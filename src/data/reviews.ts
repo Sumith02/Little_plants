@@ -1,0 +1,88 @@
+import { CustomerReview } from "@/types";
+
+export const demoReviews: CustomerReview[] = [
+  {
+    id: "rev-1",
+    author: "Ananya Deshmukh",
+    location: "Koramangala, Bengaluru",
+    verifiedBuyer: true,
+    rating: 5,
+    title: "Packaging was unbelievable—not a single leaf was folded!",
+    comment:
+      "I was skeptical about ordering a 3-foot Monstera online in Bengaluru's traffic, but Little Plants' coconut coir crate packing is pure engineering genius. The soil was damp, the leaves were pristine, and the terracotta pot has such an earthy, tactile texture.",
+    date: "14 Sep 2026",
+    productName: "Monstera Deliciosa",
+    productSlug: "monstera-deliciosa-swiss-cheese-plant",
+    helpfulCount: 34,
+  },
+  {
+    id: "rev-2",
+    author: "Rohan Varma",
+    location: "Bandra West, Mumbai",
+    verifiedBuyer: true,
+    rating: 5,
+    title: "The ZZ plant survived two weeks while I was on client travel",
+    comment:
+      "As someone living alone in a high-rise with unpredictable travel schedules, the ZZ plant and self-watering pot combination is unbeatable. It still looks glossy and radiant. Their plant care card is taped to my fridge.",
+    date: "02 Sep 2026",
+    productName: "ZZ Plant 'Emerald Feather'",
+    productSlug: "zz-plant-zamioculcas-zamiifolia",
+    helpfulCount: 28,
+  },
+  {
+    id: "rev-3",
+    author: "Meera Subramanian",
+    location: "Alwarpet, Chennai",
+    verifiedBuyer: true,
+    rating: 5,
+    title: "Pet-safe prayer plant that our curious beagle ignores completely",
+    comment:
+      "Having a very curious beagle made me paranoid about toxic plants. Finding genuine pet-safe houseplants with transparent safety notes in India is rare. The Calathea Orbifolia arrived in perfect condition and its silver leaves are breathtaking.",
+    date: "26 Aug 2026",
+    productName: "Calathea Orbifolia",
+    productSlug: "calathea-orbifolia-prayer-plant",
+    helpfulCount: 42,
+  },
+  {
+    id: "rev-4",
+    author: "Vikramjit Singh",
+    location: "Vasant Vihar, New Delhi",
+    verifiedBuyer: true,
+    rating: 5,
+    title: "Heirloom pruners feel like a lifelong companion",
+    comment:
+      "The hand-forged carbon steel pruners slice through woody ficus stems like warm butter. No snagging, no bruised bark. Also purchased the solid brass mist sprayer—looks like a vintage apothecary artifact on my study shelf.",
+    date: "18 Aug 2026",
+    productName: "Hand-Forged Carbon Steel Pruners",
+    productSlug: "carbon-steel-precision-bypass-pruners",
+    helpfulCount: 19,
+  },
+  {
+    id: "rev-5",
+    author: "Pooja Hegde-Patil",
+    location: "Aundh, Pune",
+    verifiedBuyer: true,
+    rating: 5,
+    title: "The New Homeowner Crate made my sister cry happy tears",
+    comment:
+      "Sent this as a housewarming gift for my sister's new flat in Pune. The wooden crate, the custom handwritten note, and the healthy Snake plant made it feel infinitely more special than flowers or generic gift cards.",
+    date: "08 Aug 2026",
+    productName: "The New Homeowner Green Oasis Gift Crate",
+    productSlug: "housewarming-green-oasis-gift-box",
+    helpfulCount: 51,
+  },
+  {
+    id: "rev-6",
+    author: "Dr. K. Srinivas",
+    location: "Jubilee Hills, Hyderabad",
+    verifiedBuyer: true,
+    rating: 4,
+    title: "High quality soil mix; zero gnats or foul compost smell",
+    comment:
+      "The 5kg soil-less potting mix is exceptionally well aerated with visible perlite and neem cake. Repotted three ailing aroids into it and noticed new root tips within 12 days. Highly recommended.",
+    date: "29 Jul 2026",
+    productName: "Enriched Organic Potting Mix (5kg)",
+    productSlug: "enriched-organic-potting-mix-5kg",
+    helpfulCount: 22,
+  },
+];
