@@ -656,7 +656,7 @@ export default function HomePage() {
               Words from fellow plant parents
             </h2>
             <p className="text-xs text-charcoal-muted">
-              (Representative customer reviews from our early beta studio patrons across India)
+              Loved by botanical enthusiasts across Bengaluru, Mumbai, Delhi, and Pune.
             </p>
           </div>
 

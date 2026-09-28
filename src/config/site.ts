@@ -41,8 +41,6 @@ export interface SiteConfig {
   };
   demoMode: {
     isDemo: boolean;
-    noticeTitle: string;
-    noticeDescription: string;
     samplePincodes: { pincode: string; city: string; state: string; days: string }[];
     sampleCoupons: { code: string; description: string; discountType: "percent" | "fixed"; value: number; minSpend?: number }[];
   };
@@ -123,9 +121,6 @@ export const siteConfig: SiteConfig = {
   },
   demoMode: {
     isDemo: true,
-    noticeTitle: "Demonstration & Prototype Environment",
-    noticeDescription:
-      "Little Plants is running in demo mode with live interactive cart, wishlist, quiz, and simulated checkout flows. No real payment or delivery charges will be processed.",
     samplePincodes: [
       { pincode: "560038", city: "Bengaluru", state: "Karnataka", days: "2-3 business days" },
       { pincode: "400050", city: "Mumbai", state: "Maharashtra", days: "2-3 business days" },

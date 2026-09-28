@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { Shield, AlertCircle, Home, ChevronRight } from "lucide-react";
+import { Shield, Home, ChevronRight } from "lucide-react";
 
 export const metadata = {
-  title: "Privacy Policy (Draft) | Little Plants",
-  description: "Little Plants draft privacy and data protection policy for customer review.",
+  title: "Privacy Policy | Little Plants",
+  description: "Little Plants privacy and data protection policy.",
 };
 
 export default function PrivacyPage() {
@@ -19,14 +19,6 @@ export default function PrivacyPage() {
         <ChevronRight className="w-3 h-3 text-sand-dark" />
         <span className="text-olive font-medium">Privacy Policy</span>
       </nav>
-
-      {/* Draft Disclaimer Notice */}
-      <div className="p-4 rounded-2xl bg-amber-50 border border-amber-200 text-xs text-amber-900 flex items-start gap-3">
-        <AlertCircle className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
-        <p>
-          <strong>Notice:</strong> This document is a preliminary operational draft prepared for prototype demonstration. Final binding privacy terms require review by legal counsel prior to commercial live operations.
-        </p>
-      </div>
 
       <div className="space-y-3">
         <h1 className="font-serif text-3xl sm:text-4xl font-bold text-olive">

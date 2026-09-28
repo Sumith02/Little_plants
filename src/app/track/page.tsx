@@ -97,7 +97,7 @@ function TrackContent() {
         </form>
 
         <div className="text-center text-[11px] text-charcoal-muted">
-          <span>Active demo consignment: </span>
+          <span>Sample consignment tracking: </span>
           <button
             onClick={() => {
               setInputVal("LP-IND-89421");

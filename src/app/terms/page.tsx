@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { Scale, AlertCircle, Home, ChevronRight } from "lucide-react";
+import { Scale, Home, ChevronRight } from "lucide-react";
 
 export const metadata = {
-  title: "Terms of Service (Draft) | Little Plants",
-  description: "Little Plants draft terms and conditions of commerce for customer review.",
+  title: "Terms & Conditions of Service | Little Plants",
+  description: "Little Plants terms and conditions of commerce.",
 };
 
 export default function TermsPage() {
@@ -19,14 +19,6 @@ export default function TermsPage() {
         <ChevronRight className="w-3 h-3 text-sand-dark" />
         <span className="text-olive font-medium">Terms of Service</span>
       </nav>
-
-      {/* Draft Disclaimer Notice */}
-      <div className="p-4 rounded-2xl bg-amber-50 border border-amber-200 text-xs text-amber-900 flex items-start gap-3">
-        <AlertCircle className="w-4 h-4 text-amber-700 shrink-0 mt-0.5" />
-        <p>
-          <strong>Notice:</strong> This draft terms agreement is prepared for prototype demonstration. Final terms require formal merchant review by legal counsel.
-        </p>
-      </div>
 
       <div className="space-y-3">
         <h1 className="font-serif text-3xl sm:text-4xl font-bold text-olive">

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import { RootProviders } from "@/components/providers/RootProviders";
-import { DemoNoticeBanner } from "@/components/common/DemoNoticeBanner";
 import { AnnouncementBar } from "@/components/layout/AnnouncementBar";
 import { Header } from "@/components/layout/Header";
 import { CartDrawer } from "@/components/layout/CartDrawer";
@@ -40,7 +39,6 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-cream text-charcoal font-sans selection:bg-terracotta selection:text-white">
         <RootProviders>
-          <DemoNoticeBanner />
           <AnnouncementBar />
           <Header />
           <main className="flex-1">{children}</main>
