@@ -9,6 +9,20 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/category/pots-and-planters",
+        destination: "/category/pots-planters",
+        permanent: true,
+      },
+      {
+        source: "/category/tools",
+        destination: "/category/gardening-tools",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
