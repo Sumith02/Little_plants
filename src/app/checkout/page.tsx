@@ -119,7 +119,7 @@ export default function CheckoutPage() {
         giftMessage: giftMessage || undefined,
       });
 
-      // Generate WhatsApp order URL for nursery owner (+91 98200 45123)
+      // Generate WhatsApp order URL for nursery owner (+91 98454 74725)
       const waUrl = buildCheckoutWhatsAppUrl(order);
       window.open(waUrl, "_blank");
 
@@ -422,7 +422,7 @@ export default function CheckoutPage() {
                     <span>Direct Order to Little Plants Nursery Owner</span>
                   </div>
                   <p className="text-[12px] text-charcoal-muted leading-relaxed">
-                    When you click the button below, your order reference, itemized cart, delivery address, and contact details will open directly in WhatsApp to our nursery team at <strong>+91 98200 45123</strong>.
+                    When you click the button below, your order reference, itemized cart, delivery address, and contact details will open directly in WhatsApp to our nursery team at <strong>+91 98454 74725</strong>.
                   </p>
                   <p className="text-[11px] text-charcoal-muted">
                     • The owner confirms plant health &amp; availability immediately.

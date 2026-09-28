@@ -55,9 +55,9 @@ export interface SiteConfig {
 export const siteConfig: SiteConfig = {
   brandName: "Little Plants",
   kannadaBrandName: "ಲಿಟಲ್ ಪ್ಲಾಂಟ್ಸ್",
-  tagline: "Curated greenery, handcrafted planters & botanical rituals for modern Indian homes.",
+  tagline: "Relaxed shop offering a wide assortment of plants – indoor and potted – as well as gift-wrapping services.",
   shortDescription:
-    "We nurture healthy, climate-acclimatized indoor plants, artisan-cast terracotta planters, and organic botanical care, packed plastic-free and shipped safely across 18,000+ PIN codes in India.",
+    "Relaxed shop offering a wide assortment of plants – indoor and potted – as well as gift-wrapping services. Visit our store at Vijaya Complex, Mannagudda Rd, Mangaluru, or order online for safe doorstep delivery across India.",
   logos: {
     green: "/images/brand/little-plants-logo-green.png",
     white: "/images/brand/little-plants-logo-white.png",
@@ -82,6 +82,11 @@ export const siteConfig: SiteConfig = {
       link: "/shop",
     },
     {
+      id: "store-visit",
+      text: "🪴 Visit our relaxed plant shop on Mannagudda Rd, Mangaluru • Open 9:30 AM – 8:30 PM",
+      link: "/contact",
+    },
+    {
       id: "quiz-cta",
       text: "🌱 Unsure what thrives in your space? Take the 60-second Plant Finder Quiz",
       link: "/quiz",
@@ -96,41 +101,30 @@ export const siteConfig: SiteConfig = {
   },
   contact: {
     email: "care@littleplants.in",
-    phone: "+91 98200 45123",
-    whatsapp: "+91 98200 45123",
-    whatsappNumber: "919820045123",
-    hours: "Monday – Saturday, 9:30 AM – 7:30 PM IST",
+    phone: "098454 74725",
+    whatsapp: "+91 98454 74725",
+    whatsappNumber: "919845474725",
+    hours: "Monday – Sunday, 9:30 AM – 8:30 PM IST",
     studios: [
       {
-        city: "Bengaluru",
-        address: "Studio 14, 12th Main Road, HAL 2nd Stage, Indiranagar",
-        landmark: "Near Defense Colony Park",
-        timing: "10:30 AM – 8:00 PM (All days)",
-      },
-      {
-        city: "Mumbai",
-        address: "The Botanical Shed, Pali Hill, Bandra West",
-        landmark: "Opposite Zig Zag Road",
-        timing: "11:00 AM – 8:30 PM (Tue – Sun)",
-      },
-      {
-        city: "Pune Nursery Hub",
-        address: "Green Valley Acclimatization Farm, Uruli Kanchan",
-        landmark: "Solapur Highway Exit",
-        timing: "Wholesale & Nursery Visits by Appointment",
+        city: "Mangaluru (Store & Studio)",
+        address: "Door No : 5, Vijaya Complex, 12-1214/4, Mannagudda Rd, Kudroli, Kodailbail, Mangaluru, Karnataka 575003",
+        landmark: "Near Atomm Fitness Club",
+        timing: "9:30 AM – 8:30 PM (All days)",
       },
     ],
   },
   demoMode: {
     isDemo: true,
     samplePincodes: [
+      { pincode: "575003", city: "Mangaluru", state: "Karnataka", days: "Same-Day / Next-Day Delivery" },
       { pincode: "560038", city: "Bengaluru", state: "Karnataka", days: "2-3 business days" },
       { pincode: "400050", city: "Mumbai", state: "Maharashtra", days: "2-3 business days" },
       { pincode: "110001", city: "New Delhi", state: "Delhi", days: "3-4 business days" },
       { pincode: "500034", city: "Hyderabad", state: "Telangana", days: "3-4 business days" },
       { pincode: "600028", city: "Chennai", state: "Tamil Nadu", days: "3-5 business days" },
       { pincode: "700019", city: "Kolkata", state: "West Bengal", days: "4-5 business days" },
-      { pincode: "411001", city: "Pune", state: "Maharashtra", days: "2 business days" },
+      { pincode: "411001", city: "Pune", state: "Maharashtra", days: "2-3 business days" },
     ],
     sampleCoupons: [
       { code: "LITTLE10", description: "10% off your entire order", discountType: "percent", value: 10 },

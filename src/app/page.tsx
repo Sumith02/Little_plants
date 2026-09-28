@@ -23,9 +23,11 @@ import {
   Layers,
   Heart,
   Star,
-  Quote,
   ShoppingBag,
+  MapPin,
+  Phone,
 } from "lucide-react";
+import WhatsAppIcon from "@/components/common/WhatsAppIcon";
 
 export default function HomePage() {
   const { addItem } = useCart();
@@ -75,7 +77,7 @@ export default function HomePage() {
             <div className="lg:col-span-6 space-y-6 sm:space-y-8 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-sand border border-sand-dark text-xs text-charcoal font-medium">
                 <Leaf className="w-3.5 h-3.5 text-terracotta" />
-                <span>Terracotta Botanical Studio &bull; Nurtured for Indian Homes</span>
+                <span>Relaxed Plant Shop &bull; Mannagudda Rd, Mangaluru</span>
               </div>
 
               <div className="space-y-3">
@@ -83,8 +85,7 @@ export default function HomePage() {
                   Make room for a little green.
                 </h1>
                 <p className="text-base sm:text-lg text-charcoal-muted leading-relaxed max-w-xl mx-auto lg:mx-0">
-                  Healthy, climate-acclimatized houseplants and artisan earthenware planters,
-                  shipped plastic-free in protective coconut coir crates to your doorstep.
+                  Relaxed shop offering a wide assortment of plants – indoor and potted – as well as bespoke gift-wrapping services.
                 </p>
               </div>
 
@@ -748,6 +749,66 @@ export default function HomePage() {
               alt="Earthen terracotta and sustainable plant packaging"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
+        </div>
+      </section>
+
+      {/* ============================================================
+          11. VISIT OUR PHYSICAL STORE (Mangaluru)
+         ============================================================ */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="rounded-3xl bg-olive-light/60 border border-olive-subtle p-8 sm:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center shadow-xs">
+          <div className="lg:col-span-7 space-y-4">
+            <span className="text-xs font-semibold uppercase tracking-widest text-terracotta">
+              Physical Store &bull; Mangaluru, Karnataka
+            </span>
+            <h3 className="font-serif text-3xl sm:text-4xl font-bold text-olive">
+              Relax in our leafy sanctuary on Mannagudda Road.
+            </h3>
+            <p className="text-xs sm:text-sm text-charcoal-muted leading-relaxed">
+              Relaxed shop offering a wide assortment of plants – indoor and potted – as well as gift-wrapping services. Walk through curated displays of tropical foliage, tactile earthenware pottery, and get one-on-one plant care advice from our botanists.
+            </p>
+            <div className="p-4 rounded-2xl bg-cream border border-sand text-xs space-y-1.5 max-w-lg">
+              <div className="font-bold text-charcoal flex items-center gap-2">
+                <MapPin className="w-4 h-4 text-terracotta shrink-0" />
+                <span>Door No : 5, Vijaya Complex, 12-1214/4, Mannagudda Rd</span>
+              </div>
+              <div className="text-charcoal-muted pl-6">
+                near Atomm Fitness Club, Kudroli, Kodailbail, Mangaluru, Karnataka 575003
+              </div>
+              <div className="text-olive font-semibold pl-6 pt-1 flex flex-wrap items-center justify-between gap-2">
+                <span>🕒 Open daily: 9:30 AM – 8:30 PM</span>
+                <span>📞 098454 74725</span>
+              </div>
+            </div>
+            <div className="pt-2 flex flex-wrap gap-3">
+              <a
+                href="https://wa.me/919845474725?text=Hello%20Little%20Plants!%20I%20would%20like%20to%20visit%20your%20store%20in%20Mangaluru."
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-semibold shadow-sm transition-all inline-flex items-center gap-2 cursor-pointer"
+              >
+                <WhatsAppIcon className="w-4 h-4 text-white" />
+                <span>Chat on WhatsApp (098454 74725)</span>
+              </a>
+              <Link
+                href="/contact"
+                className="px-6 py-3 rounded-xl bg-sand hover:bg-sand-dark text-olive text-xs font-semibold transition-colors inline-flex items-center gap-1.5"
+              >
+                <span>Store Details &amp; Directions</span>
+                <ArrowRight className="w-3.5 h-3.5" />
+              </Link>
+            </div>
+          </div>
+
+          <div className="lg:col-span-5 relative aspect-4/3 rounded-2xl overflow-hidden bg-sand border border-sand shadow-sm">
+            <Image
+              src="/images/brand/dp.jpg"
+              alt="Little Plants Mangaluru Store"
+              fill
+              sizes="(max-width: 1024px) 100vw, 40vw"
               className="object-cover"
             />
           </div>

@@ -84,7 +84,7 @@ function TrackContent() {
               type="text"
               value={inputVal}
               onChange={(e) => setInputVal(e.target.value)}
-              placeholder="e.g. LP-IND-89421 or 9820045123"
+              placeholder="e.g. LP-IND-89421 or 09845474725"
               className="w-full pl-10 pr-3 py-3 rounded-xl bg-white border border-sand-dark text-xs sm:text-sm font-mono text-charcoal focus:outline-none focus:border-terracotta"
             />
           </div>

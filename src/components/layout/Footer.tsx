@@ -224,22 +224,15 @@ export const Footer: React.FC = () => {
           {/* Studios & Contact */}
           <div className="space-y-3">
             <h5 className="text-xs font-bold uppercase tracking-wider text-olive">
-              Studio Locations
+              Visit Our Store
             </h5>
             <div className="space-y-3 text-xs text-charcoal-muted">
               <div>
-                <strong className="text-charcoal block">Bengaluru Studio</strong>
-                <span>12th Main Road, HAL 2nd Stage, Indiranagar</span>
-              </div>
-
-              <div>
-                <strong className="text-charcoal block">Mumbai Shed</strong>
-                <span>Pali Hill, Bandra West</span>
-              </div>
-
-              <div>
-                <strong className="text-charcoal block">Pune Nursery Hub</strong>
-                <span>Green Valley Farm, Uruli Kanchan</span>
+                <strong className="text-charcoal block">Little Plants Store (ಲಿಟಲ್ ಪ್ಲಾಂಟ್ಸ್)</strong>
+                <span>Door No : 5, Vijaya Complex, 12-1214/4, Mannagudda Rd</span>
+                <span className="block text-[11px] text-terracotta">Near Atomm Fitness Club, Kudroli, Kodailbail</span>
+                <span className="block">Mangaluru, Karnataka 575003</span>
+                <span className="text-[11px] text-olive font-medium mt-1 block">Open daily: 9:30 AM – 8:30 PM</span>
               </div>
 
               <div className="pt-2 border-t border-sand space-y-1">

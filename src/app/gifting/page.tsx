@@ -136,6 +136,53 @@ export default function GiftingPage() {
         </div>
       </section>
 
+      {/* Artisanal Gift-Wrapping Services Section */}
+      <section className="rounded-3xl bg-cream-50 border border-sand p-6 sm:p-10 space-y-6">
+        <div className="text-center max-w-xl mx-auto space-y-2">
+          <span className="text-xs font-semibold uppercase tracking-widest text-terracotta">
+            In-Store &amp; Online Services
+          </span>
+          <h3 className="font-serif text-2xl sm:text-3xl font-bold text-olive">
+            Artisanal Gift-Wrapping Services
+          </h3>
+          <p className="text-xs text-charcoal-muted leading-relaxed">
+            At our relaxed Mannagudda plant shop, we take special pride in dressing up living gifts with mindful, plastic-free presentation.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-xs">
+          <div className="space-y-2 p-5 rounded-2xl bg-cream border border-sand">
+            <div className="w-8 h-8 rounded-lg bg-terracotta/10 text-terracotta flex items-center justify-center font-bold mb-2">
+              <Gift className="w-4 h-4" />
+            </div>
+            <h4 className="font-serif text-base font-bold text-olive">On-The-Spot Wrapping</h4>
+            <p className="text-charcoal-muted leading-relaxed">
+              Visiting our Mangaluru store? Select any indoor or potted plant and our florists will hand-wrap it in textured brown kraft paper, jute twine ribbons, and dried botanical sprigs.
+            </p>
+          </div>
+
+          <div className="space-y-2 p-5 rounded-2xl bg-cream border border-sand">
+            <div className="w-8 h-8 rounded-lg bg-olive/10 text-olive flex items-center justify-center font-bold mb-2">
+              <CheckCircle2 className="w-4 h-4 text-olive" />
+            </div>
+            <h4 className="font-serif text-base font-bold text-olive">Handwritten Seeded Paper Notes</h4>
+            <p className="text-charcoal-muted leading-relaxed">
+              Every gift includes an artisanal plantable seed card. Provide your message during WhatsApp order or checkout, and we will handwrite it in archival ink.
+            </p>
+          </div>
+
+          <div className="space-y-2 p-5 rounded-2xl bg-cream border border-sand">
+            <div className="w-8 h-8 rounded-lg bg-sand text-charcoal flex items-center justify-center font-bold mb-2">
+              <ShieldCheck className="w-4 h-4 text-olive" />
+            </div>
+            <h4 className="font-serif text-base font-bold text-olive">Discreet Delivery &amp; Care Guide</h4>
+            <p className="text-charcoal-muted leading-relaxed">
+              Prices and tax receipts are excluded from recipient boxes. Each gift crate comes with a botanical care card to ensure the recipient can nurture their new companion with ease.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Corporate Gifting Inquiry Form Section */}
       <section className="rounded-3xl bg-cream-50 border border-sand p-6 sm:p-12 space-y-8">
         <div className="max-w-2xl mx-auto text-center space-y-3">

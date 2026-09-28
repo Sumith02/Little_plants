@@ -52,7 +52,7 @@ export default function TermsPage() {
         <section className="space-y-2">
           <h2 className="font-serif text-lg font-bold text-olive">4. Governing Law</h2>
           <p>
-            These terms shall be governed by and construed in accordance with the laws of the Republic of India. Disputes shall be subject to the exclusive jurisdiction of the courts of Bengaluru, Karnataka.
+            These terms shall be governed by and construed in accordance with the laws of the Republic of India. Disputes shall be subject to the exclusive jurisdiction of the courts of Mangaluru, Karnataka.
           </p>
         </section>
       </div>

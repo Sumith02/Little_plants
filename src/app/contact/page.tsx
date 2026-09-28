@@ -53,7 +53,7 @@ export default function ContactPage() {
           Get in Touch with our Studio Botanists
         </h1>
         <p className="text-xs sm:text-sm text-charcoal-muted leading-relaxed">
-          Need help diagnosing a yellow leaf, curious about custom corporate hampers, or looking to visit our Pune nursery? We respond with care.
+          Need help diagnosing a yellow leaf, curious about custom corporate hampers, or looking to visit our Mangaluru store? We respond with care.
         </p>
       </div>
 
@@ -203,14 +203,16 @@ export default function ContactPage() {
 
           <div className="p-6 rounded-3xl bg-cream-50 border border-sand space-y-4">
             <h3 className="font-serif text-lg font-bold text-olive border-b border-sand pb-3">
-              Studio Locations
+              Visit Our Store
             </h3>
             <div className="space-y-4 text-xs">
               {siteConfig.contact.studios.map((st) => (
-                <div key={st.city} className="space-y-1">
-                  <span className="font-bold text-olive block">{st.city}</span>
-                  <p className="text-charcoal-muted">{st.address}</p>
-                  <span className="text-[11px] text-terracotta">{st.timing}</span>
+                <div key={st.city} className="space-y-1.5">
+                  <span className="font-bold text-olive text-sm block">{st.city}</span>
+                  <p className="text-charcoal leading-relaxed">{st.address}</p>
+                  <span className="text-[11px] text-terracotta block">{st.landmark}</span>
+                  <span className="text-[11px] text-charcoal-muted block font-medium">🕒 {st.timing}</span>
+                  <span className="text-[11px] text-olive font-medium block">📞 Phone: {siteConfig.contact.phone}</span>
                 </div>
               ))}
             </div>

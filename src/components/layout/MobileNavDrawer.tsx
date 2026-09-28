@@ -236,7 +236,7 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({
 
           <div className="pt-2 text-center text-[11px] text-charcoal-muted flex items-center justify-center gap-1.5">
             <MapPin className="w-3 h-3 text-terracotta" />
-            <span>Studios in Bengaluru, Mumbai & Pune</span>
+            <span>Store at Mannagudda Rd, Mangaluru • 098454 74725</span>
           </div>
         </div>
       </div>

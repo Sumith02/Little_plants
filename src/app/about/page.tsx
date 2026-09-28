@@ -109,27 +109,32 @@ export default function AboutPage() {
           <span className="text-xs font-semibold uppercase tracking-widest text-terracotta">
             Visit Us in Person
           </span>
-          <h3 className="font-serif text-3xl font-bold text-olive">Our Botanical Studios</h3>
-          <p className="text-xs text-charcoal-muted">
-            Experience our living collection, consult with studio botanists, or attend weekend repotting workshops.
+          <h3 className="font-serif text-3xl font-bold text-olive">Our Flagship Store &amp; Studio</h3>
+          <p className="text-xs text-charcoal-muted leading-relaxed">
+            Relaxed shop offering a wide assortment of plants – indoor and potted – as well as bespoke gift-wrapping services.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="max-w-2xl mx-auto">
           {siteConfig.contact.studios.map((studio) => (
             <div
               key={studio.city}
-              className="p-5 rounded-2xl bg-cream border border-sand space-y-2 text-xs"
+              className="p-6 sm:p-8 rounded-2xl bg-cream border border-sand space-y-3 text-xs text-center shadow-xs"
             >
-              <div className="flex items-center gap-1.5 font-bold text-sm text-olive">
+              <div className="inline-flex items-center gap-1.5 font-bold text-base text-olive">
                 <MapPin className="w-4 h-4 text-terracotta" />
                 <span>{studio.city}</span>
               </div>
-              <p className="text-charcoal leading-relaxed">{studio.address}</p>
-              <span className="text-charcoal-muted block">{studio.landmark}</span>
-              <span className="text-[11px] font-medium text-terracotta block pt-1">
-                Hours: {studio.timing}
+              <p className="text-charcoal sm:text-sm font-medium leading-relaxed max-w-lg mx-auto">
+                {studio.address}
+              </p>
+              <span className="text-terracotta font-medium block">
+                {studio.landmark}
               </span>
+              <div className="pt-2 border-t border-sand flex flex-wrap items-center justify-center gap-4 text-charcoal-muted">
+                <span>🕒 <strong>Timing:</strong> {studio.timing}</span>
+                <span>📞 <strong>Phone:</strong> {siteConfig.contact.phone}</span>
+              </div>
             </div>
           ))}
         </div>

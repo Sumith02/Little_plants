@@ -2,7 +2,7 @@ import { siteConfig } from "@/config/site";
 import { Product, CartItem, OrderRecord } from "@/types";
 
 export function getCleanWhatsAppNumber(): string {
-  return siteConfig.contact.whatsappNumber || "919820045123";
+  return siteConfig.contact.whatsappNumber || "919845474725";
 }
 
 /**

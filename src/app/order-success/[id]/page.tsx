@@ -63,7 +63,7 @@ export default function OrderSuccessPage({
         </h1>
 
         <p className="text-xs sm:text-sm text-charcoal-muted max-w-lg mx-auto leading-relaxed">
-          Your order has been received at our Pune Acclimatization Center. We will carefully hydrate the roots and pack them in our breathable coconut coir crate before courier dispatch.
+          Your order has been received at our Little Plants Studio in Mangaluru. We will carefully hydrate the roots and pack them in our breathable coconut coir crate before courier dispatch.
         </p>
 
         <div className="pt-2 flex flex-wrap items-center justify-center gap-3 text-xs">
