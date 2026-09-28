@@ -31,6 +31,7 @@ export interface SiteConfig {
     email: string;
     phone: string;
     whatsapp: string;
+    whatsappNumber: string;
     hours: string;
     studios: {
       city: string;
@@ -97,6 +98,7 @@ export const siteConfig: SiteConfig = {
     email: "care@littleplants.in",
     phone: "+91 98200 45123",
     whatsapp: "+91 98200 45123",
+    whatsappNumber: "919820045123",
     hours: "Monday – Saturday, 9:30 AM – 7:30 PM IST",
     studios: [
       {

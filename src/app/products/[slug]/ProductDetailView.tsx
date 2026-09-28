@@ -10,6 +10,8 @@ import { useCart } from "@/context/CartContext";
 import { useWishlist } from "@/context/WishlistContext";
 import { PincodeChecker } from "@/components/product/PincodeChecker";
 import { ProductCard } from "@/components/product/ProductCard";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
+import { buildProductWhatsAppUrl } from "@/utils/whatsapp";
 import {
   Heart,
   ShoppingBag,
@@ -82,6 +84,19 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
   // Add to cart handler
   const handleAddToCart = () => {
     addItem(product, selectedSize, selectedMaterial, selectedColor, quantity);
+  };
+
+  // WhatsApp direct order handler
+  const handleOrderWhatsApp = () => {
+    const url = buildProductWhatsAppUrl({
+      product,
+      sizeName: selectedSize?.name,
+      materialName: selectedMaterial?.name,
+      colorName: selectedColor?.name,
+      quantity,
+      unitPrice,
+    });
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   // Buy now handler
@@ -400,11 +415,24 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
             )}
           </div>
 
-          {/* Quantity & Purchase CTAs */}
+          {/* Quantity & WhatsApp Purchase CTAs */}
           <div className="space-y-3 pt-2">
-            <div className="flex items-center gap-3">
+            {/* Primary Order on WhatsApp Button */}
+            <button
+              onClick={handleOrderWhatsApp}
+              className="w-full py-4 px-6 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] active:scale-[0.99] text-white font-semibold text-sm sm:text-base tracking-wide transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2.5 cursor-pointer"
+            >
+              <WhatsAppIcon className="w-5 h-5 text-white" />
+              <span>Order on WhatsApp &bull; {formatPrice(totalPrice)}</span>
+            </button>
+            <div className="flex items-center justify-center gap-2 text-[11px] text-charcoal-muted text-center">
+              <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
+              <span>Direct confirmation with nursery owner &bull; Pay via UPI / GPay</span>
+            </div>
+
+            <div className="flex items-center gap-3 pt-1">
               {/* Stepper */}
-              <div className="flex items-center border border-sand rounded-xl bg-white px-2 py-1">
+              <div className="flex items-center border border-sand rounded-xl bg-white px-2 py-1 shrink-0">
                 <button
                   onClick={() => setQuantity((q) => Math.max(1, q - 1))}
                   className="p-2 text-charcoal hover:bg-sand rounded"
@@ -412,7 +440,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
                 >
                   -
                 </button>
-                <span className="px-4 text-sm font-semibold font-mono">{quantity}</span>
+                <span className="px-3 text-sm font-semibold font-mono">{quantity}</span>
                 <button
                   onClick={() => setQuantity((q) => q + 1)}
                   className="p-2 text-charcoal hover:bg-sand rounded"
@@ -422,23 +450,15 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
                 </button>
               </div>
 
-              {/* Add to Cart button */}
+              {/* Add to Cart button (for multi-item order) */}
               <button
                 onClick={handleAddToCart}
-                className="flex-1 py-3.5 px-6 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white font-medium text-xs sm:text-sm tracking-wide transition-all shadow-sm flex items-center justify-center gap-2 cursor-pointer"
+                className="flex-1 py-3 px-4 rounded-xl bg-sand/80 hover:bg-sand text-charcoal hover:text-olive font-medium text-xs sm:text-sm tracking-wide transition-all flex items-center justify-center gap-2 cursor-pointer border border-sand-dark/40"
               >
-                <ShoppingBag className="w-4 h-4" />
-                <span>Add to Basket &bull; {formatPrice(totalPrice)}</span>
+                <ShoppingBag className="w-4 h-4 text-terracotta" />
+                <span>Add to Basket (Multi-Item Order)</span>
               </button>
             </div>
-
-            {/* Buy Now button */}
-            <button
-              onClick={handleBuyNow}
-              className="w-full py-3 px-6 rounded-xl bg-olive hover:bg-olive-dark text-white font-medium text-xs sm:text-sm tracking-wide transition-all shadow-sm cursor-pointer"
-            >
-              Buy Now with Instant Express Dispatch
-            </button>
           </div>
 
           {/* Delivery PIN Code Checker */}
@@ -629,22 +649,31 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
       {/* ============================================================
           STICKY MOBILE PURCHASE BAR (Mobile Only)
          ============================================================ */}
-      <div className="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-cream/95 backdrop-blur-md border-t border-sand p-3 shadow-lg flex items-center justify-between gap-3">
-        <div>
-          <div className="text-xs font-bold text-charcoal">{formatPrice(unitPrice)}</div>
-          <div className="text-[10px] text-charcoal-muted truncate max-w-[140px]">
-            {selectedSize?.name.split("(")[0] || "Standard"} &bull;{" "}
-            {selectedMaterial?.name.split(" ")[0] || "Nursery"}
+      <div className="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-cream/95 backdrop-blur-md border-t border-sand p-2.5 shadow-lg flex items-center justify-between gap-2">
+        <div className="shrink-0">
+          <div className="text-xs font-bold text-charcoal">{formatPrice(totalPrice)}</div>
+          <div className="text-[10px] text-charcoal-muted truncate max-w-[100px]">
+            {selectedSize?.name.split("(")[0] || "Standard"} &bull; Qty: {quantity}
           </div>
         </div>
 
-        <button
-          onClick={handleAddToCart}
-          className="flex-1 py-2.5 px-4 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white text-xs font-medium tracking-wide flex items-center justify-center gap-1.5 shadow-sm"
-        >
-          <ShoppingBag className="w-3.5 h-3.5" />
-          <span>Add to Basket</span>
-        </button>
+        <div className="flex items-center gap-2 flex-1 justify-end">
+          <button
+            onClick={handleAddToCart}
+            aria-label="Add to Basket"
+            className="p-2.5 rounded-xl bg-sand hover:bg-sand-dark text-charcoal border border-sand-dark/40 transition-colors shrink-0"
+          >
+            <ShoppingBag className="w-4 h-4" />
+          </button>
+
+          <button
+            onClick={handleOrderWhatsApp}
+            className="flex-1 py-2.5 px-3 rounded-xl bg-[#25D366] hover:bg-[#20ba59] active:scale-95 text-white text-xs font-semibold tracking-wide flex items-center justify-center gap-1.5 shadow-sm"
+          >
+            <WhatsAppIcon className="w-4 h-4 text-white" />
+            <span>Order on WhatsApp</span>
+          </button>
+        </div>
       </div>
     </div>
   );

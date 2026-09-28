@@ -17,6 +17,8 @@ import {
   Tag,
   Check,
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
+import { buildCartWhatsAppUrl } from "@/utils/whatsapp";
 
 export const CartDrawer: React.FC = () => {
   const {
@@ -35,6 +37,7 @@ export const CartDrawer: React.FC = () => {
     amountNeededForFreeShipping,
     freeShippingPercentage,
     addItem,
+    giftMessage,
   } = useCart();
 
   const [promoInput, setPromoInput] = useState("");
@@ -63,6 +66,17 @@ export const CartDrawer: React.FC = () => {
       setPromoFeedback({ type: "error", message: res.message });
     }
     setTimeout(() => setPromoFeedback(null), 4000);
+  };
+
+  const handleOrderCartWhatsApp = () => {
+    const url = buildCartWhatsAppUrl({
+      items,
+      subtotal,
+      shippingFee,
+      total,
+      giftMessage,
+    });
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   if (!isDrawerOpen) return null;
@@ -364,23 +378,30 @@ export const CartDrawer: React.FC = () => {
               </div>
 
               {/* Actions */}
-              <div className="space-y-2 pt-1">
-                <Link
-                  href="/checkout"
-                  onClick={closeDrawer}
-                  className="w-full py-3 px-4 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white font-medium text-xs sm:text-sm tracking-wide flex items-center justify-center gap-2 transition-colors shadow-sm cursor-pointer"
+              <div className="space-y-2 pt-2">
+                <button
+                  onClick={handleOrderCartWhatsApp}
+                  className="w-full py-3.5 px-4 rounded-xl bg-[#25D366] hover:bg-[#20ba59] active:scale-[0.99] text-white font-semibold text-xs sm:text-sm tracking-wide flex items-center justify-center gap-2 transition-all shadow-md hover:shadow-lg cursor-pointer"
                 >
-                  <span>Proceed to Checkout</span>
-                  <ArrowRight className="w-4 h-4" />
-                </Link>
+                  <WhatsAppIcon className="w-4 h-4 text-white" />
+                  <span>Order All on WhatsApp &bull; {formatPrice(total)}</span>
+                </button>
 
-                <div className="text-center">
+                <div className="flex items-center justify-between gap-2 pt-1 text-[11px]">
+                  <Link
+                    href="/checkout"
+                    onClick={closeDrawer}
+                    className="flex-1 py-2 px-3 rounded-lg bg-sand/70 hover:bg-sand text-charcoal font-medium text-center border border-sand-dark/30 transition-colors"
+                  >
+                    Enter Address
+                  </Link>
+
                   <Link
                     href="/cart"
                     onClick={closeDrawer}
-                    className="text-xs text-charcoal-muted hover:text-terracotta underline transition-colors"
+                    className="flex-1 py-2 px-3 rounded-lg bg-sand/70 hover:bg-sand text-charcoal font-medium text-center border border-sand-dark/30 transition-colors"
                   >
-                    View detailed cart & gift options
+                    View Full Cart
                   </Link>
                 </div>
               </div>

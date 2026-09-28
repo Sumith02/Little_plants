@@ -20,7 +20,10 @@ import {
   AlertCircle,
   Truck,
   RotateCcw,
+  MessageCircle,
 } from "lucide-react";
+import WhatsAppIcon from "@/components/common/WhatsAppIcon";
+import { buildCheckoutWhatsAppUrl } from "@/utils/whatsapp";
 
 export default function CheckoutPage() {
   const router = useRouter();
@@ -102,30 +105,31 @@ export default function CheckoutPage() {
     setIsProcessing(true);
     setErrorMessage(null);
 
-    // Simulate verified payment provider round-trip
-    setTimeout(() => {
-      try {
-        const order = createOrder({
-          customer: formData,
-          items,
-          subtotal,
-          couponDiscount,
-          couponCode: couponCode || undefined,
-          shippingFee,
-          shippingMethod,
-          total,
-          paymentMethod,
-          giftMessage: giftMessage || undefined,
-        });
+    try {
+      const order = createOrder({
+        customer: formData,
+        items,
+        subtotal,
+        couponDiscount,
+        couponCode: couponCode || undefined,
+        shippingFee,
+        shippingMethod,
+        total,
+        paymentMethod,
+        giftMessage: giftMessage || undefined,
+      });
 
-        clearCart();
-        setIsProcessing(false);
-        router.push(`/order-success/${order.id}`);
-      } catch (err) {
-        setIsProcessing(false);
-        setErrorMessage("Order creation failed. Please try again.");
-      }
-    }, 1800);
+      // Generate WhatsApp order URL for nursery owner (+91 98200 45123)
+      const waUrl = buildCheckoutWhatsAppUrl(order);
+      window.open(waUrl, "_blank");
+
+      clearCart();
+      setIsProcessing(false);
+      router.push(`/order-success/${order.id}`);
+    } catch (err) {
+      setIsProcessing(false);
+      setErrorMessage("Order creation failed. Please try again.");
+    }
   };
 
   if (items.length === 0) {
@@ -188,7 +192,7 @@ export default function CheckoutPage() {
               2
             </span>
             <span className={`font-semibold ${currentStep >= 2 ? "text-olive" : "text-charcoal-muted"}`}>
-              Payment Verification
+              Confirm & Send to WhatsApp
             </span>
           </div>
         </div>
@@ -380,17 +384,17 @@ export default function CheckoutPage() {
                 type="submit"
                 className="w-full py-4 px-6 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white font-medium text-sm tracking-wide transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer"
               >
-                <span>Continue to Payment Verification</span>
+                <span>Continue to WhatsApp Confirmation</span>
                 <ArrowRight className="w-4 h-4" />
               </button>
             </form>
           ) : (
-            /* STEP 2: PAYMENT METHOD & VERIFICATION GATEWAY */
+            /* STEP 2: CONFIRM & SEND TO WHATSAPP */
             <div className="space-y-6">
               <div className="p-6 rounded-2xl bg-cream-50 border border-sand space-y-5">
                 <div className="flex items-center justify-between border-b border-sand pb-3">
                   <h2 className="font-serif text-xl font-bold text-olive">
-                    Select & Verify Payment
+                    Confirm Order & Send to WhatsApp
                   </h2>
                   <button
                     onClick={() => setCurrentStep(1)}
@@ -411,129 +415,69 @@ export default function CheckoutPage() {
                   </div>
                 </div>
 
-                {/* Simulated Payment Providers */}
-                <div className="space-y-3">
-                  {/* Option 1: Razorpay Simulated Sandbox */}
+                {/* How WhatsApp Ordering Works */}
+                <div className="p-4 rounded-xl bg-[#25D366]/10 border border-[#25D366]/30 text-xs space-y-2">
+                  <div className="flex items-center gap-2 font-bold text-charcoal">
+                    <WhatsAppIcon className="w-4 h-4 text-[#25D366]" />
+                    <span>Direct Order to Little Plants Nursery Owner</span>
+                  </div>
+                  <p className="text-[12px] text-charcoal-muted leading-relaxed">
+                    When you click the button below, your order reference, itemized cart, delivery address, and contact details will open directly in WhatsApp to our nursery team at <strong>+91 98200 45123</strong>.
+                  </p>
+                  <p className="text-[11px] text-charcoal-muted">
+                    • The owner confirms plant health &amp; availability immediately.
+                    <br />
+                    • Receive real plant photos from the greenhouse before shipping.
+                    <br />
+                    • Fast UPI payment (GPay / PhonePe / Paytm QR) or Cash on Delivery.
+                  </p>
+                </div>
+
+                {/* Preferred Payment Mode */}
+                <div className="space-y-2">
+                  <h3 className="text-xs font-bold uppercase tracking-wider text-olive">
+                    Preferred Payment Mode
+                  </h3>
+
+                  {/* Option 1: Instant UPI */}
                   <div
-                    className={`p-4 rounded-xl border transition-all ${
+                    className={`p-3.5 rounded-xl border transition-all cursor-pointer ${
                       paymentMethod === "razorpay_simulated"
-                        ? "border-terracotta bg-cream shadow-2xs"
+                        ? "border-[#25D366] bg-[#25D366]/5 shadow-2xs"
                         : "border-sand bg-white opacity-80"
                     }`}
+                    onClick={() => setPaymentMethod("razorpay_simulated")}
                   >
-                    <label className="flex items-center justify-between cursor-pointer mb-3">
+                    <label className="flex items-center justify-between cursor-pointer">
                       <div className="flex items-center gap-2.5">
                         <input
                           type="radio"
                           name="payMethod"
                           checked={paymentMethod === "razorpay_simulated"}
                           onChange={() => setPaymentMethod("razorpay_simulated")}
-                          className="text-terracotta"
+                          className="text-[#25D366]"
                         />
                         <div>
                           <span className="font-semibold text-charcoal text-xs block">
-                            Razorpay Payment Gateway (Instant UPI / Cards / NetBanking)
+                            UPI Payment (GPay / PhonePe / Paytm / QR)
                           </span>
-                          <span className="text-[10px] text-olive font-medium">
-                            Simulated Indian Sandbox Gateway
+                          <span className="text-[11px] text-charcoal-muted">
+                            Nursery owner shares UPI QR code on WhatsApp for seamless mobile payment
                           </span>
                         </div>
                       </div>
-                      <span className="text-[10px] px-2 py-0.5 rounded bg-olive/10 text-olive font-semibold">
-                        Instant Capture
-                      </span>
+                      <QrCode className="w-4 h-4 text-olive" />
                     </label>
-
-                    {paymentMethod === "razorpay_simulated" && (
-                      <div className="pt-3 border-t border-sand space-y-4">
-                        {/* Subtabs: UPI, Card, NetBanking */}
-                        <div className="flex gap-2">
-                          <button
-                            type="button"
-                            onClick={() => setPaymentSubtype("upi")}
-                            className={`flex-1 py-2 px-3 rounded-lg text-xs font-medium flex items-center justify-center gap-1.5 transition-colors ${
-                              paymentSubtype === "upi"
-                                ? "bg-olive text-cream"
-                                : "bg-sand-light text-charcoal hover:bg-sand"
-                            }`}
-                          >
-                            <QrCode className="w-3.5 h-3.5" />
-                            <span>UPI (GPay / PhonePe)</span>
-                          </button>
-                          <button
-                            type="button"
-                            onClick={() => setPaymentSubtype("card")}
-                            className={`flex-1 py-2 px-3 rounded-lg text-xs font-medium flex items-center justify-center gap-1.5 transition-colors ${
-                              paymentSubtype === "card"
-                                ? "bg-olive text-cream"
-                                : "bg-sand-light text-charcoal hover:bg-sand"
-                            }`}
-                          >
-                            <CreditCard className="w-3.5 h-3.5" />
-                            <span>Debit / Credit Card</span>
-                          </button>
-                        </div>
-
-                        {paymentSubtype === "upi" ? (
-                          <div className="space-y-2 p-3 bg-cream-50 rounded-xl border border-sand text-xs">
-                            <label className="font-medium text-charcoal block">
-                              Enter UPI VPA ID
-                            </label>
-                            <input
-                              type="text"
-                              value={upiId}
-                              onChange={(e) => setUpiId(e.target.value)}
-                              className="w-full p-2.5 rounded-lg bg-white border border-sand font-mono text-xs focus:outline-none focus:border-terracotta"
-                              placeholder="e.g. username@okhdfcbank"
-                            />
-                            <p className="text-[11px] text-charcoal-muted">
-                              A simulated verification prompt will confirm this payment upon clicking verify.
-                            </p>
-                          </div>
-                        ) : (
-                          <div className="space-y-3 p-3 bg-cream-50 rounded-xl border border-sand text-xs">
-                            <div className="space-y-1">
-                              <label className="font-medium text-charcoal block">Card Number</label>
-                              <input
-                                type="text"
-                                value={cardNumber}
-                                onChange={(e) => setCardNumber(e.target.value)}
-                                className="w-full p-2.5 rounded-lg bg-white border border-sand font-mono text-xs"
-                              />
-                            </div>
-                            <div className="grid grid-cols-2 gap-2">
-                              <div>
-                                <label className="font-medium text-charcoal block">Expiry</label>
-                                <input
-                                  type="text"
-                                  value={cardExpiry}
-                                  onChange={(e) => setCardExpiry(e.target.value)}
-                                  className="w-full p-2 rounded-lg bg-white border border-sand font-mono text-xs"
-                                />
-                              </div>
-                              <div>
-                                <label className="font-medium text-charcoal block">CVV</label>
-                                <input
-                                  type="password"
-                                  value={cardCvv}
-                                  onChange={(e) => setCardCvv(e.target.value)}
-                                  className="w-full p-2 rounded-lg bg-white border border-sand font-mono text-xs"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        )}
-                      </div>
-                    )}
                   </div>
 
                   {/* Option 2: Cash on Delivery */}
                   <div
-                    className={`p-4 rounded-xl border transition-all ${
+                    className={`p-3.5 rounded-xl border transition-all cursor-pointer ${
                       paymentMethod === "cod_simulated"
-                        ? "border-terracotta bg-cream shadow-2xs"
+                        ? "border-[#25D366] bg-[#25D366]/5 shadow-2xs"
                         : "border-sand bg-white opacity-80"
                     }`}
+                    onClick={() => setPaymentMethod("cod_simulated")}
                   >
                     <label className="flex items-center justify-between cursor-pointer">
                       <div className="flex items-center gap-2.5">
@@ -542,14 +486,14 @@ export default function CheckoutPage() {
                           name="payMethod"
                           checked={paymentMethod === "cod_simulated"}
                           onChange={() => setPaymentMethod("cod_simulated")}
-                          className="text-terracotta"
+                          className="text-[#25D366]"
                         />
                         <div>
                           <span className="font-semibold text-charcoal text-xs block">
-                            Cash on Delivery (COD)
+                            Cash / UPI on Delivery (COD)
                           </span>
-                          <span className="text-[10px] text-charcoal-muted">
-                            Pay with cash or UPI QR directly to the courier upon delivery
+                          <span className="text-[11px] text-charcoal-muted">
+                            Pay with cash or scan courier UPI QR at your doorstep
                           </span>
                         </div>
                       </div>
@@ -558,24 +502,24 @@ export default function CheckoutPage() {
                   </div>
                 </div>
 
-                {/* Verification Notice */}
-                <div className="p-3.5 rounded-xl bg-olive-light/70 border border-olive-subtle text-xs text-olive space-y-1">
-                  <div className="flex items-center gap-1.5 font-semibold">
-                    <ShieldCheck className="w-4 h-4" />
-                    <span>Provider Confirmation Verification Required</span>
+                {/* Botanical Transit Guarantee */}
+                <div className="p-3.5 rounded-xl bg-sand/40 border border-sand text-xs text-charcoal-muted space-y-1">
+                  <div className="flex items-center gap-1.5 font-semibold text-olive">
+                    <ShieldCheck className="w-4 h-4 text-olive" />
+                    <span>7-Day Safe Transit Guarantee</span>
                   </div>
-                  <p className="text-[11px] text-charcoal-muted">
-                    In compliance with our safety protocol, payment is verified prior to dispatching living botanical cargo. Clicking below simulates the authenticated authorization hook.
+                  <p className="text-[11px]">
+                    All plants are packed in ventilated, shock-resistant coconut coir cartons. If any plant arrives damaged, we replace it instantly.
                   </p>
                 </div>
               </div>
 
               {/* Action Buttons */}
-              <div className="flex gap-3">
+              <div className="flex flex-col sm:flex-row gap-3">
                 <button
                   type="button"
                   onClick={() => setCurrentStep(1)}
-                  className="px-5 py-3.5 rounded-xl border border-sand text-xs font-semibold text-charcoal hover:bg-sand transition-colors"
+                  className="px-5 py-3.5 rounded-xl border border-sand text-xs font-semibold text-charcoal hover:bg-sand transition-colors order-2 sm:order-1"
                 >
                   ← Back to Address
                 </button>
@@ -584,15 +528,18 @@ export default function CheckoutPage() {
                   type="button"
                   onClick={handleFinalizeOrder}
                   disabled={isProcessing}
-                  className="flex-1 py-4 px-6 rounded-xl bg-terracotta hover:bg-terracotta-dark disabled:opacity-60 text-white font-medium text-sm tracking-wide transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer"
+                  className="flex-1 py-4 px-6 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] disabled:opacity-60 text-white font-semibold text-sm tracking-wide transition-all shadow-md flex items-center justify-center gap-2.5 cursor-pointer order-1 sm:order-2"
                 >
                   {isProcessing ? (
                     <span className="flex items-center gap-2">
                       <span className="w-4 h-4 border-2 border-white/40 border-t-white rounded-full animate-spin" />
-                      <span>Verifying with Payment Gateway...</span>
+                      <span>Opening WhatsApp...</span>
                     </span>
                   ) : (
-                    <span>Verify & Place Order &bull; {formatPrice(total)}</span>
+                    <>
+                      <WhatsAppIcon className="w-5 h-5 text-white" />
+                      <span>Send Order to WhatsApp • {formatPrice(total)}</span>
+                    </>
                   )}
                 </button>
               </div>

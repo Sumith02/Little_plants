@@ -7,6 +7,8 @@ import { Product, ProductVariantSize, ProductVariantMaterial, ProductVariantColo
 import { useCart } from "@/context/CartContext";
 import { formatPrice } from "@/config/site";
 import { X, Check, ShoppingBag, ArrowRight } from "lucide-react";
+import WhatsAppIcon from "@/components/common/WhatsAppIcon";
+import { buildProductWhatsAppUrl } from "@/utils/whatsapp";
 
 interface QuickAddModalProps {
   product: Product | null;
@@ -47,6 +49,19 @@ export const QuickAddModal: React.FC<QuickAddModalProps> = ({ product, isOpen, o
 
   const handleAddToCart = () => {
     addItem(product, selectedSize, selectedMaterial, selectedColor, quantity);
+    onClose();
+  };
+
+  const handleOrderWhatsApp = () => {
+    const url = buildProductWhatsAppUrl({
+      product,
+      sizeName: selectedSize?.name,
+      materialName: selectedMaterial?.name,
+      colorName: selectedColor?.name,
+      quantity,
+      unitPrice: currentPrice,
+    });
+    window.open(url, "_blank");
     onClose();
   };
 
@@ -205,23 +220,33 @@ export const QuickAddModal: React.FC<QuickAddModalProps> = ({ product, isOpen, o
         </div>
 
         {/* Footer Actions */}
-        <div className="p-4 border-t border-sand bg-cream-50 flex items-center gap-3">
-          <Link
-            href={`/products/${product.slug}`}
-            onClick={onClose}
-            className="px-3 py-2.5 rounded-xl border border-sand text-xs font-medium text-charcoal hover:bg-sand transition-colors flex items-center gap-1"
-          >
-            <span>Full Specs</span>
-            <ArrowRight className="w-3.5 h-3.5" />
-          </Link>
-
+        <div className="p-4 border-t border-sand bg-cream-50 flex flex-col sm:flex-row items-center gap-2.5">
           <button
-            onClick={handleAddToCart}
-            className="flex-1 py-3 px-4 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white font-medium text-xs sm:text-sm tracking-wide flex items-center justify-center gap-2 transition-colors shadow-sm cursor-pointer"
+            onClick={handleOrderWhatsApp}
+            className="w-full sm:flex-1 py-3 px-4 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-xs sm:text-sm tracking-wide flex items-center justify-center gap-2 transition-colors shadow-sm cursor-pointer"
           >
-            <ShoppingBag className="w-4 h-4" />
-            <span>Add to Basket &bull; {formatPrice(currentPrice * quantity)}</span>
+            <WhatsAppIcon className="w-4 h-4 text-white" />
+            <span>Order on WhatsApp • {formatPrice(currentPrice * quantity)}</span>
           </button>
+
+          <div className="flex gap-2 w-full sm:w-auto">
+            <button
+              onClick={handleAddToCart}
+              className="flex-1 sm:flex-initial py-3 px-4 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white font-medium text-xs sm:text-sm tracking-wide flex items-center justify-center gap-2 transition-colors shadow-sm cursor-pointer"
+            >
+              <ShoppingBag className="w-4 h-4" />
+              <span>Add to Basket</span>
+            </button>
+
+            <Link
+              href={`/products/${product.slug}`}
+              onClick={onClose}
+              className="px-3 py-2.5 rounded-xl border border-sand text-xs font-medium text-charcoal hover:bg-sand transition-colors flex items-center justify-center gap-1"
+            >
+              <span>Specs</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </Link>
+          </div>
         </div>
       </div>
     </div>

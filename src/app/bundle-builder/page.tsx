@@ -19,6 +19,8 @@ import {
   Droplets,
   RotateCcw,
 } from "lucide-react";
+import WhatsAppIcon from "@/components/common/WhatsAppIcon";
+import { buildBundleWhatsAppUrl } from "@/utils/whatsapp";
 
 export default function BundleBuilderPage() {
   const { addItem, openDrawer } = useCart();
@@ -80,6 +82,21 @@ export default function BundleBuilderPage() {
       setIsAdded(false);
       openDrawer();
     }, 1500);
+  };
+
+  const handleOrderBundleWhatsApp = () => {
+    const careItemNames = careOptions
+      .filter((c) => selectedCareIds.includes(c.id))
+      .map((c) => c.name);
+
+    const url = buildBundleWhatsAppUrl({
+      plantName: selectedPlant.name,
+      planterName: selectedPlanter.name,
+      careItems: careItemNames,
+      total: finalBundleTotal,
+      originalTotal: rawTotal,
+    });
+    window.open(url, "_blank");
   };
 
   return (
@@ -444,29 +461,40 @@ export default function BundleBuilderPage() {
                 <span className="font-bold">-{formatPrice(bundleSavings)}</span>
               </div>
 
-              <div className="pt-2 flex justify-between">
+              <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-3">
                 <button
                   onClick={() => setActiveStep(3)}
-                  className="px-5 py-2.5 rounded-xl border border-sand text-xs font-semibold text-charcoal hover:bg-sand"
+                  className="px-5 py-2.5 rounded-xl border border-sand text-xs font-semibold text-charcoal hover:bg-sand w-full sm:w-auto"
                 >
                   ← Edit Selections
                 </button>
-                <button
-                  onClick={handleAddBundleToCart}
-                  className="px-8 py-3.5 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white font-medium text-xs sm:text-sm tracking-wide transition-all shadow-md flex items-center gap-2 cursor-pointer"
-                >
-                  {isAdded ? (
-                    <>
-                      <Check className="w-4 h-4" />
-                      <span>Added All Items to Basket!</span>
-                    </>
-                  ) : (
-                    <>
-                      <ShoppingBag className="w-4 h-4" />
-                      <span>Add Entire Corner &bull; {formatPrice(finalBundleTotal)}</span>
-                    </>
-                  )}
-                </button>
+
+                <div className="flex flex-col sm:flex-row items-center gap-2.5 w-full sm:w-auto">
+                  <button
+                    onClick={handleOrderBundleWhatsApp}
+                    className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-xs sm:text-sm tracking-wide transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer"
+                  >
+                    <WhatsAppIcon className="w-4 h-4 text-white" />
+                    <span>Order on WhatsApp • {formatPrice(finalBundleTotal)}</span>
+                  </button>
+
+                  <button
+                    onClick={handleAddBundleToCart}
+                    className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white font-medium text-xs sm:text-sm tracking-wide transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer"
+                  >
+                    {isAdded ? (
+                      <>
+                        <Check className="w-4 h-4" />
+                        <span>Added to Basket!</span>
+                      </>
+                    ) : (
+                      <>
+                        <ShoppingBag className="w-4 h-4" />
+                        <span>Add to Basket</span>
+                      </>
+                    )}
+                  </button>
+                </div>
               </div>
             </div>
           )}
@@ -537,22 +565,32 @@ export default function BundleBuilderPage() {
               </div>
             </div>
 
-            <button
-              onClick={handleAddBundleToCart}
-              className="w-full py-3.5 px-4 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white font-medium text-xs tracking-wide transition-all shadow-sm flex items-center justify-center gap-2 cursor-pointer"
-            >
-              {isAdded ? (
-                <>
-                  <Check className="w-4 h-4" />
-                  <span>Added to Basket!</span>
-                </>
-              ) : (
-                <>
-                  <ShoppingBag className="w-4 h-4" />
-                  <span>Add Bundle to Basket</span>
-                </>
-              )}
-            </button>
+            <div className="space-y-2">
+              <button
+                onClick={handleOrderBundleWhatsApp}
+                className="w-full py-3.5 px-4 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-xs tracking-wide transition-all shadow-sm flex items-center justify-center gap-2 cursor-pointer"
+              >
+                <WhatsAppIcon className="w-4 h-4 text-white" />
+                <span>Order on WhatsApp • {formatPrice(finalBundleTotal)}</span>
+              </button>
+
+              <button
+                onClick={handleAddBundleToCart}
+                className="w-full py-3 px-4 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white font-medium text-xs tracking-wide transition-all shadow-sm flex items-center justify-center gap-2 cursor-pointer"
+              >
+                {isAdded ? (
+                  <>
+                    <Check className="w-4 h-4" />
+                    <span>Added to Basket!</span>
+                  </>
+                ) : (
+                  <>
+                    <ShoppingBag className="w-4 h-4" />
+                    <span>Add to Basket</span>
+                  </>
+                )}
+              </button>
+            </div>
 
             <div className="text-[11px] text-center text-charcoal-muted">
               🚚 Qualifies for complimentary eco-transit delivery

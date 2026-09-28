@@ -16,6 +16,8 @@ import {
   ShieldCheck,
   Home,
 } from "lucide-react";
+import WhatsAppIcon from "@/components/common/WhatsAppIcon";
+import { buildCheckoutWhatsAppUrl } from "@/utils/whatsapp";
 
 export default function OrderSuccessPage({
   params,
@@ -66,13 +68,24 @@ export default function OrderSuccessPage({
 
         <div className="pt-2 flex flex-wrap items-center justify-center gap-3 text-xs">
           <span className="font-mono font-bold bg-sand px-3 py-1.5 rounded-lg text-charcoal">
-            Order ID: {order.orderNumber}
+            Order Reference: #{order.orderNumber}
           </span>
-          <span className="bg-olive/10 text-olive px-3 py-1.5 rounded-lg font-medium">
-            {order.paymentMethod === "razorpay_simulated"
-              ? "Verified Payment (Sandbox)"
-              : "Cash on Delivery"}
+          <span className="bg-[#25D366]/15 text-[#128C7E] px-3 py-1.5 rounded-lg font-semibold flex items-center gap-1.5">
+            <WhatsAppIcon className="w-3.5 h-3.5" />
+            <span>Direct WhatsApp Order</span>
           </span>
+        </div>
+
+        <div className="pt-3 flex flex-wrap items-center justify-center gap-3">
+          <a
+            href={buildCheckoutWhatsAppUrl(order)}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs sm:text-sm font-semibold shadow-md transition-all cursor-pointer"
+          >
+            <WhatsAppIcon className="w-4 h-4 text-white" />
+            <span>Chat with Owner on WhatsApp</span>
+          </a>
         </div>
       </div>
 

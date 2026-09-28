@@ -20,6 +20,8 @@ import {
   Truck,
   RotateCcw,
 } from "lucide-react";
+import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
+import { buildCartWhatsAppUrl } from "@/utils/whatsapp";
 
 export default function CartPage() {
   const {
@@ -59,6 +61,17 @@ export default function CartPage() {
       setPromoMessage({ type: "error", text: res.message });
     }
     setTimeout(() => setPromoMessage(null), 4000);
+  };
+
+  const handleOrderWhatsApp = () => {
+    const url = buildCartWhatsAppUrl({
+      items,
+      subtotal,
+      shippingFee,
+      total,
+      giftMessage: giftMessage || undefined,
+    });
+    window.open(url, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -442,17 +455,28 @@ export default function CartPage() {
                 </span>
               </div>
 
-              {/* Checkout Button */}
-              <Link
-                href="/checkout"
-                className="w-full py-4 px-6 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white font-medium text-sm tracking-wide transition-all shadow-md flex items-center justify-center gap-2 cursor-pointer"
-              >
-                <span>Proceed to Secure Checkout</span>
-                <ArrowRight className="w-4 h-4" />
-              </Link>
+              {/* WhatsApp Checkout Button */}
+              <div className="space-y-3">
+                <button
+                  onClick={handleOrderWhatsApp}
+                  className="w-full py-4 px-6 rounded-2xl bg-[#25D366] hover:bg-[#20ba59] active:scale-[0.99] text-white font-semibold text-sm sm:text-base tracking-wide transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2.5 cursor-pointer"
+                >
+                  <WhatsAppIcon className="w-5 h-5 text-white" />
+                  <span>Order All on WhatsApp &bull; {formatPrice(total)}</span>
+                </button>
 
-              <div className="text-center text-[11px] text-charcoal-muted">
-                🔒 Simulated 256-bit SSL encrypted checkout
+                <Link
+                  href="/checkout"
+                  className="w-full py-3 px-4 rounded-xl bg-sand/80 hover:bg-sand text-charcoal font-medium text-xs sm:text-sm text-center border border-sand-dark/40 transition-colors flex items-center justify-center gap-2"
+                >
+                  <span>Or Enter Delivery Address Form</span>
+                  <ArrowRight className="w-4 h-4 text-olive" />
+                </Link>
+              </div>
+
+              <div className="text-center text-[11px] text-charcoal-muted flex items-center justify-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-[#25D366] animate-pulse" />
+                <span>Direct ordering with Little Plants owner on WhatsApp</span>
               </div>
             </div>
           </div>

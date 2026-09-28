@@ -20,6 +20,8 @@ import {
   ShieldCheck,
   Send,
 } from "lucide-react";
+import WhatsAppIcon from "@/components/common/WhatsAppIcon";
+import { getCleanWhatsAppNumber } from "@/utils/whatsapp";
 
 export default function GiftingPage() {
   const { addItem } = useCart();
@@ -42,6 +44,22 @@ export default function GiftingPage() {
   const handleSubmitInquiry = (e: React.FormEvent) => {
     e.preventDefault();
     setInquirySubmitted(true);
+  };
+
+  const handleCorporateWhatsApp = () => {
+    let msg = `🌿 *Corporate Gifting Enquiry - Little Plants*\n\n`;
+    if (corpForm.companyName) msg += `🏢 *Company:* ${corpForm.companyName}\n`;
+    if (corpForm.contactPerson) msg += `👤 *Contact Person:* ${corpForm.contactPerson}\n`;
+    if (corpForm.phone) msg += `📞 *Phone:* ${corpForm.phone}\n`;
+    if (corpForm.workEmail) msg += `✉️ *Email:* ${corpForm.workEmail}\n`;
+    msg += `📦 *Quantity Needed:* ${corpForm.quantity}\n`;
+    msg += `💰 *Target Budget:* ${corpForm.budgetPerUnit}\n`;
+    if (corpForm.eventDate) msg += `📅 *Expected Date:* ${corpForm.eventDate}\n`;
+    if (corpForm.customizationNeeds) msg += `📝 *Notes:* ${corpForm.customizationNeeds}\n`;
+    msg += `\nPlease share your corporate catalog and corporate quotation. Thank you!`;
+
+    const phone = getCleanWhatsAppNumber();
+    window.open(`https://wa.me/${phone}?text=${encodeURIComponent(msg)}`, "_blank");
   };
 
   return (
@@ -145,7 +163,15 @@ export default function GiftingPage() {
             <p className="text-xs text-charcoal-muted leading-relaxed">
               Thank you, <strong>{corpForm.contactPerson}</strong>. Our corporate botanical consultant will review your estimated requirement of <strong>{corpForm.quantity}</strong> and get back with a tailored catalog proposal within 4 business hours.
             </p>
-            <div className="pt-2">
+            <div className="pt-3 flex flex-wrap items-center justify-center gap-3">
+              <button
+                type="button"
+                onClick={handleCorporateWhatsApp}
+                className="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-semibold shadow-md transition-all cursor-pointer"
+              >
+                <WhatsAppIcon className="w-4 h-4 text-white" />
+                <span>Open Corporate Chat on WhatsApp</span>
+              </button>
               <button
                 onClick={() => setInquirySubmitted(false)}
                 className="text-xs text-terracotta font-semibold hover:underline"
@@ -249,13 +275,21 @@ export default function GiftingPage() {
               />
             </div>
 
-            <div className="sm:col-span-2 pt-2 text-center">
+            <div className="sm:col-span-2 pt-2 flex flex-col sm:flex-row items-center justify-center gap-3">
               <button
                 type="submit"
-                className="px-8 py-3.5 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white font-medium text-xs sm:text-sm tracking-wide transition-all shadow-md inline-flex items-center gap-2 cursor-pointer"
+                className="w-full sm:w-auto px-8 py-3.5 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white font-medium text-xs sm:text-sm tracking-wide transition-all shadow-md inline-flex items-center justify-center gap-2 cursor-pointer"
               >
                 <Send className="w-4 h-4" />
-                <span>Submit Corporate Proposal Request</span>
+                <span>Submit Proposal Request</span>
+              </button>
+              <button
+                type="button"
+                onClick={handleCorporateWhatsApp}
+                className="w-full sm:w-auto px-6 py-3.5 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white font-semibold text-xs sm:text-sm tracking-wide transition-all shadow-md inline-flex items-center justify-center gap-2 cursor-pointer"
+              >
+                <WhatsAppIcon className="w-4 h-4 text-white" />
+                <span>Instant WhatsApp Enquiry</span>
               </button>
             </div>
           </form>
