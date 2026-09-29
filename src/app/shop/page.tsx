@@ -18,7 +18,7 @@ function ShopContent() {
   const filterParam = searchParams.get("filter") || undefined;
 
   let pageTitle = "All Botanical Collections";
-  let pageSubtitle = "Explore our complete assortment of indoor greenery, handcrafted pottery, heirloom seeds, and organic plant care.";
+  let pageSubtitle = "Explore our complete assortment of indoor greenery, handcrafted pottery, and organic plant care.";
 
   if (spaceParam) {
     const formatted = spaceParam.replace("-", " ");

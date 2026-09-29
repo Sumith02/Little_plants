@@ -52,26 +52,26 @@ export const spaces: RoomSpace[] = [
   },
   {
     id: "space-balcony",
-    name: "Balcony & Verandah",
+    name: "Sunroom & Window Nook",
     slug: "balcony",
-    title: "Sun-Drenched Balcony Paradises",
-    subtitle: "Sun-loving tropicals, hardy palms, and organic kitchen garden planters.",
+    title: "Sunlit Window Nooks & Indoor Balconies",
+    subtitle: "Sun-loving indoor tropicals, hardy palms, and architectural foliage.",
     description:
-      "Indian balconies experience intense seasonal temperature shifts from blazing summer sunshine to lush monsoon downpours. These hardy specimens thrive with direct sun, open air, and natural weather rhythms.",
+      "Enclosed balconies and large sunny window nooks provide glorious bright natural light. These hardy indoor specimens thrive with filtered sun, gentle air breezes, and indoor room comfort.",
     image:
       "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d87323cc-bf70-4799-a66d-7ff965c8cb2b.jpg?v=1709701882",
     idealConditions: {
-      light: "3 to 6 hours of direct morning or late afternoon sun",
-      airflow: "Open atmospheric breezes and cross-ventilation",
-      temperature: "18°C – 38°C",
+      light: "3 to 5 hours of bright morning sunlight or filtered afternoon light",
+      airflow: "Open window breezes and natural cross-ventilation",
+      temperature: "20°C – 32°C",
     },
     stylingTip:
-      "Group porous terracotta pots along balcony railings where excess water can drain freely. Mix lush Areca Palms in corners with trailing herbs and heirloom cherry tomato planters.",
+      "Group porous terracotta pots along window ledges where daylight is plentiful. Mix lush Areca Palms in corners with architectural Jade Plants and Rubber Plants.",
     recommendedPlantIds: [
       "plant-areca-palm-classic",
       "plant-jade-mini-bonsai",
-      "seeds-cherry-tomato",
-      "seeds-sweet-basil",
+      "plant-rubber-plant-burgundy",
+      "plant-monstera-deliciosa",
     ],
   },
   {

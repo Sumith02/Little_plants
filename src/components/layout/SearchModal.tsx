@@ -99,7 +99,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => 
             type="text"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
-            placeholder="Search plants, terracotta pots, seeds, organic care..."
+            placeholder="Search indoor plants, planters, organic care, tools..."
             className="w-full bg-transparent px-3 py-2 text-charcoal placeholder:text-charcoal-muted/60 text-base focus:outline-none"
           />
           {query && (

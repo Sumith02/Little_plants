@@ -109,7 +109,7 @@ export const Header: React.FC = () => {
                   href="/category/plants"
                   className="text-xs font-semibold uppercase tracking-wider text-charcoal hover:text-terracotta py-2 flex items-center gap-1 transition-colors"
                 >
-                  <span>Plants</span>
+                  <span>Indoor Plants</span>
                   <ChevronDown className="w-3.5 h-3.5 opacity-60" />
                 </Link>
 
@@ -232,14 +232,6 @@ export const Header: React.FC = () => {
                 className="text-xs font-semibold uppercase tracking-wider text-charcoal hover:text-terracotta py-2 transition-colors"
               >
                 Pots & Planters
-              </Link>
-
-              {/* Seeds */}
-              <Link
-                href="/category/seeds"
-                className="text-xs font-semibold uppercase tracking-wider text-charcoal hover:text-terracotta py-2 transition-colors"
-              >
-                Seeds
               </Link>
 
               {/* Plant Care */}
