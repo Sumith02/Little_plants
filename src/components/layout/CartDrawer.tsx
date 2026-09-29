@@ -302,7 +302,7 @@ export const CartDrawer: React.FC = () => {
                     type="text"
                     value={promoInput}
                     onChange={(e) => setPromoInput(e.target.value)}
-                    placeholder="Coupon code (e.g. WELCOME10)"
+                    placeholder="Enter coupon code"
                     className="w-full pl-8 pr-3 py-1.5 bg-white border border-sand rounded-lg text-xs placeholder:text-charcoal-muted/60 focus:outline-none focus:border-terracotta uppercase"
                   />
                 </div>

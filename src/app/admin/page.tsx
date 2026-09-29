@@ -83,11 +83,6 @@ export default function AdminPage() {
     }
   };
 
-  const handleQuickUnlock = () => {
-    setIsAuthenticated(true);
-    setPinError(false);
-  };
-
   // Filtered product list for admin table
   const filteredProducts = useMemo(() => {
     return products.filter((p) => {
@@ -160,13 +155,13 @@ export default function AdminPage() {
                   setPinInput(e.target.value);
                   setPinError(false);
                 }}
-                placeholder="Enter PIN (Default: 74725)"
+                placeholder="Enter PIN"
                 className="w-full text-center tracking-widest text-lg font-mono px-4 py-3 rounded-xl border border-sand-dark bg-white focus:outline-none focus:border-terracotta"
               />
               {pinError && (
                 <p className="text-xs text-red-600 mt-2 font-medium flex items-center justify-center gap-1">
                   <AlertCircle className="w-3.5 h-3.5" />
-                  <span>Incorrect PIN. Hint: last 5 digits of store phone (74725)</span>
+                  <span>Incorrect PIN. Please try again.</span>
                 </p>
               )}
             </div>
@@ -179,16 +174,6 @@ export default function AdminPage() {
               <span>Unlock Admin Panel</span>
             </button>
           </form>
-
-          <div className="pt-2 border-t border-sand">
-            <button
-              type="button"
-              onClick={handleQuickUnlock}
-              className="text-xs text-olive underline hover:text-terracotta transition-colors"
-            >
-              Demo Quick Unlock (Instant Access)
-            </button>
-          </div>
         </div>
       </div>
     );
