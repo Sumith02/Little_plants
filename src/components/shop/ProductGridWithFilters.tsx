@@ -4,7 +4,8 @@ import React, { useState, useMemo } from "react";
 import Link from "next/link";
 import { Product, ProductCategory } from "@/types";
 import { ProductCard } from "@/components/product/ProductCard";
-import { categories } from "@/data/categories";
+import { categories as defaultCategories } from "@/data/categories";
+import { useCatalog } from "@/context/CatalogContext";
 import {
   SlidersHorizontal,
   X,
@@ -33,6 +34,9 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
   title,
   subtitle,
 }) => {
+  const { products: catalogProducts, categories: catalogCategories } = useCatalog();
+  const categories = catalogCategories && catalogCategories.length > 0 ? catalogCategories : defaultCategories;
+
   // Filter states
   const [selectedCategory, setSelectedCategory] = useState<ProductCategory | "all">(currentCategory);
   const [selectedSubcategory, setSelectedSubcategory] = useState<string>(initialSubcategory || "all");
@@ -52,12 +56,15 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
   const [displayCount, setDisplayCount] = useState(12);
 
   // Subcategories available for active category
-  const activeCategoryObj = categories.find((c) => c.id === selectedCategory);
+  const activeCategoryObj = (catalogCategories || defaultCategories).find((c) => c.id === selectedCategory);
   const availableSubcategories = activeCategoryObj?.subcategories || [];
+
+  // Active products pool (reactive from CatalogContext)
+  const activeProductsPool = catalogProducts && catalogProducts.length > 0 ? catalogProducts : initialProducts;
 
   // Filter products logic
   const filteredProducts = useMemo(() => {
-    return initialProducts.filter((product) => {
+    return activeProductsPool.filter((product) => {
       // Category filter
       if (selectedCategory !== "all" && product.category !== selectedCategory) {
         return false;
@@ -112,7 +119,7 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
       return true;
     });
   }, [
-    initialProducts,
+    activeProductsPool,
     selectedCategory,
     selectedSubcategory,
     initialSpace,

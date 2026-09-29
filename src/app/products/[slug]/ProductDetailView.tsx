@@ -8,6 +8,7 @@ import { Product, ProductVariantSize, ProductVariantMaterial, ProductVariantColo
 import { formatPrice } from "@/config/site";
 import { useCart } from "@/context/CartContext";
 import { useWishlist } from "@/context/WishlistContext";
+import { useCatalog } from "@/context/CatalogContext";
 import { PincodeChecker } from "@/components/product/PincodeChecker";
 import { ProductCard } from "@/components/product/ProductCard";
 import { WhatsAppIcon } from "@/components/common/WhatsAppIcon";
@@ -39,11 +40,13 @@ interface ProductDetailViewProps {
 }
 
 export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
-  product,
+  product: initialProduct,
   compatiblePlanterProducts,
   careAddonProducts,
   relatedProducts,
 }) => {
+  const { getProductById } = useCatalog();
+  const product = getProductById(initialProduct.id) || initialProduct;
   const router = useRouter();
   const { addItem, openDrawer } = useCart();
   const { isInWishlist, toggleWishlist } = useWishlist();

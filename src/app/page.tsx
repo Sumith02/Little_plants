@@ -3,8 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { products } from "@/data/products";
-import { categories } from "@/data/categories";
+import { products as defaultProducts } from "@/data/products";
+import { categories as defaultCategories } from "@/data/categories";
 import { spaces } from "@/data/spaces";
 import { featuredBundles } from "@/data/bundles";
 import { journalPosts } from "@/data/journal";
@@ -12,6 +12,7 @@ import { demoReviews } from "@/data/reviews";
 import { formatPrice } from "@/config/site";
 import { ProductCard } from "@/components/product/ProductCard";
 import { useCart } from "@/context/CartContext";
+import { useCatalog } from "@/context/CatalogContext";
 import {
   Sparkles,
   ArrowRight,
@@ -31,6 +32,7 @@ import WhatsAppIcon from "@/components/common/WhatsAppIcon";
 
 export default function HomePage() {
   const { addItem } = useCart();
+  const { products, categories } = useCatalog();
   const [selectedSpaceId, setSelectedSpaceId] = useState(spaces[0].id);
   const [addedBundleId, setAddedBundleId] = useState<string | null>(null);
 

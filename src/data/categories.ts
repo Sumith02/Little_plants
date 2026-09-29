@@ -45,7 +45,7 @@ export const categories: CategoryInfo[] = [
     description:
       "Harvest your own sun-warmed cherry tomatoes, peppery sweet basil, and nutrient-dense microgreens straight from your apartment balcony or kitchen window.",
     image:
-      "https://images.unsplash.com/photo-1592417817098-8f3d69109853?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=1000&auto=format&fit=crop",
     productCount: 3,
     subcategories: [
       "Kitchen Garden",

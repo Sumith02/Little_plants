@@ -4,7 +4,8 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
-import { categories } from "@/data/categories";
+import { categories as defaultCategories } from "@/data/categories";
+import { useCatalog } from "@/context/CatalogContext";
 import {
   Sprout,
   ArrowRight,
@@ -16,9 +17,11 @@ import {
   Truck,
   RotateCcw,
   Sparkles,
+  Settings,
 } from "lucide-react";
 
 export const Footer: React.FC = () => {
+  const { categories } = useCatalog();
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
 
@@ -272,7 +275,7 @@ export const Footer: React.FC = () => {
             <span>
               &copy; {new Date().getFullYear()} {siteConfig.brandName} Private Limited. All rights reserved.
             </span>
-            <div className="flex items-center gap-3">
+            <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3">
               <Link href="/privacy" className="hover:text-charcoal hover:underline">
                 Privacy Policy
               </Link>
@@ -283,6 +286,15 @@ export const Footer: React.FC = () => {
               <span>&bull;</span>
               <Link href="/about" className="hover:text-charcoal hover:underline">
                 About Our Nursery
+              </Link>
+              <span>&bull;</span>
+              <Link
+                href="/admin"
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-sand/80 hover:bg-olive hover:text-white transition-all text-[11px] font-semibold text-olive border border-sand-dark/50 shadow-2xs"
+                title="Store Owner Portal - Alter Images, Products & Categories"
+              >
+                <Settings className="w-3 h-3" />
+                <span>Store Admin Access</span>
               </Link>
             </div>
           </div>

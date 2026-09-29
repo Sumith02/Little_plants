@@ -4,8 +4,9 @@ import React, { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import { products } from "@/data/products";
-import { categories } from "@/data/categories";
+import { products as defaultProducts } from "@/data/products";
+import { categories as defaultCategories } from "@/data/categories";
+import { useCatalog } from "@/context/CatalogContext";
 import { formatPrice } from "@/config/site";
 import { Product } from "@/types";
 import { Search, X, ArrowRight, Sparkles } from "lucide-react";
@@ -16,6 +17,7 @@ interface SearchModalProps {
 }
 
 export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose }) => {
+  const { products, categories } = useCatalog();
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
   const router = useRouter();

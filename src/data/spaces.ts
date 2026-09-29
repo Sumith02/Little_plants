@@ -35,7 +35,7 @@ export const spaces: RoomSpace[] = [
     description:
       "Unlike most plants that rest at night, CAM (Crassulacean Acid Metabolism) species like Snake Plants and ZZ Plants actively absorb carbon dioxide and emit fresh oxygen throughout the dark hours, naturally purifying your sleep environment.",
     image:
-      "https://images.unsplash.com/photo-1593482892290-f54927ae1bf6?q=80&w=1200&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=1200&auto=format&fit=crop",
     idealConditions: {
       light: "Soft morning light or curtain-filtered ambient light",
       airflow: "Gentle ceiling fan circulation",

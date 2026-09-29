@@ -3,7 +3,8 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { categories } from "@/data/categories";
+import { categories as defaultCategories } from "@/data/categories";
+import { useCatalog } from "@/context/CatalogContext";
 import { siteConfig } from "@/config/site";
 import {
   X,
@@ -16,6 +17,7 @@ import {
   MapPin,
   Heart,
   User,
+  Settings,
 } from "lucide-react";
 
 interface MobileNavDrawerProps {
@@ -29,6 +31,7 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({
   onClose,
   onOpenSearch,
 }) => {
+  const { categories } = useCatalog();
   const [openCategory, setOpenCategory] = useState<string | null>(null);
 
   if (!isOpen) return null;
@@ -233,6 +236,16 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({
               <span>Plant Journal</span>
             </Link>
           </div>
+
+          {/* Store Owner Admin Link */}
+          <Link
+            href="/admin"
+            onClick={onClose}
+            className="flex items-center justify-center gap-1.5 p-2.5 rounded-lg bg-sand/80 hover:bg-olive hover:text-white border border-sand-dark text-olive text-xs font-semibold transition-colors shadow-2xs"
+          >
+            <Settings className="w-3.5 h-3.5" />
+            <span>Store Admin Access</span>
+          </Link>
 
           <div className="pt-2 text-center text-[11px] text-charcoal-muted flex items-center justify-center gap-1.5">
             <MapPin className="w-3 h-3 text-terracotta" />

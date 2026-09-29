@@ -53,7 +53,7 @@ export const featuredBundles: (BundleProduct & {
     description:
       "Everything needed to kickstart fresh home harvests: Italian Genovese Basil Seeds, Heirloom Cherry Tomatoes, 5kg Enriched Organic Potting Mix, and Hand-Forged Carbon Steel Pruners.",
     image:
-      "https://images.unsplash.com/photo-1592417817098-8f3d69109853?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=1000&auto=format&fit=crop",
     plantId: "seeds-sweet-basil",
     planterId: "pot-terracotta-urn",
     addonIds: ["seeds-cherry-tomato", "care-potting-mix-5kg", "tool-forged-pruners"],

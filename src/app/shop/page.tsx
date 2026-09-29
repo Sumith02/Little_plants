@@ -3,12 +3,14 @@
 import React, { Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
-import { products } from "@/data/products";
+import { products as defaultProducts } from "@/data/products";
+import { useCatalog } from "@/context/CatalogContext";
 import { ProductGridWithFilters } from "@/components/shop/ProductGridWithFilters";
 import { ProductCategory } from "@/types";
 import { ChevronRight, Home } from "lucide-react";
 
 function ShopContent() {
+  const { products } = useCatalog();
   const searchParams = useSearchParams();
   const categoryParam = (searchParams.get("category") as ProductCategory) || "all";
   const subcategoryParam = searchParams.get("sub") || undefined;

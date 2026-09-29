@@ -4,8 +4,9 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
-import { categories } from "@/data/categories";
-import { products } from "@/data/products";
+import { categories as defaultCategories } from "@/data/categories";
+import { products as defaultProducts } from "@/data/products";
+import { useCatalog } from "@/context/CatalogContext";
 import { useCart } from "@/context/CartContext";
 import { useWishlist } from "@/context/WishlistContext";
 import { SearchModal } from "./SearchModal";
@@ -23,6 +24,7 @@ import {
 } from "lucide-react";
 
 export const Header: React.FC = () => {
+  const { categories, products } = useCatalog();
   const { openDrawer: openCartDrawer, itemCount } = useCart();
   const { count: wishlistCount } = useWishlist();
 

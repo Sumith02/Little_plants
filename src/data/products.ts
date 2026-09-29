@@ -93,8 +93,8 @@ export const products: Product[] = [
     shortDescription: "Virtually indestructible bedside companion that releases fresh oxygen through the night.",
     description: "The Bird's Nest Snake Plant Golden Hahnii features compact, spiraling rosettes of deep sage green bordered with golden-butter margins. Renowned by NASA for absorbing airborne toxins like formaldehyde and xylene, this architectural succulent is the ultimate forgiving plant for busy modern lifestyles.",
     images: [
-      "https://images.unsplash.com/photo-1593482892290-f54927ae1bf6?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=1000&auto=format&fit=crop",
     ],
     careGuide: {
       light: "Low Light",
@@ -284,7 +284,7 @@ export const products: Product[] = [
     shortDescription: "Dramatic dark foliage crowned by serene white spathes that bloom continuously indoors.",
     description: "The Peace Lily brings calm and elegance to indoor spaces. Its glossy deep green leaves form a lush fountain, while sculpted porcelain-white blooms rise above the canopy. What plant parents love most is its expressive communication: it gently droops when thirsty and perks right back up within hours of watering.",
     images: [
-      "https://images.unsplash.com/photo-1593691509543-c55fb32e7355?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1598880940080-ff9a29891b85?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1000&auto=format&fit=crop",
     ],
     careGuide: {
@@ -347,7 +347,7 @@ export const products: Product[] = [
     shortDescription: "Certified 100% pet-safe prayer plant with expansive, painterly silver-striped rounded leaves.",
     description: "Calathea Orbifolia is celebrated for its huge, circular leaves marked with subtle metallic silvery stripes. As a member of the prayer-plant family (Marantaceae), it rhythmically raises its leaves in the evening and lowers them during daylight to catch soft rays. Completely non-toxic to cats and dogs.",
     images: [
-      "https://images.unsplash.com/photo-1596728325492-c9a039d91811?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1000&auto=format&fit=crop",
     ],
     careGuide: {
@@ -474,7 +474,7 @@ export const products: Product[] = [
     description: "Satin Pothos is one of the most mesmerizing trailing houseplants for bookshelves, high mantels, or hanging planters. Its heart-shaped foliage has a matte, velvety texture splashed with iridescent metallic-silver spots that sparkle under warm room lighting.",
     images: [
       "https://images.unsplash.com/photo-1597055181300-e3633a917c9c?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1593482892290-f54927ae1bf6?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1616046229478-9901c5536a45?q=80&w=1000&auto=format&fit=crop",
     ],
     careGuide: {
       light: "Medium Light",
@@ -537,7 +537,7 @@ export const products: Product[] = [
     description: "The Jade Plant is a succulent shrub with thick, woody branches and shiny, oval fleshy leaves that resemble miniature jade coins. In Vastu and Feng Shui traditions, it is celebrated as an auspicious harbinger of prosperity and grounding presence for study desks and entryways.",
     images: [
       "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1593482892290-f54927ae1bf6?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1516205651411-aef33a44f7c2?q=80&w=1000&auto=format&fit=crop",
     ],
     careGuide: {
       light: "Direct Sun",
@@ -599,7 +599,7 @@ export const products: Product[] = [
     description: "Who says indoor foliage has to be solely green? The Aglaonema Pink Anjamani boasts striking blush-rose leaves edged with deep forest green speckles. It is famously tough, requiring very little attention and tolerating variable indoor light effortlessly.",
     images: [
       "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1596728325492-c9a039d91811?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1602491453631-e2a5ad90a131?q=80&w=1000&auto=format&fit=crop",
     ],
     careGuide: {
       light: "Low Light",
@@ -723,7 +723,7 @@ export const products: Product[] = [
     shortDescription: "Safe for inquisitive pets! Cascades of feather-light arching fronds that adore bathroom humidity.",
     description: "The Boston Fern is a timeless Victorian botanical icon known for its sword-like cascading fronds of vivid apple green. Fully certified pet-safe and non-toxic, it thrives remarkably well in Indian bathrooms with frosted windows or balconies sheltered from dry winds.",
     images: [
-      "https://images.unsplash.com/photo-1596728325492-c9a039d91811?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1597916829826-02e5bb4a54e0?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1597055181300-e3633a917c9c?q=80&w=1000&auto=format&fit=crop",
     ],
     careGuide: {
@@ -955,8 +955,8 @@ export const products: Product[] = [
     shortDescription: "Non-GMO heirloom seeds producing clusters of exceptionally sweet, sun-warmed cherry tomatoes.",
     description: "Bred for generous yields in balcony containers and sunny window boxes. These open-pollinated, untreated heirloom seeds germinate within 6-9 days and begin fruiting in 60-70 days under Indian climate conditions.",
     images: [
-      "https://images.unsplash.com/photo-1592417817098-8f3d69109853?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=1000&auto=format&fit=crop",
     ],
     packageContents: [
       "40+ Non-GMO, tested germination heirloom seeds",
@@ -987,8 +987,8 @@ export const products: Product[] = [
     shortDescription: "Intensely aromatic broad-leaf sweet basil for fresh pesto, pastas, and herbal teas.",
     description: "The classic Genovese culinary basil with cupped, glossy leaves packed with peppery clove-scented essential oils. Prolific grower on kitchen sills with 3-4 hours of morning sun. Prune regularly for endless harvest throughout the year.",
     images: [
-      "https://images.unsplash.com/photo-1618375569909-3c352844b608?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1592417817098-8f3d69109853?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1628352081506-83c43123ed6d?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?q=80&w=1000&auto=format&fit=crop",
     ],
     packageContents: [
       "75+ Non-GMO untreated culinary basil seeds",
@@ -1019,7 +1019,7 @@ export const products: Product[] = [
     description: "Microgreens contain up to 40 times higher concentrations of vital minerals and vitamins than their mature counterparts. This zero-mess kit includes 3 premium varieties that sprout cleanly on a sunny dining table without needing outdoor garden beds.",
     images: [
       "https://images.unsplash.com/photo-1530595467537-0b5996c41f2d?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1618375569909-3c352844b608?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=1000&auto=format&fit=crop",
     ],
     packageContents: [
       "3x Seed packs: Purple Radish Sango, Micro Mustard, Sweet Pea Shoots",
@@ -1337,7 +1337,7 @@ export const products: Product[] = [
     description: "Ideal for festive corporate rewards, employee appreciation, and Diwali or New Year corporate hampers. Three resilient tabletop plants in matching terracotta-rust stoneware with custom branding sleeve options available for orders over 10 units.",
     images: [
       "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=1000&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1593482892290-f54927ae1bf6?q=80&w=1000&auto=format&fit=crop",
+      "https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=1000&auto=format&fit=crop",
       "https://images.unsplash.com/photo-1597055181300-e3633a917c9c?q=80&w=1000&auto=format&fit=crop",
     ],
     packageContents: [
