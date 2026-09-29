@@ -16,7 +16,7 @@ import {
   BookOpen,
   MapPin,
   Heart,
-  User,
+  Phone,
   Settings,
 } from "lucide-react";
 
@@ -212,12 +212,12 @@ export const MobileNavDrawer: React.FC<MobileNavDrawerProps> = ({
               <span>Track Order</span>
             </Link>
             <Link
-              href="/account"
+              href="/contact"
               onClick={onClose}
               className="flex items-center gap-1.5 p-2 rounded bg-cream border border-sand text-charcoal hover:border-olive"
             >
-              <User className="w-3.5 h-3.5 text-olive" />
-              <span>My Account</span>
+              <Phone className="w-3.5 h-3.5 text-olive" />
+              <span>Contact Store</span>
             </Link>
             <Link
               href="/wishlist"

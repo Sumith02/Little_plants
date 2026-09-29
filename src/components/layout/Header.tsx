@@ -15,7 +15,6 @@ import {
   Search,
   ShoppingBag,
   Heart,
-  User,
   Menu,
   Sparkles,
   ChevronDown,
@@ -300,15 +299,6 @@ export const Header: React.FC = () => {
                   /
                 </kbd>
               </button>
-
-              {/* Account Link */}
-              <Link
-                href="/account"
-                className="p-2 rounded-full text-charcoal hover:text-terracotta hover:bg-sand/60 transition-colors relative"
-                aria-label="Customer account"
-              >
-                <User className="w-5 h-5" />
-              </Link>
 
               {/* Wishlist Link */}
               <Link
