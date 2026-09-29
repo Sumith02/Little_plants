@@ -61,7 +61,7 @@ const initialSampleOrders: OrderRecord[] = [
           shortDescription: "Iconic split-leaf tropical beauty that brings lush jungle drama into living rooms.",
           description: "Monstera Deliciosa",
           images: [
-            "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1000&auto=format&fit=crop",
+            "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d2836da1-2292-4d2b-a45b-7b243be4f590.jpg?v=1747738221",
           ],
           packageContents: [],
           approximateDimensions: "Height: 24 inches",
@@ -95,8 +95,8 @@ const initialSampleOrders: OrderRecord[] = [
           name: "Cold-Pressed Neem Oil Shield (250ml)",
           category: "plant-care",
           subcategory: "Organic Protection",
-          price: 349,
-          originalPrice: 449,
+          price: 199,
+          originalPrice: 299,
           rating: 4.91,
           reviewCount: 180,
           inStock: true,
@@ -104,7 +104,7 @@ const initialSampleOrders: OrderRecord[] = [
           shortDescription: "Ready-to-use organic emulsion that repels mealybugs and spider mites.",
           description: "Neem Oil Spray",
           images: [
-            "https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?q=80&w=1000&auto=format&fit=crop",
+            "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/NeemOil-100Ml_5d0a6498-38bb-40cf-a734-70e17621c463.jpg?v=1747479000",
           ],
           packageContents: [],
           approximateDimensions: "250ml",

@@ -893,7 +893,7 @@ function EditProductModal({
               <div className="flex gap-2">
                 <input
                   type="url"
-                  placeholder="https://images.unsplash.com/... or any public image URL"
+                  placeholder="https://cdn.shopify.com/... or any public image URL"
                   value={newImageUrl}
                   onChange={(e) => {
                     setNewImageUrl(e.target.value);
@@ -1117,7 +1117,7 @@ function AddProductModal({
   const [price, setPrice] = useState(599);
   const [originalPrice, setOriginalPrice] = useState(799);
   const [imageUrl, setImageUrl] = useState(
-    "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?q=80&w=1000&auto=format&fit=crop"
+    "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d2836da1-2292-4d2b-a45b-7b243be4f590.jpg?v=1747738221"
   );
   const [shortDescription, setShortDescription] = useState("");
   const [description, setDescription] = useState("");

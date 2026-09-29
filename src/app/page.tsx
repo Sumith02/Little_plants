@@ -131,7 +131,7 @@ export default function HomePage() {
             <div className="lg:col-span-6 relative">
               <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-4/5 border border-sand bg-sand/30">
                 <Image
-                  src="https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=1200&auto=format&fit=crop"
+                  src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Bigslot1-31aug26-189.jpg?v=1788501330"
                   alt="Lush Monstera and indoor botanical sanctuary"
                   fill
                   priority
@@ -143,7 +143,7 @@ export default function HomePage() {
                 <div className="absolute bottom-5 left-5 right-5 sm:right-auto sm:max-w-xs bg-cream/95 backdrop-blur-md p-4 rounded-2xl border border-sand shadow-lg flex items-center gap-3.5">
                   <div className="w-12 h-12 rounded-xl bg-sand overflow-hidden shrink-0 relative">
                     <Image
-                      src="https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=200&auto=format&fit=crop"
+                      src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d2836da1-2292-4d2b-a45b-7b243be4f590.jpg?v=1747738221"
                       alt="Monstera Deliciosa leaf"
                       fill
                       className="object-cover"
@@ -157,7 +157,7 @@ export default function HomePage() {
                       Monstera in Terracotta Urn
                     </span>
                     <span className="text-[11px] text-charcoal-muted">
-                      From {formatPrice(1299)} &bull; Ready to flourish
+                      From {formatPrice(1259)} &bull; Ready to flourish
                     </span>
                   </div>
                 </div>
@@ -563,7 +563,7 @@ export default function HomePage() {
           {/* Decorative background foliage silhouette */}
           <div className="absolute right-0 bottom-0 top-0 w-1/3 opacity-20 pointer-events-none hidden lg:block">
             <Image
-              src="https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=800&auto=format&fit=crop"
+              src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/website-small-8jul-726.jpg?v=1785491591"
               alt="Botanical background"
               fill
               className="object-cover"
@@ -747,7 +747,7 @@ export default function HomePage() {
 
           <div className="relative aspect-4/3 rounded-2xl overflow-hidden bg-sand border border-sand">
             <Image
-              src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?q=80&w=1000&auto=format&fit=crop"
+              src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d87323cc-bf70-4799-a66d-7ff965c8cb2b.jpg?v=1709701882"
               alt="Earthen terracotta and sustainable plant packaging"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"

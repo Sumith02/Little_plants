@@ -51,7 +51,7 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         <div className="lg:col-span-6 relative aspect-4/3 sm:aspect-16/10 rounded-3xl overflow-hidden bg-sand border border-sand shadow-sm">
           <Image
-            src="https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=1200&auto=format&fit=crop"
+            src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Bigslot1-31aug26-189.jpg?v=1788501330"
             alt="Pune nursery acclimatization polyhouse"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
@@ -94,7 +94,7 @@ export default function AboutPage() {
 
         <div className="lg:col-span-6 order-1 lg:order-2 relative aspect-4/3 sm:aspect-16/10 rounded-3xl overflow-hidden bg-sand border border-sand shadow-sm">
           <Image
-            src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?q=80&w=1200&auto=format&fit=crop"
+            src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d87323cc-bf70-4799-a66d-7ff965c8cb2b.jpg?v=1709701882"
             alt="Hand-thrown terracotta pottery"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"

@@ -42,7 +42,7 @@ Tap water in Indian metropolitan cities often carries high TDS (total dissolved 
     },
     date: "12 Aug 2026",
     coverImage:
-      "https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=1200&auto=format&fit=crop",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Bigslot1-31aug26-189.jpg?v=1788501330",
     category: "Seasonal Care",
     tags: ["Monsoon Care", "Watering", "Root Health", "Indoor Plants"],
     relatedProductIds: [
@@ -86,7 +86,7 @@ The most common repotting mistake is jumping from an 6-inch pot directly into a 
     },
     date: "28 Jul 2026",
     coverImage:
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=1200&auto=format&fit=crop",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/PottingSoilMix-5Kg_876dbd60-4145-4cde-a2ff-e77e282935be.jpg?v=1747478999",
     category: "Repotting & Soil",
     tags: ["Repotting", "Soil Science", "Beginner Tips", "Roots"],
     relatedProductIds: [
@@ -142,7 +142,7 @@ Fortunately, evolution has crafted plant species adapted to limestone cliffs, fo
     },
     date: "19 Jul 2026",
     coverImage:
-      "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1200&auto=format&fit=crop",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/website-small-8jul-498.jpg?v=1785592392",
     category: "Plant Selection",
     tags: ["Apartment Gardening", "Low Light", "Urban Living", "Beginner Friendly"],
     relatedProductIds: [

@@ -7,10 +7,10 @@ export const categories: CategoryInfo[] = [
     slug: "plants",
     headline: "Acclimatized indoor and balcony greenery nurtured for Indian homes.",
     description:
-      "Explore air-purifying foliage, architectural statement trees, trailing vines, and low-light companions, grown sustainably in Pune & Bengaluru nurseries.",
+      "Explore air-purifying foliage, architectural statement trees, trailing vines, and low-light companions, grown sustainably in nursery conditions.",
     image:
-      "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1000&auto=format&fit=crop",
-    productCount: 11,
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Bigslot1-31aug26-189.jpg?v=1788501330",
+    productCount: 12,
     subcategories: [
       "Large Floor Plants",
       "Air Purifying",
@@ -24,11 +24,11 @@ export const categories: CategoryInfo[] = [
     id: "pots-planters",
     name: "Pots & Planters",
     slug: "pots-planters",
-    headline: "Wheel-thrown earthenware terracotta, high-fired ceramics & architectural stone.",
+    headline: "Wheel-thrown earthenware terracotta, high-fired ceramics & architectural planters.",
     description:
       "Sculptural vessels designed with root-friendly drainage, breathable earthen clays, and sub-irrigation self-watering reservoirs.",
     image:
-      "https://images.unsplash.com/photo-1485955900006-10f4d324d411?q=80&w=1000&auto=format&fit=crop",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d87323cc-bf70-4799-a66d-7ff965c8cb2b.jpg?v=1709701882",
     productCount: 4,
     subcategories: [
       "Handmade Terracotta",
@@ -45,7 +45,7 @@ export const categories: CategoryInfo[] = [
     description:
       "Harvest your own sun-warmed cherry tomatoes, peppery sweet basil, and nutrient-dense microgreens straight from your apartment balcony or kitchen window.",
     image:
-      "https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?q=80&w=1000&auto=format&fit=crop",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/ugaoo_generate-a-hero-product-s_s76foTgl8e.jpg?v=1788875809",
     productCount: 3,
     subcategories: [
       "Kitchen Garden",
@@ -58,11 +58,11 @@ export const categories: CategoryInfo[] = [
     id: "plant-care",
     name: "Organic Plant Care",
     slug: "plant-care",
-    headline: "Pure botanical tonics, steam-sterilized soil-less media, and cold-pressed neem.",
+    headline: "Pure botanical tonics, steam-sterilized potting mix, and cold-pressed neem.",
     description:
-      "Everything your green companions need to flourish: biologically active seaweed extracts, porous potting mixtures, and chemical-free pest deterrents.",
+      "Everything your green companions need to flourish: biological vermicompost, porous potting mixtures, and chemical-free pest deterrents.",
     image:
-      "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?q=80&w=1000&auto=format&fit=crop",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/PottingSoilMix-5Kg_876dbd60-4145-4cde-a2ff-e77e282935be.jpg?v=1747478999",
     productCount: 3,
     subcategories: [
       "Soil & Media",
@@ -75,12 +75,12 @@ export const categories: CategoryInfo[] = [
     id: "gardening-tools",
     name: "Gardening Tools",
     slug: "gardening-tools",
-    headline: "Heirloom-grade forged steel pruners, solid brass misters & copper watering cans.",
+    headline: "Heavy-duty anvil pruners, metallic misters & high-capacity watering cans.",
     description:
       "Hand-finished tools crafted for mindful daily plant parenting, designed to age beautifully while delivering precision care.",
     image:
-      "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?q=80&w=1000&auto=format&fit=crop",
-    productCount: 3,
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Heavy_Duty_Anvil_Pruner.jpg?v=1751815004",
+    productCount: 4,
     subcategories: [
       "Pruning & Cutting",
       "Watering & Misting",
@@ -92,11 +92,11 @@ export const categories: CategoryInfo[] = [
     id: "gifts",
     name: "Curated Gifts",
     slug: "gifts",
-    headline: "Living housewarming gifts, mindful desk hampers, and bespoke corporate sets.",
+    headline: "Living housewarming gifts, auspicious bamboo, and air-purifying corporate sets.",
     description:
-      "A meaningful, lasting alternative to cut bouquets. Packed in sustainable wooden hampers with wax-sealed calligraphy notes and plant care passports.",
+      "A meaningful, lasting alternative to cut bouquets. Packed with decorative planters, care passports, and festive packaging.",
     image:
-      "https://images.unsplash.com/photo-1545241047-6083a3684587?q=80&w=1000&auto=format&fit=crop",
+      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/website-small-8jul-669.jpg?v=1785859525",
     productCount: 3,
     subcategories: [
       "Curated Hampers",

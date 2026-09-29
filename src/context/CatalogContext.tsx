@@ -5,8 +5,8 @@ import { Product, CategoryInfo } from "@/types";
 import { products as defaultProducts } from "@/data/products";
 import { categories as defaultCategories } from "@/data/categories";
 
-const STORAGE_KEY_PRODUCTS = "little_plants_catalog_products_v2";
-const STORAGE_KEY_CATEGORIES = "little_plants_catalog_categories_v2";
+const STORAGE_KEY_PRODUCTS = "little_plants_catalog_products_v3";
+const STORAGE_KEY_CATEGORIES = "little_plants_catalog_categories_v3";
 
 interface CatalogContextType {
   products: Product[];
@@ -34,6 +34,12 @@ export const CatalogProvider: React.FC<{ children: React.ReactNode }> = ({ child
   // Hydrate from localStorage on client mount
   useEffect(() => {
     try {
+      // Clear legacy storage versions
+      localStorage.removeItem("little_plants_catalog_products_v1");
+      localStorage.removeItem("little_plants_catalog_categories_v1");
+      localStorage.removeItem("little_plants_catalog_products_v2");
+      localStorage.removeItem("little_plants_catalog_categories_v2");
+
       const storedProds = localStorage.getItem(STORAGE_KEY_PRODUCTS);
       const storedCats = localStorage.getItem(STORAGE_KEY_CATEGORIES);
 
