@@ -19,6 +19,7 @@ import {
   Sparkles,
   Settings,
 } from "lucide-react";
+import WhatsAppIcon from "@/components/common/WhatsAppIcon";
 
 export const Footer: React.FC = () => {
   const { categories } = useCatalog();
@@ -238,10 +239,21 @@ export const Footer: React.FC = () => {
                 <span className="text-[11px] text-olive font-medium mt-1 block">Open daily: 9:30 AM – 8:30 PM</span>
               </div>
 
-              <div className="pt-2 border-t border-sand space-y-1">
+              <div className="pt-2 border-t border-sand space-y-1.5">
                 <div className="flex items-center gap-2">
                   <Phone className="w-3.5 h-3.5 text-olive" />
-                  <span>{siteConfig.contact.phone}</span>
+                  <span>Call: {siteConfig.contact.phone}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
+                  <a
+                    href={`https://wa.me/${siteConfig.contact.whatsappNumber}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-olive transition-colors font-medium text-charcoal"
+                  >
+                    WhatsApp: {siteConfig.contact.whatsapp}
+                  </a>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail className="w-3.5 h-3.5 text-olive" />

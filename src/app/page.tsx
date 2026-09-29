@@ -787,13 +787,13 @@ export default function HomePage() {
             </div>
             <div className="pt-2 flex flex-wrap gap-3">
               <a
-                href="https://wa.me/919845474725?text=Hello%20Little%20Plants!%20I%20would%20like%20to%20visit%20your%20store%20in%20Mangaluru."
+                href="https://wa.me/917991799135?text=Hello%20Little%20Plants!%20I%20would%20like%20to%20visit%20your%20store%20in%20Mangaluru."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 rounded-xl bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-semibold shadow-sm transition-all inline-flex items-center gap-2 cursor-pointer"
               >
                 <WhatsAppIcon className="w-4 h-4 text-white" />
-                <span>Chat on WhatsApp (098454 74725)</span>
+                <span>Chat on WhatsApp (+91 79917 99135)</span>
               </a>
               <Link
                 href="/contact"

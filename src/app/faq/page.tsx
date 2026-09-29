@@ -45,7 +45,7 @@ const faqs: FAQItem[] = [
     category: "warranty",
     question: "What is your 7-Day Transit Damage & Plant Health Guarantee?",
     answer:
-      "If your plant or handcrafted planter arrives with transit damage, broken main stems, or severe dehydration, take a quick photo of the box and plant within 7 days of delivery and send it to our WhatsApp helpline (+91 98454 74725) or care@littleplants.in. We will dispatch an immediate free replacement.",
+      "If your plant or handcrafted planter arrives with transit damage, broken main stems, or severe dehydration, take a quick photo of the box and plant within 7 days of delivery and send it to our WhatsApp helpline (+91 79917 99135) or care@littleplants.in. We will dispatch an immediate free replacement.",
   },
   {
     category: "orders",

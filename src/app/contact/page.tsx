@@ -14,6 +14,7 @@ import {
   Home,
   ChevronRight,
 } from "lucide-react";
+import WhatsAppIcon from "@/components/common/WhatsAppIcon";
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -182,9 +183,26 @@ export default function ContactPage() {
                   <Phone className="w-4 h-4" />
                 </div>
                 <div>
-                  <span className="font-semibold block">Botanical Helpline</span>
-                  <a href={`tel:${siteConfig.contact.phone}`} className="text-charcoal-muted">
+                  <span className="font-semibold block">Contact Phone</span>
+                  <a href={`tel:${siteConfig.contact.phone}`} className="text-charcoal font-medium hover:text-terracotta">
                     {siteConfig.contact.phone}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-3">
+                <div className="w-9 h-9 rounded-xl bg-[#25D366]/10 text-[#25D366] flex items-center justify-center shrink-0">
+                  <WhatsAppIcon className="w-4 h-4" />
+                </div>
+                <div>
+                  <span className="font-semibold block">WhatsApp Orders & Help</span>
+                  <a
+                    href={`https://wa.me/${siteConfig.contact.whatsappNumber}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#25D366] hover:underline font-medium"
+                  >
+                    {siteConfig.contact.whatsapp}
                   </a>
                 </div>
               </div>
@@ -212,7 +230,8 @@ export default function ContactPage() {
                   <p className="text-charcoal leading-relaxed">{st.address}</p>
                   <span className="text-[11px] text-terracotta block">{st.landmark}</span>
                   <span className="text-[11px] text-charcoal-muted block font-medium">🕒 {st.timing}</span>
-                  <span className="text-[11px] text-olive font-medium block">📞 Phone: {siteConfig.contact.phone}</span>
+                  <span className="text-[11px] text-olive font-medium block">📞 Contact Phone: {siteConfig.contact.phone}</span>
+                  <span className="text-[11px] text-[#25D366] font-medium block">💬 WhatsApp: {siteConfig.contact.whatsapp}</span>
                 </div>
               ))}
             </div>

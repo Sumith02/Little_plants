@@ -102,8 +102,8 @@ export const siteConfig: SiteConfig = {
   contact: {
     email: "care@littleplants.in",
     phone: "098454 74725",
-    whatsapp: "+91 98454 74725",
-    whatsappNumber: "919845474725",
+    whatsapp: "+91 79917 99135",
+    whatsappNumber: "917991799135",
     hours: "Monday – Sunday, 9:30 AM – 8:30 PM IST",
     studios: [
       {

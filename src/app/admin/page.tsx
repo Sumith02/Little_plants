@@ -662,7 +662,7 @@ export default function AdminPage() {
 
               <div className="p-3 bg-sand-light/50 rounded-xl space-y-1">
                 <span className="font-semibold text-olive uppercase tracking-wider text-[10px]">WhatsApp Dispatch</span>
-                <p className="text-charcoal font-mono font-medium">+{siteConfig.contact.whatsapp}</p>
+                <p className="text-charcoal font-mono font-medium">{siteConfig.contact.whatsapp}</p>
               </div>
             </div>
 
@@ -676,7 +676,7 @@ export default function AdminPage() {
               <div className="space-y-1">
                 <strong className="text-olive font-semibold block">WhatsApp Direct Ordering is Active</strong>
                 <p className="text-charcoal text-[11px] leading-relaxed">
-                  Every cart checkout and instant buy click generates a customized, pre-formatted order message directly sent to your phone <span className="font-mono font-semibold">+91 98454 74725</span> with exact product names, quantities, customer address, and pricing totals.
+                  Every cart checkout and instant buy click generates a customized, pre-formatted order message directly sent to your WhatsApp <span className="font-mono font-semibold">{siteConfig.contact.whatsapp}</span> with exact product names, quantities, customer address, and pricing totals.
                 </p>
               </div>
             </div>
