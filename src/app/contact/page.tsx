@@ -221,17 +221,17 @@ export default function ContactPage() {
 
           <div className="p-6 rounded-3xl bg-cream-50 border border-sand space-y-4">
             <h3 className="font-serif text-lg font-bold text-olive border-b border-sand pb-3">
-              Visit Our Store
+              Visit Our Mangaluru Stores
             </h3>
-            <div className="space-y-4 text-xs">
+            <div className="space-y-5 text-xs">
               {siteConfig.contact.studios.map((st) => (
-                <div key={st.city} className="space-y-1.5">
-                  <span className="font-bold text-olive text-sm block">{st.city}</span>
+                <div key={st.name} className="space-y-1.5 pb-4 border-b border-sand last:border-0 last:pb-0">
+                  <span className="font-bold text-olive text-sm block">{st.name}</span>
                   <p className="text-charcoal leading-relaxed">{st.address}</p>
                   <span className="text-[11px] text-terracotta block">{st.landmark}</span>
                   <span className="text-[11px] text-charcoal-muted block font-medium">🕒 {st.timing}</span>
-                  <span className="text-[11px] text-olive font-medium block">📞 Contact Phone: {siteConfig.contact.phone}</span>
-                  <span className="text-[11px] text-[#25D366] font-medium block">💬 WhatsApp: {siteConfig.contact.whatsapp}</span>
+                  <span className="text-[11px] text-olive font-medium block">📞 Contact Phone: <a href={`tel:${st.phone}`} className="hover:underline font-semibold">{st.phone}</a></span>
+                  <span className="text-[11px] text-[#25D366] font-medium block">💬 WhatsApp: <a href={`https://wa.me/${siteConfig.contact.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="hover:underline font-semibold">{siteConfig.contact.whatsapp}</a></span>
                 </div>
               ))}
             </div>

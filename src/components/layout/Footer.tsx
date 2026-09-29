@@ -228,22 +228,34 @@ export const Footer: React.FC = () => {
           {/* Studios & Contact */}
           <div className="space-y-3">
             <h5 className="text-xs font-bold uppercase tracking-wider text-olive">
-              Visit Our Store
+              Visit Our Stores (Mangaluru)
             </h5>
             <div className="space-y-3 text-xs text-charcoal-muted">
+              {/* Branch 1 */}
               <div>
-                <strong className="text-charcoal block">Little Plants Store (ಲಿಟಲ್ ಪ್ಲಾಂಟ್ಸ್)</strong>
+                <strong className="text-charcoal block">1. Mannagudda Store (Flagship)</strong>
                 <span>Door No : 5, Vijaya Complex, 12-1214/4, Mannagudda Rd</span>
-                <span className="block text-[11px] text-terracotta">Near Atomm Fitness Club, Kudroli, Kodailbail</span>
-                <span className="block">Mangaluru, Karnataka 575003</span>
-                <span className="text-[11px] text-olive font-medium mt-1 block">Open daily: 9:30 AM – 8:30 PM</span>
+                <span className="block text-[11px] text-terracotta">Near Atomm Fitness Club, Kudroli, Kodailbail, 575003</span>
+                <div className="flex items-center gap-1.5 pt-0.5 text-[11px] text-charcoal">
+                  <Phone className="w-3 h-3 text-olive" />
+                  <a href="tel:09845474725" className="hover:text-olive">098454 74725</a>
+                  <span className="text-charcoal-muted">• 9:30 AM – 8:30 PM</span>
+                </div>
+              </div>
+
+              {/* Branch 2 */}
+              <div className="pt-2 border-t border-sand">
+                <strong className="text-charcoal block">2. Fiza By Nexus Mall Branch</strong>
+                <span>UG Entrance, Fiza By Nexus Mall, Mangaladevi Temple Rd</span>
+                <span className="block text-[11px] text-terracotta">Pandeshwar, Mangaluru 575001</span>
+                <div className="flex items-center gap-1.5 pt-0.5 text-[11px] text-charcoal">
+                  <Phone className="w-3 h-3 text-olive" />
+                  <a href="tel:7676236369" className="hover:text-olive">7676236369</a>
+                  <span className="text-charcoal-muted">• 10:00 AM – 9:30 PM</span>
+                </div>
               </div>
 
               <div className="pt-2 border-t border-sand space-y-1.5">
-                <div className="flex items-center gap-2">
-                  <Phone className="w-3.5 h-3.5 text-olive" />
-                  <span>Call: {siteConfig.contact.phone}</span>
-                </div>
                 <div className="flex items-center gap-2">
                   <WhatsAppIcon className="w-3.5 h-3.5 text-[#25D366]" />
                   <a

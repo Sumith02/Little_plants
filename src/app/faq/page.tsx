@@ -51,7 +51,7 @@ const faqs: FAQItem[] = [
     category: "orders",
     question: "Do you have a physical store where I can browse plants in person?",
     answer:
-      "Yes! Visit our relaxed plant shop at Door No : 5, Vijaya Complex, 12-1214/4, Mannagudda Rd, near Atomm Fitness Club, Kudroli, Kodailbail, Mangaluru, Karnataka 575003. We offer a wide assortment of indoor and potted plants, handcrafted planters, and custom gift-wrapping services. Open daily from 9:30 AM to 8:30 PM. Call us at 098454 74725.",
+      "Yes! We have two relaxed plant stores in Mangaluru: 1) Mannagudda Flagship: Door No : 5, Vijaya Complex, 12-1214/4, Mannagudda Rd (near Atomm Fitness Club), Kudroli, Kodailbail, Mangaluru 575003 (Call: 098454 74725, Open: 9:30 AM – 8:30 PM). 2) Mall Branch: UG Entrance, Fiza By Nexus Mall, Mangaladevi Temple Rd, Pandeshwar, Mangaluru 575001 (Call: 7676236369, Open: 10:00 AM – 9:30 PM). WhatsApp for both: +91 79917 99135.",
   },
   {
     category: "warranty",

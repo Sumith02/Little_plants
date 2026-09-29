@@ -109,31 +109,34 @@ export default function AboutPage() {
           <span className="text-xs font-semibold uppercase tracking-widest text-terracotta">
             Visit Us in Person
           </span>
-          <h3 className="font-serif text-3xl font-bold text-olive">Our Flagship Store &amp; Studio</h3>
+          <h3 className="font-serif text-3xl font-bold text-olive">Our Stores &amp; Studios in Mangaluru</h3>
           <p className="text-xs text-charcoal-muted leading-relaxed">
-            Relaxed shop offering a wide assortment of plants – indoor and potted – as well as bespoke gift-wrapping services.
+            Relaxed shops offering a wide assortment of plants – indoor and potted – as well as bespoke gift-wrapping services.
           </p>
         </div>
 
-        <div className="max-w-2xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {siteConfig.contact.studios.map((studio) => (
             <div
-              key={studio.city}
-              className="p-6 sm:p-8 rounded-2xl bg-cream border border-sand space-y-3 text-xs text-center shadow-xs"
+              key={studio.name}
+              className="p-6 sm:p-7 rounded-2xl bg-cream border border-sand space-y-3 text-xs text-center shadow-xs flex flex-col justify-between"
             >
-              <div className="inline-flex items-center gap-1.5 font-bold text-base text-olive">
-                <MapPin className="w-4 h-4 text-terracotta" />
-                <span>{studio.city}</span>
+              <div className="space-y-2">
+                <div className="inline-flex items-center gap-1.5 font-bold text-base text-olive">
+                  <MapPin className="w-4 h-4 text-terracotta shrink-0" />
+                  <span>{studio.name}</span>
+                </div>
+                <p className="text-charcoal sm:text-xs font-medium leading-relaxed max-w-sm mx-auto">
+                  {studio.address}
+                </p>
+                <span className="text-terracotta font-medium block text-[11px]">
+                  {studio.landmark}
+                </span>
               </div>
-              <p className="text-charcoal sm:text-sm font-medium leading-relaxed max-w-lg mx-auto">
-                {studio.address}
-              </p>
-              <span className="text-terracotta font-medium block">
-                {studio.landmark}
-              </span>
-              <div className="pt-2 border-t border-sand flex flex-wrap items-center justify-center gap-4 text-charcoal-muted">
-                <span>🕒 <strong>Timing:</strong> {studio.timing}</span>
-                <span>📞 <strong>Phone:</strong> {siteConfig.contact.phone}</span>
+              <div className="pt-3 border-t border-sand space-y-1 text-charcoal-muted text-[11px]">
+                <div>🕒 <strong>Timing:</strong> {studio.timing}</div>
+                <div>📞 <strong>Phone:</strong> <a href={`tel:${studio.phone}`} className="text-olive font-semibold hover:underline">{studio.phone}</a></div>
+                <div>💬 <strong>WhatsApp:</strong> <a href={`https://wa.me/${siteConfig.contact.whatsappNumber}`} target="_blank" rel="noopener noreferrer" className="text-[#25D366] font-semibold hover:underline">{siteConfig.contact.whatsapp}</a></div>
               </div>
             </div>
           ))}

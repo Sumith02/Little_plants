@@ -649,9 +649,15 @@ export default function AdminPage() {
           </div>
 
           <div className="space-y-4 text-xs">
-            <div className="p-3 bg-sand-light/50 rounded-xl space-y-1">
-              <span className="font-semibold text-olive uppercase tracking-wider text-[10px]">Store Address</span>
-              <p className="text-charcoal leading-relaxed">{siteConfig.contact.studios[0].address}</p>
+            <div className="space-y-2">
+              <span className="font-semibold text-olive uppercase tracking-wider text-[10px] block">Store Branches ({siteConfig.contact.studios.length})</span>
+              {siteConfig.contact.studios.map((st) => (
+                <div key={st.name} className="p-3 bg-sand-light/50 rounded-xl space-y-1 border border-sand">
+                  <strong className="text-olive block text-xs">{st.name}</strong>
+                  <p className="text-charcoal leading-relaxed">{st.address}</p>
+                  <p className="text-charcoal-muted text-[11px]">📞 Call: {st.phone} &bull; 🕒 {st.timing}</p>
+                </div>
+              ))}
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">

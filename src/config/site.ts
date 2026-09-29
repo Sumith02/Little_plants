@@ -34,10 +34,12 @@ export interface SiteConfig {
     whatsappNumber: string;
     hours: string;
     studios: {
+      name: string;
       city: string;
       address: string;
       landmark: string;
       timing: string;
+      phone: string;
     }[];
   };
   demoMode: {
@@ -57,7 +59,7 @@ export const siteConfig: SiteConfig = {
   kannadaBrandName: "ಲಿಟಲ್ ಪ್ಲಾಂಟ್ಸ್",
   tagline: "Relaxed shop offering a wide assortment of plants – indoor and potted – as well as gift-wrapping services.",
   shortDescription:
-    "Relaxed shop offering a wide assortment of plants – indoor and potted – as well as gift-wrapping services. Visit our store at Vijaya Complex, Mannagudda Rd, Mangaluru, or order online for safe doorstep delivery across India.",
+    "Relaxed shop offering a wide assortment of plants – indoor and potted – as well as gift-wrapping services. Visit our stores at Mannagudda Rd and Fiza By Nexus Mall in Mangaluru, or order online for safe doorstep delivery across India.",
   logos: {
     green: "/images/brand/little-plants-logo-green.png",
     white: "/images/brand/little-plants-logo-white.png",
@@ -107,10 +109,20 @@ export const siteConfig: SiteConfig = {
     hours: "Monday – Sunday, 9:30 AM – 8:30 PM IST",
     studios: [
       {
-        city: "Mangaluru (Store & Studio)",
+        name: "Mannagudda Store & Studio (Flagship)",
+        city: "Mangaluru - Mannagudda",
         address: "Door No : 5, Vijaya Complex, 12-1214/4, Mannagudda Rd, Kudroli, Kodailbail, Mangaluru, Karnataka 575003",
         landmark: "Near Atomm Fitness Club",
+        phone: "098454 74725",
         timing: "9:30 AM – 8:30 PM (All days)",
+      },
+      {
+        name: "Fiza By Nexus Mall Branch",
+        city: "Mangaluru - Pandeshwar",
+        address: "UG Entrance, Fiza By Nexus Mall, Mangaladevi Temple Rd, Pandeshwar, Mangaluru, Karnataka 575001",
+        landmark: "UG Entrance, Fiza By Nexus Mall",
+        phone: "7676236369",
+        timing: "10:00 AM – 9:30 PM (All days)",
       },
     ],
   },

@@ -764,27 +764,47 @@ export default function HomePage() {
         <div className="rounded-3xl bg-olive-light/60 border border-olive-subtle p-8 sm:p-12 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center shadow-xs">
           <div className="lg:col-span-7 space-y-4">
             <span className="text-xs font-semibold uppercase tracking-widest text-terracotta">
-              Physical Store &bull; Mangaluru, Karnataka
+              Physical Stores &bull; Mangaluru, Karnataka
             </span>
             <h3 className="font-serif text-3xl sm:text-4xl font-bold text-olive">
-              Relax in our leafy sanctuary on Mannagudda Road.
+              Visit our leafy sanctuaries in Mangaluru.
             </h3>
             <p className="text-xs sm:text-sm text-charcoal-muted leading-relaxed">
-              Relaxed shop offering a wide assortment of plants – indoor and potted – as well as gift-wrapping services. Walk through curated displays of tropical foliage, tactile earthenware pottery, and get one-on-one plant care advice from our botanists.
+              Relaxed shops offering a wide assortment of plants – indoor and potted – as well as bespoke gift-wrapping services. Walk through curated displays of tropical foliage and tactile earthenware pottery with personalized care guidance.
             </p>
-            <div className="p-4 rounded-2xl bg-cream border border-sand text-xs space-y-1.5 max-w-lg">
-              <div className="font-bold text-charcoal flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-terracotta shrink-0" />
-                <span>Door No : 5, Vijaya Complex, 12-1214/4, Mannagudda Rd</span>
+
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
+              {/* Branch 1: Mannagudda */}
+              <div className="p-3.5 rounded-2xl bg-cream border border-sand text-xs space-y-1.5 shadow-xs">
+                <div className="font-bold text-olive flex items-center gap-1.5">
+                  <MapPin className="w-3.5 h-3.5 text-terracotta shrink-0" />
+                  <span>Mannagudda Store (Flagship)</span>
+                </div>
+                <div className="text-charcoal leading-snug">
+                  Door No : 5, Vijaya Complex, 12-1214/4, Mannagudda Rd, near Atomm Fitness Club, Kudroli, Kodailbail, Mangaluru 575003
+                </div>
+                <div className="text-charcoal-muted pt-1 space-y-0.5 text-[11px]">
+                  <div>🕒 Open daily: 9:30 AM – 8:30 PM</div>
+                  <div className="text-olive font-semibold">📞 Call: <a href="tel:09845474725" className="hover:underline">098454 74725</a></div>
+                </div>
               </div>
-              <div className="text-charcoal-muted pl-6">
-                near Atomm Fitness Club, Kudroli, Kodailbail, Mangaluru, Karnataka 575003
-              </div>
-              <div className="text-olive font-semibold pl-6 pt-1 flex flex-wrap items-center justify-between gap-2">
-                <span>🕒 Open daily: 9:30 AM – 8:30 PM</span>
-                <span>📞 098454 74725</span>
+
+              {/* Branch 2: Fiza By Nexus Mall */}
+              <div className="p-3.5 rounded-2xl bg-cream border border-sand text-xs space-y-1.5 shadow-xs">
+                <div className="font-bold text-olive flex items-center gap-1.5">
+                  <MapPin className="w-3.5 h-3.5 text-terracotta shrink-0" />
+                  <span>Fiza By Nexus Mall Branch</span>
+                </div>
+                <div className="text-charcoal leading-snug">
+                  UG Entrance, Fiza By Nexus Mall, Mangaladevi Temple Rd, Pandeshwar, Mangaluru, Karnataka 575001
+                </div>
+                <div className="text-charcoal-muted pt-1 space-y-0.5 text-[11px]">
+                  <div>🕒 Open daily: 10:00 AM – 9:30 PM</div>
+                  <div className="text-olive font-semibold">📞 Call: <a href="tel:7676236369" className="hover:underline">7676236369</a></div>
+                </div>
               </div>
             </div>
+
             <div className="pt-2 flex flex-wrap gap-3">
               <a
                 href="https://wa.me/917991799135?text=Hello%20Little%20Plants!%20I%20would%20like%20to%20visit%20your%20store%20in%20Mangaluru."
