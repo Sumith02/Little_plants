@@ -143,9 +143,10 @@ export default function HomePage() {
                 <div className="absolute bottom-5 left-5 right-5 sm:right-auto sm:max-w-xs bg-cream/95 backdrop-blur-md p-4 rounded-2xl border border-sand shadow-lg flex items-center gap-3.5">
                   <div className="w-12 h-12 rounded-xl bg-sand overflow-hidden shrink-0 relative">
                     <Image
-                      src="/images/plants/monstera-deliciosa-plant-31793362206852.jpg"
+                      src="/images/plants/monstera-deliciosa-plant-31793362272388.jpg"
                       alt="Monstera Deliciosa leaf"
                       fill
+                      sizes="48px"
                       className="object-cover"
                     />
                   </div>
