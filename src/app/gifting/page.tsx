@@ -109,7 +109,7 @@ export default function GiftingPage() {
 
         <div className="lg:col-span-5 relative aspect-4/3 rounded-2xl overflow-hidden bg-sand border border-sand shadow-sm">
           <Image
-            src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/website-small-8jul-669.jpg?v=1785859525"
+            src="/images/gifts/air-purifier-verdant-trio.jpg"
             alt="Curated botanical gift crate"
             fill
             sizes="(max-width: 1024px) 100vw, 40vw"

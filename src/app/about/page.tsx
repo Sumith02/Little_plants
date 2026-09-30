@@ -51,8 +51,8 @@ export default function AboutPage() {
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
         <div className="lg:col-span-6 relative aspect-4/3 sm:aspect-16/10 rounded-3xl overflow-hidden bg-sand border border-sand shadow-sm">
           <Image
-            src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Bigslot1-31aug26-189.jpg?v=1788501330"
-            alt="Pune nursery acclimatization polyhouse"
+            src="/images/plants/areca-palm-plant-xl-31798831349892.jpg"
+            alt="Little Plants nursery acclimatized indoor plants"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"
@@ -94,8 +94,8 @@ export default function AboutPage() {
 
         <div className="lg:col-span-6 order-1 lg:order-2 relative aspect-4/3 sm:aspect-16/10 rounded-3xl overflow-hidden bg-sand border border-sand shadow-sm">
           <Image
-            src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d87323cc-bf70-4799-a66d-7ff965c8cb2b.jpg?v=1709701882"
-            alt="Hand-thrown terracotta pottery"
+            src="/images/pots/handcrafted-terracotta-studio-urn.jpg"
+            alt="Handcrafted earthenware pottery"
             fill
             sizes="(max-width: 1024px) 100vw, 50vw"
             className="object-cover"

@@ -15655,11 +15655,8 @@ export const products: Product[] = [
     shortDescription: "Wheel-thrown porous red clay planter with matching drainage saucer for optimal root aeration.",
     description: "Crafted by generational potter families using natural unglazed earthenware clay, this Terracotta Studio Urn allows plant roots to breathe freely through microscopic pores. The natural thermal regulation protects roots during scorching Indian summers while developing a gorgeous aged patina over time.",
     images: [
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d87323cc-bf70-4799-a66d-7ff965c8cb2b.jpg?v=1709701882",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/6_66d33a7b-f4ed-4502-bffc-66561d4ae463.png?v=1770027606",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/2_908ceb44-4faf-4eb6-b12b-4769ebf5ee54.png?v=1770027606",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/3_ae7fdfaf-41fe-48d2-a5c4-0d387babf1e5.png?v=1770027606",
-    ],
+      "/images/pots/handcrafted-terracotta-studio-urn.jpg"
+],
     variants: {
       sizes: [
         { id: "size-6", name: "6-inch Diameter", heightGuide: "Ideal for succulents, pothos & small plants", priceModifier: 0 },
@@ -15699,9 +15696,8 @@ export const products: Product[] = [
     shortDescription: "Sculptural ribbed stone composite planter that elevates tabletop foliage to gallery art.",
     description: "Featuring tactile vertical architectural fluting inspired by neoclassical columns, this planter is cast from durable crushed sandstone and mineral composite. Finished in a warm matte stone texture that blends effortlessly into minimalist, Japandi, and contemporary Indian interiors.",
     images: [
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Artboard_1_f270f819-14c2-4f80-ab44-e56ad0550a84.jpg?v=1789048274",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/products/tokyo-round-planter-32010534289572.jpg?v=1789048274",
-    ],
+      "/images/pots/fluted-sandstone-pedestal-planter.jpg"
+],
     variants: {
       sizes: [
         { id: "size-7", name: "7-inch Diameter", heightGuide: "Tabletop elegance", priceModifier: 0 },
@@ -15741,11 +15737,8 @@ export const products: Product[] = [
     shortDescription: "High-fired ceramic with reactive olive glaze and raw earthen unglazed base.",
     description: "Each bowl is individually dip-glazed by studio ceramicists in Khurja, producing organic speckled variations in earthy olive and moss tones. High-fired at 1200°C for exceptional durability and frost-resistance.",
     images: [
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Roman_5_inch-01.jpg?v=1758278420",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/AImagewithplant_971e1e09-f0ca-4a9f-8414-efbeda26c674.jpg?v=1758278420",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Sizemeup_af15bc22-5c43-48ee-9f8c-3616fb6b9200.jpg?v=1770029059",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Detail_7098f910-57b1-400d-a8a9-7b18f6c8a69c.jpg?v=1770029059",
-    ],
+      "/images/pots/artisan-glazed-ceramic-bowl-planter.jpg"
+],
     variants: {
       sizes: [
         { id: "size-6", name: "6.5-inch Wide", heightGuide: "Ideal for trailing pothos & calathea", priceModifier: 0 },
@@ -15783,11 +15776,8 @@ export const products: Product[] = [
     shortDescription: "Sub-irrigation wicking system that keeps plants perfectly hydrated for up to 14 days.",
     description: "Never worry about overwatering or leaving plants unattended during holidays. Features an engineered capillary sub-irrigation basin that allows plants to drink water naturally from below via osmosis, preventing root rot while saving up to 40% water.",
     images: [
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/AImage_15828f4a-e15b-40d5-9d17-241fe701088f.jpg?v=1695717092",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/AImage_df337456-2133-47b6-af96-6fcc14b4ffaf.jpg?v=1695717092",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/AImageWithoutPlant.jpg?v=1695717092",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/3_42d51344-c292-4966-a751-a3cb66c7750b.jpg?v=1695717092",
-    ],
+      "/images/pots/hydro-reservoir-self-watering-pot.jpg"
+],
     variants: {
       sizes: [
         { id: "size-7", name: "7-inch Planter", heightGuide: "Holds 400ml water reservoir (7-10 days)", priceModifier: 0 },
@@ -15830,11 +15820,8 @@ export const products: Product[] = [
     shortDescription: "100% soil-less, fungus-free aerated blend of washed coco peat, perlite, vermicompost & neem cake.",
     description: "Standard garden mud compacts like concrete inside indoor pots, suffocating plant roots. Our proprietary Little Plants soil-less blend is steam-sterilized and crafted with washed low-EC coconut coir, horticultural perlite for air channels, aged vermicompost for organic nutrition, and organic neem cake to ward off root fungus and gnats.",
     images: [
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Pot-O-Mix-5Kg.jpg?v=1747483880",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/MG_0042.jpg?v=1747479116",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/MG_0041.jpg?v=1747479116",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/MG_0112.jpg?v=1747479116",
-    ],
+      "/images/care/organic-potting-mix-primary.jpg"
+],
     packageContents: [
       "5kg resealable zip-lock heavy-duty botanical craft pouch",
       "Formula composition: 40% Coco Coir, 25% Vermicompost, 15% Perlite, 10% Leaf Mold, 10% Neem Cake",
@@ -15862,11 +15849,8 @@ export const products: Product[] = [
     shortDescription: "Ready-to-use organic emulsion that repels mealybugs, spider mites, and scale insects naturally.",
     description: "Extracted from organic Indian neem kernels with cold-press milling to preserve active azadirachtin compounds. Pre-emulsified with bio-surfactants and subtle organic eucalyptus essential oil so it sprays in a uniform microscopic mist with zero harsh sulfur odor.",
     images: [
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Neem_Oil_100_ML.jpg?v=1747289957",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/DSC_1027_871dba9a-ac74-41d2-884b-580ac3c28f46.jpg?v=1747285633",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/2_5a3a360a-8c70-456c-9044-e748b87b900d.jpg?v=1747285633",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/3_d437c983-eaaa-4fc3-a636-6c9812476ff9.jpg?v=1747285633",
-    ],
+      "/images/care/cold-pressed-neem-oil-spray.jpg"
+],
     packageContents: [
       "250ml recyclable amber UV-protective bottle with adjustable trigger mist sprayer",
       "Application instruction card for prevention & infestation rescue",
@@ -15894,11 +15878,8 @@ export const products: Product[] = [
     shortDescription: "Bio-active kelp extract packed with 60+ micronutrients, encouraging rapid new leaf unfurling.",
     description: "Sourced sustainably from cold-water kelp, this rich bio-stimulant boosts chlorophyll production, fortifies cell walls against heat stress, and stimulates dormant growth nodes. Dilute just 5ml per liter of water for watering or foliar spraying.",
     images: [
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Vermicompost-5Kg.jpg?v=1770887843",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/PDP-14.jpg?v=1770887843",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Vermicompost_A_-08_68d6df5e-cdff-4381-ae7e-4ed0b03374b0.jpg?v=1770887843",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Vermicompost_A_-09.jpg?v=1770887843",
-    ],
+      "/images/care/liquid-seaweed-foliage-tonic.jpg"
+],
     packageContents: [
       "200ml concentrated kelp tonic with graduated measuring cap",
       "Dilution and seasonal feeding schedule",
@@ -15929,11 +15910,8 @@ export const products: Product[] = [
     shortDescription: "Handcrafted metallic mister that delivers an ultra-fine velvet fog for ferns and tropicals.",
     description: "An heirloom gardening accessory worthy of displaying prominently on open shelving. Made of powder-coated metal with an elegant gold metallic pump and handle. The precision plunger mechanism produces an ultra-fine micro-droplet mist that humidifies tropical foliage without soaking leaves or staining wooden furniture.",
     images: [
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Dom_Metallic_Mister.jpg?v=1751825271",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Metal_WateringCan_5.jpg?v=1751823688",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/InUse_74416d62-f1ce-49f6-bf4f-b56fe8a6f14b.jpg?v=1751823688",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/45_a7a6186d-d694-4615-b031-ca561999474f.jpg?v=1751823688",
-    ],
+      "/images/tools/antique-brass-botanical-mister.jpg"
+],
     packageContents: [
       "1x Solid brass 300ml misting reservoir",
       "1x Precision brass plunger with ergonomic ring handle",
@@ -15962,10 +15940,8 @@ export const products: Product[] = [
     shortDescription: "Razor-sharp Japanese SK-5 high carbon steel blades with warm ashwood ergonomic handle inlays.",
     description: "Clean pruning cuts allow houseplants and bonsai to heal quickly without bruising plant tissues. These precision bypass pruners slice effortlessly through branches up to 18mm thick with smooth scissor action, secured by a solid brass safety locking latch.",
     images: [
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Heavy_Duty_Anvil_Pruner.jpg?v=1751815004",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/products/heavy-duty-anvil-pruner-32010533306500.jpg?v=1751815004",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/products/heavy-duty-anvil-pruner-32010533273732.jpg?v=1751815004",
-    ],
+      "/images/tools/hand-forged-carbon-steel-pruners.jpg"
+],
     packageContents: [
       "1x Japanese SK-5 carbon steel bypass pruner",
       "Protective oiled leather blade sheath",
@@ -15994,9 +15970,8 @@ export const products: Product[] = [
     shortDescription: "Elegant slender spout that directs water precisely to the root zone without splashing.",
     description: "Designed specifically for plant parents, the extended slender spout reaches through dense foliage to deliver a steady, non-spill stream right into compact pot rims. Ergonomically balanced and durable for both indoor and balcony garden care.",
     images: [
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Premium_Garden_Watering_Can_For_Plants_5_Litre.jpg?v=1751821081",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/products/premium-garden-watering-can-for-plants-5-litre-32010535010468.jpg?v=1751821081",
-    ],
+      "/images/tools/precision-long-spout-watering-can.jpg"
+],
     packageContents: [
       "1x 5-liter precision watering can",
       "Detachable fine-spray rose head for delicate seedlings",
@@ -16024,9 +15999,8 @@ export const products: Product[] = [
     shortDescription: "Precision miniature garden trowel and rake set for repotting, loosening soil, and succulent care.",
     description: "The ideal toolkit for indoor plants, bonsai styling, and container gardening. Features rust-resistant carbon steel heads and ergonomic wooden handles for gentle soil aeration, transplanting, and root maintenance without damaging root balls.",
     images: [
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Mini_bonsai_kit.jpg?v=1747289956",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/products/mini-garden-bonsai-set-31263107055780.jpg?v=1747289956",
-    ],
+      "/images/tools/mini-garden-bonsai-tool-set.jpg"
+],
     packageContents: [
       "1x Mini Shovel / Trowel",
       "1x Mini Spade",
@@ -16091,9 +16065,8 @@ export const products: Product[] = [
     shortDescription: "Designed for work desks: lush Jade Plant in Roma Ceramic Planter.",
     description: "Transform daily desk hours into a mindful sanctuary. Studies show that having living greenery in line of sight reduces screen fatigue and anxiety by 37%. Features a compact, resilient Jade Plant paired with our minimalist Roma Ceramic Planter.",
     images: [
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_c9aaa3ce-c3d3-45f5-b3a9-6ef48498b3e2.jpg?v=1770026404",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Roman_5_inch-01.jpg?v=1758278420",
-    ],
+      "/images/gifts/the-mindful-desk-greenery-ritual-set.jpg"
+],
     packageContents: [
       "1x Desk-sized Jade Mini Plant",
       "1x 5-inch Roma Glazed Ceramic Planter with drainage",
@@ -16122,10 +16095,8 @@ export const products: Product[] = [
     shortDescription: "A harmonized set of three miniature air-purifiers: Jade, Golden Money Plant, and Snake Plant.",
     description: "Ideal for festive corporate rewards, employee appreciation, and Diwali or New Year corporate hampers. Three resilient tabletop plants in matching self-watering planters with custom branding sleeve options available for orders over 10 units.",
     images: [
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/website-small-8jul-498.jpg?v=1785592392",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/website-small-8jul-726.jpg?v=1785491591",
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_c9aaa3ce-c3d3-45f5-b3a9-6ef48498b3e2.jpg?v=1770026404",
-    ],
+      "/images/gifts/air-purifier-verdant-trio.jpg"
+],
     packageContents: [
       "3x Living plants (Jade Plant, Snake Plant, Golden Money Plant)",
       "3x Matching tabletop pots with moisture-control wicks",

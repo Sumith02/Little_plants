@@ -61,7 +61,7 @@ const initialSampleOrders: OrderRecord[] = [
           shortDescription: "Iconic split-leaf tropical beauty that brings lush jungle drama into living rooms.",
           description: "Monstera Deliciosa",
           images: [
-            "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d2836da1-2292-4d2b-a45b-7b243be4f590.jpg?v=1747738221",
+            "/images/plants/monstera-deliciosa-plant-31793362174084.jpg",
           ],
           packageContents: [],
           approximateDimensions: "Height: 24 inches",
@@ -104,7 +104,7 @@ const initialSampleOrders: OrderRecord[] = [
           shortDescription: "Ready-to-use organic emulsion that repels mealybugs and spider mites.",
           description: "Neem Oil Spray",
           images: [
-            "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/NeemOil-100Ml_5d0a6498-38bb-40cf-a734-70e17621c463.jpg?v=1747479000",
+            "/images/care/cold-pressed-neem-oil-spray.jpg",
           ],
           packageContents: [],
           approximateDimensions: "250ml",

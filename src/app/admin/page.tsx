@@ -899,7 +899,7 @@ function EditProductModal({
               <div className="flex gap-2">
                 <input
                   type="url"
-                  placeholder="https://cdn.shopify.com/... or any public image URL"
+                  placeholder="e.g. /images/plants/sample-plant.jpg"
                   value={newImageUrl}
                   onChange={(e) => {
                     setNewImageUrl(e.target.value);
@@ -1123,7 +1123,7 @@ function AddProductModal({
   const [price, setPrice] = useState(599);
   const [originalPrice, setOriginalPrice] = useState(799);
   const [imageUrl, setImageUrl] = useState(
-    "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d2836da1-2292-4d2b-a45b-7b243be4f590.jpg?v=1747738221"
+    "/images/plants/monstera-deliciosa-plant-31793362174084.jpg"
   );
   const [shortDescription, setShortDescription] = useState("");
   const [description, setDescription] = useState("");
