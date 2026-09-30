@@ -42,7 +42,7 @@ Tap water in Indian metropolitan cities often carries high TDS (total dissolved 
     },
     date: "12 Aug 2026",
     coverImage:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Bigslot1-31aug26-189.jpg?v=1788501330",
+      "/images/plants/monstera-deliciosa-plant-31793362174084.jpg",
     category: "Seasonal Care",
     tags: ["Monsoon Care", "Watering", "Root Health", "Indoor Plants"],
     relatedProductIds: [
@@ -142,7 +142,7 @@ Fortunately, evolution has crafted plant species adapted to limestone cliffs, fo
     },
     date: "19 Jul 2026",
     coverImage:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/website-small-8jul-498.jpg?v=1785592392",
+      "/images/plants/snake-plant-golden-hahnii-31771655864452.jpg",
     category: "Plant Selection",
     tags: ["Apartment Gardening", "Low Light", "Urban Living", "Beginner Friendly"],
     relatedProductIds: [

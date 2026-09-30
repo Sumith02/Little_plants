@@ -10,7 +10,7 @@ export const spaces: RoomSpace[] = [
     description:
       "Living rooms typically offer generous ambient light and moderate air circulation. We recommend sculptural statement plants like Monstera Deliciosa, Fiddle Leaf Figs, and blooming Peace Lilies to create visual height and conversation-starting green focal points.",
     image:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Bigslot1-31aug26-189.jpg?v=1788501330",
+      "/images/plants/monstera-deliciosa-plant-31793362174084.jpg",
     idealConditions: {
       light: "Bright indirect light 4-6 feet from windows",
       airflow: "Natural room circulation, away from direct AC vents",
@@ -35,7 +35,7 @@ export const spaces: RoomSpace[] = [
     description:
       "Unlike most plants that rest at night, CAM (Crassulacean Acid Metabolism) species like Snake Plants and ZZ Plants actively absorb carbon dioxide and emit fresh oxygen throughout the dark hours, naturally purifying your sleep environment.",
     image:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/website-small-8jul-726.jpg?v=1785491591",
+      "/images/plants/snake-plant-golden-hahnii-31771655864452.jpg",
     idealConditions: {
       light: "Soft morning light or curtain-filtered ambient light",
       airflow: "Gentle ceiling fan circulation",
@@ -59,7 +59,7 @@ export const spaces: RoomSpace[] = [
     description:
       "Enclosed balconies and large sunny window nooks provide glorious bright natural light. These hardy indoor specimens thrive with filtered sun, gentle air breezes, and indoor room comfort.",
     image:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d87323cc-bf70-4799-a66d-7ff965c8cb2b.jpg?v=1709701882",
+      "/images/plants/areca-palm-plant-31828365279364.jpg",
     idealConditions: {
       light: "3 to 5 hours of bright morning sunlight or filtered afternoon light",
       airflow: "Open window breezes and natural cross-ventilation",
@@ -83,7 +83,7 @@ export const spaces: RoomSpace[] = [
     description:
       "Studies indicate that natural greenery in workspaces enhances concentration, reduces mental fatigue, and boosts creative output. These plants require almost zero maintenance and tolerate artificial office lighting with ease.",
     image:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/website-small-8jul-498.jpg?v=1785592392",
+      "/images/plants/zz-plant-31792473505924.jpg",
     idealConditions: {
       light: "Fluorescent, LED task lighting, or indirect room light",
       airflow: "Standard conditioned home or commercial office air",

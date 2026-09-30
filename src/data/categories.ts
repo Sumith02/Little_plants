@@ -9,8 +9,8 @@ export const categories: CategoryInfo[] = [
     description:
       "Explore air-purifying foliage, architectural statement trees, trailing vines, and low-light companions, nurtured specifically for apartment and indoor living.",
     image:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Bigslot1-31aug26-189.jpg?v=1788501330",
-    productCount: 16,
+      "/images/plants/monstera-deliciosa-plant-31793362174084.jpg",
+    productCount: 39,
     subcategories: [
       "Large Floor Plants",
       "Air Purifying",
@@ -79,7 +79,7 @@ export const categories: CategoryInfo[] = [
     description:
       "A meaningful, lasting alternative to cut bouquets. Packed with decorative indoor planters, care passports, and festive packaging.",
     image:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/website-small-8jul-669.jpg?v=1785859525",
+      "/images/plants/lucky-bamboo-plant-3-layer-31793708138628.jpg",
     productCount: 3,
     subcategories: [
       "Curated Hampers",

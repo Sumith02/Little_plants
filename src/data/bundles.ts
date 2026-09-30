@@ -15,11 +15,11 @@ export const featuredBundles: (BundleProduct & {
     description:
       "A mature Monstera Deliciosa paired with our wheel-thrown Sienna Terracotta Pots, ready-potted with organic soil and accompanied by our Cold-Pressed Neem Oil Shield. Save 15% when purchased as a harmonized bundle.",
     image:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d2836da1-2292-4d2b-a45b-7b243be4f590.jpg?v=1747738221",
+      "/images/plants/monstera-deliciosa-plant-31793362174084.jpg",
     plantId: "plant-monstera-deliciosa",
     planterId: "pot-terracotta-urn",
     addonIds: ["care-neem-oil-spray"],
-    plantName: "Monstera Deliciosa (Mature Floor)",
+    plantName: "Monstera Deliciosa Plant",
     planterName: "Sienna Terracotta Pots - Set of 3",
     addonNames: ["Cold-Pressed Neem Oil Shield (100ml)"],
     originalPrice: 2457,
@@ -34,7 +34,7 @@ export const featuredBundles: (BundleProduct & {
     description:
       "A drought-hardy ZZ Plant potted into our warm Roma Ceramic Planter, complemented by our Dom Metallic Botanical Mister. Keeps desk air fresh and screens less tiring.",
     image:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_9ebdfd59-d830-4e31-89a3-5c2fcda53344.jpg?v=1770025983",
+      "/images/plants/zz-plant-31792473505924.jpg",
     plantId: "plant-zz-plant-emerald",
     planterId: "pot-ceramic-bowl",
     addonIds: ["care-brass-mister"],
@@ -53,7 +53,7 @@ export const featuredBundles: (BundleProduct & {
     description:
       "A resilient Snake Plant Golden Hahnii in a Roma Ceramic Planter, paired with organic vermicompost foliage tonic. Clean indoor air around the clock with zero fuss.",
     image:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/website-small-8jul-726.jpg?v=1785491591",
+      "/images/plants/snake-plant-golden-hahnii-31771655864452.jpg",
     plantId: "plant-snake-golden-hahnii",
     planterId: "pot-ceramic-bowl",
     addonIds: ["care-foliage-tonic"],
