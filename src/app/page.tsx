@@ -131,7 +131,7 @@ export default function HomePage() {
             <div className="lg:col-span-6 relative">
               <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-4/5 border border-sand bg-sand/30">
                 <Image
-                  src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Bigslot1-31aug26-189.jpg?v=1788501330"
+                  src="/images/plants/monstera-deliciosa-plant-31793362174084.jpg"
                   alt="Lush Monstera and indoor botanical sanctuary"
                   fill
                   priority
@@ -143,7 +143,7 @@ export default function HomePage() {
                 <div className="absolute bottom-5 left-5 right-5 sm:right-auto sm:max-w-xs bg-cream/95 backdrop-blur-md p-4 rounded-2xl border border-sand shadow-lg flex items-center gap-3.5">
                   <div className="w-12 h-12 rounded-xl bg-sand overflow-hidden shrink-0 relative">
                     <Image
-                      src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d2836da1-2292-4d2b-a45b-7b243be4f590.jpg?v=1747738221"
+                      src="/images/plants/monstera-deliciosa-plant-31793362206852.jpg"
                       alt="Monstera Deliciosa leaf"
                       fill
                       className="object-cover"
@@ -563,7 +563,7 @@ export default function HomePage() {
           {/* Decorative background foliage silhouette */}
           <div className="absolute right-0 bottom-0 top-0 w-1/3 opacity-20 pointer-events-none hidden lg:block">
             <Image
-              src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/website-small-8jul-726.jpg?v=1785491591"
+              src="/images/plants/snake-plant-golden-31911045267588.jpg"
               alt="Botanical background"
               fill
               className="object-cover"
@@ -747,8 +747,8 @@ export default function HomePage() {
 
           <div className="relative aspect-4/3 rounded-2xl overflow-hidden bg-sand border border-sand">
             <Image
-              src="https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d87323cc-bf70-4799-a66d-7ff965c8cb2b.jpg?v=1709701882"
-              alt="Earthen terracotta and sustainable plant packaging"
+              src="/images/plants/rubber-plant-31800175526020.jpg"
+              alt="Earthen terracotta and sustainable indoor plant packaging"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover"

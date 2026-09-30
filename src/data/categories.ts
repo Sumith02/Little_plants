@@ -28,7 +28,7 @@ export const categories: CategoryInfo[] = [
     description:
       "Sculptural indoor vessels designed with root-friendly drainage, breathable earthen clays, and sub-irrigation self-watering reservoirs.",
     image:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/1_d87323cc-bf70-4799-a66d-7ff965c8cb2b.jpg?v=1709701882",
+      "/images/plants/zz-plant-31792473505924.jpg",
     productCount: 4,
     subcategories: [
       "Handmade Terracotta",
@@ -45,7 +45,7 @@ export const categories: CategoryInfo[] = [
     description:
       "Everything your indoor green companions need to flourish: biological vermicompost, porous potting mixtures, and chemical-free pest deterrents.",
     image:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/PottingSoilMix-5Kg_876dbd60-4145-4cde-a2ff-e77e282935be.jpg?v=1747478999",
+      "/images/plants/aglaonema-pink-beauty-plant-32220868247684.jpg",
     productCount: 3,
     subcategories: [
       "Soil & Media",
@@ -62,7 +62,7 @@ export const categories: CategoryInfo[] = [
     description:
       "Hand-finished tools crafted for mindful daily indoor plant parenting, designed to age beautifully while delivering precision care.",
     image:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/Heavy_Duty_Anvil_Pruner.jpg?v=1751815004",
+      "/images/plants/ficus-bonsai-plant-31792241410180.jpg",
     productCount: 4,
     subcategories: [
       "Pruning & Cutting",

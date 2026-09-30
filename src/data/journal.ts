@@ -86,7 +86,7 @@ The most common repotting mistake is jumping from an 6-inch pot directly into a 
     },
     date: "28 Jul 2026",
     coverImage:
-      "https://cdn.shopify.com/s/files/1/0579/7924/0580/files/PottingSoilMix-5Kg_876dbd60-4145-4cde-a2ff-e77e282935be.jpg?v=1747478999",
+      "/images/plants/aglaonema-red-plant-32220893053060.jpg",
     category: "Repotting & Soil",
     tags: ["Repotting", "Soil Science", "Beginner Tips", "Roots"],
     relatedProductIds: [
