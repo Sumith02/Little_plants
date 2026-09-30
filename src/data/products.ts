@@ -1,3112 +1,770 @@
 import { Product } from "@/types";
-
 export const products: Product[] = [
   // ==========================================
-  // 1. INDOOR PLANTS (Authentic Ugaoo Catalog)
+  // 1. INDOOR PLANTS (Authentic Drive Images & Ugaoo Catalog)
   // ==========================================
   {
-    id: "plant-monstera-deliciosa",
-    slug: "monstera-deliciosa-swiss-cheese-plant",
-    name: "Monstera Deliciosa Plant",
-    botanicalName: "Monstera deliciosa",
+    id: "plant-aechmea-fasciata",
+    slug: "aechmea-fasciata-silver-vase-bromeliad",
+    name: "Aechmea Fasciata Plant",
+    botanicalName: "Aechmea fasciata",
     category: "plants",
-    subcategory: "Large Floor Plants",
-    price: 1259,
-    originalPrice: 1849,
-    rating: 4.9,
-    reviewCount: 148,
-    isBestseller: true,
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.91,
+    reviewCount: 21,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 35,
+    shortDescription: "Lush, healthy Aechmea Fasciata Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Aechmea Fasciata Plant (Aechmea fasciata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/aechmea-fasciata-plant-32220864643204.jpg",
+      "/images/plants/aechmea-fasciata-plant-32220864741508.jpg",
+      "/images/plants/aechmea-fasciata-plant-32220865036420.jpg",
+      "/images/plants/aechmea-fasciata-plant-32220865134724.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-aglaonema-cutlass",
+    slug: "aglaonema-cutlass-plant",
+    name: "Aglaonema Cutlass Plant",
+    botanicalName: "Aglaonema commutatum",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.86,
+    reviewCount: 46,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 16,
+    shortDescription: "Lush, healthy Aglaonema Cutlass Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Aglaonema Cutlass Plant (Aglaonema commutatum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/aglaonema-cutlass-plant-32220863168644.jpg",
+      "/images/plants/aglaonema-cutlass-plant-32220863266948.jpg",
+      "/images/plants/aglaonema-cutlass-plant-32220863332484.jpg",
+      "/images/plants/aglaonema-cutlass-plant-32220863430788.jpg"
+],
+    careGuide: {
+      light: "Low Light",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-aglaonema-pink",
+    slug: "aglaonema-pink-beauty-plant",
+    name: "Aglaonema Pink Beauty Plant - Medium",
+    botanicalName: "Aglaonema commutatum",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 599,
+    originalPrice: 700,
+    rating: 4.92,
+    reviewCount: 87,
+    isBestseller: false,
     isNew: false,
     isBeginnerFriendly: true,
     isPetSafe: false,
     inStock: true,
     stockCount: 14,
-    shortDescription: "Iconic split-leaf tropical beauty that brings lush jungle drama into living rooms and well-lit corners.",
-    description: "The Monstera Deliciosa, often called the Swiss Cheese Plant, is an architectural marvel native to the tropical rainforests of Central America. In Indian homes, it thrives with vibrant energy, unfurling perforated fenestrated leaves that catch soft ambient daylight. Shipped in our breathable protective root wrap.",
-    images: [
-      "/images/plants/monstera-deliciosa-plant-31793362174084.jpg",
-      "/images/plants/monstera-deliciosa-plant-31793362272388.jpg",
-      "/images/plants/monstera-deliciosa-plant-31793362337924.jpg",
-      "/images/plants/monstera-deliciosa-plant-31793362370692.jpg",
-    ],
-    careGuide: {
-      light: "Bright Indirect",
-      lightDetail: "Flourishes near east or north-facing windows. Keep away from harsh midday direct sun which scorches foliage.",
-      watering: "Weekly",
-      wateringDetail: "Water thoroughly when the top 2 inches of soil feel dry to the touch. Reduce frequency slightly in winter.",
-      humidity: "High (Misting Helpful)",
-      petFriendly: false,
-      petNote: "Contains insoluble calcium oxalates; keep out of reach of curious cats and dogs.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Living Room Corner", "Study Balcony", "Double-height Foyer"],
-      feed: "Nourish once every 3 weeks during monsoon and spring with balanced organic seaweed liquid tonic.",
-      repotting: "Repot every 18-24 months into a pot 2 inches wider with our chunky porous potting mix.",
-      commonIssues: "Yellowing lower leaves usually indicate overwatering; brown crispy edges indicate low humidity.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-m",
-                      "name": "Mature Floor (18-24 inches)",
-                      "heightGuide": "Well-branched architectural foliage",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-l",
-                      "name": "Statement Specimen (30-38 inches)",
-                      "heightGuide": "Towering statement floor piece",
-                      "priceModifier": 600
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Monstera Deliciosa Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 22-26 inches (including pot) | Pot Diameter: 7.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["air-purifying", "living-room", "statement-plant", "bestseller", "indoor"],
-  },
-
-  {
-    id: "plant-snake-golden-hahnii",
-    slug: "snake-plant-golden-hahnii",
-    name: "Snake Plant Golden Hahnii",
-    botanicalName: "Sansevieria trifasciata 'Golden Hahnii'",
-    category: "plants",
-    subcategory: "Air Purifying",
-    price: 299,
-    originalPrice: 399,
-    rating: 4.9,
-    reviewCount: 215,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 32,
-    shortDescription: "Virtually indestructible bedside companion that releases fresh oxygen through the night.",
-    description: "The Bird's Nest Snake Plant Golden Hahnii features compact, spiraling rosettes of deep sage green bordered with golden-butter margins. Renowned by NASA for absorbing airborne toxins like formaldehyde and xylene, this architectural succulent is the ultimate forgiving plant for busy modern lifestyles.",
-    images: [
-      "/images/plants/snake-plant-golden-hahnii-31771655864452.jpg",
-      "/images/plants/snake-plant-golden-hahnii-31771656028292.jpg",
-      "/images/plants/snake-plant-golden-hahnii-31771656192132.jpg",
-      "/images/plants/snake-plant-golden-hahnii-32076154273924.jpg",
-    ],
-    careGuide: {
-      light: "Low Light",
-      lightDetail: "Highly adaptable. Survives dim bedroom corners as happily as brightly filtered window sills.",
-      watering: "Every 10-14 Days",
-      wateringDetail: "Allow potting soil to dry out completely between waterings. Highly sensitive to soggy roots.",
-      humidity: "Tolerant of Dry Air",
-      petFriendly: false,
-      petNote: "Mild toxicity if ingested; keep elevated on shelves or study desks.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Bedside Nightstand", "Home Office Desk", "Powder Room Vanity"],
-      feed: "Light feed once every 6 weeks with mild vermicompost extract during summer months.",
-      repotting: "Very slow root growth; only needs potting transition every 3 years.",
-      commonIssues: "Mushy leaves at base mean overwatering; wrinkling foliage means it is time for a thorough soak.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Snake Plant Golden Hahnii in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 7-9 inches (including pot) | Pot Diameter: 4 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["air-purifying", "bedroom", "low-light", "hardy", "tabletop"],
-  },
-
-  {
-    id: "plant-snake-golden",
-    slug: "snake-plant-golden-laurentii",
-    name: "Snake Plant Golden (Laurentii)",
-    botanicalName: "Sansevieria trifasciata 'Laurentii'",
-    category: "plants",
-    subcategory: "Air Purifying",
-    price: 349,
-    originalPrice: 499,
-    rating: 4.8,
-    reviewCount: 182,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 24,
-    shortDescription: "Tall upright sword-like foliage edged with vivid yellow margins. Supreme night-time oxygen generator.",
-    description: "The Golden Snake Plant (Laurentii) is one of the most celebrated indoor foliage plants globally. Its stately, erect architectural leaves feature silvery-green horizontal banding framed by bright sunny gold borders. Perfectly adapted to modern apartments with minimal watering requirements.",
-    images: [
-      "/images/plants/snake-plant-golden-31911045267588.jpg",
-      "/images/plants/snake-plant-golden-31911045300356.jpg",
-      "/images/plants/snake-plant-golden-31911045333124.jpg",
-      "/images/plants/snake-plant-golden-31911045365892.jpg",
-    ],
-    careGuide: {
-      light: "Low Light",
-      lightDetail: "Thrives in low light to bright indirect sunlight. Adapts effortlessly to dim interior spaces.",
-      watering: "Every 10-14 Days",
-      wateringDetail: "Water only when the potting mix is bone dry. Overwatering is the only true threat.",
-      humidity: "Tolerant of Dry Air",
-      petFriendly: false,
-      petNote: "Mildly toxic to pets; best placed on elevated pedestals or console tables.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Bedroom Corner", "Hallway Console", "Conference Room"],
-      feed: "Feed once every two months with a mild organic foliar tonic.",
-      repotting: "Slow-growing; repot only every 2-3 years.",
-      commonIssues: "Base rot from standing moisture; ensure potting soil drains instantly.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Snake Plant Golden (Laurentii) in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 14-18 inches (including pot) | Pot Diameter: 5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["air-purifying", "low-maintenance", "bedroom", "statement-plant"],
-  },
-
-  {
-    id: "plant-fiddle-leaf-fig",
-    slug: "fiddle-leaf-fig-bambino",
-    name: "Fiddle Leaf Fig Plant",
-    botanicalName: "Ficus lyrata",
-    category: "plants",
-    subcategory: "Large Floor Plants",
-    price: 699,
-    originalPrice: 899,
-    rating: 4.7,
-    reviewCount: 98,
-    isBestseller: false,
-    isNew: false,
-    isBeginnerFriendly: false,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 12,
-    shortDescription: "Dramatic, sculptural violin-shaped foliage that anchors modern spaces with architectural presence.",
-    description: "Prized by interior architects worldwide, Ficus Lyrata stands as the reigning monarch of statement indoor greenery. Its broad, waxy scalloped leaves reflect indoor lighting, creating striking silhouettes against minimalist walls.",
-    images: [
-      "/images/plants/fiddle-leaf-fig-plant-31793606754436.jpg",
-      "/images/plants/fiddle-leaf-fig-plant-31793606787204.jpg",
-      "/images/plants/fiddle-leaf-fig-plant-31793606852740.jpg",
-      "/images/plants/fiddle-leaf-fig-plant-32065347518596.jpg",
-    ],
-    careGuide: {
-      light: "Bright Indirect",
-      lightDetail: "Demands generous pools of consistent, bright indirect light. Direct morning sun is very beneficial.",
-      watering: "When Top 2 Inches Dry",
-      wateringDetail: "Water deeply until moisture runs freely from drainage ports, then empty drip trays completely.",
-      humidity: "High (Misting Helpful)",
-      petFriendly: false,
-      petNote: "Sap can irritate skin and cause oral discomfort in animals if chewed.",
-      difficulty: "Moderate Care",
-      idealPlacement: ["Living Room Bay Window", "Bright Home Studio", "Sunlit Reading Nook"],
-      feed: "Feed monthly with nitrogen-rich organic vermicompost tea during spring and monsoon growth spurts.",
-      repotting: "Repot every 2 years into a stable, weighted terracotta planter to prevent top-heaviness.",
-      commonIssues: "Brown leaf spotting occurs from cold drafts or chlorinated tap water; wipe foliage regularly.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-m",
-                      "name": "Mature Floor (18-24 inches)",
-                      "heightGuide": "Well-branched architectural foliage",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-l",
-                      "name": "Statement Specimen (30-38 inches)",
-                      "heightGuide": "Towering statement floor piece",
-                      "priceModifier": 600
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Fiddle Leaf Fig Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 20-24 inches (including pot) | Pot Diameter: 6.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["statement-plant", "living-room", "architectural", "indoor"],
-  },
-
-  {
-    id: "plant-zz-plant-emerald",
-    slug: "zz-plant-zamioculcas-zamiifolia",
-    name: "ZZ Plant (Emerald Palm)",
-    botanicalName: "Zamioculcas zamiifolia",
-    category: "plants",
-    subcategory: "Low Light",
-    price: 599,
-    originalPrice: 749,
-    rating: 4.9,
-    reviewCount: 264,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 40,
-    shortDescription: "Mirror-gloss leaves with potato-like underground rhizomes that store moisture for weeks.",
-    description: "Hailing from drought-prone eastern Africa, the ZZ plant is the ultimate survivor in contemporary indoor horticulture. Its upright fleshy stems carry glossy, dark-emerald leaflets that look naturally polished. Equipped with subterranean tuberous rhizomes, it thrives even if forgotten for weeks.",
-    images: [
-      "/images/plants/zz-plant-31792473505924.jpg",
-      "/images/plants/zz-plant-31792473604228.jpg",
-      "/images/plants/zz-plant-31792473735300.jpg",
-      "/images/plants/zz-plant-31792473768068.jpg",
-    ],
-    careGuide: {
-      light: "Low Light",
-      lightDetail: "Thrives exceptionally well in windowless offices, hallways, and deep interior rooms under LED lighting.",
-      watering: "Every 10-14 Days",
-      wateringDetail: "Water sparingly once every 2 to 3 weeks. Tubers hold reservoirs of moisture.",
-      humidity: "Tolerant of Dry Air",
-      petFriendly: false,
-      petNote: "High calcium oxalate content; keep elevated if curious pets share your space.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Cubicle Desk", "Dim Living Room Corner", "Windowless Powder Room"],
-      feed: "Minimal feeding needed; once every 8 weeks in summer with diluted balanced fertilizer.",
-      repotting: "Only repot when the heavy rhizomes visibly press against and distort the plastic nursery pot.",
-      commonIssues: "Yellowing leaves indicate too frequent watering. Leaf drop is rare and indicates prolonged drought.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized ZZ Plant (Emerald Palm) in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 14-18 inches (including pot) | Pot Diameter: 5.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["low-light", "desk-plant", "indestructible", "air-purifying", "bestseller"],
-  },
-
-  {
-    id: "plant-zamia-zz-black",
-    slug: "zamia-zz-black-raven-plant",
-    name: "Zamia ZZ Black Plant (ZZ Raven)",
-    botanicalName: "Zamioculcas zamiifolia 'Raven'",
-    category: "plants",
-    subcategory: "Low Light",
-    price: 699,
-    originalPrice: 899,
-    rating: 4.9,
-    reviewCount: 112,
-    isBestseller: true,
-    isNew: true,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 18,
-    shortDescription: "Rare, dramatic gothic beauty whose leaves emerge bright lime-green and mature into obsidian black.",
-    description: "The ZZ Black (also celebrated as ZZ Raven) is a showstopping cultivar discovered in Germany. Fresh shoots unfurl in an electric bright green before gradually maturing into an inky, mirror-gloss purple-black foliage that creates unmatched contrast in modern interior decor.",
-    images: [
-      "/images/plants/zamia-zz-black-plant-31792532422788.jpg",
-      "/images/plants/zamia-zz-black-plant-31792532455556.jpg",
-      "/images/plants/zamia-zz-black-plant-31792532521092.jpg",
-    ],
-    careGuide: {
-      light: "Low Light",
-      lightDetail: "Maintains its dark pigmentation in medium to low indirect light. Avoid scorching midday sun.",
-      watering: "Every 10-14 Days",
-      wateringDetail: "Water deeply only after the soil has completely dried out.",
-      humidity: "Tolerant of Dry Air",
-      petFriendly: false,
-      petNote: "Keep out of reach of pets due to insoluble oxalates.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Monochrome Modern Shelving", "Executive Desk", "Study Credenza"],
-      feed: "Nourish once every 2 months with mild organic seaweed fertilizer.",
-      repotting: "Repot every 2 to 3 years when rhizomes fill the pot.",
-      commonIssues: "Overwatering causes stem softness; dry neglect is tolerated easily.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Zamia ZZ Black Plant (ZZ Raven) in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 12-16 inches (including pot) | Pot Diameter: 5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["rare-plants", "low-light", "collector", "statement-plant"],
-  },
-
-  {
-    id: "plant-peace-lily-pure",
-    slug: "peace-lily-spathiphyllum",
-    name: "Peace Lily Plant",
-    botanicalName: "Spathiphyllum wallisii",
-    category: "plants",
-    subcategory: "Flowering",
-    price: 299,
-    originalPrice: 399,
-    rating: 4.8,
-    reviewCount: 178,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 26,
-    shortDescription: "Graceful ribbed emerald foliage paired with pristine porcelain-white flower spathes.",
-    description: "Among the most beloved flowering indoor plants, Peace Lilies bring serene purity to any room. Celebrated for its dramatic communication (drooping softly when thirsty and perking up within an hour of water), it serves as a natural indoor humidity regulator and air filter.",
-    images: [
-      "/images/plants/peace-lily-plant-set-of-2-31818398957700.jpg",
-      "/images/plants/peace-lily-plant-set-of-2-31818401185924.jpg",
-      "/images/plants/peace-lily-plant-set-of-2-31818401218692.jpg",
-    ],
-    careGuide: {
-      light: "Medium Light",
-      lightDetail: "Flourishes in medium to low indirect light. Direct sun causes leaf scorch.",
-      watering: "Weekly",
-      wateringDetail: "Keep soil evenly moist. Water as soon as the top inch feels dry or when leaves start drooping.",
-      humidity: "High (Misting Helpful)",
-      petFriendly: false,
-      petNote: "Toxic to pets; keep off floor levels.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Living Room Coffee Table", "Bathroom Counter", "Study Corner"],
-      feed: "Feed every 4 weeks during spring and monsoon with a mild bloom booster.",
-      repotting: "Repot annually in spring with rich, moisture-retentive potting mix.",
-      commonIssues: "Brown tips occur from fluoride in hard tap water; use filtered or rested water.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Peace Lily Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 12-15 inches (including pot) | Pot Diameter: 5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["flowering", "air-purifying", "living-room", "bestseller"],
-  },
-
-  {
-    id: "plant-calathea-orbifolia",
-    slug: "calathea-orbifolia-medium",
-    name: "Calathea Orbifolia Medium",
-    botanicalName: "Goeppertia orbifolia",
-    category: "plants",
-    subcategory: "Pet-Safe",
-    price: 599,
-    originalPrice: 799,
-    rating: 4.7,
-    reviewCount: 73,
-    isBestseller: false,
-    isNew: true,
-    isBeginnerFriendly: false,
-    isPetSafe: true,
-    inStock: true,
-    stockCount: 15,
-    shortDescription: "Spectacular circular foliage striped with metallic silver brushstrokes. 100% pet-safe.",
-    description: "One of the most sought-after prayer plants from the tropical understory of Bolivia. Calathea Orbifolia commands attention with broad, plate-like circular leaves etched with delicate silver pin-striping that fold upward gracefully in evening reverence.",
-    images: [
-      "/images/plants/calathea-orbifolia-medium-31778201370756.jpg",
-      "/images/plants/calathea-orbifolia-medium-31778201403524.jpg",
-      "/images/plants/calathea-orbifolia-medium-31778201436292.jpg",
-      "/images/plants/calathea-orbifolia-medium-31778201469060.jpg",
-    ],
-    careGuide: {
-      light: "Bright Indirect",
-      lightDetail: "Requires soft, diffused indirect daylight. Never place in harsh direct beams.",
-      watering: "Weekly",
-      wateringDetail: "Maintain consistently lightly moist soil; never let it dry out completely.",
-      humidity: "High (Misting Helpful)",
-      petFriendly: true,
-      petNote: "Completely non-toxic and 100% safe for cats and dogs.",
-      difficulty: "Moderate Care",
-      idealPlacement: ["Humid Master Bathroom", "Living Room Console", "Bedroom Stand"],
-      feed: "Feed monthly in spring with diluted organic seaweed extract.",
-      repotting: "Repot gently every 18 months using a peat-perlite airy mix.",
-      commonIssues: "Crispy edges signal low humidity or hard tap water. Mist frequently.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Calathea Orbifolia Medium in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 12-16 inches (including pot) | Pot Diameter: 6 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["pet-safe", "statement-plant", "air-purifying", "prayer-plant"],
-  },
-
-  {
-    id: "plant-areca-palm-classic",
-    slug: "areca-palm-indoor-air-purifier",
-    name: "Areca Palm Plant",
-    botanicalName: "Dypsis lutescens",
-    category: "plants",
-    subcategory: "Large Floor Plants",
-    price: 299,
-    originalPrice: 399,
-    rating: 4.8,
-    reviewCount: 160,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: true,
-    inStock: true,
-    stockCount: 28,
-    shortDescription: "Feathery golden cane palm fronds that introduce tropical relaxation and natural humidity.",
-    description: "Known as the Golden Cane Palm, the Areca Palm is the undisputed champion of indoor tropical ambience. Its arching, delicate feather-like fronds soften rigid room corners while transpiring nearly a litre of moisture daily into dry, air-conditioned rooms.",
-    images: [
-      "/images/plants/areca-palm-plant-31828365279364.jpg",
-      "/images/plants/areca-palm-plant-31828365312132.jpg",
-      "/images/plants/areca-palm-plant-31828365377668.jpg",
-      "/images/plants/areca-palm-plant-31828365410436.jpg",
-    ],
-    careGuide: {
-      light: "Bright Indirect",
-      lightDetail: "Thrives best in bright filtered light; tolerates medium light well.",
-      watering: "When Top 2 Inches Dry",
-      wateringDetail: "Water thoroughly once the top 2 inches feel dry. Keep roots evenly moist.",
-      humidity: "High (Misting Helpful)",
-      petFriendly: true,
-      petNote: "Certified non-toxic to all companion pets.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Living Room Corner", "Office Reception", "Balcony Foyer"],
-      feed: "Apply slow-release organic fertilizer every 2 months during the growing season.",
-      repotting: "Repot every 2 to 3 years when roots crowd the container.",
-      commonIssues: "Brown leaf tips are natural with older fronds; trim neatly with clean shears.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-m",
-                      "name": "Mature Floor (18-24 inches)",
-                      "heightGuide": "Well-branched architectural foliage",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-l",
-                      "name": "Statement Specimen (30-38 inches)",
-                      "heightGuide": "Towering statement floor piece",
-                      "priceModifier": 600
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Areca Palm Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 24-30 inches (including pot) | Pot Diameter: 7 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["pet-safe", "air-purifying", "floor-plant", "tropical", "bestseller"],
-  },
-
-  {
-    id: "plant-satin-pothos",
-    slug: "satin-pothos-scindapsus-pictus",
-    name: "Satin Pothos Argyraeus",
-    botanicalName: "Scindapsus pictus 'Argyraeus'",
-    category: "plants",
-    subcategory: "Air Purifying",
-    price: 299,
-    originalPrice: 399,
-    rating: 4.9,
-    reviewCount: 139,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 35,
-    shortDescription: "Heart-shaped velvety matte leaves brushed with iridescent silver specks. Cascades gorgeously.",
-    description: "Satin Pothos Argyraeus is one of the most tactile trailing indoor vines. Its heart-shaped foliage features a velvety matte texture dappled with metallic silver speckles that shimmer in soft daylight, cascading down bookshelves and macrame planters.",
-    images: [
-      "/images/plants/satin-pothos-argyraeus-31792719036548.jpg",
-      "/images/plants/satin-pothos-argyraeus-31792719069316.jpg",
-      "/images/plants/satin-pothos-argyraeus-31792719134852.jpg",
-      "/images/plants/satin-pothos-argyraeus-32076152438916.jpg",
-    ],
-    careGuide: {
-      light: "Medium Light",
-      lightDetail: "Prefers medium to bright indirect light to maintain its vivid silver variegation.",
-      watering: "When Top 2 Inches Dry",
-      wateringDetail: "Allow the top half of soil to dry out between waterings. Leaves curl when thirsty.",
-      humidity: "Average Home",
-      petFriendly: false,
-      petNote: "Contains calcium oxalates; keep elevated on floating shelves.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["High Bookshelf Edge", "Hanging Macrame", "Cabinet Top"],
-      feed: "Feed monthly with balanced foliage fertilizer during summer.",
-      repotting: "Repot every 2 years into a hanging pot or tabletop pot with trellis.",
-      commonIssues: "Leaves curl inwards when dehydrated; water deeply to revive.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Satin Pothos Argyraeus in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Trailing vine: 10-14 inches vine length | Pot Diameter: 4.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["trailing-plant", "hanging-plant", "air-purifying", "bookshelf", "bestseller"],
-  },
-
-  {
-    id: "plant-money-plant-golden",
-    slug: "golden-money-plant-epipremnum",
-    name: "Golden Money Plant (Pothos)",
-    botanicalName: "Epipremnum aureum",
-    category: "plants",
-    subcategory: "Air Purifying",
-    price: 299,
-    originalPrice: 399,
-    rating: 4.9,
-    reviewCount: 240,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 45,
-    shortDescription: "The classic auspicious indoor vine with heart-shaped golden-splashed leaves that thrives everywhere.",
-    description: "The quintessential Indian houseplant, Golden Money Plant brings prosperous energy, vibrant green vitality, and legendary resilience to homes. It cascades gracefully from shelves or climbs vigorously up moss poles, absorbing household toxins with ease.",
-    images: [
-      "/images/plants/money-plant-golden-31774507368580.jpg",
-      "/images/plants/money-plant-golden-31774507401348.jpg",
-      "/images/plants/money-plant-golden-31774507565188.jpg",
-      "/images/plants/money-plant-golden-32076256379012.jpg",
-    ],
-    careGuide: {
-      light: "Low Light",
-      lightDetail: "Highly versatile; flourishes anywhere from low light to bright indirect sunshine.",
-      watering: "Weekly",
-      wateringDetail: "Water when top 1-2 inches of soil are dry. Very forgiving of occasional neglect.",
-      humidity: "Average Home",
-      petFriendly: false,
-      petNote: "Keep out of reach of cats and dogs.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Study Desk", "Balcony Trellis", "Living Room Wall Unit"],
-      feed: "Feed every 4 weeks in growing season with organic vermicompost.",
-      repotting: "Repot every 2 years or propagate freely in water vases.",
-      commonIssues: "Yellowing leaves can result from old age or excessive standing water.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Golden Money Plant (Pothos) in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 10-14 inches | Pot Diameter: 4.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["air-purifying", "trailing", "auspicious", "beginner-friendly", "bestseller"],
-  },
-
-  {
-    id: "plant-money-plant-variegated",
-    slug: "variegated-money-plant-marble",
-    name: "Variegated Money Plant",
-    botanicalName: "Epipremnum aureum 'Variegata'",
-    category: "plants",
-    subcategory: "Air Purifying",
-    price: 329,
-    originalPrice: 449,
-    rating: 4.8,
-    reviewCount: 115,
-    isBestseller: false,
-    isNew: true,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 20,
-    shortDescription: "Marbled creamy-white and emerald trailing vines that brighten compact desk and shelf corners.",
-    description: "A striking variegated variant of the classic money plant featuring splashes and brushstrokes of cream and ivory on rich forest green foliage. Perfect for adding high-contrast visual texture to modern indoor plant collections.",
-    images: [
-      "/images/plants/money-plant-variegated-31808468549764.jpg",
-      "/images/plants/money-plant-variegated-31808468648068.jpg",
-      "/images/plants/money-plant-variegated-31808468811908.jpg",
-      "/images/plants/money-plant-variegated-32076245336196.jpg",
-    ],
-    careGuide: {
-      light: "Bright Indirect",
-      lightDetail: "Requires medium to bright indirect light to preserve its bright white marbling.",
-      watering: "Weekly",
-      wateringDetail: "Water when the top 2 inches dry out completely.",
-      humidity: "Average Home",
-      petFriendly: false,
-      petNote: "Contains oxalates; place elevated.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Bookshelf Edge", "Kitchen Island", "Study Desk"],
-      feed: "Feed once monthly during monsoon with seaweed foliage tonic.",
-      repotting: "Repot every 18-24 months into fresh potting soil.",
-      commonIssues: "Loss of white variegation indicates insufficient indirect daylight.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Variegated Money Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 10-12 inches | Pot Diameter: 4.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["trailing", "variegated", "air-purifying", "tabletop"],
-  },
-
-  {
-    id: "plant-jade-mini-bonsai",
-    slug: "jade-plant-mini-crassula-ovata",
-    name: "Jade Plant Mini",
-    botanicalName: "Crassula ovata",
-    category: "plants",
-    subcategory: "Succulents & Cacti",
-    price: 249,
-    originalPrice: 349,
-    rating: 4.8,
-    reviewCount: 192,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 38,
-    shortDescription: "Auspicious 'Dollar Plant' with plump jade-green teardrop leaves symbolizing fortune and growth.",
-    description: "Known in Vastu and Feng Shui as the quintessential Money Tree or Friendship Plant, the miniature Jade Plant is a succulent treasure. Its plump, coin-shaped jade leaves store moisture effortlessly, forming thick woody miniature tree trunks over time.",
-    images: [
-      "/images/plants/jade-plant-mini-31800078172292.jpg",
-      "/images/plants/jade-plant-mini-31800078565508.jpg",
-      "/images/plants/jade-plant-mini-32065298858116.jpg",
-    ],
-    careGuide: {
-      light: "Bright Indirect",
-      lightDetail: "Thrives on sun-drenched sills and bright windows. Welcomes 2-3 hours of direct morning sun.",
-      watering: "Every 10-14 Days",
-      wateringDetail: "Water thoroughly only after potting mix is completely dry. Less is more.",
-      humidity: "Tolerant of Dry Air",
-      petFriendly: false,
-      petNote: "Keep out of reach of household pets.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["South/East Facing Sill", "Home Office Desk", "Balcony Shelf"],
-      feed: "Feed once every 6-8 weeks with mild succulent fertilizer in summer.",
-      repotting: "Repot every 2-3 years into a heavy terracotta pot with fast-draining gritty mix.",
-      commonIssues: "Soft, shriveled leaves mean underwatering; yellow translucent dropping leaves mean overwatering.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (4-6 inches)",
-                      "heightGuide": "Ideal for sunny sills and desk corners",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Established (7-9 inches)",
-                      "heightGuide": "Plump multi-stem specimen",
-                      "priceModifier": 120
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Jade Plant Mini in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 6-8 inches (including pot) | Pot Diameter: 4 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["succulent", "auspicious", "vastu", "desk-plant", "bestseller"],
-  },
-
-  {
-    id: "plant-variegated-jade-mini",
-    slug: "variegated-jade-mini-plant",
-    name: "Variegated Jade Mini Plant",
-    botanicalName: "Portulacaria afra 'Variegata'",
-    category: "plants",
-    subcategory: "Succulents & Cacti",
-    price: 299,
-    originalPrice: 399,
-    rating: 4.9,
-    reviewCount: 87,
-    isBestseller: false,
-    isNew: true,
-    isBeginnerFriendly: true,
-    isPetSafe: true,
-    inStock: true,
-    stockCount: 22,
-    shortDescription: "Charming rainbow elephant bush with magenta-tinged stems and creamy edged succulent foliage.",
-    description: "Also cherished as the Rainbow Elephant Bush, this delightful miniature succulent displays reddish-pink branching stems clad in tiny cream-and-green variegated leaves. Naturally drought-hardy and an exceptional carbon sponge.",
-    images: [
-      "/images/plants/variegated-jade-mini-plant-32125253910660.jpg",
-      "/images/plants/variegated-jade-mini-plant-32125253943428.jpg",
-      "/images/plants/variegated-jade-mini-plant-32125253976196.jpg",
-      "/images/plants/variegated-jade-mini-plant-32125254041732.jpg",
-    ],
-    careGuide: {
-      light: "Bright Indirect",
-      lightDetail: "Prefers bright light with gentle morning sun to maintain vivid pink stem accents.",
-      watering: "Every 10-14 Days",
-      wateringDetail: "Water only when soil is bone dry. Prone to root rot in soggy soil.",
-      humidity: "Tolerant of Dry Air",
-      petFriendly: true,
-      petNote: "Safe and non-toxic for domestic animals.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Sunny Window Ledge", "Workstation Table", "Living Room Balcony"],
-      feed: "Feed twice a year with organic cactus & succulent fertilizer.",
-      repotting: "Repot into shallow succulent planters with volcanic pumice and coarse sand.",
-      commonIssues: "Leaf drop occurs if overwatered in poorly draining soil.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (4-6 inches)",
-                      "heightGuide": "Ideal for sunny sills and desk corners",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Established (7-9 inches)",
-                      "heightGuide": "Plump multi-stem specimen",
-                      "priceModifier": 120
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Variegated Jade Mini Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 6-8 inches (including pot) | Pot Diameter: 4 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["succulent", "pet-safe", "variegated", "tabletop"],
-  },
-
-  {
-    id: "plant-aglaonema-pink",
-    slug: "aglaonema-pink-beauty-plant",
-    name: "Aglaonema Pink Beauty Plant",
-    botanicalName: "Aglaonema commutatum 'Pink Beauty'",
-    category: "plants",
-    subcategory: "Air Purifying",
-    price: 499,
-    originalPrice: 699,
-    rating: 4.9,
-    reviewCount: 142,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 25,
-    shortDescription: "Pastel pink foliage with olive green speckling. The most colorful low-maintenance indoor plant.",
-    description: "Chinese Evergreens (Aglaonema) are celebrated as the crown jewels of colorful foliage. The Pink Beauty cultivar showcases lush pastel pink center leaves framed by deep forest-green margins, thriving effortlessly in indoor ambient conditions.",
+    shortDescription: "Lush, healthy Aglaonema Pink Beauty Plant - Medium acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Aglaonema Pink Beauty Plant - Medium (Aglaonema commutatum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
       "/images/plants/aglaonema-pink-beauty-plant-32220868247684.jpg",
       "/images/plants/aglaonema-pink-beauty-plant-32220868542596.jpg",
       "/images/plants/aglaonema-pink-beauty-plant-32220868608132.jpg",
-      "/images/plants/aglaonema-pink-beauty-plant-32220868673668.jpg",
-    ],
+      "/images/plants/aglaonema-pink-beauty-plant-32220868673668.jpg"
+],
     careGuide: {
       light: "Low Light",
-      lightDetail: "Performs remarkably in low to medium indirect light. Keeps pink colors bright near soft light.",
-      watering: "Weekly",
-      wateringDetail: "Water once every 7 to 10 days when the top 2 inches dry out.",
-      humidity: "Average Home",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
       petFriendly: false,
-      petNote: "Keep away from chewing cats or dogs.",
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
       difficulty: "Beginner Friendly",
-      idealPlacement: ["Living Room Credenza", "Bedside Table", "Office Reception"],
-      feed: "Feed once monthly during monsoon with seaweed foliage tonic.",
-      repotting: "Repot every 2 years in fresh well-draining potting mixture.",
-      commonIssues: "Yellowing leaves indicate overwatering; brown tips indicate dry AC drafts.",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized Aglaonema Pink Beauty Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Height: 10-14 inches (including pot) | Pot Diameter: 5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["colorful-foliage", "air-purifying", "low-light", "bestseller"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "beginner-friendly"],
   },
-
   {
     id: "plant-aglaonema-red",
     slug: "aglaonema-red-plant",
-    name: "Aglaonema Red Plant (Red Anjamani)",
-    botanicalName: "Aglaonema commutatum 'Red Valentine'",
+    name: "Aglaonema Red Plant",
+    botanicalName: "Aglaonema commutatum",
     category: "plants",
-    subcategory: "Air Purifying",
-    price: 499,
-    originalPrice: 699,
-    rating: 4.8,
-    reviewCount: 98,
+    subcategory: "Low Light Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.9,
+    reviewCount: 22,
     isBestseller: false,
-    isNew: true,
+    isNew: false,
     isBeginnerFriendly: true,
     isPetSafe: false,
     inStock: true,
-    stockCount: 19,
-    shortDescription: "Crimson red leaves edged with dark green. Vibrant living accent for interior living spaces.",
-    description: "Aglaonema Red brings fiery crimson radiance directly into indoor rooms without requiring harsh sunlight. Its thick, waxy foliage purifies indoor air of benzene and formaldehyde while needing very little attention.",
+    stockCount: 12,
+    shortDescription: "Lush, healthy Aglaonema Red Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Aglaonema Red Plant (Aglaonema commutatum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
       "/images/plants/aglaonema-red-plant-32220893053060.jpg",
       "/images/plants/aglaonema-red-plant-32220893544580.jpg",
-      "/images/plants/aglaonema-red-plant-32220894953604.jpg",
-    ],
-    careGuide: {
-      light: "Medium Light",
-      lightDetail: "Medium to bright indirect light helps retain the intense crimson leaf saturation.",
-      watering: "Weekly",
-      wateringDetail: "Water when top 1-2 inches are dry. Avoid waterlogged soil.",
-      humidity: "Average Home",
-      petFriendly: false,
-      petNote: "Contains calcium oxalate crystals.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Dining Table Centerpiece", "Living Room Coffee Table", "Study Room"],
-      feed: "Feed once every 4 weeks in warm months with organic liquid fertilizer.",
-      repotting: "Repot every 2 years.",
-      commonIssues: "Drooping foliage usually resolves after a thorough bottom soak.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Aglaonema Red Plant (Red Anjamani) in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 10-13 inches (including pot) | Pot Diameter: 5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["colorful-foliage", "air-purifying", "low-light", "tabletop"],
-  },
-
-  {
-    id: "plant-aglaonema-cutlass",
-    slug: "aglaonema-cutlass-plant",
-    name: "Aglaonema Cutlass Plant",
-    botanicalName: "Aglaonema 'Cutlass'",
-    category: "plants",
-    subcategory: "Air Purifying",
-    price: 499,
-    originalPrice: 699,
-    rating: 4.8,
-    reviewCount: 65,
-    isBestseller: false,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 16,
-    shortDescription: "Slender dagger-like silvery pale green leaves with dark green center veins and margins.",
-    description: "The Cutlass Chinese Evergreen is distinguished by its narrow, sword-like silver-green blades that sprout in dense clusters. Unmatched for low-light endurance and modern minimalist aesthetics.",
-    images: [
-      "/images/plants/aglaonema-cutlass-plant-32220863168644.jpg",
-      "/images/plants/aglaonema-cutlass-plant-32220863266948.jpg",
-      "/images/plants/aglaonema-cutlass-plant-32220863332484.jpg",
-      "/images/plants/aglaonema-cutlass-plant-32220863430788.jpg",
-    ],
+      "/images/plants/aglaonema-red-plant-32220894953604.jpg"
+],
     careGuide: {
       light: "Low Light",
-      lightDetail: "Survives in low light corners as well as fluorescent office lighting.",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
       watering: "Every 10-14 Days",
-      wateringDetail: "Allow soil to dry halfway down before watering.",
-      humidity: "Average Home",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
       petFriendly: false,
-      petNote: "Mildly toxic to pets.",
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
       difficulty: "Beginner Friendly",
-      idealPlacement: ["Office Desk", "Corner Plant Stand", "Hallway Console"],
-      feed: "Feed every 6 weeks during spring and monsoon.",
-      repotting: "Repot every 2-3 years.",
-      commonIssues: "Root rot from soggy soil; make sure pot drains cleanly.",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized Aglaonema Cutlass Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Height: 11-14 inches (including pot) | Pot Diameter: 5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["air-purifying", "low-light", "architectural", "tabletop"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "beginner-friendly"],
   },
-
   {
-    id: "plant-rubber-plant-burgundy",
-    slug: "rubber-plant-burgundy-ficus-elastica",
-    name: "Rubber Plant Burgundy",
-    botanicalName: "Ficus elastica 'Burgundy'",
-    category: "plants",
-    subcategory: "Large Floor Plants",
-    price: 549,
-    originalPrice: 699,
-    rating: 4.8,
-    reviewCount: 134,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 18,
-    shortDescription: "Deep burgundy-bronze glossy leaves with ruby-red leaf sheaths. Dramatic architectural statement.",
-    description: "Ficus Elastica Burgundy is an imposing ornamental indoor tree. Its thick, leathery leaves emerge wrapped in fiery crimson sheaths, unfurling into dark bronze-green foliage with a natural lacquered sheen.",
-    images: [
-      "/images/plants/rubber-plant-31800175526020.jpg",
-      "/images/plants/rubber-plant-31800175558788.jpg",
-      "/images/plants/rubber-plant-31800175624324.jpg",
-      "/images/plants/rubber-plant-31800175755396.jpg",
-    ],
-    careGuide: {
-      light: "Bright Indirect",
-      lightDetail: "Needs bright indirect light to preserve the deep rich burgundy tones.",
-      watering: "When Top 2 Inches Dry",
-      wateringDetail: "Water thoroughly once the top 2 inches dry out. Reduce watering in winter.",
-      humidity: "Average Home",
-      petFriendly: false,
-      petNote: "Milky latex sap can irritate skin and cause mild pet toxicity.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Living Room Corner", "Study Balcony", "Entry Foyer"],
-      feed: "Feed monthly in spring and monsoon with seaweed foliar tonic.",
-      repotting: "Repot every 2 years into a heavy clay planter.",
-      commonIssues: "Dust accumulation reduces photosynthesis; wipe leaves with a damp cloth monthly.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-m",
-                      "name": "Mature Floor (18-24 inches)",
-                      "heightGuide": "Well-branched architectural foliage",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-l",
-                      "name": "Statement Specimen (30-38 inches)",
-                      "heightGuide": "Towering statement floor piece",
-                      "priceModifier": 600
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Rubber Plant Burgundy in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 18-24 inches (including pot) | Pot Diameter: 6.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["statement-plant", "living-room", "air-purifying", "bestseller"],
-  },
-
-  {
-    id: "plant-anthurium-red",
-    slug: "anthurium-red-flowering-plant",
-    name: "Anthurium Red Plant",
-    botanicalName: "Anthurium andraeanum",
-    category: "plants",
-    subcategory: "Flowering",
-    price: 699,
-    originalPrice: 899,
-    rating: 4.9,
-    reviewCount: 104,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 20,
-    shortDescription: "Heart-shaped glossy red spathes with yellow spadix blooms that last up to 8 weeks per flower.",
-    description: "The Red Anthurium, or Flamingo Flower, is NASA's top air-purifying flowering plant. Its waxy lacquer-red heart spathes remain vibrant for months, contrasting magnificently against lush arrow-shaped dark emerald foliage.",
-    images: [
-      "/images/plants/anthurium-red-plant-31798804414596.jpg",
-      "/images/plants/anthurium-red-plant-31798804480132.jpg",
-      "/images/plants/anthurium-red-plant-31798804578436.jpg",
-      "/images/plants/anthurium-red-plant-32076159975556.jpg",
-    ],
-    careGuide: {
-      light: "Bright Indirect",
-      lightDetail: "Bright indirect light encourages continuous blooming throughout the year.",
-      watering: "Weekly",
-      wateringDetail: "Water when the top inch of soil feels dry. Never let potting mix sit waterlogged.",
-      humidity: "High (Misting Helpful)",
-      petFriendly: false,
-      petNote: "Toxic if chewed by pets; keep elevated.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Dining Table Console", "Living Room Coffee Table", "Bright Study"],
-      feed: "Feed every 3 weeks with high-potassium organic bloom tonic.",
-      repotting: "Repot every 2 years with a coarse, airy orchid bark and coco-chip mix.",
-      commonIssues: "Green spathes indicate low light; move closer to filtered daylight.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Anthurium Red Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 14-17 inches (including pot) | Pot Diameter: 5.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["flowering", "air-purifying", "living-room", "bestseller", "gifting"],
-  },
-
-  {
-    id: "plant-anthurium-million-flowers",
-    slug: "anthurium-million-flowers-plant",
-    name: "Anthurium Million Flowers Plant",
-    botanicalName: "Anthurium andraeanum 'Million Flowers'",
-    category: "plants",
-    subcategory: "Flowering",
-    price: 749,
-    originalPrice: 999,
-    rating: 4.9,
-    reviewCount: 78,
-    isBestseller: false,
-    isNew: true,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 15,
-    shortDescription: "Prolific blooming dwarf anthurium covered in multiple vibrant scarlet blooms simultaneously.",
-    description: "Anthurium Million Flowers is celebrated for its dense, bushy growth habit and phenomenal flower count. Rather than producing 2-3 blooms at a time, it reliably displays a profusion of bright red flowers against deep green foliage.",
-    images: [
-      "/images/plants/anthurium-million-flowers-31911038713988.jpg",
-      "/images/plants/anthurium-million-flowers-31911038746756.jpg",
-      "/images/plants/anthurium-million-flowers-31911038779524.jpg",
-      "/images/plants/anthurium-million-flowers-31911038812292.jpg",
-    ],
-    careGuide: {
-      light: "Bright Indirect",
-      lightDetail: "Thrives best with generous indirect sunlight near east-facing windows.",
-      watering: "Weekly",
-      wateringDetail: "Keep root zone evenly moist without standing in excess water.",
-      humidity: "High (Misting Helpful)",
-      petFriendly: false,
-      petNote: "Toxic to companion animals.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Coffee Table Centerpiece", "Office Desk", "Bedroom Window Stand"],
-      feed: "Feed every 3 weeks with flowering plant nutrient solution.",
-      repotting: "Repot every 2 years into fresh airy soil mix.",
-      commonIssues: "Yellowing leaves mean root saturation; ensure drainage hole remains clear.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Anthurium Million Flowers Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 12-15 inches (including pot) | Pot Diameter: 5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["flowering", "prolific-blooms", "air-purifying", "tabletop"],
-  },
-
-  {
-    id: "plant-spider-chlorophytum",
-    slug: "chlorophytum-spider-plant",
-    name: "Chlorophytum Spider Plant",
-    botanicalName: "Chlorophytum comosum",
-    category: "plants",
-    subcategory: "Air Purifying",
-    price: 249,
-    originalPrice: 349,
-    rating: 4.9,
-    reviewCount: 164,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: true,
-    inStock: true,
-    stockCount: 35,
-    shortDescription: "Fountain-like arching ribbon foliage that produces baby spiderettes. 100% pet-safe.",
-    description: "The Spider Plant is one of the most resilient, forgiving, and pet-friendly indoor houseplants ever discovered. Its arching ribbon leaves boast bright ivory center bands edged with lime green, shooting out long runners bearing miniature plantlets.",
-    images: [
-      "/images/plants/chlorophytum-spider-plant-31800232607876.jpg",
-      "/images/plants/chlorophytum-spider-plant-31800232738948.jpg",
-      "/images/plants/chlorophytum-spider-plant-32065401159812.jpg",
-    ],
-    careGuide: {
-      light: "Medium Light",
-      lightDetail: "Thrives in moderate to bright indirect light. Avoid scorching direct sun.",
-      watering: "Weekly",
-      wateringDetail: "Water when the top 1 inch dries out. Tolerates missed waterings effortlessly.",
-      humidity: "Average Home",
-      petFriendly: true,
-      petNote: "100% certified non-toxic and pet-safe for cats and dogs.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Hanging Macrame", "Study Bookshelf", "Kids Bedroom Desk"],
-      feed: "Feed once a month in warm season with mild liquid organic fertilizer.",
-      repotting: "Repot annually or propagate runner spiderettes in water.",
-      commonIssues: "Brown leaf tips from tap chlorine; use filtered water or trim tips.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Chlorophytum Spider Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 8-11 inches (including pot) | Pot Diameter: 4.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["pet-safe", "air-purifying", "hanging-plant", "beginner-friendly", "bestseller"],
-  },
-
-  {
-    id: "plant-ficus-bonsai",
-    slug: "ficus-bonsai-plant-medium",
-    name: "Ficus Bonsai Plant",
-    botanicalName: "Ficus microcarpa (Ginseng)",
+    id: "plant-aloe-blizzard-plant",
+    slug: "aloe-blizzard-plant",
+    name: "Aloe Blizzard Plant",
+    botanicalName: "Aloe barbadensis miller",
     category: "plants",
     subcategory: "Succulents & Cacti",
-    price: 749,
-    originalPrice: 999,
-    rating: 4.8,
-    reviewCount: 118,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 16,
-    shortDescription: "Living sculptural miniature tree with thick aerial banyan roots and dense emerald canopy.",
-    description: "Trained with traditional bonsai techniques, Ficus Microcarpa features thick, sculptural bulbous roots that elevate above the soil line like ancient banyan trunks. Topped with a dense crown of deep green glossy leaves, it infuses zen tranquility into home and office spaces.",
-    images: [
-      "/images/plants/ficus-bonsai-plant-31792241410180.jpg",
-      "/images/plants/ficus-bonsai-plant-31792241508484.jpg",
-      "/images/plants/ficus-bonsai-plant-31792241606788.jpg",
-      "/images/plants/ficus-bonsai-plant-31792241803396.jpg",
-    ],
-    careGuide: {
-      light: "Bright Indirect",
-      lightDetail: "Requires bright indirect daylight; enjoys 2-3 hours of gentle morning sun.",
-      watering: "Weekly",
-      wateringDetail: "Water thoroughly when top soil dries out. Avoid completely drying out.",
-      humidity: "High (Misting Helpful)",
-      petFriendly: false,
-      petNote: "Keep out of reach of curious cats and dogs.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Zen Meditation Room", "Workstation Credenza", "Living Room Centerpiece"],
-      feed: "Feed every 4 weeks with organic bonsai plant food during active growth.",
-      repotting: "Repot every 2-3 years into a shallow bonsai container with root trimming.",
-      commonIssues: "Leaf drop can occur when moved suddenly; keep in a consistent bright location.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (4-6 inches)",
-                      "heightGuide": "Ideal for sunny sills and desk corners",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Established (7-9 inches)",
-                      "heightGuide": "Plump multi-stem specimen",
-                      "priceModifier": 120
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Ficus Bonsai Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 12-16 inches (including pot) | Pot Diameter: 6 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["bonsai", "zen", "statement-plant", "desk-plant", "bestseller"],
-  },
-
-  {
-    id: "plant-fittonia-nerve",
-    slug: "fittonia-green-nerve-plant",
-    name: "Fittonia Green Nerve Plant",
-    botanicalName: "Fittonia albivenis",
-    category: "plants",
-    subcategory: "Low Light",
-    price: 249,
-    originalPrice: 349,
-    rating: 4.8,
-    reviewCount: 94,
+    price: 399,
+    originalPrice: 549,
+    rating: 4.83,
+    reviewCount: 47,
     isBestseller: false,
     isNew: false,
     isBeginnerFriendly: true,
-    isPetSafe: true,
+    isPetSafe: false,
     inStock: true,
     stockCount: 28,
-    shortDescription: "Intricate mosaic white veins tracing deep forest-green leaves. Perfect terrarium companion.",
-    description: "Fittonia, fondly named the Nerve Plant or Mosaic Plant, is a compact rainforest understory groundcover from South America. Its leaves feature delicate silver-white web-like venation, making it a favorite for desktop planters and glass terrariums.",
+    shortDescription: "Lush, healthy Aloe Blizzard Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Aloe Blizzard Plant (Aloe barbadensis miller) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
-      "/images/plants/fittonia-green-plant-nerve-plant-31774473027716.jpg",
-      "/images/plants/fittonia-green-plant-nerve-plant-31774473060484.jpg",
-      "/images/plants/fittonia-green-plant-nerve-plant-31774473158788.jpg",
-      "/images/plants/fittonia-green-plant-nerve-plant-32076090540164.jpg",
-    ],
+      "/images/plants/aloe-blizzard-plant-31773915742340.jpg",
+      "/images/plants/aloe-blizzard-plant-31773915775108.jpg",
+      "/images/plants/aloe-blizzard-plant-31773915807876.jpg",
+      "/images/plants/aloe-blizzard-plant-31773915840644.jpg"
+],
     careGuide: {
-      light: "Low Light",
-      lightDetail: "Thrives in medium to low indirect light. Direct sun bleaches and scorches leaves.",
-      watering: "Every 2-3 Days",
-      wateringDetail: "Enjoys consistently moist soil. Faints dramatically when thirsty, perking back up within an hour of watering.",
-      humidity: "High (Misting Helpful)",
-      petFriendly: true,
-      petNote: "100% pet-friendly and non-toxic.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Desk Terrarium", "Bathroom Sill", "Bookshelf"],
-      feed: "Feed monthly with diluted liquid plant food during monsoon.",
-      repotting: "Repot every 18 months into shallow containers.",
-      commonIssues: "Wilting indicates dry soil; water immediately to revive.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Fittonia Green Nerve Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 4-6 inches (including pot) | Pot Diameter: 3.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["pet-safe", "terrarium", "tabletop", "low-light"],
-  },
-
-  {
-    id: "plant-fittonia-pink",
-    slug: "fittonia-pink-nerve-plant",
-    name: "Fittonia Pink Plant",
-    botanicalName: "Fittonia albivenis 'Pink Forest Flame'",
-    category: "plants",
-    subcategory: "Low Light",
-    price: 249,
-    originalPrice: 349,
-    rating: 4.9,
-    reviewCount: 76,
-    isBestseller: false,
-    isNew: true,
-    isBeginnerFriendly: true,
-    isPetSafe: true,
-    inStock: true,
-    stockCount: 24,
-    shortDescription: "Bright magenta-pink netted venation over olive-green foliage. Eye-catching tabletop gem.",
-    description: "The Pink Nerve Plant captivates with electric magenta-pink netted veins that radiate across deep emerald leaves. It thrives in high indoor humidity and adds a splash of color to small desks, terrariums, and windowsills.",
-    images: [
-      "/images/plants/fittonia-pink-plant-31793595613316.jpg",
-      "/images/plants/fittonia-pink-plant-31793595646084.jpg",
-      "/images/plants/fittonia-pink-plant-31793595711620.jpg",
-      "/images/plants/fittonia-pink-plant-31793595744388.jpg",
-    ],
-    careGuide: {
-      light: "Low Light",
-      lightDetail: "Prefers medium indirect light to maintain vibrant pink coloration.",
-      watering: "Every 2-3 Days",
-      wateringDetail: "Keep soil moist but not waterlogged. Mist regularly.",
-      humidity: "High (Misting Helpful)",
-      petFriendly: true,
-      petNote: "Completely non-toxic to cats and dogs.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Work Desk", "Terrarium Bottle", "Bathroom Vanity"],
-      feed: "Feed monthly with diluted seaweed fertilizer in spring.",
-      repotting: "Repot annually into moist organic potting mix.",
-      commonIssues: "Crisp leaves mean low air humidity; mist daily.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Fittonia Pink Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 4-6 inches (including pot) | Pot Diameter: 3.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["pet-safe", "colorful-foliage", "tabletop", "low-light"],
-  },
-
-  {
-    id: "plant-syngonium-pink",
-    slug: "syngonium-pink-arrowhead-plant",
-    name: "Syngonium Pink Plant",
-    botanicalName: "Syngonium podophyllum 'Neon Robusta'",
-    category: "plants",
-    subcategory: "Air Purifying",
-    price: 299,
-    originalPrice: 399,
-    rating: 4.9,
-    reviewCount: 136,
-    isBestseller: true,
-    isNew: false,
-    isBeginnerFriendly: true,
-    isPetSafe: false,
-    inStock: true,
-    stockCount: 30,
-    shortDescription: "Arrowhead-shaped foliage dipped in soft pastel baby pink. Incredibly easy to grow.",
-    description: "The Pink Arrowhead Vine is celebrated for its blush pastel pink arrow-shaped foliage that stays vibrantly colorful without fading. Highly adaptable to Indian household temperatures, it absorbs VOCs and airborne dust.",
-    images: [
-      "/images/plants/syngonium-pink-plant-31792667656324.jpg",
-      "/images/plants/syngonium-pink-plant-31792667721860.jpg",
-      "/images/plants/syngonium-pink-plant-31792667754628.jpg",
-      "/images/plants/syngonium-pink-plant-31792667885700.jpg",
-    ],
-    careGuide: {
-      light: "Medium Light",
-      lightDetail: "Medium to bright indirect light helps retain optimal pink coloration.",
-      watering: "Weekly",
-      wateringDetail: "Water when top 1-2 inches of soil feel dry to the touch.",
-      humidity: "Average Home",
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
       petFriendly: false,
-      petNote: "Keep out of reach of domestic pets.",
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
       difficulty: "Beginner Friendly",
-      idealPlacement: ["Bedside Nightstand", "Living Room Shelf", "Study Desk"],
-      feed: "Feed every 4 weeks in monsoon and summer with organic foliage tonic.",
-      repotting: "Repot every 2 years or insert a moss pole for upright climbing.",
-      commonIssues: "Reversion to green leaves happens if light levels are too dark.",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized Syngonium Pink Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Height: 8-12 inches (including pot) | Pot Diameter: 4.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["colorful-foliage", "air-purifying", "beginner-friendly", "bestseller"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
   },
-
   {
-    id: "plant-syngonium-white-butterfly",
-    slug: "syngonium-white-butterfly-plant",
-    name: "Syngonium White Butterfly Plant",
-    botanicalName: "Syngonium podophyllum 'White Butterfly'",
+    id: "plant-aloe-pepe",
+    slug: "aloe-pepe",
+    name: "Aloe Pepe Plant",
+    botanicalName: "Aloe barbadensis miller",
     category: "plants",
-    subcategory: "Air Purifying",
-    price: 279,
-    originalPrice: 379,
-    rating: 4.8,
+    subcategory: "Succulents & Cacti",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.9,
     reviewCount: 89,
     isBestseller: false,
     isNew: false,
     isBeginnerFriendly: true,
     isPetSafe: false,
     inStock: true,
-    stockCount: 26,
-    shortDescription: "Creamy white butterfly-wing leaves edged with delicate mint green. Lush and bushy.",
-    description: "Syngonium White Butterfly features arrowhead leaves with glowing creamy-white centers outlined by soft jade margins, resembling butterfly wings in flight. One of the top air-purifying indoor foliage selections for modern apartments.",
+    stockCount: 18,
+    shortDescription: "Lush, healthy Aloe Pepe Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Aloe Pepe Plant (Aloe barbadensis miller) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
-      "/images/plants/syngonium-white-butterfly-plant-31792589963396.jpg",
-      "/images/plants/syngonium-white-butterfly-plant-31792589996164.jpg",
-      "/images/plants/syngonium-white-butterfly-plant-31792590028932.jpg",
-      "/images/plants/syngonium-white-butterfly-plant-31792590094468.jpg",
-    ],
-    careGuide: {
-      light: "Medium Light",
-      lightDetail: "Flourishes in medium to bright filtered daylight.",
-      watering: "Weekly",
-      wateringDetail: "Water once every 6 to 8 days as topsoil dries.",
-      humidity: "Average Home",
-      petFriendly: false,
-      petNote: "Mildly toxic to pets.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Work Desk", "Balcony Shelf", "Living Room Table"],
-      feed: "Feed every 4-6 weeks with balanced plant food.",
-      repotting: "Repot every 2 years.",
-      commonIssues: "Pale limp leaves indicate overwatering; allow soil to dry between waterings.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Syngonium White Butterfly Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 8-11 inches (including pot) | Pot Diameter: 4.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["air-purifying", "tabletop", "beginner-friendly", "foliage"],
-  },
-
-  {
-    id: "plant-the-china-doll-xl",
-    slug: "the-china-doll-plant-xl",
-    name: "The China Doll Plant XL",
-    botanicalName: "Radermachera sinica",
-    category: "plants",
-    subcategory: "Large Floor Plants",
-    price: 1499,
-    originalPrice: 1899,
-    rating: 4.8,
-    reviewCount: 62,
-    isBestseller: false,
-    isNew: true,
-    isBeginnerFriendly: false,
-    isPetSafe: true,
-    inStock: true,
-    stockCount: 10,
-    shortDescription: "Stately floor tree with glossy, bipinnate emerald leaflets that create a delicate canopy.",
-    description: "Native to the subtropical mountain forests of southern China and Taiwan, the China Doll is a sophisticated indoor ornamental tree. Its finely divided, lace-like emerald foliage reflects light with an exquisite gloss, bringing architectural elegance to spacious interiors.",
-    images: [
-      "/images/plants/the-china-doll-plant-xl-31799955456132.jpg",
-      "/images/plants/the-china-doll-plant-xl-31799955488900.jpg",
-      "/images/plants/the-china-doll-plant-xl-31799955521668.jpg",
-      "/images/plants/the-china-doll-plant-xl-32075992924292.jpg",
-    ],
+      "/images/plants/aloe-pepe-31911036518532.jpg",
+      "/images/plants/aloe-pepe-31911036584068.jpg",
+      "/images/plants/aloe-pepe-31911036616836.jpg",
+      "/images/plants/aloe-pepe-31911036649604.jpg"
+],
     careGuide: {
       light: "Bright Indirect",
-      lightDetail: "Demands abundant bright indirect sunlight. Rotate regularly for balanced canopy growth.",
-      watering: "Weekly",
-      wateringDetail: "Keep root zone evenly moist; never allow to dry out completely or stand in water.",
-      humidity: "High (Misting Helpful)",
-      petFriendly: true,
-      petNote: "Certified non-toxic and pet safe.",
-      difficulty: "Moderate Care",
-      idealPlacement: ["Spacious Living Room Foyer", "Double Height Window Area", "Executive Office"],
-      feed: "Feed monthly during warm spring and monsoon months with organic foliage fertilizer.",
-      repotting: "Repot every 2 years in a large, weighted ceramic or stone planter.",
-      commonIssues: "Leaf drop occurs if relocated frequently or subjected to dry heating drafts.",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-m",
-                      "name": "Mature Floor (18-24 inches)",
-                      "heightGuide": "Well-branched architectural foliage",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-l",
-                      "name": "Statement Specimen (30-38 inches)",
-                      "heightGuide": "Towering statement floor piece",
-                      "priceModifier": 600
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized The China Doll Plant XL in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Height: 32-38 inches (including pot) | Pot Diameter: 9 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["floor-plant", "statement-plant", "pet-safe", "architectural"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
   },
-
   {
-    id: "plant-zebra-haworthia",
-    slug: "zebra-haworthia-succulent-plant",
-    name: "Zebra Haworthia Plant",
-    botanicalName: "Haworthiopsis fasciata",
+    id: "plant-aloe-vera-green-mini-plant",
+    slug: "aloe-vera-green-mini-plant",
+    name: "Aloe Vera Green Mini",
+    botanicalName: "Aloe barbadensis miller",
     category: "plants",
     subcategory: "Succulents & Cacti",
-    price: 249,
-    originalPrice: 349,
-    rating: 4.9,
-    reviewCount: 145,
-    isBestseller: true,
+    price: 449,
+    originalPrice: 649,
+    rating: 4.92,
+    reviewCount: 87,
+    isBestseller: false,
     isNew: false,
     isBeginnerFriendly: true,
-    isPetSafe: true,
+    isPetSafe: false,
     inStock: true,
-    stockCount: 35,
-    shortDescription: "Miniature rosette succulent studded with raised porcelain-white zebra stripes. Non-toxic.",
-    description: "Zebra Haworthia is a miniature succulent masterpiece. Its upright, dark green pointed leaves are banded horizontally with embossed, chalk-white ridges that resemble zebra stripes. Completely harmless to companion animals.",
+    stockCount: 25,
+    shortDescription: "Lush, healthy Aloe Vera Green Mini acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Aloe Vera Green Mini (Aloe barbadensis miller) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
-      "/images/plants/zebra-haworthia-plant-31791683174532.jpg",
-      "/images/plants/zebra-haworthia-plant-31791683240068.jpg",
-      "/images/plants/zebra-haworthia-plant-31791683272836.jpg",
-      "/images/plants/zebra-haworthia-plant-32076011405444.jpg",
-    ],
+      "/images/plants/aloe-vera-green-mini-plant-31774014144644.jpg",
+      "/images/plants/aloe-vera-green-mini-plant-31774014177412.jpg",
+      "/images/plants/aloe-vera-green-mini-plant-31774014242948.jpg",
+      "/images/plants/aloe-vera-green-mini-plant-31774014275716.jpg"
+],
     careGuide: {
       light: "Bright Indirect",
-      lightDetail: "Thrives on bright windowsills with gentle early sun or bright indirect light.",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
       watering: "Every 10-14 Days",
-      wateringDetail: "Water only after soil dries out thoroughly. Overwatering is the only danger.",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
       humidity: "Tolerant of Dry Air",
-      petFriendly: true,
-      petNote: "100% non-toxic and safe around curious cats and dogs.",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
       difficulty: "Beginner Friendly",
-      idealPlacement: ["Office Desk", "Sunny Sill", "Bookshelf"],
-      feed: "Feed twice a year with diluted succulent tonic.",
-      repotting: "Repot every 2-3 years in gritty cactus potting mix.",
-      commonIssues: "Reddish tinge means intense sun; soft base leaves mean excess moisture.",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (4-6 inches)",
-                      "heightGuide": "Ideal for sunny sills and desk corners",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Established (7-9 inches)",
-                      "heightGuide": "Plump multi-stem specimen",
-                      "priceModifier": 120
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized Zebra Haworthia Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Height: 5-7 inches (including pot) | Pot Diameter: 3.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["succulent", "pet-safe", "tabletop", "bestseller", "low-maintenance"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
   },
-
   {
     id: "plant-aloe-vera-mini",
     slug: "aloe-vera-mini-plant",
@@ -3114,1218 +772,14869 @@ export const products: Product[] = [
     botanicalName: "Aloe barbadensis miller",
     category: "plants",
     subcategory: "Succulents & Cacti",
-    price: 199,
-    originalPrice: 299,
-    rating: 4.9,
-    reviewCount: 188,
-    isBestseller: true,
+    price: 399,
+    originalPrice: 538,
+    rating: 4.85,
+    reviewCount: 93,
+    isBestseller: false,
     isNew: false,
     isBeginnerFriendly: true,
     isPetSafe: false,
     inStock: true,
-    stockCount: 42,
-    shortDescription: "Medicinal healing succulent with thick fleshy spears filled with cooling restorative gel.",
-    description: "The miracle plant of botanical medicine, Aloe Vera is an ancient, drought-tolerant succulent known for its soothing gel. Compact and self-sufficient, it purifies indoor air of benzene while sitting proudly on sunny sills.",
+    stockCount: 20,
+    shortDescription: "Lush, healthy Aloe Vera Mini Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Aloe Vera Mini Plant (Aloe barbadensis miller) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
       "/images/plants/aloe-vera-mini-plant-31774051565700.jpg",
       "/images/plants/aloe-vera-mini-plant-31774051631236.jpg",
       "/images/plants/aloe-vera-mini-plant-31774051664004.jpg",
-      "/images/plants/aloe-vera-mini-plant-31774051696772.jpg",
-    ],
+      "/images/plants/aloe-vera-mini-plant-31774051696772.jpg"
+],
     careGuide: {
       light: "Bright Indirect",
-      lightDetail: "Enjoys bright sunshine. Requires at least 3-4 hours of bright light daily.",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
       watering: "Every 10-14 Days",
-      wateringDetail: "Soak deeply, then allow soil to dry completely before watering again.",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
       humidity: "Tolerant of Dry Air",
       petFriendly: false,
-      petNote: "Latex beneath rind can cause mild digestive upset in animals if chewed.",
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
       difficulty: "Beginner Friendly",
-      idealPlacement: ["Kitchen Window Sill", "Balcony Table", "Sunlit Study Desk"],
-      feed: "Feed once in spring with balanced organic liquid fertilizer.",
-      repotting: "Repot every 2 years into terracotta with gritty soil.",
-      commonIssues: "Brown droopy leaves mean root saturation; ensure pot has unobstructed drainage.",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (4-6 inches)",
-                      "heightGuide": "Ideal for sunny sills and desk corners",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Established (7-9 inches)",
-                      "heightGuide": "Plump multi-stem specimen",
-                      "priceModifier": 120
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized Aloe Vera Mini Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Height: 7-9 inches (including pot) | Pot Diameter: 4 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["succulent", "medicinal", "air-purifying", "bestseller"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
   },
-
   {
-    id: "plant-peacock-calathea",
-    slug: "peacock-plant-calathea-makoyana",
-    name: "Peacock Plant (Calathea Makoyana)",
-    botanicalName: "Calathea makoyana",
+    id: "plant-aloe-vera-star-plant",
+    slug: "aloe-vera-star-plant",
+    name: "Aloe Vera Star",
+    botanicalName: "Aloe barbadensis miller",
     category: "plants",
-    subcategory: "Pet-Safe",
-    price: 499,
-    originalPrice: 649,
-    rating: 4.8,
-    reviewCount: 81,
+    subcategory: "Succulents & Cacti",
+    price: 665,
+    originalPrice: 749,
+    rating: 4.93,
+    reviewCount: 18,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 36,
+    shortDescription: "Lush, healthy Aloe Vera Star acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Aloe Vera Star (Aloe barbadensis miller) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/aloe-vera-star-plant-31774077616260.jpg",
+      "/images/plants/aloe-vera-star-plant-31774077649028.jpg",
+      "/images/plants/aloe-vera-star-plant-31774077681796.jpg",
+      "/images/plants/aloe-vera-star-plant-31774077812868.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-anthurium-million-flowers",
+    slug: "anthurium-million-flowers-plant",
+    name: "Anthurium Million Flowers Plant",
+    botanicalName: "Anthurium andraeanum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.93,
+    reviewCount: 72,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 22,
+    shortDescription: "Lush, healthy Anthurium Million Flowers Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Anthurium Million Flowers Plant (Anthurium andraeanum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/anthurium-million-flowers-31911038713988.jpg",
+      "/images/plants/anthurium-million-flowers-31911038746756.jpg",
+      "/images/plants/anthurium-million-flowers-31911038779524.jpg",
+      "/images/plants/anthurium-million-flowers-31911038812292.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-anthurium-red",
+    slug: "anthurium-red-flowering-plant",
+    name: "Anthurium Red Plant",
+    botanicalName: "Anthurium andraeanum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.86,
+    reviewCount: 100,
+    isBestseller: true,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 36,
+    shortDescription: "Lush, healthy Anthurium Red Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Anthurium Red Plant (Anthurium andraeanum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/anthurium-red-plant-31798804414596.jpg",
+      "/images/plants/anthurium-red-plant-31798804480132.jpg",
+      "/images/plants/anthurium-red-plant-31798804578436.jpg",
+      "/images/plants/anthurium-red-plant-32076159975556.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants", "bestseller"],
+  },
+  {
+    id: "plant-aralia-golden-plant",
+    slug: "aralia-golden-plant",
+    name: "Aralia Golden Plant",
+    botanicalName: "Polyscias fruticosa",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 299,
+    originalPrice: 403,
+    rating: 4.87,
+    reviewCount: 29,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 24,
+    shortDescription: "Lush, healthy Aralia Golden Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Aralia Golden Plant (Polyscias fruticosa) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/aralia-golden-plant-31774150164612.jpg",
+      "/images/plants/aralia-golden-plant-31774150361220.jpg",
+      "/images/plants/aralia-golden-plant-31774150426756.jpg",
+      "/images/plants/aralia-golden-plant-32065308655748.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-aralia-variegated-mini-plant",
+    slug: "aralia-variegated-mini-plant",
+    name: "Aralia Variegated Mini Plant",
+    botanicalName: "Polyscias fruticosa",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 345,
+    originalPrice: 399,
+    rating: 4.83,
+    reviewCount: 62,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 31,
+    shortDescription: "Lush, healthy Aralia Variegated Mini Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Aralia Variegated Mini Plant (Polyscias fruticosa) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/aralia-variegated-mini-plant-31774269243524.jpg",
+      "/images/plants/aralia-variegated-mini-plant-31774269309060.jpg",
+      "/images/plants/aralia-variegated-mini-plant-31774269407364.jpg",
+      "/images/plants/aralia-variegated-mini-plant-31774269603972.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-aralia-variegated-white-plant-mini",
+    slug: "aralia-variegated-white-plant-mini",
+    name: "Aralia Variegated White Plant Mini",
+    botanicalName: "Polyscias fruticosa",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 249,
+    originalPrice: 349,
+    rating: 4.86,
+    reviewCount: 23,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 35,
+    shortDescription: "Lush, healthy Aralia Variegated White Plant Mini acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Aralia Variegated White Plant Mini (Polyscias fruticosa) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/aralia-variegated-white-plant-mini-31774240211076.jpg",
+      "/images/plants/aralia-variegated-white-plant-mini-31774240276612.jpg",
+      "/images/plants/aralia-variegated-white-plant-mini-31774240342148.jpg",
+      "/images/plants/aralia-variegated-white-plant-mini-32065310589060.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-areca-palm-classic",
+    slug: "areca-palm-indoor-air-purifier",
+    name: "Areca Palm Plant XL",
+    botanicalName: "Dypsis lutescens",
+    category: "plants",
+    subcategory: "Air Purifying",
+    price: 1499,
+    originalPrice: 1800,
+    rating: 4.88,
+    reviewCount: 76,
+    isBestseller: true,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 24,
+    shortDescription: "Lush, healthy Areca Palm Plant XL acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Areca Palm Plant XL (Dypsis lutescens) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/areca-palm-plant-31828365279364.jpg",
+      "/images/plants/areca-palm-plant-31828365312132.jpg",
+      "/images/plants/areca-palm-plant-31828365377668.jpg",
+      "/images/plants/areca-palm-plant-31828365410436.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "air-purifying", "bestseller", "pet-safe"],
+  },
+  {
+    id: "plant-areca-palm-plant-xl",
+    slug: "areca-palm-plant-xl",
+    name: "Areca Palm Plant XL",
+    botanicalName: "Dypsis lutescens",
+    category: "plants",
+    subcategory: "Large Floor Plants",
+    price: 1499,
+    originalPrice: 1800,
+    rating: 4.83,
+    reviewCount: 55,
     isBestseller: false,
     isNew: false,
     isBeginnerFriendly: false,
     isPetSafe: true,
     inStock: true,
-    stockCount: 14,
-    shortDescription: "Translucent patterned leaves resembling peacock tail feathers with purple undersides.",
-    description: "Calathea Makoyana is renowned as the Peacock Plant for its striking feathered foliage that looks hand-painted by nature. At dusk, the plant draws its leaves upward in prayer, exposing rich burgundy-purple undersides.",
+    stockCount: 38,
+    shortDescription: "Lush, healthy Areca Palm Plant XL acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Areca Palm Plant XL (Dypsis lutescens) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
-      "/images/plants/peacock-plant-31778230993028.jpg",
-      "/images/plants/peacock-plant-31778231124100.jpg",
-      "/images/plants/peacock-plant-31778231189636.jpg",
-      "/images/plants/peacock-plant-31778231255172.jpg",
-    ],
+      "/images/plants/areca-palm-plant-xl-31798831349892.jpg",
+      "/images/plants/areca-palm-plant-xl-31798831448196.jpg",
+      "/images/plants/areca-palm-plant-xl-31798831513732.jpg"
+],
     careGuide: {
-      light: "Medium Light",
-      lightDetail: "Prefers medium to bright indirect light. Avoid direct harsh sun.",
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
       watering: "Weekly",
-      wateringDetail: "Keep potting soil evenly moist; never waterlogged and never bone dry.",
-      humidity: "High (Misting Helpful)",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
       petFriendly: true,
-      petNote: "100% pet-friendly and non-toxic to all companion pets.",
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
       difficulty: "Moderate Care",
-      idealPlacement: ["Bathroom Vanity", "Living Room Console", "Side Table"],
-      feed: "Feed monthly during warm season with gentle foliage tonic.",
-      repotting: "Repot every 18 months into moisture-retentive peat mix.",
-      commonIssues: "Curling leaves indicate low ambient humidity or dry potting soil.",
+      idealPlacement: ["Living Room Focal Point", "Double-height Foyer", "Dining Hall Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized Peacock Plant (Calathea Makoyana) in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Height: 10-14 inches (including pot) | Pot Diameter: 5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["pet-safe", "prayer-plant", "colorful-foliage", "air-purifying"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "large-floor-plants", "pet-safe"],
   },
-
+  {
+    id: "plant-bamboo-palm-plant",
+    slug: "bamboo-palm-plant",
+    name: "Bamboo Palm Plant",
+    botanicalName: "Chamaedorea seifrizii",
+    category: "plants",
+    subcategory: "Air Purifying",
+    price: 349,
+    originalPrice: 471,
+    rating: 4.91,
+    reviewCount: 64,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 30,
+    shortDescription: "Lush, healthy Bamboo Palm Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Bamboo Palm Plant (Chamaedorea seifrizii) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/bamboo-palm-plant-31774360109188.jpg",
+      "/images/plants/bamboo-palm-plant-31774360240260.jpg",
+      "/images/plants/bamboo-palm-plant-32076107251844.jpg",
+      "/images/plants/bamboo-palm-plant-32173747208324.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "air-purifying", "pet-safe"],
+  },
+  {
+    id: "plant-betel-leaf-plant-magai-paan",
+    slug: "betel-leaf-plant-magai-paan",
+    name: "Betel Leaf Plant Magai Paan",
+    botanicalName: "Piper betle",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.85,
+    reviewCount: 26,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 13,
+    shortDescription: "Lush, healthy Betel Leaf Plant Magai Paan acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Betel Leaf Plant Magai Paan (Piper betle) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/betel-leaf-plant-magai-paan-31808456196228.jpg",
+      "/images/plants/betel-leaf-plant-magai-paan-31808456523908.jpg",
+      "/images/plants/betel-leaf-plant-magai-paan-31808456622212.jpg",
+      "/images/plants/betel-leaf-plant-magai-paan-32076105678980.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-bird-of-paradise-plant",
+    slug: "bird-of-paradise-plant",
+    name: "Bird of Paradise Plant",
+    botanicalName: "Strelitzia reginae",
+    category: "plants",
+    subcategory: "Large Floor Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.91,
+    reviewCount: 55,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 14,
+    shortDescription: "Lush, healthy Bird of Paradise Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Bird of Paradise Plant (Strelitzia reginae) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/bird-of-paradise-plant-31799193043076.jpg",
+      "/images/plants/bird-of-paradise-plant-31799193206916.jpg",
+      "/images/plants/bird-of-paradise-plant-31799193239684.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Focal Point", "Double-height Foyer", "Dining Hall Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "large-floor-plants"],
+  },
   {
     id: "plant-boston-fern",
     slug: "boston-compacta-fern-plant",
-    name: "Boston Compacta Fern Plant",
-    botanicalName: "Nephrolepis exaltata 'Compacta'",
+    name: "Boston Compacta",
+    botanicalName: "Botanical cultivar",
     category: "plants",
-    subcategory: "Pet-Safe",
+    subcategory: "Tabletop Plants",
+    price: 336,
+    originalPrice: 549,
+    rating: 4.94,
+    reviewCount: 30,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 24,
+    shortDescription: "Lush, healthy Boston Compacta acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Boston Compacta (Botanical cultivar) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/boston-compacta-31774400512132.jpg",
+      "/images/plants/boston-compacta-31774400544900.jpg",
+      "/images/plants/boston-compacta-32076103680132.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-boxwood-buxus-plant",
+    slug: "boxwood-buxus-plant",
+    name: "Boxwood Buxus Plant",
+    botanicalName: "Buxus sempervirens",
+    category: "plants",
+    subcategory: "Tabletop Plants",
     price: 399,
     originalPrice: 549,
-    rating: 4.8,
-    reviewCount: 84,
+    rating: 4.86,
+    reviewCount: 64,
     isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 17,
+    shortDescription: "Lush, healthy Boxwood Buxus Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Boxwood Buxus Plant (Buxus sempervirens) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/boxwood-buxus-plant-31774428070020.jpg",
+      "/images/plants/boxwood-buxus-plant-31774428102788.jpg",
+      "/images/plants/boxwood-buxus-plant-31774428201092.jpg",
+      "/images/plants/boxwood-buxus-plant-31774428299396.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-broken-heart-plant",
+    slug: "broken-heart-plant",
+    name: "Broken Heart Plant",
+    botanicalName: "Monstera adansonii",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.87,
+    reviewCount: 44,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 33,
+    shortDescription: "Lush, healthy Broken Heart Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Broken Heart Plant (Monstera adansonii) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/broken-heart-plant-31774448844932.jpg",
+      "/images/plants/broken-heart-plant-31774448943236.jpg",
+      "/images/plants/broken-heart-plant-31774448976004.jpg",
+      "/images/plants/broken-heart-plant-32169476325508.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-button-fern-plant",
+    slug: "button-fern-plant",
+    name: "Button Fern",
+    botanicalName: "Nephrolepis exaltata",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 710,
+    originalPrice: 799,
+    rating: 4.86,
+    reviewCount: 27,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 31,
+    shortDescription: "Lush, healthy Button Fern acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Button Fern (Nephrolepis exaltata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/button-fern-plant-31777918222468.jpg",
+      "/images/plants/button-fern-plant-31777918255236.jpg",
+      "/images/plants/button-fern-plant-31777918320772.jpg",
+      "/images/plants/button-fern-plant-32076371755140.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-cactus-plant-elongated",
+    slug: "cactus-plant-elongated",
+    name: "Cactus Plant - Elongated",
+    botanicalName: "Cereus peruvianus",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 399,
+    originalPrice: 538,
+    rating: 4.91,
+    reviewCount: 86,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 35,
+    shortDescription: "Lush, healthy Cactus Plant - Elongated acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Cactus Plant - Elongated (Cereus peruvianus) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/cactus-plant-elongated-31791570485380.jpg",
+      "/images/plants/cactus-plant-elongated-31791570518148.jpg",
+      "/images/plants/cactus-plant-elongated-31791570616452.jpg",
+      "/images/plants/cactus-plant-elongated-32076091981956.jpg"
+],
+    careGuide: {
+      light: "Direct Sun",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-calathea-burle-marxii-plant",
+    slug: "calathea-burle-marxii-plant",
+    name: "Calathea Burle Marxii Plant",
+    botanicalName: "Goeppertia orbifolia",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.85,
+    reviewCount: 77,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 24,
+    shortDescription: "Lush, healthy Calathea Burle Marxii Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Calathea Burle Marxii Plant (Goeppertia orbifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/calathea-burle-marxii-plant-31910637437060.jpg",
+      "/images/plants/calathea-burle-marxii-plant-31910637469828.jpg",
+      "/images/plants/calathea-burle-marxii-plant-31910637502596.jpg",
+      "/images/plants/calathea-burle-marxii-plant-31910637535364.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-calathea-network-plant",
+    slug: "calathea-network-plant",
+    name: "Calathea Network Plant",
+    botanicalName: "Goeppertia orbifolia",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.86,
+    reviewCount: 89,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 19,
+    shortDescription: "Lush, healthy Calathea Network Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Calathea Network Plant (Goeppertia orbifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/calathea-network-plant-31983022604420.jpg",
+      "/images/plants/calathea-network-plant-31983022637188.jpg",
+      "/images/plants/calathea-network-plant-31983022669956.jpg",
+      "/images/plants/calathea-network-plant-31983022702724.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-calathea-orbifolia",
+    slug: "calathea-orbifolia-medium",
+    name: "Calathea Orbifolia Medium Plant",
+    botanicalName: "Goeppertia orbifolia",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.92,
+    reviewCount: 59,
+    isBestseller: true,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 19,
+    shortDescription: "Lush, healthy Calathea Orbifolia Medium Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Calathea Orbifolia Medium Plant (Goeppertia orbifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/calathea-orbifolia-medium-31778201370756.jpg",
+      "/images/plants/calathea-orbifolia-medium-31778201403524.jpg",
+      "/images/plants/calathea-orbifolia-medium-31778201436292.jpg",
+      "/images/plants/calathea-orbifolia-medium-31778201469060.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "bestseller", "pet-safe"],
+  },
+  {
+    id: "plant-calathea-pinstripe-plant",
+    slug: "calathea-pinstripe-plant",
+    name: "Calathea Pinstripe Plant",
+    botanicalName: "Goeppertia orbifolia",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 699,
+    originalPrice: 800,
+    rating: 4.94,
+    reviewCount: 58,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 24,
+    shortDescription: "Lush, healthy Calathea Pinstripe Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Calathea Pinstripe Plant (Goeppertia orbifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/calathea-pinstripe-plant-31910639665284.jpg",
+      "/images/plants/calathea-pinstripe-plant-31910639698052.jpg",
+      "/images/plants/calathea-pinstripe-plant-31910639730820.jpg",
+      "/images/plants/calathea-pinstripe-plant-31910639763588.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-calathea-prayer-plant",
+    slug: "calathea-prayer-plant",
+    name: "Calathea Prayer Plant",
+    botanicalName: "Goeppertia orbifolia",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.86,
+    reviewCount: 45,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 30,
+    shortDescription: "Lush, healthy Calathea Prayer Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Calathea Prayer Plant (Goeppertia orbifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/calathea-prayer-plant-31911040385156.jpg",
+      "/images/plants/calathea-prayer-plant-31911040417924.jpg",
+      "/images/plants/calathea-prayer-plant-31911040450692.jpg",
+      "/images/plants/calathea-prayer-plant-31911040483460.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-calathea-prayer-plant-medium",
+    slug: "calathea-prayer-plant-medium",
+    name: "Calathea Prayer Plant Medium",
+    botanicalName: "Goeppertia orbifolia",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.94,
+    reviewCount: 58,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 18,
+    shortDescription: "Lush, healthy Calathea Prayer Plant Medium acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Calathea Prayer Plant Medium (Goeppertia orbifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/calathea-prayer-plant-medium-31779559637124.jpg",
+      "/images/plants/calathea-prayer-plant-medium-31779559800964.jpg",
+      "/images/plants/calathea-prayer-plant-medium-31779559833732.jpg",
+      "/images/plants/calathea-prayer-plant-medium-31779559866500.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-calathea-rattlesnake-plant",
+    slug: "calathea-rattlesnake-plant",
+    name: "Calathea Rattlesnake Plant",
+    botanicalName: "Sansevieria trifasciata",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.91,
+    reviewCount: 68,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 32,
+    shortDescription: "Lush, healthy Calathea Rattlesnake Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Calathea Rattlesnake Plant (Sansevieria trifasciata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/calathea-rattlesnake-plant-31779580051588.jpg",
+      "/images/plants/calathea-rattlesnake-plant-31779580117124.jpg",
+      "/images/plants/calathea-rattlesnake-plant-31779580149892.jpg",
+      "/images/plants/calathea-rattlesnake-plant-32076102008964.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-calathea-sanderiana",
+    slug: "calathea-sanderiana",
+    name: "Calathea Sanderiana",
+    botanicalName: "Goeppertia orbifolia",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.88,
+    reviewCount: 51,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 16,
+    shortDescription: "Lush, healthy Calathea Sanderiana acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Calathea Sanderiana (Goeppertia orbifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/calathea-sanderiana-31799521968260.jpg",
+      "/images/plants/calathea-sanderiana-31799522033796.jpg",
+      "/images/plants/calathea-sanderiana-31799522066564.jpg",
+      "/images/plants/calathea-sanderiana-31799522132100.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-spider-chlorophytum",
+    slug: "chlorophytum-spider-plant",
+    name: "Chlorophytum Spider Plant",
+    botanicalName: "Chlorophytum comosum",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.85,
+    reviewCount: 182,
+    isBestseller: true,
     isNew: false,
     isBeginnerFriendly: true,
     isPetSafe: true,
     inStock: true,
     stockCount: 20,
-    shortDescription: "Lush cascading fronds that cleanse airborne toxins and restore indoor humidity.",
-    description: "Boston Compacta is a refined, bushier cultivar of the classic sword fern. Its arching fronds are densely packed with emerald leaflets, acting as a natural living humidifier and air scrubber that is entirely non-toxic to pets.",
+    shortDescription: "Lush, healthy Chlorophytum Spider Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Chlorophytum Spider Plant (Chlorophytum comosum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
-      "/images/plants/boston-compacta-31774400512132.jpg",
-      "/images/plants/boston-compacta-31774400544900.jpg",
-      "/images/plants/boston-compacta-32076103680132.jpg",
-    ],
+      "/images/plants/chlorophytum-spider-plant-31800232607876.jpg",
+      "/images/plants/chlorophytum-spider-plant-31800232738948.jpg",
+      "/images/plants/chlorophytum-spider-plant-32065401159812.jpg"
+],
     careGuide: {
-      light: "Medium Light",
-      lightDetail: "Prefers dappled or filtered indirect light. Avoid direct harsh sunshine.",
-      watering: "When Top 2 Inches Dry",
-      wateringDetail: "Water whenever the surface soil feels slightly dry. Mist fronds regularly.",
-      humidity: "High (Misting Helpful)",
-      petFriendly: true,
-      petNote: "Completely non-toxic to cats and dogs.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Humid Master Bathroom", "Hanging Macrame", "Shaded Balcony"],
-      feed: "Feed once every 4 weeks in warm months with diluted seaweed extract.",
-      repotting: "Repot every 2 years in rich, porous organic mix.",
-      commonIssues: "Browning leaflets signal dry indoor air; mist fronds twice weekly.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Boston Compacta Fern Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 12-15 inches (including pot) | Pot Diameter: 5.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["pet-safe", "air-purifying", "hanging-plant", "fern"],
-  },
-
-  {
-    id: "plant-golden-fern",
-    slug: "golden-fern-plant",
-    name: "Golden Fern Plant",
-    botanicalName: "Nephrolepis cordifolia 'Duffii'",
-    category: "plants",
-    subcategory: "Pet-Safe",
-    price: 349,
-    originalPrice: 499,
-    rating: 4.8,
-    reviewCount: 57,
-    isBestseller: false,
-    isNew: true,
-    isBeginnerFriendly: true,
-    isPetSafe: true,
-    inStock: true,
-    stockCount: 18,
-    shortDescription: "Bright chartreuse button-like fronds that bring radiant texture to indoor corners.",
-    description: "Also known as the Lemon Button Fern, Golden Fern features arching fronds with tiny, rounded golden-green pinnae that emit a subtle citrus fragrance when brushed. Safe for playful pets and delightfully compact.",
-    images: [
-      "/images/plants/golden-fern-plant-31793589584004.jpg",
-      "/images/plants/golden-fern-plant-31793589649540.jpg",
-      "/images/plants/golden-fern-plant-31793589682308.jpg",
-      "/images/plants/golden-fern-plant-32076361793668.jpg",
-    ],
-    careGuide: {
-      light: "Medium Light",
-      lightDetail: "Flourishes in medium to bright indirect light.",
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
       watering: "Weekly",
-      wateringDetail: "Keep potting soil lightly moist; do not allow roots to sit submerged.",
-      humidity: "High (Misting Helpful)",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
       petFriendly: true,
-      petNote: "100% pet safe.",
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
       difficulty: "Beginner Friendly",
-      idealPlacement: ["Desk Shelf", "Bathroom Counter", "Plant Stand"],
-      feed: "Feed once monthly during monsoon.",
-      repotting: "Repot every 2 years.",
-      commonIssues: "Crisp tips mean low humidity; mist periodically.",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized Golden Fern Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Height: 9-12 inches (including pot) | Pot Diameter: 4.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["pet-safe", "fern", "tabletop", "air-purifying"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "bestseller", "beginner-friendly", "pet-safe"],
   },
-
   {
-    id: "plant-stromanthe-triostar",
-    slug: "stromanthe-triostar-plant",
-    name: "Stromanthe Triostar Plant",
-    botanicalName: "Stromanthe thalia 'Triostar'",
+    id: "plant-christmas-cactus",
+    slug: "christmas-cactus",
+    name: "Festive Christmas Cactus",
+    botanicalName: "Cereus peruvianus",
     category: "plants",
-    subcategory: "Pet-Safe",
+    subcategory: "Succulents & Cacti",
     price: 449,
-    originalPrice: 599,
-    rating: 4.9,
-    reviewCount: 92,
+    originalPrice: 649,
+    rating: 4.92,
+    reviewCount: 72,
     isBestseller: false,
-    isNew: true,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 30,
+    shortDescription: "Lush, healthy Festive Christmas Cactus acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Festive Christmas Cactus (Cereus peruvianus) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/christmas-cactus-31779687268484.jpg",
+      "/images/plants/christmas-cactus-31779687301252.jpg",
+      "/images/plants/christmas-cactus-31779687334020.jpg",
+      "/images/plants/christmas-cactus-31779687366788.jpg"
+],
+    careGuide: {
+      light: "Direct Sun",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-cobra-fern-plant-medium",
+    slug: "cobra-fern-plant-medium",
+    name: "Cobra Fern Plant",
+    botanicalName: "Nephrolepis exaltata",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 1599,
+    originalPrice: 2158,
+    rating: 4.88,
+    reviewCount: 46,
+    isBestseller: false,
+    isNew: false,
     isBeginnerFriendly: false,
     isPetSafe: true,
     inStock: true,
     stockCount: 16,
-    shortDescription: "Dramatic tricolor foliage painted with pastel pink, ivory, and emerald with ruby undersides.",
-    description: "Stromanthe Triostar is an exotic Brazilian relative of the prayer plant family. Its lance-shaped leaves are splashed with swirls of cream, pastel pink, and forest green, backed by vivid magenta-pink undersides.",
+    shortDescription: "Lush, healthy Cobra Fern Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Cobra Fern Plant (Nephrolepis exaltata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
-      "/images/plants/stromanthe-triostar-plant-31800251875460.jpg",
-      "/images/plants/stromanthe-triostar-plant-31800251908228.jpg",
-      "/images/plants/stromanthe-triostar-plant-32076001968260.jpg",
-    ],
+      "/images/plants/cobra-fern-plant-medium-31771513159812.jpg",
+      "/images/plants/cobra-fern-plant-medium-31771513389188.jpg",
+      "/images/plants/cobra-fern-plant-medium-31771513421956.jpg",
+      "/images/plants/cobra-fern-plant-medium-31771513520260.jpg"
+],
     careGuide: {
       light: "Bright Indirect",
-      lightDetail: "Bright indirect light is required to maintain its tricolor pink-and-white splashes.",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
       watering: "Weekly",
-      wateringDetail: "Keep soil evenly moist using room temperature filtered water.",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
       humidity: "High (Misting Helpful)",
       petFriendly: true,
-      petNote: "Completely non-toxic to all pets.",
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
       difficulty: "Moderate Care",
-      idealPlacement: ["Living Room Console", "Bright Bathroom", "Side Table"],
-      feed: "Feed once every 3 weeks in spring and monsoon with mild liquid tonic.",
-      repotting: "Repot every 2 years in spring.",
-      commonIssues: "Brown leaf edges from dry air or fluoride; mist regularly.",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized Stromanthe Triostar Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Height: 12-16 inches (including pot) | Pot Diameter: 5.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["pet-safe", "colorful-foliage", "prayer-plant", "statement-plant"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
   },
-
   {
-    id: "plant-aechmea-fasciata",
-    slug: "aechmea-fasciata-silver-vase-bromeliad",
-    name: "Aechmea Fasciata Bromeliad Plant",
-    botanicalName: "Aechmea fasciata",
+    id: "plant-crassula-ovata-plant",
+    slug: "crassula-ovata-plant",
+    name: "Crassula Ovata Plant For Environment Day Gifting",
+    botanicalName: "Crassula ovata",
     category: "plants",
-    subcategory: "Flowering",
-    price: 699,
-    originalPrice: 899,
-    rating: 4.9,
-    reviewCount: 49,
+    subcategory: "Succulents & Cacti",
+    price: 259,
+    originalPrice: 349,
+    rating: 4.89,
+    reviewCount: 29,
     isBestseller: false,
-    isNew: true,
+    isNew: false,
     isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 36,
+    shortDescription: "Lush, healthy Crassula Ovata Plant For Environment Day Gifting acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Crassula Ovata Plant For Environment Day Gifting (Crassula ovata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/crassula-ovata-plant-31910632849540.jpg",
+      "/images/plants/crassula-ovata-plant-31910632882308.jpg",
+      "/images/plants/crassula-ovata-plant-31910632915076.jpg",
+      "/images/plants/crassula-ovata-plant-31910632947844.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-croton-petra",
+    slug: "croton-petra",
+    name: "Croton Petra",
+    botanicalName: "Codiaeum variegatum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 499,
+    originalPrice: 749,
+    rating: 4.83,
+    reviewCount: 32,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 16,
+    shortDescription: "Lush, healthy Croton Petra acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Croton Petra (Codiaeum variegatum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/croton-petra-31798766796932.jpg",
+      "/images/plants/croton-petra-31798766862468.jpg",
+      "/images/plants/croton-petra-31798766895236.jpg",
+      "/images/plants/croton-petra-32168859205764.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-dieffenbachia-plant",
+    slug: "dieffenbachia-plant",
+    name: "Dieffenbachia Tropic Snow Plant - XL",
+    botanicalName: "Dieffenbachia seguine",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 2299,
+    originalPrice: 2999,
+    rating: 4.91,
+    reviewCount: 72,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 31,
+    shortDescription: "Lush, healthy Dieffenbachia Tropic Snow Plant - XL acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Dieffenbachia Tropic Snow Plant - XL (Dieffenbachia seguine) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/dieffenbachia-plant-31953134551172.jpg",
+      "/images/plants/dieffenbachia-plant-31953134583940.jpg",
+      "/images/plants/dieffenbachia-plant-31953134616708.jpg",
+      "/images/plants/dieffenbachia-plant-31953134649476.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-dracaena-coffee-plant",
+    slug: "dracaena-coffee-plant",
+    name: "Dracaena Coffee Plant",
+    botanicalName: "Botanical cultivar",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.83,
+    reviewCount: 66,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 31,
+    shortDescription: "Lush, healthy Dracaena Coffee Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Dracaena Coffee Plant (Botanical cultivar) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/dracaena-coffee-plant-31911042285700.jpg",
+      "/images/plants/dracaena-coffee-plant-31911042351236.jpg",
+      "/images/plants/dracaena-coffee-plant-31911042384004.jpg",
+      "/images/plants/dracaena-coffee-plant-31911042416772.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-dracaena-compacta-plant",
+    slug: "dracaena-compacta-plant",
+    name: "Dracaena Compacta Plant",
+    botanicalName: "Botanical cultivar",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.96,
+    reviewCount: 85,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 20,
+    shortDescription: "Lush, healthy Dracaena Compacta Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Dracaena Compacta Plant (Botanical cultivar) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/dracaena-compacta-plant-31779853172868.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-dracaena-golden-milky-plant",
+    slug: "dracaena-golden-milky-plant",
+    name: "Dracaena Golden Milky Plant",
+    botanicalName: "Botanical cultivar",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.96,
+    reviewCount: 19,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 33,
+    shortDescription: "Lush, healthy Dracaena Golden Milky Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Dracaena Golden Milky Plant (Botanical cultivar) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/dracaena-golden-milky-plant-31779865657476.jpg",
+      "/images/plants/dracaena-golden-milky-plant-31779865690244.jpg",
+      "/images/plants/dracaena-golden-milky-plant-31779865723012.jpg",
+      "/images/plants/dracaena-golden-milky-plant-32076096536708.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-dwarf-zz-plant",
+    slug: "dwarf-zz-plant",
+    name: "Dwarf ZZ Plant",
+    botanicalName: "Zamioculcas zamiifolia",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.92,
+    reviewCount: 86,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 36,
+    shortDescription: "Lush, healthy Dwarf ZZ Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Dwarf ZZ Plant (Zamioculcas zamiifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/dwarf-zz-plant-31799981572228.jpg",
+      "/images/plants/dwarf-zz-plant-31799981604996.jpg",
+      "/images/plants/dwarf-zz-plant-31799981637764.jpg",
+      "/images/plants/dwarf-zz-plant-31799981670532.jpg"
+],
+    careGuide: {
+      light: "Low Light",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-earth-star-plant",
+    slug: "earth-star-plant",
+    name: "Earth Star Plant - Pink",
+    botanicalName: "Cryptanthus bivittatus",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.86,
+    reviewCount: 61,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 15,
+    shortDescription: "Lush, healthy Earth Star Plant - Pink acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Earth Star Plant - Pink (Cryptanthus bivittatus) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/earth-star-plant-31791505932420.jpg",
+      "/images/plants/earth-star-plant-31791505965188.jpg",
+      "/images/plants/earth-star-plant-31791505997956.jpg",
+      "/images/plants/earth-star-plant-32076373983364.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-earth-star-plant-pink",
+    slug: "earth-star-plant-pink",
+    name: "Earth Star Plant - Pink",
+    botanicalName: "Cryptanthus bivittatus",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.86,
+    reviewCount: 38,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 26,
+    shortDescription: "Lush, healthy Earth Star Plant - Pink acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Earth Star Plant - Pink (Cryptanthus bivittatus) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/earth-star-plant-pink-31791545680004.jpg",
+      "/images/plants/earth-star-plant-pink-31791545712772.jpg",
+      "/images/plants/earth-star-plant-pink-31791545778308.jpg",
+      "/images/plants/earth-star-plant-pink-32076377129092.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-echeveria-hybrid-plant",
+    slug: "echeveria-hybrid-plant",
+    name: "Echeveria Hybrid Plant",
+    botanicalName: "Echeveria elegans",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.82,
+    reviewCount: 51,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 28,
+    shortDescription: "Lush, healthy Echeveria Hybrid Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Echeveria Hybrid Plant (Echeveria elegans) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/echeveria-hybrid-plant-31791554920580.jpg",
+      "/images/plants/echeveria-hybrid-plant-31791554953348.jpg",
+      "/images/plants/echeveria-hybrid-plant-31791555018884.jpg",
+      "/images/plants/echeveria-hybrid-plant-32076095160452.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-echeveria-subsesilis-hybrid-silver-plant",
+    slug: "echeveria-subsesilis-hybrid-silver-plant",
+    name: "Echeveria Subsesilis Hybrid Silver Plant",
+    botanicalName: "Echeveria elegans",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.93,
+    reviewCount: 82,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 15,
+    shortDescription: "Lush, healthy Echeveria Subsesilis Hybrid Silver Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Echeveria Subsesilis Hybrid Silver Plant (Echeveria elegans) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/echeveria-subsesilis-hybrid-silver-plant-31791565045892.jpg",
+      "/images/plants/echeveria-subsesilis-hybrid-silver-plant-31791565209732.jpg",
+      "/images/plants/echeveria-subsesilis-hybrid-silver-plant-31791565308036.jpg",
+      "/images/plants/echeveria-subsesilis-hybrid-silver-plant-31793659314308.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-elongated-cactus-plant-variegated",
+    slug: "elongated-cactus-plant-variegated",
+    name: "Elongated Cactus Plant Variegated",
+    botanicalName: "Cereus peruvianus",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.94,
+    reviewCount: 56,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 38,
+    shortDescription: "Lush, healthy Elongated Cactus Plant Variegated acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Elongated Cactus Plant Variegated (Cereus peruvianus) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/elongated-cactus-plant-variegated-32094626939012.jpg",
+      "/images/plants/elongated-cactus-plant-variegated-32094626971780.jpg",
+      "/images/plants/elongated-cactus-plant-variegated-32094627004548.jpg",
+      "/images/plants/elongated-cactus-plant-variegated-32094627037316.jpg"
+],
+    careGuide: {
+      light: "Direct Sun",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-fern-morpankhi",
+    slug: "fern-morpankhi",
+    name: "Fern Morpankhi For Environment Day Gifting",
+    botanicalName: "Nephrolepis exaltata",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 275,
+    originalPrice: 371,
+    rating: 4.91,
+    reviewCount: 95,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
     isPetSafe: true,
     inStock: true,
-    stockCount: 12,
-    shortDescription: "Silver Vase Bromeliad with frosted silver foliage and a striking exotic pink bloom.",
-    description: "Aechmea Fasciata, the Silver Vase Plant, is one of the most exotic tropical epiphytes. It forms an urn-shaped rosette of arching leathery leaves frosted in silver horizontal banding, from which emerges a dramatic pink bract that remains stunning for up to 6 months.",
+    stockCount: 18,
+    shortDescription: "Lush, healthy Fern Morpankhi For Environment Day Gifting acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Fern Morpankhi For Environment Day Gifting (Nephrolepis exaltata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
-      "/images/plants/aechmea-fasciata-plant-32220864643204.jpg",
-      "/images/plants/aechmea-fasciata-plant-32220864741508.jpg",
-      "/images/plants/aechmea-fasciata-plant-32220865036420.jpg",
-      "/images/plants/aechmea-fasciata-plant-32220865134724.jpg",
-    ],
+      "/images/plants/fern-morpankhi-31910456623236.jpg",
+      "/images/plants/fern-morpankhi-31910456656004.jpg",
+      "/images/plants/fern-morpankhi-31910456721540.jpg",
+      "/images/plants/fern-morpankhi-31910456754308.jpg"
+],
     careGuide: {
       light: "Bright Indirect",
-      lightDetail: "Enjoys bright indirect light; tolerates morning sun.",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
       watering: "Weekly",
-      wateringDetail: "Keep the central cup (urn) filled with fresh water; lightly moisten soil once weekly.",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
       humidity: "High (Misting Helpful)",
       petFriendly: true,
-      petNote: "Non-toxic to companion animals.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Coffee Table Feature", "Living Room Centerpiece", "Covered Balcony"],
-      feed: "Light foliar feed misted onto leaves once every 2 months in warm season.",
-      repotting: "Rarely needs repotting; propagates via base pups (offsets).",
-      commonIssues: "Flush and replace the central urn water every 2-3 weeks to keep it clean.",
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized Aechmea Fasciata Bromeliad Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Height: 14-18 inches (including pot) | Pot Diameter: 6 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["flowering", "pet-safe", "exotic", "statement-plant"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
   },
-
   {
-    id: "plant-philodendron-ceylon-golden",
-    slug: "philodendron-ceylon-golden-plant",
-    name: "Philodendron Ceylon Golden Plant",
-    botanicalName: "Philodendron 'Ceylon Gold'",
+    id: "plant-fern-morpankhi-medium",
+    slug: "fern-morpankhi-medium",
+    name: "Fern Morpankhi For Environment Day Gifting",
+    botanicalName: "Nephrolepis exaltata",
     category: "plants",
-    subcategory: "Air Purifying",
-    price: 349,
-    originalPrice: 499,
-    rating: 4.8,
-    reviewCount: 73,
+    subcategory: "Pet Friendly",
+    price: 275,
+    originalPrice: 371,
+    rating: 4.84,
+    reviewCount: 38,
     isBestseller: false,
-    isNew: true,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 29,
+    shortDescription: "Lush, healthy Fern Morpankhi For Environment Day Gifting acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Fern Morpankhi For Environment Day Gifting (Nephrolepis exaltata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/fern-morpankhi-medium-31911030161540.jpg",
+      "/images/plants/fern-morpankhi-medium-31911030194308.jpg",
+      "/images/plants/fern-morpankhi-medium-31911030227076.jpg",
+      "/images/plants/fern-morpankhi-medium-31911030292612.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-ficus-bonsai",
+    slug: "ficus-bonsai-plant-medium",
+    name: "Ficus Bonsai Plant",
+    botanicalName: "Ficus microcarpa",
+    category: "plants",
+    subcategory: "Bonsai & Ficus",
+    price: 749,
+    originalPrice: 850,
+    rating: 4.95,
+    reviewCount: 180,
+    isBestseller: true,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 12,
+    shortDescription: "Lush, healthy Ficus Bonsai Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Ficus Bonsai Plant (Ficus microcarpa) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/ficus-bonsai-plant-31792241410180.jpg",
+      "/images/plants/ficus-bonsai-plant-31792241508484.jpg",
+      "/images/plants/ficus-bonsai-plant-31792241606788.jpg",
+      "/images/plants/ficus-bonsai-plant-31792241803396.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "bonsai-ficus", "bestseller"],
+  },
+  {
+    id: "plant-ficus-lyrata-bambino-xl",
+    slug: "ficus-lyrata-bambino-xl",
+    name: "Ficus Lyrata Bambino -XL",
+    botanicalName: "Ficus microcarpa",
+    category: "plants",
+    subcategory: "Large Floor Plants",
+    price: 1999,
+    originalPrice: 2400,
+    rating: 4.9,
+    reviewCount: 80,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 12,
+    shortDescription: "Lush, healthy Ficus Lyrata Bambino -XL acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Ficus Lyrata Bambino -XL (Ficus microcarpa) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/ficus-lyrata-bambino-xl-31800064802948.jpg",
+      "/images/plants/ficus-lyrata-bambino-xl-31800064835716.jpg",
+      "/images/plants/ficus-lyrata-bambino-xl-31800064868484.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Focal Point", "Double-height Foyer", "Dining Hall Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "large-floor-plants"],
+  },
+  {
+    id: "plant-ficus-moclame-plant-xl",
+    slug: "ficus-moclame-plant-xl",
+    name: "Ficus Moclame Plant - XL",
+    botanicalName: "Ficus microcarpa",
+    category: "plants",
+    subcategory: "Large Floor Plants",
+    price: 2299,
+    originalPrice: 5999,
+    rating: 4.84,
+    reviewCount: 64,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 38,
+    shortDescription: "Lush, healthy Ficus Moclame Plant - XL acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Ficus Moclame Plant - XL (Ficus microcarpa) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/ficus-moclame-plant-xl-32169671524484.jpg",
+      "/images/plants/ficus-moclame-plant-xl-32169671557252.jpg",
+      "/images/plants/ficus-moclame-plant-xl-32169671590020.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Focal Point", "Double-height Foyer", "Dining Hall Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "large-floor-plants"],
+  },
+  {
+    id: "plant-ficus-prestige",
+    slug: "ficus-prestige",
+    name: "Ficus Bonsai Plant",
+    botanicalName: "Ficus microcarpa",
+    category: "plants",
+    subcategory: "Bonsai & Ficus",
+    price: 749,
+    originalPrice: 850,
+    rating: 4.93,
+    reviewCount: 48,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 13,
+    shortDescription: "Lush, healthy Ficus Bonsai Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Ficus Bonsai Plant (Ficus microcarpa) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/ficus-prestige-31911043956868.jpg",
+      "/images/plants/ficus-prestige-31911043989636.jpg",
+      "/images/plants/ficus-prestige-31911044022404.jpg",
+      "/images/plants/ficus-prestige-31911044055172.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "bonsai-ficus"],
+  },
+  {
+    id: "plant-fiddle-leaf-fig",
+    slug: "fiddle-leaf-fig-bambino",
+    name: "Fiddle Leaf Fig Plant",
+    botanicalName: "Ficus lyrata",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 1169,
+    originalPrice: 1849,
+    rating: 4.85,
+    reviewCount: 65,
+    isBestseller: true,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 14,
+    shortDescription: "Lush, healthy Fiddle Leaf Fig Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Fiddle Leaf Fig Plant (Ficus lyrata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/fiddle-leaf-fig-plant-31793606754436.jpg",
+      "/images/plants/fiddle-leaf-fig-plant-31793606787204.jpg",
+      "/images/plants/fiddle-leaf-fig-plant-31793606852740.jpg",
+      "/images/plants/fiddle-leaf-fig-plant-32065347518596.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants", "bestseller"],
+  },
+  {
+    id: "plant-fiddle-leaf-fig-bambino",
+    slug: "fiddle-leaf-fig-plant-bambino",
+    name: "Fiddle Leaf Fig Plant - Bambino",
+    botanicalName: "Ficus lyrata",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.92,
+    reviewCount: 26,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 36,
+    shortDescription: "Lush, healthy Fiddle Leaf Fig Plant - Bambino acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Fiddle Leaf Fig Plant - Bambino (Ficus lyrata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/fiddle-leaf-fig-plant-bambino-31793615437956.jpg",
+      "/images/plants/fiddle-leaf-fig-plant-bambino-31793615536260.jpg",
+      "/images/plants/fiddle-leaf-fig-plant-bambino-32065352007812.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-fittonia-nerve",
+    slug: "fittonia-green-plant-nerve-plant",
+    name: "Fittonia Green Plant (Nerve Plant)",
+    botanicalName: "Fittonia albivenis",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.89,
+    reviewCount: 34,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 16,
+    shortDescription: "Lush, healthy Fittonia Green Plant (Nerve Plant) acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Fittonia Green Plant (Nerve Plant) (Fittonia albivenis) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/fittonia-green-plant-nerve-plant-31774473027716.jpg",
+      "/images/plants/fittonia-green-plant-nerve-plant-31774473060484.jpg",
+      "/images/plants/fittonia-green-plant-nerve-plant-31774473158788.jpg",
+      "/images/plants/fittonia-green-plant-nerve-plant-32076090540164.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-fittonia-pink",
+    slug: "fittonia-pink-plant",
+    name: "Fittonia Pink Plant",
+    botanicalName: "Fittonia albivenis",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.91,
+    reviewCount: 88,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 17,
+    shortDescription: "Lush, healthy Fittonia Pink Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Fittonia Pink Plant (Fittonia albivenis) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/fittonia-pink-plant-31793595613316.jpg",
+      "/images/plants/fittonia-pink-plant-31793595646084.jpg",
+      "/images/plants/fittonia-pink-plant-31793595711620.jpg",
+      "/images/plants/fittonia-pink-plant-31793595744388.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-glass-bowl-lucky-bamboo-plant-2-layer",
+    slug: "glass-bowl-lucky-bamboo-plant-2-layer",
+    name: "Glass Bowl Lucky Bamboo Plant 2 Layer",
+    botanicalName: "Dracaena sanderiana",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.86,
+    reviewCount: 95,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 25,
+    shortDescription: "Lush, healthy Glass Bowl Lucky Bamboo Plant 2 Layer acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Glass Bowl Lucky Bamboo Plant 2 Layer (Dracaena sanderiana) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/glass-bowl-lucky-bamboo-plant-2-layer-31793705713796.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-golden-fern",
+    slug: "golden-fern-plant",
+    name: "Golden Fern Plant",
+    botanicalName: "Nephrolepis exaltata",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.96,
+    reviewCount: 87,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 36,
+    shortDescription: "Lush, healthy Golden Fern Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Golden Fern Plant (Nephrolepis exaltata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/golden-fern-plant-31793589584004.jpg",
+      "/images/plants/golden-fern-plant-31793589649540.jpg",
+      "/images/plants/golden-fern-plant-31793589682308.jpg",
+      "/images/plants/golden-fern-plant-32076361793668.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-golden-sedum-plant",
+    slug: "golden-sedum-plant",
+    name: "Golden Sedum Plant For Environment Day Gifting",
+    botanicalName: "Sedum adolphii",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 269,
+    originalPrice: 363,
+    rating: 4.92,
+    reviewCount: 43,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 34,
+    shortDescription: "Lush, healthy Golden Sedum Plant For Environment Day Gifting acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Golden Sedum Plant For Environment Day Gifting (Sedum adolphii) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/golden-sedum-plant-31910631768196.jpg",
+      "/images/plants/golden-sedum-plant-31910631800964.jpg",
+      "/images/plants/golden-sedum-plant-31910631866500.jpg",
+      "/images/plants/golden-sedum-plant-31910631899268.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-green-fern-plant-mini",
+    slug: "green-fern-plant-mini",
+    name: "Green Fern Plant Mini",
+    botanicalName: "Nephrolepis exaltata",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 249,
+    originalPrice: 349,
+    rating: 4.86,
+    reviewCount: 65,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 26,
+    shortDescription: "Lush, healthy Green Fern Plant Mini acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Green Fern Plant Mini (Nephrolepis exaltata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/green-fern-plant-mini-31800021614724.jpg",
+      "/images/plants/green-fern-plant-mini-31800021647492.jpg",
+      "/images/plants/green-fern-plant-mini-31800021680260.jpg",
+      "/images/plants/green-fern-plant-mini-31800021745796.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-haworthia-coarctata-plant",
+    slug: "haworthia-coarctata-plant",
+    name: "Haworthia Coarctata Birthday",
+    botanicalName: "Haworthiopsis attenuata",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 1099,
+    originalPrice: 1483,
+    rating: 4.95,
+    reviewCount: 75,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 15,
+    shortDescription: "Lush, healthy Haworthia Coarctata Birthday acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Haworthia Coarctata Birthday (Haworthiopsis attenuata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/haworthia-coarctata-plant-31791619014788.jpg",
+      "/images/plants/haworthia-coarctata-plant-31791619047556.jpg",
+      "/images/plants/haworthia-coarctata-plant-31791619080324.jpg",
+      "/images/plants/haworthia-coarctata-plant-32277649948804.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-haworthia-cooperi-fleshy",
+    slug: "haworthia-cooperi-fleshy",
+    name: "Haworthia Cooperi Fleshy",
+    botanicalName: "Haworthiopsis attenuata",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 449,
+    originalPrice: 606,
+    rating: 4.85,
+    reviewCount: 26,
+    isBestseller: false,
+    isNew: false,
     isBeginnerFriendly: true,
     isPetSafe: false,
     inStock: true,
     stockCount: 22,
-    shortDescription: "Vibrant chartreuse-yellow tropical leaves that illuminate dimly lit interior living spaces.",
-    description: "Philodendron Ceylon Gold instantly enlivens indoor rooms with its neon chartreuse and golden-lime heart-shaped leaves. Fast-growing and resilient, it cleanses interior air of airborne pollutants effortlessly.",
+    shortDescription: "Lush, healthy Haworthia Cooperi Fleshy acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Haworthia Cooperi Fleshy (Haworthiopsis attenuata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
-      "/images/plants/philodendron-ceylon-golden-plant-31779600040068.jpg",
-      "/images/plants/philodendron-ceylon-golden-plant-31779600203908.jpg",
-      "/images/plants/philodendron-ceylon-golden-plant-31779600236676.jpg",
-      "/images/plants/philodendron-ceylon-golden-plant-32076062490756.jpg",
-    ],
+      "/images/plants/haworthia-cooperi-fleshy-31987377275012.jpg",
+      "/images/plants/haworthia-cooperi-fleshy-31987377307780.jpg",
+      "/images/plants/haworthia-cooperi-fleshy-31987377340548.jpg",
+      "/images/plants/haworthia-cooperi-fleshy-31987377406084.jpg"
+],
     careGuide: {
       light: "Bright Indirect",
-      lightDetail: "Prefers medium to bright indirect light to maintain its neon yellow brilliance.",
-      watering: "Weekly",
-      wateringDetail: "Water when top 1-2 inches of soil feel dry.",
-      humidity: "Average Home",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
       petFriendly: false,
-      petNote: "Keep out of reach of pets.",
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
       difficulty: "Beginner Friendly",
-      idealPlacement: ["Living Room Corner", "Study Bookcase", "Balcony Shelf"],
-      feed: "Feed monthly with balanced seaweed liquid tonic.",
-      repotting: "Repot every 2 years in fresh potting mix.",
-      commonIssues: "Dull greenish foliage means light is too dim; move closer to filtered daylight.",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized Philodendron Ceylon Golden Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Height: 10-14 inches (including pot) | Pot Diameter: 5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["air-purifying", "colorful-foliage", "beginner-friendly", "indoor"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
   },
-
   {
-    id: "plant-philodendron-brasil",
-    slug: "philodendron-brasil-plant",
-    name: "Philodendron Brasil Plant",
-    botanicalName: "Philodendron hederaceum 'Brasil'",
+    id: "plant-haworthia-cymbiformis-plant",
+    slug: "haworthia-cymbiformis-plant",
+    name: "Haworthia Cymbiformis Plant",
+    botanicalName: "Haworthiopsis attenuata",
     category: "plants",
-    subcategory: "Low Light",
-    price: 349,
-    originalPrice: 499,
+    subcategory: "Succulents & Cacti",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.82,
+    reviewCount: 88,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 19,
+    shortDescription: "Lush, healthy Haworthia Cymbiformis Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Haworthia Cymbiformis Plant (Haworthiopsis attenuata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/haworthia-cymbiformis-plant-31791621931140.jpg",
+      "/images/plants/haworthia-cymbiformis-plant-31791621963908.jpg",
+      "/images/plants/haworthia-cymbiformis-plant-31791621996676.jpg",
+      "/images/plants/haworthia-cymbiformis-plant-31791622062212.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-haworthia-fasciata-plant",
+    slug: "haworthia-fasciata-plant",
+    name: "Haworthia Fasciata Plant",
+    botanicalName: "Haworthiopsis attenuata",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 249,
+    originalPrice: 336,
     rating: 4.9,
-    reviewCount: 118,
+    reviewCount: 18,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 14,
+    shortDescription: "Lush, healthy Haworthia Fasciata Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Haworthia Fasciata Plant (Haworthiopsis attenuata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/haworthia-fasciata-plant-31791628091524.jpg",
+      "/images/plants/haworthia-fasciata-plant-31791628157060.jpg",
+      "/images/plants/haworthia-fasciata-plant-31791628222596.jpg",
+      "/images/plants/haworthia-fasciata-plant-31793574903940.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-haworthia-limifolia-var-ubomboensis",
+    slug: "haworthia-limifolia-var-ubomboensis",
+    name: "Haworthia Limifolia var. Ubomboensis",
+    botanicalName: "Haworthiopsis attenuata",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 499,
+    originalPrice: 649,
+    rating: 4.92,
+    reviewCount: 25,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 19,
+    shortDescription: "Lush, healthy Haworthia Limifolia var. Ubomboensis acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Haworthia Limifolia var. Ubomboensis (Haworthiopsis attenuata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/haworthia-limifolia-var-ubomboensis-31791635792004.jpg",
+      "/images/plants/haworthia-limifolia-var-ubomboensis-31791635857540.jpg",
+      "/images/plants/haworthia-limifolia-var-ubomboensis-31791635923076.jpg",
+      "/images/plants/haworthia-limifolia-var-ubomboensis-31793500225668.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-haworthia-maculata-plant",
+    slug: "haworthia-maculata-plant",
+    name: "Haworthia Maculata Plant",
+    botanicalName: "Haworthiopsis attenuata",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 349,
+    originalPrice: 400,
+    rating: 4.83,
+    reviewCount: 22,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 22,
+    shortDescription: "Lush, healthy Haworthia Maculata Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Haworthia Maculata Plant (Haworthiopsis attenuata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/haworthia-maculata-plant-31791643000964.jpg",
+      "/images/plants/haworthia-maculata-plant-31791643033732.jpg",
+      "/images/plants/haworthia-maculata-plant-31791643066500.jpg",
+      "/images/plants/haworthia-maculata-plant-32076075827332.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-haworthia-turgida",
+    slug: "haworthia-turgida",
+    name: "Haworthia Turgida",
+    botanicalName: "Haworthiopsis attenuata",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.83,
+    reviewCount: 48,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 20,
+    shortDescription: "Lush, healthy Haworthia Turgida acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Haworthia Turgida (Haworthiopsis attenuata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/haworthia-turgida-31910634913924.jpg",
+      "/images/plants/haworthia-turgida-31910634946692.jpg",
+      "/images/plants/haworthia-turgida-31910635012228.jpg",
+      "/images/plants/haworthia-turgida-31910635044996.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-heart-hoya-plant",
+    slug: "heart-hoya-plant",
+    name: "Heart Hoya Plant",
+    botanicalName: "Hoya kerrii",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 299,
+    originalPrice: 403,
+    rating: 4.91,
+    reviewCount: 45,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 29,
+    shortDescription: "Lush, healthy Heart Hoya Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Heart Hoya Plant (Hoya kerrii) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/heart-hoya-plant-31791652176004.jpg",
+      "/images/plants/heart-hoya-plant-31791652208772.jpg",
+      "/images/plants/heart-hoya-plant-31791652339844.jpg",
+      "/images/plants/heart-hoya-plant-32076073042052.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-heart-hoya-plant-variegated",
+    slug: "heart-hoya-plant-variegated",
+    name: "Heart Hoya Plant - Variegated",
+    botanicalName: "Hoya kerrii",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 349,
+    originalPrice: 471,
+    rating: 4.84,
+    reviewCount: 91,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 30,
+    shortDescription: "Lush, healthy Heart Hoya Plant - Variegated acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Heart Hoya Plant - Variegated (Hoya kerrii) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/heart-hoya-plant-variegated-31791669051524.jpg",
+      "/images/plants/heart-hoya-plant-variegated-31791669084292.jpg",
+      "/images/plants/heart-hoya-plant-variegated-31791669117060.jpg",
+      "/images/plants/heart-hoya-plant-variegated-31791669182596.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-homalomena-plant-xl",
+    slug: "homalomena-plant-xl",
+    name: "Homalomena Plant XL",
+    botanicalName: "Homalomena rubescens",
+    category: "plants",
+    subcategory: "Large Floor Plants",
+    price: 1299,
+    originalPrice: 1799,
+    rating: 4.89,
+    reviewCount: 78,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 37,
+    shortDescription: "Lush, healthy Homalomena Plant XL acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Homalomena Plant XL (Homalomena rubescens) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/homalomena-plant-xl-32169769271428.jpg",
+      "/images/plants/homalomena-plant-xl-32169769304196.jpg",
+      "/images/plants/homalomena-plant-xl-32169769336964.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Focal Point", "Double-height Foyer", "Dining Hall Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "large-floor-plants"],
+  },
+  {
+    id: "plant-jade-mini-bonsai",
+    slug: "jade-plant-mini-crassula-ovata",
+    name: "Jade Mini Plant",
+    botanicalName: "Crassula ovata",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 199,
+    originalPrice: 268,
+    rating: 4.88,
+    reviewCount: 69,
     isBestseller: true,
     isNew: false,
     isBeginnerFriendly: true,
     isPetSafe: false,
     inStock: true,
-    stockCount: 26,
-    shortDescription: "Lush heart-shaped leaves striped with electric lime center brushstrokes. Vigorous trailer.",
-    description: "Philodendron Brasil is a beloved trailing houseplant featuring heart-shaped leaves with an electric lime-yellow stripe down each leaf center. Incredibly tolerant of varying light levels and missed waterings.",
+    stockCount: 15,
+    shortDescription: "Lush, healthy Jade Mini Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Jade Mini Plant (Crassula ovata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
-      "/images/plants/philodendron-brasil-plant-31793323344004.jpg",
-      "/images/plants/philodendron-brasil-plant-31793323376772.jpg",
-      "/images/plants/philodendron-brasil-plant-31793323409540.jpg",
-      "/images/plants/philodendron-brasil-plant-32076050530436.jpg",
-    ],
+      "/images/plants/jade-plant-mini-31800078172292.jpg",
+      "/images/plants/jade-plant-mini-31800078565508.jpg",
+      "/images/plants/jade-plant-mini-32065298858116.jpg"
+],
     careGuide: {
-      light: "Medium Light",
-      lightDetail: "Thrives in low to bright indirect light.",
-      watering: "Weekly",
-      wateringDetail: "Water when the top half of soil dries out.",
-      humidity: "Average Home",
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
       petFriendly: false,
-      petNote: "Keep elevated on hanging hooks or bookshelves.",
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
       difficulty: "Beginner Friendly",
-      idealPlacement: ["Bookshelf Edge", "Hanging Macrame", "Office Desk"],
-      feed: "Feed once monthly during monsoon.",
-      repotting: "Repot every 2 years.",
-      commonIssues: "Leaves curl slightly when thirsty; recovers quickly after watering.",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized Philodendron Brasil Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Trailing vine length: 12-16 inches | Pot Diameter: 4.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["trailing", "hanging-plant", "low-light", "bestseller"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "bestseller", "beginner-friendly"],
   },
-
   {
-    id: "plant-sansevieria-superba",
-    slug: "sansevieria-superba-green-snake-plant",
-    name: "Sansevieria Superba Green Snake Plant",
-    botanicalName: "Sansevieria trifasciata 'Futura Superba'",
+    id: "plant-kalanchoe-plant-orange",
+    slug: "kalanchoe-plant-orange",
+    name: "Kalanchoe Plant Orange",
+    botanicalName: "Kalanchoe blossfeldiana",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.91,
+    reviewCount: 63,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 25,
+    shortDescription: "Lush, healthy Kalanchoe Plant Orange acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Kalanchoe Plant Orange (Kalanchoe blossfeldiana) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/kalanchoe-plant-orange-31911044350084.jpg",
+      "/images/plants/kalanchoe-plant-orange-31911044382852.jpg",
+      "/images/plants/kalanchoe-plant-orange-31911044415620.jpg",
+      "/images/plants/kalanchoe-plant-orange-31911044448388.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-kalanchoe-plant-pink",
+    slug: "kalanchoe-plant-pink",
+    name: "Kalanchoe Pink Plant",
+    botanicalName: "Kalanchoe blossfeldiana",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 399,
+    originalPrice: 499,
+    rating: 4.88,
+    reviewCount: 24,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 33,
+    shortDescription: "Lush, healthy Kalanchoe Pink Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Kalanchoe Pink Plant (Kalanchoe blossfeldiana) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/kalanchoe-plant-pink-31793437540484.jpg",
+      "/images/plants/kalanchoe-plant-pink-31793437573252.jpg",
+      "/images/plants/kalanchoe-plant-pink-31793437638788.jpg",
+      "/images/plants/kalanchoe-plant-pink-31793437737092.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-kalanchoe-plant-red",
+    slug: "kalanchoe-plant-red",
+    name: "Kalanchoe Red in ceramic pot Women's Day Gift",
+    botanicalName: "Kalanchoe blossfeldiana",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 599,
+    originalPrice: 1049,
+    rating: 4.91,
+    reviewCount: 30,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 13,
+    shortDescription: "Lush, healthy Kalanchoe Red in ceramic pot Women's Day Gift acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Kalanchoe Red in ceramic pot Women's Day Gift (Kalanchoe blossfeldiana) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/kalanchoe-plant-red-31793426792580.jpg",
+      "/images/plants/kalanchoe-plant-red-31793426825348.jpg",
+      "/images/plants/kalanchoe-plant-red-31793426858116.jpg",
+      "/images/plants/kalanchoe-plant-red-31793426923652.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-kalanchoe-plant-yellow",
+    slug: "kalanchoe-plant-yellow",
+    name: "Kalanchoe Plant - Yellow",
+    botanicalName: "Kalanchoe blossfeldiana",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 499,
+    originalPrice: 699,
+    rating: 4.88,
+    reviewCount: 61,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 37,
+    shortDescription: "Lush, healthy Kalanchoe Plant - Yellow acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Kalanchoe Plant - Yellow (Kalanchoe blossfeldiana) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/kalanchoe-plant-yellow-31793418764420.jpg",
+      "/images/plants/kalanchoe-plant-yellow-31793418862724.jpg",
+      "/images/plants/kalanchoe-plant-yellow-31793418895492.jpg",
+      "/images/plants/kalanchoe-plant-yellow-32173764935812.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-large-bird-of-paradise-plant",
+    slug: "large-bird-of-paradise-plant",
+    name: "Bird of Paradise Plant",
+    botanicalName: "Strelitzia reginae",
+    category: "plants",
+    subcategory: "Large Floor Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.94,
+    reviewCount: 49,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 18,
+    shortDescription: "Lush, healthy Bird of Paradise Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Bird of Paradise Plant (Strelitzia reginae) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/large-bird-of-paradise-plant-31799193272452.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Focal Point", "Double-height Foyer", "Dining Hall Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "large-floor-plants"],
+  },
+  {
+    id: "plant-large-fiddle-leaf-fig-plant-bambino",
+    slug: "large-fiddle-leaf-fig-plant-bambino",
+    name: "Fiddle Leaf Fig Plant - Bambino",
+    botanicalName: "Ficus lyrata",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.85,
+    reviewCount: 75,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 16,
+    shortDescription: "Lush, healthy Fiddle Leaf Fig Plant - Bambino acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Fiddle Leaf Fig Plant - Bambino (Ficus lyrata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/large-fiddle-leaf-fig-plant-bambino-31793615470724.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-lemon-grass",
+    slug: "lemon-grass",
+    name: "Lemon Grass",
+    botanicalName: "Cymbopogon citratus",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 999,
+    originalPrice: 1348,
+    rating: 4.88,
+    reviewCount: 53,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 26,
+    shortDescription: "Lush, healthy Lemon Grass acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Lemon Grass (Cymbopogon citratus) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/lemon-grass-31793410343044.jpg",
+      "/images/plants/lemon-grass-31793410375812.jpg",
+      "/images/plants/lemon-grass-31793410408580.jpg",
+      "/images/plants/lemon-grass-31793410506884.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-lucky-bamboo-plant-2-layer",
+    slug: "lucky-bamboo-plant-2-layer",
+    name: "Lucky Bamboo Plant - 2 Layer",
+    botanicalName: "Dracaena sanderiana",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.85,
+    reviewCount: 27,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 26,
+    shortDescription: "Lush, healthy Lucky Bamboo Plant - 2 Layer acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Lucky Bamboo Plant - 2 Layer (Dracaena sanderiana) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/lucky-bamboo-plant-2-layer-31793705746564.jpg",
+      "/images/plants/lucky-bamboo-plant-2-layer-31793705779332.jpg",
+      "/images/plants/lucky-bamboo-plant-2-layer-31808501776516.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-lucky-bamboo-plant-3-layer",
+    slug: "lucky-bamboo-plant-3-layer",
+    name: "Lucky Bamboo Plant - 3 Layer",
+    botanicalName: "Dracaena sanderiana",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 400,
+    rating: 4.93,
+    reviewCount: 88,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 15,
+    shortDescription: "Lush, healthy Lucky Bamboo Plant - 3 Layer acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Lucky Bamboo Plant - 3 Layer (Dracaena sanderiana) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/lucky-bamboo-plant-3-layer-31793708138628.jpg",
+      "/images/plants/lucky-bamboo-plant-3-layer-31793708171396.jpg",
+      "/images/plants/lucky-bamboo-plant-3-layer-31793708302468.jpg",
+      "/images/plants/lucky-bamboo-plant-3-layer-31808503840900.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-medium-anthurium-red-plant",
+    slug: "medium-anthurium-red-plant",
+    name: "Anthurium Red Plant",
+    botanicalName: "Anthurium andraeanum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.83,
+    reviewCount: 87,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 38,
+    shortDescription: "Lush, healthy Anthurium Red Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Anthurium Red Plant (Anthurium andraeanum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/medium-anthurium-red-plant-31798804512900.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-medium-areca-palm-plant",
+    slug: "medium-areca-palm-plant",
+    name: "Areca Palm Plant XL",
+    botanicalName: "Dypsis lutescens",
     category: "plants",
     subcategory: "Air Purifying",
-    price: 349,
-    originalPrice: 499,
-    rating: 4.8,
-    reviewCount: 89,
+    price: 1499,
+    originalPrice: 1800,
+    rating: 4.82,
+    reviewCount: 29,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 36,
+    shortDescription: "Lush, healthy Areca Palm Plant XL acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Areca Palm Plant XL (Dypsis lutescens) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/medium-areca-palm-plant-31828365246596.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "air-purifying", "pet-safe"],
+  },
+  {
+    id: "plant-medium-croton-petra",
+    slug: "medium-croton-petra",
+    name: "Croton Petra",
+    botanicalName: "Codiaeum variegatum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 499,
+    originalPrice: 749,
+    rating: 4.94,
+    reviewCount: 39,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 25,
+    shortDescription: "Lush, healthy Croton Petra acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Croton Petra (Codiaeum variegatum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/medium-croton-petra-31798766731396.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-medium-peacock-plant",
+    slug: "medium-peacock-plant",
+    name: "Peacock Plant",
+    botanicalName: "Botanical cultivar",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.89,
+    reviewCount: 45,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 24,
+    shortDescription: "Lush, healthy Peacock Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Peacock Plant (Botanical cultivar) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/medium-peacock-plant-31778231222404.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-medium-rubber-plant",
+    slug: "medium-rubber-plant",
+    name: "Rubber Plant",
+    botanicalName: "Botanical cultivar",
+    category: "plants",
+    subcategory: "Air Purifying",
+    price: 549,
+    originalPrice: 741,
+    rating: 4.95,
+    reviewCount: 39,
     isBestseller: false,
     isNew: false,
     isBeginnerFriendly: true,
     isPetSafe: false,
     inStock: true,
     stockCount: 24,
-    shortDescription: "Compact, wide-leaved architectural snake plant with silvery cross-banding and creamy edges.",
-    description: "Futura Superba is a mid-sized snake plant cultivar that strikes the perfect balance between dwarf hahnii and tall laurentii varieties. Its wide, twisting sword leaves feature mottled green centers framed by gold borders.",
+    shortDescription: "Lush, healthy Rubber Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Rubber Plant (Botanical cultivar) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
-      "/images/plants/sansevieria-superba-green-snake-plant-31793037475972.jpg",
-      "/images/plants/sansevieria-superba-green-snake-plant-31793037508740.jpg",
-      "/images/plants/sansevieria-superba-green-snake-plant-31793037574276.jpg",
-      "/images/plants/sansevieria-superba-green-snake-plant-31793037607044.jpg",
+      "/images/plants/medium-rubber-plant-31800175853700.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "air-purifying", "beginner-friendly"],
+  },
+  {
+    id: "plant-medium-stromanthe-triostar-plant",
+    slug: "medium-stromanthe-triostar-plant",
+    name: "Stromanthe Triostar Plant Christmas Hamper",
+    botanicalName: "Stromanthe thalia",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 749,
+    originalPrice: 999,
+    rating: 4.82,
+    reviewCount: 67,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 20,
+    shortDescription: "Lush, healthy Stromanthe Triostar Plant Christmas Hamper acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Stromanthe Triostar Plant Christmas Hamper (Stromanthe thalia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/medium-stromanthe-triostar-plant-31800251940996.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-medium-zz-plant",
+    slug: "medium-zz-plant",
+    name: "ZZ Plant",
+    botanicalName: "Zamioculcas zamiifolia",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 499,
+    originalPrice: 673,
+    rating: 4.95,
+    reviewCount: 76,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 21,
+    shortDescription: "Lush, healthy ZZ Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The ZZ Plant (Zamioculcas zamiifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/medium-zz-plant-31792473702532.jpg"
+],
     careGuide: {
       light: "Low Light",
-      lightDetail: "Highly tolerant of dark bedrooms, office corners, and bright living rooms.",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
       watering: "Every 10-14 Days",
-      wateringDetail: "Water only when potting medium is bone dry.",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
       humidity: "Tolerant of Dry Air",
       petFriendly: false,
-      petNote: "Mild pet toxicity; best kept on elevated tables.",
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
       difficulty: "Beginner Friendly",
-      idealPlacement: ["Bedside Nightstand", "Console Table", "Conference Room"],
-      feed: "Feed every 8 weeks in summer with mild liquid food.",
-      repotting: "Repot every 3 years.",
-      commonIssues: "Soft leaf base indicates overwatering.",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized Sansevieria Superba Green Snake Plant in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Height: 11-14 inches (including pot) | Pot Diameter: 5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["air-purifying", "low-light", "hardy", "bedroom"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "beginner-friendly"],
   },
-
   {
-    id: "plant-peperomia-green",
-    slug: "peperomia-green-baby-rubber-plant",
-    name: "Peperomia Green Plant (Baby Rubber)",
-    botanicalName: "Peperomia obtusifolia",
+    id: "plant-money-plant-golden",
+    slug: "golden-money-plant-epipremnum",
+    name: "Money Plant Golden",
+    botanicalName: "Epipremnum aureum",
     category: "plants",
-    subcategory: "Pet-Safe",
-    price: 299,
-    originalPrice: 399,
-    rating: 4.8,
-    reviewCount: 68,
-    isBestseller: false,
-    isNew: true,
-    isBeginnerFriendly: true,
-    isPetSafe: true,
-    inStock: true,
-    stockCount: 22,
-    shortDescription: "Plump rounded spoon leaves with succulent glossy texture. 100% pet-safe tabletop green.",
-    description: "Peperomia Obtusifolia, affectionately termed the Baby Rubber Plant, displays thick, waxy spoon-shaped foliage that retains moisture like a succulent. Completely safe for companion animals and very easy to care for.",
-    images: [
-      "/images/plants/peperomia-green-plant-31793195614340.jpg",
-      "/images/plants/peperomia-green-plant-31793195679876.jpg",
-      "/images/plants/peperomia-green-plant-31793195778180.jpg",
-      "/images/plants/peperomia-green-plant-32076237832324.jpg",
-    ],
-    careGuide: {
-      light: "Medium Light",
-      lightDetail: "Performs best in medium to bright indirect light.",
-      watering: "Weekly",
-      wateringDetail: "Allow top 2 inches of soil to dry before watering again.",
-      humidity: "Average Home",
-      petFriendly: true,
-      petNote: "100% non-toxic to cats and dogs.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Coffee Table", "Kitchen Island", "Study Desk"],
-      feed: "Feed every 6 weeks during spring and monsoon.",
-      repotting: "Repot every 2-3 years into well-draining succulent soil.",
-      commonIssues: "Blackened stems mean overwatering; let soil dry between waterings.",
-    },
-    variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
-    },
-    packageContents: [
-          "Healthy acclimatized Peperomia Green Plant (Baby Rubber) in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
-    ],
-    approximateDimensions: "Height: 8-11 inches (including pot) | Pot Diameter: 4.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["pet-safe", "succulent-like", "tabletop", "air-purifying"],
-  },
-
-  {
-    id: "plant-money-tree",
-    slug: "money-tree-pachira-aquatica",
-    name: "Money Tree Plant (Pachira Aquatica)",
-    botanicalName: "Pachira aquatica",
-    category: "plants",
-    subcategory: "Low Light",
-    price: 499,
-    originalPrice: 699,
-    rating: 4.9,
-    reviewCount: 97,
+    subcategory: "Air Purifying",
+    price: 199,
+    originalPrice: 268,
+    rating: 4.88,
+    reviewCount: 169,
     isBestseller: true,
     isNew: false,
     isBeginnerFriendly: true,
-    isPetSafe: true,
+    isPetSafe: false,
     inStock: true,
-    stockCount: 20,
-    shortDescription: "Braided woody trunk crowned by umbrella-like palmate leaves. Symbol of wealth and harmony.",
-    description: "The Money Tree (Pachira Aquatica) is renowned in Feng Shui for locking in financial prosperity and positive energy. Its intertwining braided woody trunk supports a lush canopy of bright green palmate leaves. Non-toxic to pets and remarkably forgiving.",
+    stockCount: 16,
+    shortDescription: "Lush, healthy Money Plant Golden acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Money Plant Golden (Epipremnum aureum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/money-plant-golden-31774507368580.jpg",
+      "/images/plants/money-plant-golden-31774507401348.jpg",
+      "/images/plants/money-plant-golden-31774507565188.jpg",
+      "/images/plants/money-plant-golden-32076256379012.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "air-purifying", "bestseller", "beginner-friendly"],
+  },
+  {
+    id: "plant-money-plant-marble",
+    slug: "money-plant-marble",
+    name: "Money Plant Marble",
+    botanicalName: "Epipremnum aureum",
+    category: "plants",
+    subcategory: "Air Purifying",
+    price: 349,
+    originalPrice: 471,
+    rating: 4.85,
+    reviewCount: 45,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 13,
+    shortDescription: "Lush, healthy Money Plant Marble acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Money Plant Marble (Epipremnum aureum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/money-plant-marble-31793402019972.jpg",
+      "/images/plants/money-plant-marble-31793402052740.jpg",
+      "/images/plants/money-plant-marble-31793402085508.jpg",
+      "/images/plants/money-plant-marble-31793402118276.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "air-purifying", "beginner-friendly"],
+  },
+  {
+    id: "plant-money-plant-n-joy",
+    slug: "money-plant-n-joy",
+    name: "Money Plant N'Joy",
+    botanicalName: "Epipremnum aureum",
+    category: "plants",
+    subcategory: "Air Purifying",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.9,
+    reviewCount: 87,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 13,
+    shortDescription: "Lush, healthy Money Plant N'Joy acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Money Plant N'Joy (Epipremnum aureum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/money-plant-n-joy-31793386389636.jpg",
+      "/images/plants/money-plant-n-joy-31793386422404.jpg",
+      "/images/plants/money-plant-n-joy-31793386455172.jpg",
+      "/images/plants/money-plant-n-joy-32076251431044.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "air-purifying", "beginner-friendly"],
+  },
+  {
+    id: "plant-money-plant-satin",
+    slug: "money-plant-satin",
+    name: "Money Plant Satin",
+    botanicalName: "Epipremnum aureum",
+    category: "plants",
+    subcategory: "Air Purifying",
+    price: 699,
+    originalPrice: 800,
+    rating: 4.92,
+    reviewCount: 25,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 13,
+    shortDescription: "Lush, healthy Money Plant Satin acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Money Plant Satin (Epipremnum aureum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/money-plant-satin-31793373544580.jpg",
+      "/images/plants/money-plant-satin-31793373610116.jpg",
+      "/images/plants/money-plant-satin-31793373642884.jpg",
+      "/images/plants/money-plant-satin-32076065767556.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "air-purifying", "beginner-friendly"],
+  },
+  {
+    id: "plant-money-plant-variegated",
+    slug: "variegated-money-plant-marble",
+    name: "Money Plant Variegated",
+    botanicalName: "Epipremnum aureum",
+    category: "plants",
+    subcategory: "Air Purifying",
+    price: 199,
+    originalPrice: 268,
+    rating: 4.9,
+    reviewCount: 82,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 28,
+    shortDescription: "Lush, healthy Money Plant Variegated acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Money Plant Variegated (Epipremnum aureum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/money-plant-variegated-31808468549764.jpg",
+      "/images/plants/money-plant-variegated-31808468648068.jpg",
+      "/images/plants/money-plant-variegated-31808468811908.jpg",
+      "/images/plants/money-plant-variegated-32076245336196.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "air-purifying", "beginner-friendly"],
+  },
+  {
+    id: "plant-money-plant-variegated-with-moss-stick",
+    slug: "money-plant-variegated-with-moss-stick",
+    name: "Money Plant Variegated with Moss Stick",
+    botanicalName: "Epipremnum aureum",
+    category: "plants",
+    subcategory: "Air Purifying",
+    price: 2499,
+    originalPrice: 3373,
+    rating: 4.84,
+    reviewCount: 83,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 14,
+    shortDescription: "Lush, healthy Money Plant Variegated with Moss Stick acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Money Plant Variegated with Moss Stick (Epipremnum aureum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/money-plant-variegated-with-moss-stick-32124265103492.jpg",
+      "/images/plants/money-plant-variegated-with-moss-stick-32124265136260.jpg",
+      "/images/plants/money-plant-variegated-with-moss-stick-32124265201796.jpg",
+      "/images/plants/money-plant-variegated-with-moss-stick-32124265857156.png"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "air-purifying", "beginner-friendly"],
+  },
+  {
+    id: "plant-money-tree",
+    slug: "money-tree-pachira-aquatica",
+    name: "Money Tree",
+    botanicalName: "Pachira aquatica",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 999,
+    originalPrice: 1499,
+    rating: 4.94,
+    reviewCount: 26,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 31,
+    shortDescription: "Lush, healthy Money Tree acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Money Tree (Pachira aquatica) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
     images: [
       "/images/plants/money-tree-31793237524612.jpg",
       "/images/plants/money-tree-31793237622916.jpg",
       "/images/plants/money-tree-31793237655684.jpg",
-      "/images/plants/money-tree-31793237753988.jpg",
-    ],
+      "/images/plants/money-tree-31793237753988.jpg"
+],
     careGuide: {
       light: "Bright Indirect",
-      lightDetail: "Thrives in medium to bright indirect light. Avoid scorching direct sun.",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
       watering: "Weekly",
-      wateringDetail: "Water when top 2-3 inches of soil are dry. Empty excess drip water.",
-      humidity: "High (Misting Helpful)",
-      petFriendly: true,
-      petNote: "Non-toxic and pet safe.",
-      difficulty: "Beginner Friendly",
-      idealPlacement: ["Living Room Corner", "Home Office", "Wealth Vastu Corner"],
-      feed: "Feed monthly in spring and monsoon with organic fertilizer.",
-      repotting: "Repot every 2 years into a stable, weighted pot.",
-      commonIssues: "Leaf drop can occur when overwatered or placed in chilly drafts.",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
     },
     variants: {
-          "sizes": [
-                {
-                      "id": "size-s",
-                      "name": "Compact (8-12 inches)",
-                      "heightGuide": "Perfect for tabletops, side tables and shelves",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "size-m",
-                      "name": "Mature Bushy (14-18 inches)",
-                      "heightGuide": "Dense bushy growth with established root ball",
-                      "priceModifier": 200
-                }
-          ],
-          "planterMaterials": [
-                {
-                      "id": "mat-nursery",
-                      "name": "Recyclable Nursery Pot",
-                      "priceModifier": 0
-                },
-                {
-                      "id": "mat-terracotta",
-                      "name": "Handcrafted Terracotta Urn",
-                      "priceModifier": 499
-                },
-                {
-                      "id": "mat-ceramic",
-                      "name": "Artisan Sand Glazed Ceramic",
-                      "priceModifier": 699
-                },
-                {
-                      "id": "mat-selfwater",
-                      "name": "Hydro-Reservoir Self-Watering",
-                      "priceModifier": 599
-                }
-          ],
-          "planterColors": [
-                {
-                      "id": "col-terracotta",
-                      "name": "Terracotta Rust",
-                      "hex": "#B95139"
-                },
-                {
-                      "id": "col-sand",
-                      "name": "Warm Sand",
-                      "hex": "#E8DCCB"
-                },
-                {
-                      "id": "col-olive",
-                      "name": "Olive Leaf",
-                      "hex": "#384333"
-                },
-                {
-                      "id": "col-charcoal",
-                      "name": "Charcoal Slate",
-                      "hex": "#252822"
-                }
-          ]
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
     },
     packageContents: [
-          "Healthy acclimatized Money Tree Plant (Pachira Aquatica) in nursery grow pot",
-          "Curated pot selection with drainage saucer",
-          "Botanical care passport with seasonal watering schedule",
-          "Complimentary pouch of slow-release organic seaweed pellets"
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
     ],
-    approximateDimensions: "Height: 14-18 inches (including pot) | Pot Diameter: 5.5 inches",
-    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted", "pot-hydro-selfwatering"],
-    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray", "care-brass-mister"],
-    tags: ["vastu", "feng-shui", "pet-safe", "statement-plant", "bestseller"],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
   },
-
+  {
+    id: "plant-monstera-deliciosa",
+    slug: "monstera-deliciosa-swiss-cheese-plant",
+    name: "Monstera Deliciosa Plant",
+    botanicalName: "Monstera deliciosa",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 1259,
+    originalPrice: 1849,
+    rating: 4.83,
+    reviewCount: 105,
+    isBestseller: true,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 24,
+    shortDescription: "Lush, healthy Monstera Deliciosa Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Monstera Deliciosa Plant (Monstera deliciosa) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/monstera-deliciosa-plant-31793362174084.jpg",
+      "/images/plants/monstera-deliciosa-plant-31793362206852.jpg",
+      "/images/plants/monstera-deliciosa-plant-31793362272388.jpg",
+      "/images/plants/monstera-deliciosa-plant-31793362337924.jpg",
+      "/images/plants/monstera-deliciosa-plant-31793362370692.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants", "bestseller"],
+  },
+  {
+    id: "plant-monstera-deliciosa-plant-xl",
+    slug: "monstera-deliciosa-plant-xl",
+    name: "Monstera Deliciosa Plant - XL",
+    botanicalName: "Monstera deliciosa",
+    category: "plants",
+    subcategory: "Large Floor Plants",
+    price: 2499,
+    originalPrice: 3000,
+    rating: 4.84,
+    reviewCount: 90,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 19,
+    shortDescription: "Lush, healthy Monstera Deliciosa Plant - XL acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Monstera Deliciosa Plant - XL (Monstera deliciosa) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/monstera-deliciosa-plant-xl-31800119558276.jpg",
+      "/images/plants/monstera-deliciosa-plant-xl-31800119591044.jpg",
+      "/images/plants/monstera-deliciosa-plant-xl-31800119656580.jpg",
+      "/images/plants/monstera-deliciosa-plant-xl-32076243632260.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Focal Point", "Double-height Foyer", "Dining Hall Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "large-floor-plants"],
+  },
+  {
+    id: "plant-monstera-peru-green",
+    slug: "monstera-peru-green",
+    name: "Monstera Peru Green Plant",
+    botanicalName: "Monstera deliciosa",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.9,
+    reviewCount: 23,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 31,
+    shortDescription: "Lush, healthy Monstera Peru Green Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Monstera Peru Green Plant (Monstera deliciosa) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/monstera-peru-green-31793337827460.jpg",
+      "/images/plants/monstera-peru-green-31793337925764.jpg",
+      "/images/plants/monstera-peru-green-31793337958532.jpg",
+      "/images/plants/monstera-peru-green-32076242354308.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-netted-ficus-tree",
+    slug: "netted-ficus-tree",
+    name: "Netted Ficus Tree",
+    botanicalName: "Ficus microcarpa",
+    category: "plants",
+    subcategory: "Bonsai & Ficus",
+    price: 4499,
+    originalPrice: 4999,
+    rating: 4.83,
+    reviewCount: 92,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 30,
+    shortDescription: "Lush, healthy Netted Ficus Tree acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Netted Ficus Tree (Ficus microcarpa) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/netted-ficus-tree-32169816686724.jpg",
+      "/images/plants/netted-ficus-tree-32169816719492.jpg",
+      "/images/plants/netted-ficus-tree-32169816752260.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "bonsai-ficus"],
+  },
+  {
+    id: "plant-peace-lily-plant-set-of-2",
+    slug: "peace-lily-plant-set-of-2",
+    name: "Peace Lily Plant - Set of 2",
+    botanicalName: "Spathiphyllum wallisii",
+    category: "plants",
+    subcategory: "Air Purifying",
+    price: 1699,
+    originalPrice: 1999,
+    rating: 4.89,
+    reviewCount: 51,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 18,
+    shortDescription: "Lush, healthy Peace Lily Plant - Set of 2 acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Peace Lily Plant - Set of 2 (Spathiphyllum wallisii) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/peace-lily-plant-set-of-2-31818398957700.jpg",
+      "/images/plants/peace-lily-plant-set-of-2-31818401185924.jpg",
+      "/images/plants/peace-lily-plant-set-of-2-31818401218692.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "air-purifying"],
+  },
+  {
+    id: "plant-peacock-calathea",
+    slug: "peacock-plant-calathea-makoyana",
+    name: "Peacock Plant",
+    botanicalName: "Botanical cultivar",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.91,
+    reviewCount: 58,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 19,
+    shortDescription: "Lush, healthy Peacock Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Peacock Plant (Botanical cultivar) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/peacock-plant-31778230993028.jpg",
+      "/images/plants/peacock-plant-31778231124100.jpg",
+      "/images/plants/peacock-plant-31778231189636.jpg",
+      "/images/plants/peacock-plant-31778231255172.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-peperomia-angulata",
+    slug: "peperomia-angulata",
+    name: "Peperomia Angulata",
+    botanicalName: "Peperomia obtusifolia",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 329,
+    originalPrice: 499,
+    rating: 4.86,
+    reviewCount: 34,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 33,
+    shortDescription: "Lush, healthy Peperomia Angulata acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Peperomia Angulata (Peperomia obtusifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/peperomia-angulata-31793223270532.jpg",
+      "/images/plants/peperomia-angulata-31793223336068.jpg",
+      "/images/plants/peperomia-angulata-31793223368836.jpg",
+      "/images/plants/peperomia-angulata-31793223401604.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-peperomia-green-creeper-plant",
+    slug: "peperomia-green-creeper-plant",
+    name: "Peperomia Green Creeper Plant",
+    botanicalName: "Peperomia obtusifolia",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.91,
+    reviewCount: 76,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 22,
+    shortDescription: "Lush, healthy Peperomia Green Creeper Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Peperomia Green Creeper Plant (Peperomia obtusifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/peperomia-green-creeper-plant-31793213210756.jpg",
+      "/images/plants/peperomia-green-creeper-plant-31793213309060.jpg",
+      "/images/plants/peperomia-green-creeper-plant-31793213407364.jpg",
+      "/images/plants/peperomia-green-creeper-plant-32076240683140.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-peperomia-green",
+    slug: "peperomia-green-baby-rubber-plant",
+    name: "Peperomia Green Plant",
+    botanicalName: "Peperomia obtusifolia",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 299,
+    originalPrice: 403,
+    rating: 4.95,
+    reviewCount: 27,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 12,
+    shortDescription: "Lush, healthy Peperomia Green Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Peperomia Green Plant (Peperomia obtusifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/peperomia-green-plant-31793195614340.jpg",
+      "/images/plants/peperomia-green-plant-31793195679876.jpg",
+      "/images/plants/peperomia-green-plant-31793195778180.jpg",
+      "/images/plants/peperomia-green-plant-32076237832324.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-philodendron-brasil",
+    slug: "philodendron-brasil-plant",
+    name: "Philodendron Brasil Plant",
+    botanicalName: "Philodendron hederaceum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.88,
+    reviewCount: 90,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 15,
+    shortDescription: "Lush, healthy Philodendron Brasil Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Philodendron Brasil Plant (Philodendron hederaceum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/philodendron-brasil-plant-31793323344004.jpg",
+      "/images/plants/philodendron-brasil-plant-31793323376772.jpg",
+      "/images/plants/philodendron-brasil-plant-31793323409540.jpg",
+      "/images/plants/philodendron-brasil-plant-32076050530436.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-philodendron-ceylon-golden",
+    slug: "philodendron-ceylon-golden-plant",
+    name: "Philodendron Ceylon Golden Plant",
+    botanicalName: "Philodendron hederaceum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 499,
+    rating: 4.83,
+    reviewCount: 45,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 28,
+    shortDescription: "Lush, healthy Philodendron Ceylon Golden Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Philodendron Ceylon Golden Plant (Philodendron hederaceum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/philodendron-ceylon-golden-plant-31779600040068.jpg",
+      "/images/plants/philodendron-ceylon-golden-plant-31779600203908.jpg",
+      "/images/plants/philodendron-ceylon-golden-plant-31779600236676.jpg",
+      "/images/plants/philodendron-ceylon-golden-plant-32076062490756.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-philodendron-ceylon-golden-plant-with-moss-stick",
+    slug: "philodendron-ceylon-golden-plant-with-moss-stick",
+    name: "Philodendron Ceylon Golden Plant With Moss Stick",
+    botanicalName: "Philodendron hederaceum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 1999,
+    originalPrice: 2698,
+    rating: 4.86,
+    reviewCount: 62,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 14,
+    shortDescription: "Lush, healthy Philodendron Ceylon Golden Plant With Moss Stick acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Philodendron Ceylon Golden Plant With Moss Stick (Philodendron hederaceum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/philodendron-ceylon-golden-plant-with-moss-stick-32124232499332.jpg",
+      "/images/plants/philodendron-ceylon-golden-plant-with-moss-stick-32124232532100.jpg",
+      "/images/plants/philodendron-ceylon-golden-plant-with-moss-stick-32124232564868.jpg",
+      "/images/plants/philodendron-ceylon-golden-plant-with-moss-stick-32124232892548.png"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-philodendron-congo",
+    slug: "philodendron-congo",
+    name: "Philodendron Congo",
+    botanicalName: "Philodendron hederaceum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 1299,
+    originalPrice: 1499,
+    rating: 4.94,
+    reviewCount: 65,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 21,
+    shortDescription: "Lush, healthy Philodendron Congo acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Philodendron Congo (Philodendron hederaceum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/philodendron-congo-31793149444228.jpg",
+      "/images/plants/philodendron-congo-31793149509764.jpg",
+      "/images/plants/philodendron-congo-31793149608068.jpg",
+      "/images/plants/philodendron-congo-31793149640836.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-philodendron-melinonii-green-large",
+    slug: "philodendron-melinonii-green-large",
+    name: "Philodendron Melinonii Green - Large",
+    botanicalName: "Philodendron hederaceum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 1499,
+    originalPrice: 2299,
+    rating: 4.84,
+    reviewCount: 87,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 34,
+    shortDescription: "Lush, healthy Philodendron Melinonii Green - Large acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Philodendron Melinonii Green - Large (Philodendron hederaceum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/philodendron-melinonii-green-large-32169530720388.jpg",
+      "/images/plants/philodendron-melinonii-green-large-32169530785924.jpg",
+      "/images/plants/philodendron-melinonii-green-large-32169530818692.jpg",
+      "/images/plants/philodendron-melinonii-green-large-32169546940548.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-philodendron-micans-plant",
+    slug: "philodendron-micans-plant",
+    name: "Philodendron Micans Plant With Hanging Pot",
+    botanicalName: "Philodendron hederaceum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 899,
+    originalPrice: 1199,
+    rating: 4.86,
+    reviewCount: 85,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 12,
+    shortDescription: "Lush, healthy Philodendron Micans Plant With Hanging Pot acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Philodendron Micans Plant With Hanging Pot (Philodendron hederaceum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/philodendron-micans-plant-31793252270212.jpg",
+      "/images/plants/philodendron-micans-plant-31793252302980.jpg",
+      "/images/plants/philodendron-micans-plant-31793252401284.jpg",
+      "/images/plants/philodendron-micans-plant-31793252466820.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-philodendron-oxycardium-golden-plant",
+    slug: "philodendron-oxycardium-golden-plant",
+    name: "Philodendron Oxycardium Golden Plant",
+    botanicalName: "Philodendron hederaceum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.91,
+    reviewCount: 88,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 21,
+    shortDescription: "Lush, healthy Philodendron Oxycardium Golden Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Philodendron Oxycardium Golden Plant (Philodendron hederaceum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/philodendron-oxycardium-golden-plant-31793307943044.jpg",
+      "/images/plants/philodendron-oxycardium-golden-plant-31793307975812.jpg",
+      "/images/plants/philodendron-oxycardium-golden-plant-31793308008580.jpg",
+      "/images/plants/philodendron-oxycardium-golden-plant-31793308237956.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-philodendron-oxycardium-golden-plant-with-moss-stick",
+    slug: "philodendron-oxycardium-golden-plant-with-moss-stick",
+    name: "Philodendron Oxycardium Golden Plant with Moss Stick",
+    botanicalName: "Philodendron hederaceum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 1699,
+    originalPrice: 2499,
+    rating: 4.95,
+    reviewCount: 31,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 16,
+    shortDescription: "Lush, healthy Philodendron Oxycardium Golden Plant with Moss Stick acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Philodendron Oxycardium Golden Plant with Moss Stick (Philodendron hederaceum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/philodendron-oxycardium-golden-plant-with-moss-stick-32124408955012.jpg",
+      "/images/plants/philodendron-oxycardium-golden-plant-with-moss-stick-32124408987780.jpg",
+      "/images/plants/philodendron-oxycardium-golden-plant-with-moss-stick-32124409020548.jpg",
+      "/images/plants/philodendron-oxycardium-golden-plant-with-moss-stick-32124452372612.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-philodendron-oxycardium-green-plant",
+    slug: "philodendron-oxycardium-green-plant",
+    name: "Philodendron Oxycardium Green Plant",
+    botanicalName: "Philodendron hederaceum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.86,
+    reviewCount: 31,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 35,
+    shortDescription: "Lush, healthy Philodendron Oxycardium Green Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Philodendron Oxycardium Green Plant (Philodendron hederaceum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/philodendron-oxycardium-green-plant-31793276813444.jpg",
+      "/images/plants/philodendron-oxycardium-green-plant-31793276846212.jpg",
+      "/images/plants/philodendron-oxycardium-green-plant-31793276911748.jpg",
+      "/images/plants/philodendron-oxycardium-green-plant-31793276944516.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-philodendron-xanadu-plant-golden",
+    slug: "philodendron-xanadu-plant-golden",
+    name: "Philodendron Xanadu Plant Golden",
+    botanicalName: "Philodendron hederaceum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.9,
+    reviewCount: 52,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 21,
+    shortDescription: "Lush, healthy Philodendron Xanadu Plant Golden acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Philodendron Xanadu Plant Golden (Philodendron hederaceum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/philodendron-xanadu-plant-golden-31791679078532.jpg",
+      "/images/plants/philodendron-xanadu-plant-golden-31791679144068.jpg",
+      "/images/plants/philodendron-xanadu-plant-golden-31791679307908.jpg",
+      "/images/plants/philodendron-xanadu-plant-golden-32076042600580.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-philodendron-xanadu-plant-green",
+    slug: "philodendron-xanadu-plant-green",
+    name: "Philodendron Xanadu Plant Green",
+    botanicalName: "Philodendron hederaceum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.9,
+    reviewCount: 61,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 18,
+    shortDescription: "Lush, healthy Philodendron Xanadu Plant Green acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Philodendron Xanadu Plant Green (Philodendron hederaceum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/philodendron-xanadu-plant-green-31792572760196.jpg",
+      "/images/plants/philodendron-xanadu-plant-green-31792572956804.jpg",
+      "/images/plants/philodendron-xanadu-plant-green-32076041224324.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-poinsettia-plant",
+    slug: "poinsettia-plant",
+    name: "Poinsettia Red Plant for Christmas",
+    botanicalName: "Euphorbia pulcherrima",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 999,
+    originalPrice: 1499,
+    rating: 4.92,
+    reviewCount: 51,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 28,
+    shortDescription: "Lush, healthy Poinsettia Red Plant for Christmas acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Poinsettia Red Plant for Christmas (Euphorbia pulcherrima) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/poinsettia-plant-31966376263812.jpg",
+      "/images/plants/poinsettia-plant-31966376296580.jpg",
+      "/images/plants/poinsettia-plant-31966376362116.jpg",
+      "/images/plants/poinsettia-plant-31966376394884.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-raphis-palm-xl",
+    slug: "raphis-palm-xl",
+    name: "Raphis Palm XL",
+    botanicalName: "Rhapis excelsa",
+    category: "plants",
+    subcategory: "Large Floor Plants",
+    price: 1299,
+    originalPrice: 1799,
+    rating: 4.89,
+    reviewCount: 24,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 14,
+    shortDescription: "Lush, healthy Raphis Palm XL acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Raphis Palm XL (Rhapis excelsa) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/raphis-palm-xl-31800164745348.jpg",
+      "/images/plants/raphis-palm-xl-31800164778116.jpg",
+      "/images/plants/raphis-palm-xl-31800164941956.jpg",
+      "/images/plants/raphis-palm-xl-32076176883844.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Focal Point", "Double-height Foyer", "Dining Hall Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "large-floor-plants"],
+  },
+  {
+    id: "plant-red-poinsettia-plant",
+    slug: "red-poinsettia-plant",
+    name: "Red Poinsettia Plant",
+    botanicalName: "Euphorbia pulcherrima",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.91,
+    reviewCount: 53,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 13,
+    shortDescription: "Lush, healthy Red Poinsettia Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Red Poinsettia Plant (Euphorbia pulcherrima) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/red-poinsettia-plant-31966376329348.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-rubber-plant-burgundy",
+    slug: "rubber-plant-burgundy-ficus-elastica",
+    name: "Rubber Plant",
+    botanicalName: "Botanical cultivar",
+    category: "plants",
+    subcategory: "Air Purifying",
+    price: 549,
+    originalPrice: 741,
+    rating: 4.82,
+    reviewCount: 78,
+    isBestseller: true,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 32,
+    shortDescription: "Lush, healthy Rubber Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Rubber Plant (Botanical cultivar) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/rubber-plant-31800175526020.jpg",
+      "/images/plants/rubber-plant-31800175558788.jpg",
+      "/images/plants/rubber-plant-31800175624324.jpg",
+      "/images/plants/rubber-plant-31800175755396.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "air-purifying", "bestseller", "beginner-friendly"],
+  },
+  {
+    id: "plant-sansevieria-gold-flame-snake-plant",
+    slug: "sansevieria-gold-flame-snake-plant",
+    name: "Sansevieria Gold Flame Snake Plant",
+    botanicalName: "Sansevieria trifasciata",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.96,
+    reviewCount: 38,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 35,
+    shortDescription: "Lush, healthy Sansevieria Gold Flame Snake Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Sansevieria Gold Flame Snake Plant (Sansevieria trifasciata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/sansevieria-gold-flame-snake-plant-31792961060996.jpg",
+      "/images/plants/sansevieria-gold-flame-snake-plant-31792961093764.jpg",
+      "/images/plants/sansevieria-gold-flame-snake-plant-31792961159300.jpg",
+      "/images/plants/sansevieria-gold-flame-snake-plant-31792961355908.jpg"
+],
+    careGuide: {
+      light: "Low Light",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-sansevieria-superba",
+    slug: "sansevieria-superba-green-snake-plant",
+    name: "Sansevieria Superba Green - Snake Plant",
+    botanicalName: "Sansevieria trifasciata",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 499,
+    originalPrice: 673,
+    rating: 4.88,
+    reviewCount: 72,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 29,
+    shortDescription: "Lush, healthy Sansevieria Superba Green - Snake Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Sansevieria Superba Green - Snake Plant (Sansevieria trifasciata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/sansevieria-superba-green-snake-plant-31793037475972.jpg",
+      "/images/plants/sansevieria-superba-green-snake-plant-31793037508740.jpg",
+      "/images/plants/sansevieria-superba-green-snake-plant-31793037574276.jpg",
+      "/images/plants/sansevieria-superba-green-snake-plant-31793037607044.jpg"
+],
+    careGuide: {
+      light: "Low Light",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-sansevieria-whitney-snake-plant",
+    slug: "sansevieria-whitney-snake-plant",
+    name: "Sansevieria Whitney - Snake Plant",
+    botanicalName: "Sansevieria trifasciata",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 1049,
+    originalPrice: 1499,
+    rating: 4.82,
+    reviewCount: 27,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 34,
+    shortDescription: "Lush, healthy Sansevieria Whitney - Snake Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Sansevieria Whitney - Snake Plant (Sansevieria trifasciata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/sansevieria-whitney-snake-plant-31793001693316.jpg",
+      "/images/plants/sansevieria-whitney-snake-plant-31793001726084.jpg",
+      "/images/plants/sansevieria-whitney-snake-plant-31793001758852.jpg",
+      "/images/plants/sansevieria-whitney-snake-plant-31793001791620.jpg"
+],
+    careGuide: {
+      light: "Low Light",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-satin-pothos",
+    slug: "satin-pothos-scindapsus-pictus",
+    name: "Satin Pothos Argyraeus-small For Environment Day Gifting",
+    botanicalName: "Scindapsus pictus",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 325,
+    originalPrice: 438,
+    rating: 4.95,
+    reviewCount: 87,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 13,
+    shortDescription: "Lush, healthy Satin Pothos Argyraeus-small For Environment Day Gifting acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Satin Pothos Argyraeus-small For Environment Day Gifting (Scindapsus pictus) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/satin-pothos-argyraeus-31792719036548.jpg",
+      "/images/plants/satin-pothos-argyraeus-31792719069316.jpg",
+      "/images/plants/satin-pothos-argyraeus-31792719134852.jpg",
+      "/images/plants/satin-pothos-argyraeus-32076152438916.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-selaginella-fern",
+    slug: "selaginella-fern",
+    name: "Selaginella Fern",
+    botanicalName: "Nephrolepis exaltata",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.94,
+    reviewCount: 92,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 29,
+    shortDescription: "Lush, healthy Selaginella Fern acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Selaginella Fern (Nephrolepis exaltata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/selaginella-fern-31792677879940.jpg",
+      "/images/plants/selaginella-fern-31792677978244.jpg",
+      "/images/plants/selaginella-fern-31792678076548.jpg",
+      "/images/plants/selaginella-fern-31792678207620.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "High (Misting Helpful)",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-small-aglaonema-red-plant",
+    slug: "small-aglaonema-red-plant",
+    name: "Aglaonema Red Plant",
+    botanicalName: "Aglaonema commutatum",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.84,
+    reviewCount: 34,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 13,
+    shortDescription: "Lush, healthy Aglaonema Red Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Aglaonema Red Plant (Aglaonema commutatum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/small-aglaonema-red-plant-32220892627076.jpg"
+],
+    careGuide: {
+      light: "Low Light",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-small-chlorophytum-spider-plant",
+    slug: "small-chlorophytum-spider-plant",
+    name: "Chlorophytum Spider Plant",
+    botanicalName: "Chlorophytum comosum",
+    category: "plants",
+    subcategory: "Pet Friendly",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.86,
+    reviewCount: 23,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: true,
+    inStock: true,
+    stockCount: 23,
+    shortDescription: "Lush, healthy Chlorophytum Spider Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Chlorophytum Spider Plant (Chlorophytum comosum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/small-chlorophytum-spider-plant-31800232542340.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: true,
+      petNote: "Non-toxic to cats and dogs. Completely safe for curious pets and toddlers.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "pet-friendly", "beginner-friendly", "pet-safe"],
+  },
+  {
+    id: "plant-small-jade-plant-mini",
+    slug: "small-jade-plant-mini",
+    name: "Jade Mini Plant",
+    botanicalName: "Crassula ovata",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 199,
+    originalPrice: 268,
+    rating: 4.85,
+    reviewCount: 49,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 33,
+    shortDescription: "Lush, healthy Jade Mini Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Jade Mini Plant (Crassula ovata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/small-jade-plant-mini-31800078499972.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-snake-plant-futura-superba",
+    slug: "snake-plant-futura-superba",
+    name: "Snake Plant - Futura Superba",
+    botanicalName: "Sansevieria trifasciata",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.83,
+    reviewCount: 89,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 25,
+    shortDescription: "Lush, healthy Snake Plant - Futura Superba acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Snake Plant - Futura Superba (Sansevieria trifasciata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/snake-plant-futura-superba-31793023713412.jpg",
+      "/images/plants/snake-plant-futura-superba-31793023746180.jpg",
+      "/images/plants/snake-plant-futura-superba-31793023778948.jpg",
+      "/images/plants/snake-plant-futura-superba-31793023877252.jpg"
+],
+    careGuide: {
+      light: "Low Light",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-snake-golden",
+    slug: "snake-plant-golden-laurentii",
+    name: "Snake Plant - Golden",
+    botanicalName: "Sansevieria trifasciata",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 349,
+    originalPrice: 471,
+    rating: 4.96,
+    reviewCount: 37,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 19,
+    shortDescription: "Lush, healthy Snake Plant - Golden acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Snake Plant - Golden (Sansevieria trifasciata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/snake-plant-golden-31911045267588.jpg",
+      "/images/plants/snake-plant-golden-31911045300356.jpg",
+      "/images/plants/snake-plant-golden-31911045333124.jpg",
+      "/images/plants/snake-plant-golden-31911045365892.jpg"
+],
+    careGuide: {
+      light: "Low Light",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-snake-golden-hahnii",
+    slug: "snake-plant-golden-hahnii",
+    name: "Snake Plant - Golden Hahnii",
+    botanicalName: "Sansevieria trifasciata",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.94,
+    reviewCount: 90,
+    isBestseller: true,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 25,
+    shortDescription: "Lush, healthy Snake Plant - Golden Hahnii acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Snake Plant - Golden Hahnii (Sansevieria trifasciata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/snake-plant-golden-hahnii-31771655864452.jpg",
+      "/images/plants/snake-plant-golden-hahnii-31771656028292.jpg",
+      "/images/plants/snake-plant-golden-hahnii-31771656192132.jpg",
+      "/images/plants/snake-plant-golden-hahnii-32076154273924.jpg"
+],
+    careGuide: {
+      light: "Low Light",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "bestseller", "beginner-friendly"],
+  },
+  {
+    id: "plant-snake-plant-green",
+    slug: "snake-plant-green",
+    name: "Snake Plant - Green",
+    botanicalName: "Sansevieria trifasciata",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.82,
+    reviewCount: 60,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 37,
+    shortDescription: "Lush, healthy Snake Plant - Green acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Snake Plant - Green (Sansevieria trifasciata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/snake-plant-green-31792945037444.jpg",
+      "/images/plants/snake-plant-green-31792945070212.jpg",
+      "/images/plants/snake-plant-green-31792945102980.jpg",
+      "/images/plants/snake-plant-green-32076039651460.jpg"
+],
+    careGuide: {
+      light: "Low Light",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-stromanthe-triostar",
+    slug: "stromanthe-triostar-plant",
+    name: "Stromanthe Triostar Plant Christmas Hamper",
+    botanicalName: "Stromanthe thalia",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 749,
+    originalPrice: 999,
+    rating: 4.95,
+    reviewCount: 49,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 20,
+    shortDescription: "Lush, healthy Stromanthe Triostar Plant Christmas Hamper acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Stromanthe Triostar Plant Christmas Hamper (Stromanthe thalia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/stromanthe-triostar-plant-31800251875460.jpg",
+      "/images/plants/stromanthe-triostar-plant-31800251908228.jpg",
+      "/images/plants/stromanthe-triostar-plant-32076001968260.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-syngonium-confetti",
+    slug: "syngonium-confetti",
+    name: "Syngonium Confetti",
+    botanicalName: "Syngonium podophyllum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 1249,
+    originalPrice: 1449,
+    rating: 4.84,
+    reviewCount: 31,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 24,
+    shortDescription: "Lush, healthy Syngonium Confetti acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Syngonium Confetti (Syngonium podophyllum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/syngonium-confetti-32030209835140.jpg",
+      "/images/plants/syngonium-confetti-32030209867908.jpg",
+      "/images/plants/syngonium-confetti-32030209900676.jpg",
+      "/images/plants/syngonium-confetti-32030209966212.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-syngonium-pink",
+    slug: "syngonium-pink-arrowhead-plant",
+    name: "Syngonium Pink Plant",
+    botanicalName: "Syngonium podophyllum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.94,
+    reviewCount: 165,
+    isBestseller: true,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 19,
+    shortDescription: "Lush, healthy Syngonium Pink Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Syngonium Pink Plant (Syngonium podophyllum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/syngonium-pink-plant-31792667656324.jpg",
+      "/images/plants/syngonium-pink-plant-31792667721860.jpg",
+      "/images/plants/syngonium-pink-plant-31792667754628.jpg",
+      "/images/plants/syngonium-pink-plant-31792667885700.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants", "bestseller", "beginner-friendly"],
+  },
+  {
+    id: "plant-syngonium-pixie-plant",
+    slug: "syngonium-pixie-plant",
+    name: "Syngonium Pixie Plant",
+    botanicalName: "Syngonium podophyllum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 329,
+    originalPrice: 399,
+    rating: 4.85,
+    reviewCount: 76,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 23,
+    shortDescription: "Lush, healthy Syngonium Pixie Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Syngonium Pixie Plant (Syngonium podophyllum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/syngonium-pixie-plant-31792619323524.jpg",
+      "/images/plants/syngonium-pixie-plant-31792619389060.jpg",
+      "/images/plants/syngonium-pixie-plant-31792619421828.jpg",
+      "/images/plants/syngonium-pixie-plant-32075997708420.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-syngonium-weindlandii",
+    slug: "syngonium-weindlandii",
+    name: "Syngonium Weindlandii Plant",
+    botanicalName: "Syngonium podophyllum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.86,
+    reviewCount: 47,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 19,
+    shortDescription: "Lush, healthy Syngonium Weindlandii Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Syngonium Weindlandii Plant (Syngonium podophyllum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/syngonium-weindlandii-32076014321796.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-syngonium-white-butterfly",
+    slug: "syngonium-white-butterfly-plant",
+    name: "Syngonium White Butterfly Plant",
+    botanicalName: "Syngonium podophyllum",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 199,
+    originalPrice: 268,
+    rating: 4.82,
+    reviewCount: 42,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 24,
+    shortDescription: "Lush, healthy Syngonium White Butterfly Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Syngonium White Butterfly Plant (Syngonium podophyllum) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/syngonium-white-butterfly-plant-31792589963396.jpg",
+      "/images/plants/syngonium-white-butterfly-plant-31792589996164.jpg",
+      "/images/plants/syngonium-white-butterfly-plant-31792590028932.jpg",
+      "/images/plants/syngonium-white-butterfly-plant-31792590094468.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-the-china-doll-xl",
+    slug: "the-china-doll-plant-xl",
+    name: "The China Doll Plant - XL",
+    botanicalName: "Radermachera sinica",
+    category: "plants",
+    subcategory: "Large Floor Plants",
+    price: 1499,
+    originalPrice: 1800,
+    rating: 4.87,
+    reviewCount: 62,
+    isBestseller: true,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 36,
+    shortDescription: "Lush, healthy The China Doll Plant - XL acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The The China Doll Plant - XL (Radermachera sinica) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/the-china-doll-plant-xl-31799955456132.jpg",
+      "/images/plants/the-china-doll-plant-xl-31799955488900.jpg",
+      "/images/plants/the-china-doll-plant-xl-31799955521668.jpg",
+      "/images/plants/the-china-doll-plant-xl-32075992924292.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Focal Point", "Double-height Foyer", "Dining Hall Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "large-floor-plants", "bestseller"],
+  },
+  {
+    id: "plant-variegated-jade-mini",
+    slug: "variegated-jade-mini-plant",
+    name: "Variegated Jade Mini Plant",
+    botanicalName: "Crassula ovata",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 249,
+    originalPrice: 349,
+    rating: 4.86,
+    reviewCount: 83,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 24,
+    shortDescription: "Lush, healthy Variegated Jade Mini Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Variegated Jade Mini Plant (Crassula ovata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/variegated-jade-mini-plant-32125253910660.jpg",
+      "/images/plants/variegated-jade-mini-plant-32125253943428.jpg",
+      "/images/plants/variegated-jade-mini-plant-32125253976196.jpg",
+      "/images/plants/variegated-jade-mini-plant-32125254041732.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-xanthosoma-plant",
+    slug: "xanthosoma-plant",
+    name: "Xanthosoma Plant",
+    botanicalName: "Xanthosoma sagittifolium",
+    category: "plants",
+    subcategory: "Tabletop Plants",
+    price: 399,
+    originalPrice: 549,
+    rating: 4.92,
+    reviewCount: 86,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 22,
+    shortDescription: "Lush, healthy Xanthosoma Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Xanthosoma Plant (Xanthosoma sagittifolium) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/xanthosoma-plant-31792552312964.jpg",
+      "/images/plants/xanthosoma-plant-31792552378500.jpg",
+      "/images/plants/xanthosoma-plant-31792552411268.jpg",
+      "/images/plants/xanthosoma-plant-31792552444036.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Coffee Table", "Study Desk", "Bookshelf Display"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "tabletop-plants"],
+  },
+  {
+    id: "plant-zamia-zz-black",
+    slug: "zamia-zz-black-raven-plant",
+    name: "Zamia ZZ Black Plant",
+    botanicalName: "Zamioculcas zamiifolia",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 599,
+    originalPrice: 808,
+    rating: 4.95,
+    reviewCount: 32,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 20,
+    shortDescription: "Lush, healthy Zamia ZZ Black Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Zamia ZZ Black Plant (Zamioculcas zamiifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/zamia-zz-black-plant-31792532422788.jpg",
+      "/images/plants/zamia-zz-black-plant-31792532455556.jpg",
+      "/images/plants/zamia-zz-black-plant-31792532521092.jpg"
+],
+    careGuide: {
+      light: "Low Light",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "beginner-friendly"],
+  },
+  {
+    id: "plant-zebra-haworthia",
+    slug: "zebra-haworthia-succulent-plant",
+    name: "Zebra Haworthia Plant",
+    botanicalName: "Haworthiopsis attenuata",
+    category: "plants",
+    subcategory: "Succulents & Cacti",
+    price: 249,
+    originalPrice: 336,
+    rating: 4.84,
+    reviewCount: 51,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 13,
+    shortDescription: "Lush, healthy Zebra Haworthia Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The Zebra Haworthia Plant (Haworthiopsis attenuata) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/zebra-haworthia-plant-31791683174532.jpg",
+      "/images/plants/zebra-haworthia-plant-31791683240068.jpg",
+      "/images/plants/zebra-haworthia-plant-31791683272836.jpg",
+      "/images/plants/zebra-haworthia-plant-32076011405444.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Loves bright sunny windowsills with 4-6 hours of daily sunlight to maintain compact vibrant growth.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Bright Window Ledge", "Balcony Garden Nook", "Study Table"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "succulents-cacti", "beginner-friendly"],
+  },
+  {
+    id: "plant-zz-plant-emerald",
+    slug: "zz-plant-zamioculcas-zamiifolia",
+    name: "ZZ Plant",
+    botanicalName: "Zamioculcas zamiifolia",
+    category: "plants",
+    subcategory: "Low Light Plants",
+    price: 499,
+    originalPrice: 673,
+    rating: 4.84,
+    reviewCount: 156,
+    isBestseller: true,
+    isNew: false,
+    isBeginnerFriendly: true,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 23,
+    shortDescription: "Lush, healthy ZZ Plant acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The ZZ Plant (Zamioculcas zamiifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/zz-plant-31792473505924.jpg",
+      "/images/plants/zz-plant-31792473604228.jpg",
+      "/images/plants/zz-plant-31792473735300.jpg",
+      "/images/plants/zz-plant-31792473768068.jpg"
+],
+    careGuide: {
+      light: "Low Light",
+      lightDetail: "Thrives in low to medium indirect light; also does exceptionally well under office fluorescent lighting.",
+      watering: "Every 10-14 Days",
+      wateringDetail: "Allow soil to dry out completely between waterings. Drought-hardy and forgiving of missed waterings.",
+      humidity: "Tolerant of Dry Air",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Beginner Friendly",
+      idealPlacement: ["Office Workstation", "Bedside Table", "Cozy Low-Light Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "low-light-plants", "bestseller", "beginner-friendly"],
+  },
+  {
+    id: "plant-zz-plant-xl",
+    slug: "zz-plant-xl",
+    name: "ZZ Plant - XL",
+    botanicalName: "Zamioculcas zamiifolia",
+    category: "plants",
+    subcategory: "Large Floor Plants",
+    price: 2499,
+    originalPrice: 3000,
+    rating: 4.92,
+    reviewCount: 58,
+    isBestseller: false,
+    isNew: false,
+    isBeginnerFriendly: false,
+    isPetSafe: false,
+    inStock: true,
+    stockCount: 25,
+    shortDescription: "Lush, healthy ZZ Plant - XL acclimatized for indoor coastal living and bright modern interiors.",
+    description: "The ZZ Plant - XL (Zamioculcas zamiifolia) is an exquisite indoor botanical specimen celebrated for its foliage and resilience. Sourced with vigorous root systems, potted into organic potting mix, and delivered with zero transit shock.",
+    images: [
+      "/images/plants/zz-plant-xl-32131287646340.jpg",
+      "/images/plants/zz-plant-xl-32131287679108.jpg",
+      "/images/plants/zz-plant-xl-32131287711876.jpg"
+],
+    careGuide: {
+      light: "Bright Indirect",
+      lightDetail: "Thrives in generous bright, filtered daylight. Morning sun is beneficial, but shield from scorching direct summer noon rays.",
+      watering: "Weekly",
+      wateringDetail: "Water thoroughly when the top 1-2 inches of soil feel dry to the touch. Ensure excess water drains freely.",
+      humidity: "Average Home",
+      petFriendly: false,
+      petNote: "Contains natural plant oxalates; keep out of reach of curious cats, dogs, or small children.",
+      difficulty: "Moderate Care",
+      idealPlacement: ["Living Room Focal Point", "Double-height Foyer", "Dining Hall Corner"],
+      feed: "Nourish once a month during spring and summer with diluted organic seaweed foliage tonic.",
+      repotting: "Repot every 18-24 months into a slightly wider pot with fresh aerated potting mix.",
+      commonIssues: "Yellowing leaves typically indicate overwatering; crispy leaf tips indicate need for misting.",
+    },
+    variants: {
+      sizes: [
+        {
+          id: "size-standard",
+          name: "Standard Tabletop / Nursery",
+          heightGuide: "Healthy rooted specimen in grower pot",
+          priceModifier: 0,
+        },
+        {
+          id: "size-mature",
+          name: "Mature Specimen",
+          heightGuide: "Well-established foliage with multiple shoots",
+          priceModifier: 300,
+        },
+      ],
+      planterMaterials: [
+        {
+          id: "mat-nursery",
+          name: "Recyclable Nursery Pot",
+          priceModifier: 0,
+        },
+        {
+          id: "mat-terracotta",
+          name: "Handcrafted Terracotta Urn",
+          priceModifier: 499,
+        },
+        {
+          id: "mat-ceramic",
+          name: "Artisan Sand Glazed Ceramic",
+          priceModifier: 699,
+        },
+        {
+          id: "mat-selfwater",
+          name: "Hydro-Reservoir Self-Watering",
+          priceModifier: 599,
+        },
+      ],
+      planterColors: [
+        {
+          id: "col-terracotta",
+          name: "Terracotta Rust",
+          hex: "#B95139",
+        },
+        {
+          id: "col-sand",
+          name: "Warm Sand",
+          hex: "#E8DCCB",
+        },
+        {
+          id: "col-olive",
+          name: "Olive Leaf",
+          hex: "#384333",
+        },
+        {
+          id: "col-charcoal",
+          name: "Charcoal Basalt",
+          hex: "#2B2D2F",
+        },
+      ],
+    },
+    packageContents: [
+      "1x Healthy rooted indoor plant specimen",
+      "1x Eco-friendly breathable protective transit wrap",
+      "1x Botanical passport with customized watering & care tips",
+    ],
+    approximateDimensions: "Height: 12-18 inches | Pot Diameter: 5-6 inches",
+    compatiblePlanters: ["pot-terracotta-urn", "pot-sandstone-fluted"],
+    careAddons: ["care-potting-mix-5kg", "care-neem-oil-spray"],
+    tags: ["indoor", "plants", "large-floor-plants"],
+  },
   // ==========================================
   // 2. POTS & PLANTERS
   // ==========================================

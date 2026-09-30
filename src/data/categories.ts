@@ -10,12 +10,13 @@ export const categories: CategoryInfo[] = [
       "Explore air-purifying foliage, architectural statement trees, trailing vines, and low-light companions, nurtured specifically for apartment and indoor living.",
     image:
       "/images/plants/monstera-deliciosa-plant-31793362174084.jpg",
-    productCount: 39,
+    productCount: 144,
     subcategories: [
       "Large Floor Plants",
       "Air Purifying",
       "Low Light",
-      "Flowering",
+      "Tabletop Plants",
+      "Bonsai & Ficus",
       "Succulents & Cacti",
       "Pet-Safe",
     ],
