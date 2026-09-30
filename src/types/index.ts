@@ -139,6 +139,8 @@ export interface CustomerReview {
   productName: string;
   productSlug?: string;
   helpfulCount: number;
+  source?: "google" | "website";
+  badge?: string;
 }
 
 export interface BlogPost {
