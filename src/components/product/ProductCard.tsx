@@ -21,9 +21,14 @@ import {
 interface ProductCardProps {
   product: Product;
   priority?: boolean;
+  layout?: "grid" | "list";
 }
 
-export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = false }) => {
+export const ProductCard: React.FC<ProductCardProps> = ({
+  product,
+  priority = false,
+  layout = "grid",
+}) => {
   const { isInWishlist, toggleWishlist } = useWishlist();
   const { addItem } = useCart();
 
@@ -47,7 +52,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
     e.preventDefault();
     e.stopPropagation();
 
-    // If product has complex variant choices (e.g. multiple sizes or materials), open modal
+    // If product has complex variant choices, open modal
     const hasVariants =
       (product.variants?.sizes && product.variants.sizes.length > 1) ||
       (product.variants?.planterMaterials && product.variants.planterMaterials.length > 1);
@@ -73,10 +78,136 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
     toggleWishlist(product.id);
   };
 
+  // ==========================================
+  // 1. LIST VIEW (Full-width row on mobile/desktop)
+  // ==========================================
+  if (layout === "list") {
+    return (
+      <>
+        <div
+          className="group relative flex flex-row bg-cream-50 rounded-2xl border border-sand overflow-hidden hover:border-sand-dark hover:shadow-md transition-all duration-300"
+          onMouseEnter={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          {/* Left: Square Image */}
+          <Link
+            href={`/products/${product.slug}`}
+            className="relative w-28 sm:w-40 aspect-square bg-sand/40 overflow-hidden shrink-0 block"
+          >
+            <Image
+              src={displayImage}
+              alt={product.name}
+              fill
+              sizes="(max-width: 640px) 120px, 160px"
+              priority={priority}
+              className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            />
+            {discountPercent > 0 && (
+              <span className="absolute top-2 left-2 px-1.5 py-0.5 rounded-full text-[9px] font-bold bg-terracotta text-white shadow-2xs">
+                {discountPercent}% OFF
+              </span>
+            )}
+          </Link>
+
+          {/* Right: Info */}
+          <div className="p-3 sm:p-4 flex-1 flex flex-col justify-between min-w-0">
+            <div className="space-y-1">
+              <div className="flex items-center justify-between text-[10px] sm:text-[11px] text-charcoal-muted">
+                <span className="truncate">{product.subcategory}</span>
+                {product.rating && (
+                  <div className="flex items-center gap-1 font-medium text-charcoal shrink-0">
+                    <span className="text-terracotta">★</span>
+                    <span>{product.rating.toFixed(1)}</span>
+                    <span className="text-charcoal-muted/70 hidden sm:inline">({product.reviewCount})</span>
+                  </div>
+                )}
+              </div>
+
+              <h3 className="font-serif text-sm sm:text-base font-bold text-olive group-hover:text-terracotta transition-colors line-clamp-1">
+                <Link href={`/products/${product.slug}`}>{product.name}</Link>
+              </h3>
+
+              {product.botanicalName && (
+                <p className="text-[10px] sm:text-xs italic text-charcoal-muted line-clamp-1">
+                  {product.botanicalName}
+                </p>
+              )}
+
+              {product.careGuide && (
+                <div className="flex items-center gap-1.5 pt-1 text-[10px] text-charcoal-muted">
+                  <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-sand-light border border-sand/70 truncate max-w-[100px]">
+                    <Sun className="w-2.5 h-2.5 text-terracotta shrink-0" />
+                    <span className="truncate">{product.careGuide.light}</span>
+                  </span>
+                  <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-sand-light border border-sand/70 truncate max-w-[100px]">
+                    <Droplets className="w-2.5 h-2.5 text-olive shrink-0" />
+                    <span className="truncate">{product.careGuide.watering}</span>
+                  </span>
+                </div>
+              )}
+            </div>
+
+            <div className="pt-2 border-t border-sand/70 flex items-center justify-between">
+              <div className="flex items-baseline gap-1.5">
+                <span className="text-sm sm:text-base font-bold text-charcoal font-sans">
+                  {formatPrice(product.price)}
+                </span>
+                {product.originalPrice > product.price && (
+                  <span className="text-[10px] sm:text-xs line-through text-charcoal-muted">
+                    {formatPrice(product.originalPrice)}
+                  </span>
+                )}
+              </div>
+
+              <div className="flex items-center gap-1.5">
+                <button
+                  onClick={handleWishlistToggle}
+                  aria-label={isFavorite ? "Remove from wishlist" : "Save to wishlist"}
+                  className="p-1.5 rounded-lg bg-cream hover:bg-sand text-charcoal transition-all shadow-xs cursor-pointer"
+                >
+                  <Heart
+                    className={`w-3.5 h-3.5 ${
+                      isFavorite ? "fill-terracotta text-terracotta" : "text-charcoal"
+                    }`}
+                  />
+                </button>
+                <button
+                  onClick={handleDirectAdd}
+                  className="px-3 py-1.5 rounded-lg bg-terracotta hover:bg-terracotta-dark text-white text-xs font-medium transition-colors flex items-center gap-1 shadow-2xs cursor-pointer"
+                >
+                  {justAdded ? (
+                    <>
+                      <Check className="w-3.5 h-3.5" />
+                      <span>Added</span>
+                    </>
+                  ) : (
+                    <>
+                      <ShoppingBag className="w-3.5 h-3.5" />
+                      <span>Add</span>
+                    </>
+                  )}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <QuickAddModal
+          product={product}
+          isOpen={isQuickAddOpen}
+          onClose={() => setIsQuickAddOpen(false)}
+        />
+      </>
+    );
+  }
+
+  // ==========================================
+  // 2. GRID VIEW (Optimized for 2-column mobile)
+  // ==========================================
   return (
     <>
       <div
-        className="group relative flex flex-col bg-cream-50 rounded-2xl border border-sand overflow-hidden hover:border-sand-dark hover:shadow-md transition-all duration-300"
+        className="group relative flex flex-col bg-cream-50 rounded-xl sm:rounded-2xl border border-sand overflow-hidden hover:border-sand-dark hover:shadow-md transition-all duration-300"
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
@@ -89,28 +220,29 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
             src={displayImage}
             alt={product.name}
             fill
-            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+            sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
             priority={priority}
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           />
 
           {/* Badges Overlay */}
-          <div className="absolute top-2.5 left-2.5 flex flex-col gap-1.5 z-10">
+          <div className="absolute top-1.5 sm:top-2.5 left-1.5 sm:left-2.5 flex flex-col gap-1 z-10">
             {product.isBestseller && (
-              <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-full text-[10px] font-semibold uppercase tracking-wider bg-olive text-cream shadow-2xs">
+              <span className="inline-flex items-center gap-0.5 px-1.5 sm:px-2 py-0.5 rounded-full text-[9px] sm:text-[10px] font-semibold uppercase tracking-wider bg-olive text-cream shadow-2xs">
                 <Sparkles className="w-2.5 h-2.5" />
-                <span>Bestseller</span>
+                <span className="hidden xs:inline">Bestseller</span>
+                <span className="xs:hidden">Top</span>
               </span>
             )}
             {discountPercent > 0 && (
-              <span className="inline-flex items-center px-2 py-0.5 rounded-full text-[10px] font-bold bg-terracotta text-white shadow-2xs">
+              <span className="inline-flex items-center px-1.5 py-0.5 rounded-full text-[9px] sm:text-[10px] font-bold bg-terracotta text-white shadow-2xs w-fit">
                 {discountPercent}% OFF
               </span>
             )}
             {product.isPetSafe && (
-              <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[10px] font-medium bg-cream/90 backdrop-blur-xs text-olive border border-olive/30 shadow-2xs">
-                <ShieldCheck className="w-3 h-3 text-olive" />
-                <span>Pet Safe</span>
+              <span className="inline-flex items-center gap-0.5 px-1.5 py-0.5 rounded-full text-[9px] sm:text-[10px] font-medium bg-cream/90 backdrop-blur-xs text-olive border border-olive/30 shadow-2xs w-fit">
+                <ShieldCheck className="w-2.5 h-2.5 text-olive shrink-0" />
+                <span className="hidden xs:inline">Pet Safe</span>
               </span>
             )}
           </div>
@@ -119,10 +251,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
           <button
             onClick={handleWishlistToggle}
             aria-label={isFavorite ? "Remove from wishlist" : "Save to wishlist"}
-            className="absolute top-2.5 right-2.5 p-2 rounded-full bg-cream/80 backdrop-blur-xs hover:bg-cream text-charcoal transition-all shadow-xs cursor-pointer z-10"
+            className="absolute top-1.5 sm:top-2.5 right-1.5 sm:right-2.5 p-1.5 sm:p-2 rounded-full bg-cream/80 backdrop-blur-xs hover:bg-cream text-charcoal transition-all shadow-xs cursor-pointer z-10"
           >
             <Heart
-              className={`w-4 h-4 transition-colors ${
+              className={`w-3.5 h-3.5 sm:w-4 sm:h-4 transition-colors ${
                 isFavorite
                   ? "fill-terracotta text-terracotta scale-110"
                   : "text-charcoal hover:text-terracotta"
@@ -152,61 +284,60 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
         </Link>
 
         {/* Product Details Card Body */}
-        <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between space-y-3">
+        <div className="p-2.5 sm:p-4 flex-1 flex flex-col justify-between space-y-1.5 sm:space-y-3">
           <div>
             {/* Category / Subcategory & Botanical name */}
-            <div className="flex items-center justify-between text-[11px] text-charcoal-muted">
-              <span>{product.subcategory}</span>
+            <div className="flex items-center justify-between text-[10px] sm:text-[11px] text-charcoal-muted">
+              <span className="truncate">{product.subcategory}</span>
               {product.rating && (
-                <div className="flex items-center gap-1 font-medium text-charcoal">
-                  <span className="text-terracotta">★</span>
+                <div className="flex items-center gap-0.5 font-medium text-charcoal shrink-0">
+                  <span className="text-terracotta text-[10px]">★</span>
                   <span>{product.rating.toFixed(1)}</span>
-                  <span className="text-charcoal-muted/70">({product.reviewCount})</span>
                 </div>
               )}
             </div>
 
             {/* Product Title */}
-            <h3 className="font-serif text-base sm:text-lg font-bold text-olive group-hover:text-terracotta transition-colors mt-1 line-clamp-1">
+            <h3 className="font-serif text-xs sm:text-base font-bold text-olive group-hover:text-terracotta transition-colors mt-0.5 line-clamp-1">
               <Link href={`/products/${product.slug}`}>{product.name}</Link>
             </h3>
 
             {/* Botanical Latin Name */}
             {product.botanicalName && (
-              <p className="text-xs italic text-charcoal-muted line-clamp-1">
+              <p className="text-[10px] sm:text-xs italic text-charcoal-muted line-clamp-1">
                 {product.botanicalName}
               </p>
             )}
 
             {/* Plant Care Indicator Pills (if plant) */}
             {product.careGuide && (
-              <div className="flex items-center gap-2 pt-2 text-[11px] text-charcoal-muted">
+              <div className="flex items-center gap-1 pt-1 text-[10px] sm:text-[11px] text-charcoal-muted">
                 <div
-                  className="flex items-center gap-1 px-1.5 py-0.5 rounded bg-sand-light border border-sand/70"
+                  className="flex items-center gap-0.5 px-1 sm:px-1.5 py-0.5 rounded bg-sand-light border border-sand/70 truncate"
                   title={`Light: ${product.careGuide.light}`}
                 >
-                  <Sun className="w-3 h-3 text-terracotta" />
-                  <span className="truncate max-w-[80px]">{product.careGuide.light}</span>
+                  <Sun className="w-2.5 h-2.5 text-terracotta shrink-0" />
+                  <span className="truncate max-w-[60px] sm:max-w-[80px]">{product.careGuide.light}</span>
                 </div>
                 <div
-                  className="flex items-center gap-1 px-1.5 py-0.5 rounded bg-sand-light border border-sand/70"
+                  className="flex items-center gap-0.5 px-1 sm:px-1.5 py-0.5 rounded bg-sand-light border border-sand/70 truncate"
                   title={`Watering: ${product.careGuide.watering}`}
                 >
-                  <Droplets className="w-3 h-3 text-olive" />
-                  <span className="truncate max-w-[80px]">{product.careGuide.watering}</span>
+                  <Droplets className="w-2.5 h-2.5 text-olive shrink-0" />
+                  <span className="truncate max-w-[60px] sm:max-w-[80px]">{product.careGuide.watering}</span>
                 </div>
               </div>
             )}
           </div>
 
           {/* Price & Mobile Add */}
-          <div className="pt-2 border-t border-sand/70 flex items-center justify-between">
-            <div className="flex items-baseline gap-2">
-              <span className="text-base font-bold text-charcoal font-sans">
+          <div className="pt-1.5 sm:pt-2 border-t border-sand/70 flex items-center justify-between">
+            <div className="flex items-baseline gap-1 sm:gap-2">
+              <span className="text-xs sm:text-base font-bold text-charcoal font-sans">
                 {formatPrice(product.price)}
               </span>
               {product.originalPrice > product.price && (
-                <span className="text-xs line-through text-charcoal-muted">
+                <span className="text-[10px] sm:text-xs line-through text-charcoal-muted">
                   {formatPrice(product.originalPrice)}
                 </span>
               )}
@@ -216,9 +347,9 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, priority = fa
             <button
               onClick={handleDirectAdd}
               aria-label={`Add ${product.name} to cart`}
-              className="sm:hidden p-2 rounded-xl bg-terracotta hover:bg-terracotta-dark text-white cursor-pointer transition-colors"
+              className="sm:hidden p-1.5 rounded-lg bg-terracotta hover:bg-terracotta-dark text-white cursor-pointer transition-colors"
             >
-              {justAdded ? <Check className="w-4 h-4" /> : <ShoppingBag className="w-4 h-4" />}
+              {justAdded ? <Check className="w-3.5 h-3.5" /> : <ShoppingBag className="w-3.5 h-3.5" />}
             </button>
           </div>
         </div>

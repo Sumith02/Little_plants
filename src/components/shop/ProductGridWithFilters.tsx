@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { Product, ProductCategory } from "@/types";
 import { ProductCard } from "@/components/product/ProductCard";
@@ -13,6 +13,10 @@ import {
   RotateCcw,
   Sparkles,
   Search,
+  LayoutGrid,
+  List,
+  ArrowUp,
+  Check,
 } from "lucide-react";
 
 interface ProductGridWithFiltersProps {
@@ -49,11 +53,26 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
   const [sortBy, setSortBy] = useState<string>("featured");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
+  // Mobile layout & scroll states
+  const [viewMode, setViewMode] = useState<"grid" | "list">("grid");
+  const [showBackToTop, setShowBackToTop] = useState(false);
+
   // Mobile filter drawer state
   const [isMobileFiltersOpen, setIsMobileFiltersOpen] = useState(false);
 
-  // Pagination state
-  const [displayCount, setDisplayCount] = useState(12);
+  // Pagination state (24 by default for faster browsing without endless clicks)
+  const [displayCount, setDisplayCount] = useState(24);
+
+  // Scroll listener for floating Back-to-Top pill
+  useEffect(() => {
+    const handleScroll = () => {
+      if (typeof window !== "undefined") {
+        setShowBackToTop(window.scrollY > 350);
+      }
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   // Subcategories available for active category
   const activeCategoryObj = (catalogCategories || defaultCategories).find((c) => c.id === selectedCategory);
@@ -174,13 +193,111 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
     setSearchQuery("");
   };
 
+  // Quick Filter Chips with live counts
+  const quickFilters = useMemo(() => {
+    const pool = activeProductsPool;
+    return [
+      {
+        id: "all",
+        label: "All Botanicals",
+        count: pool.length,
+        isActive:
+          selectedCategory === (currentCategory || "all") &&
+          selectedSubcategory === "all" &&
+          priceRange === "all" &&
+          selectedLight === "all" &&
+          selectedWatering === "all" &&
+          !beginnerOnly &&
+          !petSafeOnly &&
+          !searchQuery,
+        onClick: () => clearAllFilters(),
+      },
+      {
+        id: "air-purifying",
+        label: "🌿 Air Purifying",
+        count: pool.filter((p) =>
+          p.tags.some((t) => t.toLowerCase().includes("air") || t.toLowerCase().includes("purif"))
+        ).length,
+        isActive: searchQuery.toLowerCase() === "air purifying",
+        onClick: () => {
+          if (searchQuery.toLowerCase() === "air purifying") {
+            setSearchQuery("");
+          } else {
+            setSearchQuery("Air Purifying");
+          }
+        },
+      },
+      {
+        id: "low-light",
+        label: "☀️ Low Light",
+        count: pool.filter((p) => p.careGuide?.light === "Low Light").length,
+        isActive: selectedLight === "Low Light",
+        onClick: () => setSelectedLight(selectedLight === "Low Light" ? "all" : "Low Light"),
+      },
+      {
+        id: "pet-safe",
+        label: "🐾 Pet Safe",
+        count: pool.filter((p) => p.isPetSafe).length,
+        isActive: petSafeOnly,
+        onClick: () => setPetSafeOnly(!petSafeOnly),
+      },
+      {
+        id: "beginner",
+        label: "🌱 Beginner Friendly",
+        count: pool.filter((p) => p.isBeginnerFriendly).length,
+        isActive: beginnerOnly,
+        onClick: () => setBeginnerOnly(!beginnerOnly),
+      },
+      {
+        id: "under-500",
+        label: "💰 Under ₹500",
+        count: pool.filter((p) => p.price < 500).length,
+        isActive: priceRange === "under-500",
+        onClick: () => setPriceRange(priceRange === "under-500" ? "all" : "under-500"),
+      },
+      {
+        id: "500-1000",
+        label: "🏷️ ₹500 – ₹1000",
+        count: pool.filter((p) => p.price >= 500 && p.price <= 1000).length,
+        isActive: priceRange === "500-1000",
+        onClick: () => setPriceRange(priceRange === "500-1000" ? "all" : "500-1000"),
+      },
+      {
+        id: "tabletop",
+        label: "🪴 Tabletop",
+        count: pool.filter((p) =>
+          p.tags.some((t) => t.toLowerCase().includes("tabletop") || t.toLowerCase().includes("desk"))
+        ).length,
+        isActive: searchQuery.toLowerCase() === "tabletop",
+        onClick: () => {
+          if (searchQuery.toLowerCase() === "tabletop") {
+            setSearchQuery("");
+          } else {
+            setSearchQuery("Tabletop");
+          }
+        },
+      },
+    ];
+  }, [
+    activeProductsPool,
+    selectedCategory,
+    currentCategory,
+    selectedSubcategory,
+    priceRange,
+    selectedLight,
+    selectedWatering,
+    beginnerOnly,
+    petSafeOnly,
+    searchQuery,
+  ]);
+
   const paginatedProducts = sortedProducts.slice(0, displayCount);
 
   return (
-    <div className="space-y-8">
-      {/* Header and Category Navigation Pills */}
+    <div className="space-y-6 sm:space-y-8">
+      {/* Header and Category Navigation */}
       <div className="space-y-4">
-        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-sand pb-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-sand pb-5">
           <div className="space-y-1">
             <h1 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-olive">
               {title}
@@ -259,6 +376,52 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
             ))}
           </div>
         )}
+
+        {/* Instant Search Bar & Fast-Filter Chips */}
+        <div className="space-y-2.5 pt-1">
+          <div className="relative">
+            <Search className="w-4 h-4 text-charcoal-muted absolute left-3.5 top-1/2 -translate-y-1/2 pointer-events-none" />
+            <input
+              type="text"
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder="Search 140+ indoor plants, botanical traits, care..."
+              className="w-full pl-10 pr-10 py-2.5 bg-white border border-sand rounded-xl text-xs text-charcoal placeholder:text-charcoal-muted/60 focus:outline-none focus:border-terracotta shadow-2xs"
+            />
+            {searchQuery && (
+              <button
+                onClick={() => setSearchQuery("")}
+                className="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-charcoal-muted hover:text-terracotta cursor-pointer"
+              >
+                <X className="w-3.5 h-3.5" />
+              </button>
+            )}
+          </div>
+
+          {/* Quick Filter Horizontal Chips Carousel */}
+          <div className="flex items-center gap-1.5 overflow-x-auto pb-1 scrollbar-none">
+            {quickFilters.map((qf) => (
+              <button
+                key={qf.id}
+                onClick={qf.onClick}
+                className={`px-3 py-1.5 rounded-full text-xs font-medium whitespace-nowrap transition-all flex items-center gap-1.5 cursor-pointer shrink-0 ${
+                  qf.isActive
+                    ? "bg-terracotta text-white shadow-2xs"
+                    : "bg-cream-50 hover:bg-sand border border-sand text-charcoal"
+                }`}
+              >
+                <span>{qf.label}</span>
+                <span
+                  className={`text-[10px] px-1.5 py-0.2 rounded-full ${
+                    qf.isActive ? "bg-white/20 text-white font-bold" : "bg-sand text-charcoal-muted"
+                  }`}
+                >
+                  {qf.count}
+                </span>
+              </button>
+            ))}
+          </div>
+        </div>
       </div>
 
       {/* Main Layout: Desktop Sidebar Filters + Product Grid */}
@@ -490,20 +653,51 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
               )}
             </div>
 
-            {/* Sort Selection */}
-            <div className="flex items-center gap-2 shrink-0 self-end sm:self-auto">
-              <span className="text-xs text-charcoal-muted">Sort:</span>
-              <select
-                value={sortBy}
-                onChange={(e) => setSortBy(e.target.value)}
-                className="px-3 py-1.5 rounded-lg bg-white border border-sand text-xs font-medium text-charcoal focus:outline-none focus:border-terracotta cursor-pointer"
-              >
-                <option value="featured">Featured & Bestsellers</option>
-                <option value="price-asc">Price: Low to High</option>
-                <option value="price-desc">Price: High to Low</option>
-                <option value="rating">Highest Rated</option>
-                <option value="newest">New Arrivals</option>
-              </select>
+            {/* View Mode & Sort Selection */}
+            <div className="flex items-center gap-2.5 shrink-0 self-end sm:self-auto">
+              {/* Grid / List Switcher */}
+              <div className="flex items-center bg-white border border-sand rounded-lg p-0.5 shadow-2xs">
+                <button
+                  onClick={() => setViewMode("grid")}
+                  aria-label="Grid view (2 columns on mobile)"
+                  title="Grid view"
+                  className={`p-1.5 rounded-md transition-colors cursor-pointer ${
+                    viewMode === "grid"
+                      ? "bg-sand text-olive font-bold shadow-2xs"
+                      : "text-charcoal-muted hover:text-charcoal"
+                  }`}
+                >
+                  <LayoutGrid className="w-3.5 h-3.5" />
+                </button>
+                <button
+                  onClick={() => setViewMode("list")}
+                  aria-label="List view (single column row)"
+                  title="List view"
+                  className={`p-1.5 rounded-md transition-colors cursor-pointer ${
+                    viewMode === "list"
+                      ? "bg-sand text-olive font-bold shadow-2xs"
+                      : "text-charcoal-muted hover:text-charcoal"
+                  }`}
+                >
+                  <List className="w-3.5 h-3.5" />
+                </button>
+              </div>
+
+              {/* Sort Selection */}
+              <div className="flex items-center gap-1.5">
+                <span className="text-xs text-charcoal-muted hidden xs:inline">Sort:</span>
+                <select
+                  value={sortBy}
+                  onChange={(e) => setSortBy(e.target.value)}
+                  className="px-2.5 sm:px-3 py-1.5 rounded-lg bg-white border border-sand text-xs font-medium text-charcoal focus:outline-none focus:border-terracotta cursor-pointer shadow-2xs"
+                >
+                  <option value="featured">Featured & Bestsellers</option>
+                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-desc">Price: High to Low</option>
+                  <option value="rating">Highest Rated</option>
+                  <option value="newest">New Arrivals</option>
+                </select>
+              </div>
             </div>
           </div>
 
@@ -530,25 +724,93 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
               </button>
             </div>
           ) : (
-            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
+            <div
+              className={
+                viewMode === "list"
+                  ? "grid grid-cols-1 gap-2.5 sm:gap-4"
+                  : "grid grid-cols-2 sm:grid-cols-2 xl:grid-cols-3 gap-2.5 sm:gap-6"
+              }
+            >
               {paginatedProducts.map((product) => (
-                <ProductCard key={product.id} product={product} />
+                <ProductCard key={product.id} product={product} layout={viewMode} />
               ))}
             </div>
           )}
 
-          {/* Load More Button */}
+          {/* Load More Button & Progress Bar */}
           {displayCount < sortedProducts.length && (
-            <div className="text-center pt-8">
+            <div className="text-center pt-8 space-y-3">
+              <div className="max-w-xs mx-auto">
+                <div className="flex justify-between text-[11px] text-charcoal-muted mb-1.5">
+                  <span>Showing {Math.min(displayCount, sortedProducts.length)} of {sortedProducts.length} plants</span>
+                  <span>{Math.round((Math.min(displayCount, sortedProducts.length) / sortedProducts.length) * 100)}%</span>
+                </div>
+                <div className="w-full bg-sand rounded-full h-1.5 overflow-hidden">
+                  <div
+                    className="bg-terracotta h-full rounded-full transition-all duration-300"
+                    style={{ width: `${(Math.min(displayCount, sortedProducts.length) / sortedProducts.length) * 100}%` }}
+                  />
+                </div>
+              </div>
+
               <button
-                onClick={() => setDisplayCount((prev) => prev + 12)}
-                className="px-8 py-3 rounded-xl bg-sand hover:bg-sand-dark text-olive font-medium text-xs tracking-wide transition-colors cursor-pointer"
+                onClick={() => setDisplayCount((prev) => prev + 24)}
+                className="px-8 py-3 rounded-xl bg-sand hover:bg-sand-dark text-olive font-medium text-xs tracking-wide transition-colors cursor-pointer shadow-2xs"
               >
                 Load More Specimens ({sortedProducts.length - displayCount} remaining)
               </button>
             </div>
           )}
         </div>
+      </div>
+
+      {/* ============================================================
+          FLOATING STICKY MOBILE ACTION BAR
+         ============================================================ */}
+      <div className="fixed bottom-5 left-1/2 -translate-x-1/2 z-40 lg:hidden flex items-center gap-2 bg-olive/95 text-cream px-3.5 py-2 rounded-full shadow-2xl border border-sand/20 backdrop-blur-md transition-all">
+        <button
+          onClick={() => setIsMobileFiltersOpen(true)}
+          className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-cream/15 text-xs font-semibold hover:bg-cream/25 transition-colors cursor-pointer"
+        >
+          <SlidersHorizontal className="w-3.5 h-3.5 text-sand" />
+          <span>Filters {activeFilterCount > 0 ? `(${activeFilterCount})` : ""}</span>
+        </button>
+
+        <div className="h-4 w-px bg-sand/30" />
+
+        <div className="flex items-center bg-cream/10 rounded-full p-0.5">
+          <button
+            onClick={() => setViewMode("grid")}
+            aria-label="Grid view (2 columns)"
+            className={`p-1.5 rounded-full transition-colors cursor-pointer ${
+              viewMode === "grid" ? "bg-terracotta text-white" : "text-cream-200"
+            }`}
+          >
+            <LayoutGrid className="w-3.5 h-3.5" />
+          </button>
+          <button
+            onClick={() => setViewMode("list")}
+            aria-label="List view (single column row)"
+            className={`p-1.5 rounded-full transition-colors cursor-pointer ${
+              viewMode === "list" ? "bg-terracotta text-white" : "text-cream-200"
+            }`}
+          >
+            <List className="w-3.5 h-3.5" />
+          </button>
+        </div>
+
+        {showBackToTop && (
+          <>
+            <div className="h-4 w-px bg-sand/30" />
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              aria-label="Scroll back to top"
+              className="p-1.5 rounded-full bg-cream/15 hover:bg-cream/25 text-sand transition-colors cursor-pointer"
+            >
+              <ArrowUp className="w-3.5 h-3.5" />
+            </button>
+          </>
+        )}
       </div>
 
       {/* ============================================================
@@ -567,7 +829,7 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
                   <h3 className="font-serif text-lg font-bold text-olive">Filter Catalog</h3>
                   <button
                     onClick={() => setIsMobileFiltersOpen(false)}
-                    className="p-1 rounded-full text-charcoal-muted hover:bg-sand"
+                    className="p-1 rounded-full text-charcoal-muted hover:bg-sand cursor-pointer"
                   >
                     <X className="w-5 h-5" />
                   </button>
@@ -580,7 +842,7 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
                       Preferences
                     </span>
                     <div className="space-y-2">
-                      <label className="flex items-center gap-2">
+                      <label className="flex items-center gap-2 cursor-pointer">
                         <input
                           type="checkbox"
                           checked={beginnerOnly}
@@ -589,7 +851,7 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
                         />
                         <span>Beginner-Friendly</span>
                       </label>
-                      <label className="flex items-center gap-2">
+                      <label className="flex items-center gap-2 cursor-pointer">
                         <input
                           type="checkbox"
                           checked={petSafeOnly}
@@ -598,7 +860,7 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
                         />
                         <span>Certified Pet-Safe</span>
                       </label>
-                      <label className="flex items-center gap-2">
+                      <label className="flex items-center gap-2 cursor-pointer">
                         <input
                           type="checkbox"
                           checked={inStockOnly}
@@ -612,11 +874,38 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
 
                   <div className="border-t border-sand pt-3">
                     <span className="font-bold uppercase tracking-wider text-olive block mb-2">
+                      Price Range
+                    </span>
+                    <div className="space-y-1.5">
+                      {[
+                        { id: "all", label: "All Prices" },
+                        { id: "under-500", label: "Under ₹500" },
+                        { id: "500-1000", label: "₹500 – ₹1,000" },
+                        { id: "1000-2000", label: "₹1,000 – ₹2,000" },
+                        { id: "above-2000", label: "₹2,000 & Above" },
+                      ].map((opt) => (
+                        <label key={opt.id} className="flex items-center gap-2 cursor-pointer">
+                          <input
+                            type="radio"
+                            name="m-price"
+                            value={opt.id}
+                            checked={priceRange === opt.id}
+                            onChange={(e) => setPriceRange(e.target.value)}
+                            className="text-terracotta"
+                          />
+                          <span>{opt.label}</span>
+                        </label>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="border-t border-sand pt-3">
+                    <span className="font-bold uppercase tracking-wider text-olive block mb-2">
                       Light Requirement
                     </span>
                     <div className="space-y-1.5">
                       {["all", "Bright Indirect", "Low Light", "Direct Sun"].map((l) => (
-                        <label key={l} className="flex items-center gap-2">
+                        <label key={l} className="flex items-center gap-2 cursor-pointer">
                           <input
                             type="radio"
                             name="m-light"
@@ -636,7 +925,7 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
                     </span>
                     <div className="space-y-1.5">
                       {["all", "Weekly", "Every 10-14 Days"].map((w) => (
-                        <label key={w} className="flex items-center gap-2">
+                        <label key={w} className="flex items-center gap-2 cursor-pointer">
                           <input
                             type="radio"
                             name="m-watering"
@@ -655,13 +944,13 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
               <div className="pt-4 border-t border-sand flex gap-2">
                 <button
                   onClick={clearAllFilters}
-                  className="flex-1 py-2.5 rounded-xl border border-sand text-xs font-medium text-charcoal hover:bg-sand"
+                  className="flex-1 py-2.5 rounded-xl border border-sand text-xs font-medium text-charcoal hover:bg-sand cursor-pointer"
                 >
                   Clear All
                 </button>
                 <button
                   onClick={() => setIsMobileFiltersOpen(false)}
-                  className="flex-1 py-2.5 rounded-xl bg-terracotta text-white text-xs font-medium hover:bg-terracotta-dark"
+                  className="flex-1 py-2.5 rounded-xl bg-terracotta text-white text-xs font-medium hover:bg-terracotta-dark cursor-pointer"
                 >
                   Apply ({sortedProducts.length})
                 </button>

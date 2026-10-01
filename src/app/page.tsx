@@ -243,9 +243,9 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {bestsellerProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} product={product} layout="grid" />
           ))}
         </div>
       </section>
@@ -417,11 +417,11 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="flex md:grid md:grid-cols-3 gap-4 md:gap-6 overflow-x-auto md:overflow-visible pb-4 md:pb-0 snap-x snap-mandatory -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-none">
           {featuredBundles.map((bundle) => (
             <div
               key={bundle.id}
-              className="bg-cream-50 rounded-2xl border border-sand hover:border-sand-dark p-5 flex flex-col justify-between shadow-2xs hover:shadow-md transition-all duration-300"
+              className="w-[85vw] max-w-sm md:w-auto shrink-0 snap-center bg-cream-50 rounded-2xl border border-sand hover:border-sand-dark p-5 flex flex-col justify-between shadow-2xs hover:shadow-md transition-all duration-300"
             >
               <div className="space-y-4">
                 {/* Bundle Image */}
@@ -532,9 +532,9 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-6">
           {beginnerProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product.id} product={product} layout="grid" />
           ))}
         </div>
       </section>
@@ -609,12 +609,12 @@ export default function HomePage() {
           </Link>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="flex md:grid md:grid-cols-3 gap-4 md:gap-6 overflow-x-auto md:overflow-visible pb-4 md:pb-0 snap-x snap-mandatory -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-none">
           {journalPosts.slice(0, 3).map((post) => (
             <Link
               key={post.id}
               href={`/journal/${post.slug}`}
-              className="group bg-cream-50 rounded-2xl border border-sand hover:border-sand-dark overflow-hidden flex flex-col transition-all duration-300 shadow-2xs hover:shadow-md"
+              className="w-[82vw] max-w-sm md:w-auto shrink-0 snap-center group bg-cream-50 rounded-2xl border border-sand hover:border-sand-dark overflow-hidden flex flex-col transition-all duration-300 shadow-2xs hover:shadow-md"
             >
               <div className="relative aspect-16/10 bg-sand overflow-hidden">
                 <Image
@@ -702,11 +702,11 @@ export default function HomePage() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="flex md:grid md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6 overflow-x-auto md:overflow-visible pb-4 md:pb-0 snap-x snap-mandatory -mx-4 px-4 sm:mx-0 sm:px-0 scrollbar-none">
             {demoReviews.map((review) => (
               <div
                 key={review.id}
-                className="bg-cream rounded-2xl p-6 border border-sand shadow-2xs space-y-4 flex flex-col justify-between hover:shadow-md transition-shadow"
+                className="w-[85vw] max-w-sm md:w-auto shrink-0 snap-center bg-cream rounded-2xl p-5 sm:p-6 border border-sand shadow-2xs space-y-4 flex flex-col justify-between hover:shadow-md transition-shadow"
               >
                 <div className="space-y-3">
                   <div className="flex items-center justify-between">
