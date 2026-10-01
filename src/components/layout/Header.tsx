@@ -53,12 +53,12 @@ export const Header: React.FC = () => {
         }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-18 sm:h-20">
+          <div className="flex items-center justify-between h-16 sm:h-20">
             {/* Mobile Hamburger & Search (Mobile only) */}
-            <div className="flex items-center gap-1 lg:hidden">
+            <div className="flex items-center gap-0.5 sm:gap-1 lg:hidden min-w-[76px]">
               <button
                 onClick={() => setIsMobileNavOpen(true)}
-                className="p-2 rounded-lg text-charcoal hover:text-terracotta hover:bg-sand/60 transition-colors"
+                className="p-2 rounded-xl text-charcoal hover:text-terracotta hover:bg-sand/60 transition-colors"
                 aria-label="Open navigation menu"
               >
                 <Menu className="w-5 h-5" />
@@ -66,7 +66,7 @@ export const Header: React.FC = () => {
 
               <button
                 onClick={() => setIsSearchOpen(true)}
-                className="p-2 rounded-lg text-charcoal hover:text-terracotta hover:bg-sand/60 transition-colors"
+                className="p-2 rounded-xl text-charcoal hover:text-terracotta hover:bg-sand/60 transition-colors"
                 aria-label="Open search dialog"
               >
                 <Search className="w-5 h-5" />
@@ -74,8 +74,8 @@ export const Header: React.FC = () => {
             </div>
 
             {/* Brand Logo & Name */}
-            <div className="flex-1 lg:flex-none text-center lg:text-left">
-              <Link href="/" className="inline-flex items-center gap-2 group py-1" aria-label="Little Plants Home">
+            <div className="flex-1 lg:flex-none flex items-center justify-center lg:justify-start">
+              <Link href="/" className="inline-flex items-center gap-2.5 group py-1" aria-label="Little Plants Home">
                 <div className="relative h-9 sm:h-11 w-32 sm:w-40 flex items-center">
                   <Image
                     src={siteConfig.logos.green}
@@ -86,19 +86,19 @@ export const Header: React.FC = () => {
                     priority
                   />
                 </div>
-                <div className="hidden xl:flex flex-col border-l border-sand pl-2 text-left">
-                  <span className="text-[11px] font-semibold text-olive tracking-wide">
+                <div className="hidden xl:flex flex-col border-l border-sand pl-2.5 text-left">
+                  <span className="text-[11px] font-semibold text-olive tracking-wide leading-tight">
                     {siteConfig.kannadaBrandName}
                   </span>
-                  <span className="text-[8px] uppercase tracking-widest text-charcoal-muted">
+                  <span className="text-[8px] uppercase tracking-widest text-charcoal-muted leading-tight">
                     Botanical Studio
                   </span>
                 </div>
               </Link>
             </div>
 
-            {/* Desktop Desktop Mega Navigation */}
-            <nav className="hidden lg:flex items-center gap-7 h-full">
+            {/* Desktop Mega Navigation */}
+            <nav className="hidden lg:flex items-center gap-2 xl:gap-4 2xl:gap-5 h-full">
               {/* Plants with Mega Menu */}
               <div
                 className="relative h-full flex items-center"
@@ -107,7 +107,7 @@ export const Header: React.FC = () => {
               >
                 <Link
                   href="/category/plants"
-                  className="text-xs font-semibold uppercase tracking-wider text-charcoal hover:text-terracotta py-2 flex items-center gap-1 transition-colors"
+                  className="px-2.5 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wider text-charcoal hover:text-terracotta hover:bg-sand/40 flex items-center gap-1 transition-all"
                 >
                   <span>Indoor Plants</span>
                   <ChevronDown className="w-3.5 h-3.5 opacity-60" />
@@ -229,7 +229,7 @@ export const Header: React.FC = () => {
               {/* Pots & Planters */}
               <Link
                 href="/category/pots-planters"
-                className="text-xs font-semibold uppercase tracking-wider text-charcoal hover:text-terracotta py-2 transition-colors"
+                className="px-2.5 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wider text-charcoal hover:text-terracotta hover:bg-sand/40 transition-all"
               >
                 Pots & Planters
               </Link>
@@ -237,7 +237,7 @@ export const Header: React.FC = () => {
               {/* Plant Care */}
               <Link
                 href="/category/plant-care"
-                className="text-xs font-semibold uppercase tracking-wider text-charcoal hover:text-terracotta py-2 transition-colors"
+                className="px-2.5 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wider text-charcoal hover:text-terracotta hover:bg-sand/40 transition-all"
               >
                 Care
               </Link>
@@ -245,7 +245,7 @@ export const Header: React.FC = () => {
               {/* Gardening Tools */}
               <Link
                 href="/category/gardening-tools"
-                className="text-xs font-semibold uppercase tracking-wider text-charcoal hover:text-terracotta py-2 transition-colors"
+                className="px-2.5 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wider text-charcoal hover:text-terracotta hover:bg-sand/40 transition-all"
               >
                 Tools
               </Link>
@@ -253,7 +253,7 @@ export const Header: React.FC = () => {
               {/* Gifts */}
               <Link
                 href="/category/gifts"
-                className="text-xs font-semibold uppercase tracking-wider text-charcoal hover:text-terracotta py-2 transition-colors"
+                className="px-2.5 py-1.5 rounded-lg text-xs font-semibold uppercase tracking-wider text-charcoal hover:text-terracotta hover:bg-sand/40 transition-all"
               >
                 Gifts
               </Link>
@@ -261,7 +261,7 @@ export const Header: React.FC = () => {
               {/* Custom Bundle Builder Pill */}
               <Link
                 href="/bundle-builder"
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-sand hover:bg-sand-dark text-charcoal text-xs font-medium transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-sand hover:bg-sand-dark text-charcoal text-xs font-medium transition-colors"
               >
                 <Layers className="w-3.5 h-3.5 text-terracotta" />
                 <span>Build Corner</span>
@@ -270,7 +270,7 @@ export const Header: React.FC = () => {
               {/* Plant Finder Quiz Pill */}
               <Link
                 href="/quiz"
-                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-terracotta/10 hover:bg-terracotta/20 text-terracotta text-xs font-semibold transition-colors"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-terracotta/10 hover:bg-terracotta/20 text-terracotta text-xs font-semibold transition-colors"
               >
                 <Sparkles className="w-3.5 h-3.5" />
                 <span>Plant Quiz</span>
@@ -278,7 +278,7 @@ export const Header: React.FC = () => {
             </nav>
 
             {/* Right Action Icons */}
-            <div className="flex items-center gap-1 sm:gap-2">
+            <div className="flex items-center justify-end gap-1 sm:gap-2 min-w-[76px] lg:min-w-0">
               {/* Search button on Desktop */}
               <button
                 onClick={() => setIsSearchOpen(true)}
@@ -295,12 +295,12 @@ export const Header: React.FC = () => {
               {/* Wishlist Link */}
               <Link
                 href="/wishlist"
-                className="p-2 rounded-full text-charcoal hover:text-terracotta hover:bg-sand/60 transition-colors relative"
+                className="p-2 rounded-xl text-charcoal hover:text-terracotta hover:bg-sand/60 transition-colors relative"
                 aria-label={`Wishlist with ${wishlistCount} items`}
               >
                 <Heart className="w-5 h-5" />
                 {wishlistCount > 0 && (
-                  <span className="absolute top-1 right-1 w-4 h-4 rounded-full bg-terracotta text-white text-[10px] font-bold flex items-center justify-center">
+                  <span className="absolute -top-0.5 -right-0.5 w-4 h-4 rounded-full bg-terracotta text-white text-[10px] font-bold flex items-center justify-center ring-2 ring-cream shadow-2xs">
                     {wishlistCount}
                   </span>
                 )}
@@ -309,12 +309,12 @@ export const Header: React.FC = () => {
               {/* Cart Drawer Trigger */}
               <button
                 onClick={openCartDrawer}
-                className="p-2 rounded-full text-charcoal hover:text-terracotta hover:bg-sand/60 transition-colors relative cursor-pointer"
+                className="p-2 rounded-xl text-charcoal hover:text-terracotta hover:bg-sand/60 transition-colors relative cursor-pointer"
                 aria-label={`Shopping cart with ${itemCount} items`}
               >
                 <ShoppingBag className="w-5 h-5" />
                 {itemCount > 0 && (
-                  <span className="absolute top-1 right-1 w-4 h-4 rounded-full bg-olive text-white text-[10px] font-bold flex items-center justify-center">
+                  <span className="absolute -top-0.5 -right-0.5 w-4 h-4 rounded-full bg-olive text-white text-[10px] font-bold flex items-center justify-center ring-2 ring-cream shadow-2xs">
                     {itemCount}
                   </span>
                 )}

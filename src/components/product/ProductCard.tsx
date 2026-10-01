@@ -89,10 +89,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
           onMouseEnter={() => setIsHovered(true)}
           onMouseLeave={() => setIsHovered(false)}
         >
-          {/* Left: Square Image */}
+          {/* Left: 10/11 Aspect Image */}
           <Link
             href={`/products/${product.slug}`}
-            className="relative w-28 sm:w-40 aspect-square bg-sand/40 overflow-hidden shrink-0 block"
+            className="relative w-28 sm:w-36 aspect-[10/11] bg-sand/40 overflow-hidden shrink-0 block"
           >
             <Image
               src={displayImage}
@@ -103,7 +103,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({
               className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
             />
             {discountPercent > 0 && (
-              <span className="absolute top-2 left-2 px-1.5 py-0.5 rounded-full text-[9px] font-bold bg-terracotta text-white shadow-2xs">
+              <span className="absolute bottom-2 right-2 px-1.5 py-0.5 rounded-full text-[9px] font-bold bg-terracotta text-white shadow-2xs">
                 {discountPercent}% OFF
               </span>
             )}
@@ -211,10 +211,10 @@ export const ProductCard: React.FC<ProductCardProps> = ({
         onMouseEnter={() => setIsHovered(true)}
         onMouseLeave={() => setIsHovered(false)}
       >
-        {/* Image Container with Badges */}
+        {/* Image Container with Badges (Native 10/11 aspect ratio preserves uncropped Little Plants logo) */}
         <Link
           href={`/products/${product.slug}`}
-          className="relative aspect-4/5 w-full bg-sand/40 overflow-hidden block"
+          className="relative aspect-[10/11] w-full bg-sand/40 overflow-hidden block"
         >
           <Image
             src={displayImage}
@@ -225,8 +225,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({
             className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
           />
 
-          {/* Badges Overlay */}
-          <div className="absolute top-1.5 sm:top-2.5 left-1.5 sm:left-2.5 flex flex-col gap-1 z-10">
+          {/* Badges Overlay (Right side below heart button to keep top-left brand logo completely clear) */}
+          <div className="absolute top-9 sm:top-11 right-1.5 sm:right-2.5 flex flex-col items-end gap-1 z-10 pointer-events-none">
             {product.isBestseller && (
               <span className="inline-flex items-center gap-0.5 px-1.5 sm:px-2 py-0.5 rounded-full text-[9px] sm:text-[10px] font-semibold uppercase tracking-wider bg-olive text-cream shadow-2xs">
                 <Sparkles className="w-2.5 h-2.5" />

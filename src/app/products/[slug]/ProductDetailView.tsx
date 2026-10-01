@@ -132,8 +132,8 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
             LEFT COLUMN: IMAGE GALLERY WITH THUMBNAILS
            ============================================================ */}
         <div className="lg:col-span-7 space-y-4">
-          {/* Main Stage Image */}
-          <div className="relative aspect-4/5 w-full rounded-3xl overflow-hidden bg-sand/30 border border-sand shadow-xs group">
+          {/* Main Stage Image (Native 10/11 aspect ratio preserves uncropped Little Plants logo) */}
+          <div className="relative aspect-[10/11] w-full rounded-3xl overflow-hidden bg-sand/30 border border-sand shadow-xs group">
             <Image
               src={product.images[activeImageIndex] || product.images[0]}
               alt={product.name}
@@ -143,8 +143,8 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
               className="object-cover transition-transform duration-500 ease-out group-hover:scale-105"
             />
 
-            {/* Badges */}
-            <div className="absolute top-4 left-4 flex flex-col gap-2 z-10">
+            {/* Badges (Positioned on the right below wishlist button to keep top-left Little Plants logo completely visible) */}
+            <div className="absolute top-18 right-4 flex flex-col items-end gap-2 z-10 pointer-events-none">
               {product.isBestseller && (
                 <span className="inline-flex items-center gap-1 px-3 py-1 rounded-full text-xs font-semibold uppercase tracking-wider bg-olive text-cream shadow-2xs">
                   <Sparkles className="w-3 h-3" />
@@ -180,7 +180,7 @@ export const ProductDetailView: React.FC<ProductDetailViewProps> = ({
                 <button
                   key={idx}
                   onClick={() => setActiveImageIndex(idx)}
-                  className={`relative w-20 h-20 rounded-xl overflow-hidden bg-sand shrink-0 border-2 transition-all cursor-pointer ${
+                  className={`relative w-18 sm:w-20 aspect-[10/11] rounded-xl overflow-hidden bg-sand shrink-0 border-2 transition-all cursor-pointer ${
                     activeImageIndex === idx
                       ? "border-terracotta ring-2 ring-terracotta/20 scale-102"
                       : "border-sand hover:border-sand-dark opacity-75 hover:opacity-100"

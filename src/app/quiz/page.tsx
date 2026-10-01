@@ -201,8 +201,8 @@ export default function PlantQuizPage() {
                 key={match.product.id}
                 className="p-6 rounded-3xl bg-cream-50 border border-sand hover:border-sand-dark shadow-2xs hover:shadow-md transition-all duration-300 grid grid-cols-1 md:grid-cols-12 gap-6 items-center"
               >
-                {/* Product Photo */}
-                <div className="md:col-span-4 relative aspect-4/3 sm:aspect-square rounded-2xl overflow-hidden bg-sand border border-sand">
+                {/* Product Photo (Native 10/11 aspect ratio preserves uncropped Little Plants logo) */}
+                <div className="md:col-span-4 relative aspect-[10/11] rounded-2xl overflow-hidden bg-sand border border-sand">
                   <Image
                     src={match.product.images[0]}
                     alt={match.product.name}
@@ -210,7 +210,7 @@ export default function PlantQuizPage() {
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover"
                   />
-                  <div className="absolute top-3 left-3 px-3 py-1 rounded-full bg-olive text-cream text-xs font-bold shadow-2xs flex items-center gap-1.5">
+                  <div className="absolute bottom-3 left-3 px-3 py-1 rounded-full bg-olive/95 backdrop-blur-xs text-cream text-xs font-bold shadow-2xs flex items-center gap-1.5">
                     <Sparkles className="w-3 h-3 text-terracotta" />
                     <span>#{idx + 1} Best Match ({match.matchScore}%)</span>
                   </div>

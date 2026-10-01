@@ -88,7 +88,7 @@ export const QuickAddModal: React.FC<QuickAddModalProps> = ({ product, isOpen, o
         <div className="p-5 overflow-y-auto space-y-5">
           {/* Top Product Summary */}
           <div className="flex gap-4 items-start">
-            <div className="relative w-20 h-20 rounded-xl overflow-hidden bg-sand shrink-0 border border-sand">
+            <div className="relative w-18 aspect-[10/11] rounded-xl overflow-hidden bg-sand shrink-0 border border-sand">
               <Image
                 src={product.images[0]}
                 alt={product.name}

@@ -166,8 +166,8 @@ export const CartDrawer: React.FC = () => {
               <div className="divide-y divide-sand space-y-3">
                 {items.map((item) => (
                   <div key={item.id} className="pt-3 first:pt-0 flex gap-3.5">
-                    {/* Item Image */}
-                    <div className="relative w-18 h-18 rounded-lg overflow-hidden bg-sand shrink-0">
+                    {/* Item Image (Native 10/11 aspect ratio preserves uncropped Little Plants logo) */}
+                    <div className="relative w-16 aspect-[10/11] rounded-lg overflow-hidden bg-sand shrink-0">
                       <Image
                         src={item.product.images[0]}
                         alt={item.product.name}

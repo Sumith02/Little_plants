@@ -137,9 +137,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Right Editorial Image Grid */}
+            {/* Right Editorial Image Grid (Native 10/11 aspect ratio preserves uncropped Little Plants logo) */}
             <div className="lg:col-span-6 relative">
-              <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-4/5 border border-sand bg-sand/30">
+              <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-[10/11] border border-sand bg-sand/30">
                 <Image
                   src="/images/plants/monstera-deliciosa-plant-31793362174084.jpg"
                   alt="Lush Monstera and indoor botanical sanctuary"
@@ -378,7 +378,7 @@ export default function HomePage() {
                       href={`/products/${p.slug}`}
                       className="p-2.5 rounded-xl bg-cream-50 hover:bg-sand border border-sand transition-colors group flex flex-col"
                     >
-                      <div className="relative aspect-square rounded-lg overflow-hidden bg-sand mb-2">
+                      <div className="relative aspect-[10/11] rounded-lg overflow-hidden bg-sand mb-2">
                         <Image
                           src={p.images[0]}
                           alt={p.name}
