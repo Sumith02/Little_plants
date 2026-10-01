@@ -36,15 +36,17 @@ function SearchContent() {
   const cleanQuery = query.trim().toLowerCase();
 
   const matchingProducts = cleanQuery
-    ? products.filter(
-        (p) =>
-          p.name.toLowerCase().includes(cleanQuery) ||
-          p.botanicalName?.toLowerCase().includes(cleanQuery) ||
-          p.category.toLowerCase().includes(cleanQuery) ||
-          p.subcategory.toLowerCase().includes(cleanQuery) ||
-          p.tags.some((t) => t.toLowerCase().includes(cleanQuery)) ||
-          p.description.toLowerCase().includes(cleanQuery)
-      )
+    ? products
+        .filter(
+          (p) =>
+            p.name.toLowerCase().includes(cleanQuery) ||
+            p.botanicalName?.toLowerCase().includes(cleanQuery) ||
+            p.category.toLowerCase().includes(cleanQuery) ||
+            p.subcategory.toLowerCase().includes(cleanQuery) ||
+            p.tags.some((t) => t.toLowerCase().includes(cleanQuery)) ||
+            p.description.toLowerCase().includes(cleanQuery)
+        )
+        .sort((a, b) => a.price - b.price)
     : [];
 
   const matchingCategories = cleanQuery
@@ -217,9 +219,12 @@ function SearchContent() {
             </Link>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            {products.slice(0, 4).map((p) => (
-              <ProductCard key={p.id} product={p} />
-            ))}
+            {[...products]
+              .sort((a, b) => a.price - b.price)
+              .slice(0, 4)
+              .map((p) => (
+                <ProductCard key={p.id} product={p} />
+              ))}
           </div>
         </div>
       )}

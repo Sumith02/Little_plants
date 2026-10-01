@@ -51,7 +51,7 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
   const [inStockOnly, setInStockOnly] = useState<boolean>(false);
   const [beginnerOnly, setBeginnerOnly] = useState<boolean>(initialFilter?.toLowerCase().includes("beginner") || false);
   const [petSafeOnly, setPetSafeOnly] = useState<boolean>(initialFilter?.toLowerCase().includes("pet") || false);
-  const [sortBy, setSortBy] = useState<string>("featured");
+  const [sortBy, setSortBy] = useState<string>("price-asc");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   // Mobile layout & scroll states
@@ -167,8 +167,8 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
     if (sortBy === "newest") {
       return list.sort((a, b) => (b.isNew ? 1 : 0) - (a.isNew ? 1 : 0));
     }
-    // Default featured: bestsellers first
-    return list.sort((a, b) => (b.isBestseller ? 1 : 0) - (a.isBestseller ? 1 : 0));
+    // Default featured: bestsellers first, then low-to-high price
+    return list.sort((a, b) => (b.isBestseller ? 1 : 0) - (a.isBestseller ? 1 : 0) || a.price - b.price);
   }, [filteredProducts, sortBy]);
 
   // Count active filters
@@ -192,6 +192,7 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
     setBeginnerOnly(false);
     setPetSafeOnly(false);
     setSearchQuery("");
+    setSortBy("price-asc");
   };
 
   // Quick Filter Chips with live counts
@@ -692,9 +693,9 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
                   onChange={(e) => setSortBy(e.target.value)}
                   className="px-2.5 sm:px-3 py-1.5 rounded-lg bg-white border border-sand text-xs font-medium text-charcoal focus:outline-none focus:border-terracotta cursor-pointer shadow-2xs"
                 >
-                  <option value="featured">Featured & Bestsellers</option>
-                  <option value="price-asc">Price: Low to High</option>
+                  <option value="price-asc">Price: Low to High (Default)</option>
                   <option value="price-desc">Price: High to Low</option>
+                  <option value="featured">Featured &amp; Bestsellers</option>
                   <option value="rating">Highest Rated</option>
                   <option value="newest">New Arrivals</option>
                 </select>
@@ -848,6 +849,35 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
                 {/* Mobile Filters Content */}
                 <div className="space-y-4 text-xs">
                   <div>
+                    <span className="font-bold uppercase tracking-wider text-olive block mb-2">
+                      Sort Order
+                    </span>
+                    <div className="space-y-1.5">
+                      {[
+                        { id: "price-asc", label: "Price: Low to High (Default)" },
+                        { id: "price-desc", label: "Price: High to Low" },
+                        { id: "featured", label: "Featured & Bestsellers" },
+                        { id: "rating", label: "Highest Rated" },
+                        { id: "newest", label: "New Arrivals" },
+                      ].map((s) => (
+                        <label key={s.id} className="flex items-center gap-2 cursor-pointer">
+                          <input
+                            type="radio"
+                            name="m-sort"
+                            value={s.id}
+                            checked={sortBy === s.id}
+                            onChange={(e) => setSortBy(e.target.value)}
+                            className="text-terracotta"
+                          />
+                          <span className={sortBy === s.id ? "font-semibold text-olive" : "text-charcoal"}>
+                            {s.label}
+                          </span>
+                        </label>
+                      ))}
+                    </div>
+                  </div>
+
+                  <div className="border-t border-sand pt-3">
                     <span className="font-bold uppercase tracking-wider text-olive block mb-2">
                       Preferences
                     </span>

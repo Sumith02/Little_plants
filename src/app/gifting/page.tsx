@@ -24,8 +24,9 @@ import WhatsAppIcon from "@/components/common/WhatsAppIcon";
 import { getCleanWhatsAppNumber } from "@/utils/whatsapp";
 
 export default function GiftingPage() {
-  const { addItem } = useCart();
-  const giftProducts = products.filter((p) => p.category === "gifts");
+  const giftProducts = products
+    .filter((p) => p.category === "gifts")
+    .sort((a, b) => a.price - b.price);
 
   // Corporate inquiry form state
   const [corpForm, setCorpForm] = useState({

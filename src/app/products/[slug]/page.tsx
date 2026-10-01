@@ -26,19 +26,20 @@ export default async function ProductPage({ params }: ProductPageProps) {
     notFound();
   }
 
-  // Resolve compatible planters
-  const compatiblePlanterProducts = products.filter(
-    (p) => product.compatiblePlanters?.includes(p.id)
-  );
+  // Resolve compatible planters (sorted low to high price)
+  const compatiblePlanterProducts = products
+    .filter((p) => product.compatiblePlanters?.includes(p.id))
+    .sort((a, b) => a.price - b.price);
 
-  // Resolve care addons
-  const careAddonProducts = products.filter(
-    (p) => product.careAddons?.includes(p.id)
-  );
+  // Resolve care addons (sorted low to high price)
+  const careAddonProducts = products
+    .filter((p) => product.careAddons?.includes(p.id))
+    .sort((a, b) => a.price - b.price);
 
-  // Related products from same category or subcategory
+  // Related products from same category or subcategory (sorted low to high price)
   const relatedProducts = products
     .filter((p) => p.id !== product.id && (p.category === product.category || p.subcategory === product.subcategory))
+    .sort((a, b) => a.price - b.price)
     .slice(0, 4);
 
   return (

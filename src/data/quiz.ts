@@ -260,6 +260,6 @@ export const calculateQuizResults = (answers: {
     };
   });
 
-  // Sort by match score descending
-  return results.sort((a, b) => b.matchScore - a.matchScore);
+  // Sort by match score descending, then by price ascending
+  return results.sort((a, b) => b.matchScore - a.matchScore || a.product.price - b.product.price);
 };

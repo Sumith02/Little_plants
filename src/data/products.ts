@@ -1,5 +1,5 @@
 import { Product } from "@/types";
-export const products: Product[] = [
+const rawProducts: Product[] = [
   // ==========================================
   // 1. INDOOR PLANTS (Authentic Drive Images & Ugaoo Catalog)
   // ==========================================
@@ -16110,3 +16110,6 @@ export const products: Product[] = [
   },
 
 ];
+
+// Export all products sorted in ascending order from lowest to highest price (₹199 -> ₹4,499)
+export const products: Product[] = [...rawProducts].sort((a, b) => a.price - b.price);

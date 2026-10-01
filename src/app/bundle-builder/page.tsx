@@ -25,12 +25,18 @@ import { buildBundleWhatsAppUrl } from "@/utils/whatsapp";
 export default function BundleBuilderPage() {
   const { addItem, openDrawer } = useCart();
 
-  // Plants available for bundle
-  const plantOptions = products.filter((p) => p.category === "plants");
-  // Planters available for bundle
-  const planterOptions = products.filter((p) => p.category === "pots-planters");
-  // Care products available for bundle
-  const careOptions = products.filter((p) => p.category === "plant-care" || p.id === "care-brass-mister");
+  // Plants available for bundle (sorted low to high price)
+  const plantOptions = products
+    .filter((p) => p.category === "plants")
+    .sort((a, b) => a.price - b.price);
+  // Planters available for bundle (sorted low to high price)
+  const planterOptions = products
+    .filter((p) => p.category === "pots-planters")
+    .sort((a, b) => a.price - b.price);
+  // Care products available for bundle (sorted low to high price)
+  const careOptions = products
+    .filter((p) => p.category === "plant-care" || p.id === "care-brass-mister")
+    .sort((a, b) => a.price - b.price);
 
   // Selection states
   const [selectedPlant, setSelectedPlant] = useState<Product>(plantOptions[0]);

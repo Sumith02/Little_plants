@@ -30,7 +30,9 @@ export default async function JournalDetailPage({ params }: JournalDetailPagePro
     notFound();
   }
 
-  const relatedProducts = products.filter((p) => post.relatedProductIds?.includes(p.id));
+  const relatedProducts = products
+    .filter((p) => post.relatedProductIds?.includes(p.id))
+    .sort((a, b) => a.price - b.price);
 
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-10 space-y-8">

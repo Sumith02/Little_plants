@@ -46,13 +46,22 @@ export default function HomePage() {
   const [selectedSpaceId, setSelectedSpaceId] = useState(spaces[0].id);
   const [addedBundleId, setAddedBundleId] = useState<string | null>(null);
 
-  // Filtered collections
-  const bestsellerProducts = products.filter((p) => p.isBestseller).slice(0, 8);
-  const beginnerProducts = products.filter((p) => p.isBeginnerFriendly && p.category === "plants").slice(0, 4);
+  // Filtered collections (sorted from low to high price)
+  const bestsellerProducts = products
+    .filter((p) => p.isBestseller)
+    .sort((a, b) => a.price - b.price)
+    .slice(0, 8);
+  const beginnerProducts = products
+    .filter((p) => p.isBeginnerFriendly && p.category === "plants")
+    .sort((a, b) => a.price - b.price)
+    .slice(0, 4);
 
-  // Active room space
+  // Active room space (sorted from low to high price)
   const currentSpace = spaces.find((s) => s.id === selectedSpaceId) || spaces[0];
-  const spaceProducts = products.filter((p) => currentSpace.recommendedPlantIds.includes(p.id)).slice(0, 4);
+  const spaceProducts = products
+    .filter((p) => currentSpace.recommendedPlantIds.includes(p.id))
+    .sort((a, b) => a.price - b.price)
+    .slice(0, 4);
 
   // Quick bundle add handler
   const handleAddBundle = (bundle: typeof featuredBundles[0]) => {
