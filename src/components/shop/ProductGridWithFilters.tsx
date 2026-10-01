@@ -16,6 +16,7 @@ import {
   LayoutGrid,
   List,
   ArrowUp,
+  ArrowRight,
   Check,
 } from "lucide-react";
 
@@ -753,12 +754,21 @@ export const ProductGridWithFilters: React.FC<ProductGridWithFiltersProps> = ({
                 </div>
               </div>
 
-              <button
-                onClick={() => setDisplayCount((prev) => prev + 24)}
-                className="px-8 py-3 rounded-xl bg-sand hover:bg-sand-dark text-olive font-medium text-xs tracking-wide transition-colors cursor-pointer shadow-2xs"
-              >
-                Load More Specimens ({sortedProducts.length - displayCount} remaining)
-              </button>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2.5 pt-1">
+                <button
+                  onClick={() => setDisplayCount((prev) => prev + 24)}
+                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-sand hover:bg-sand-dark text-olive font-medium text-xs tracking-wide transition-colors cursor-pointer shadow-2xs"
+                >
+                  Load Next 24 Specimens
+                </button>
+                <button
+                  onClick={() => setDisplayCount(sortedProducts.length)}
+                  className="w-full sm:w-auto px-6 py-3 rounded-xl bg-olive hover:bg-olive-dark text-cream font-medium text-xs tracking-wide transition-colors cursor-pointer shadow-2xs flex items-center justify-center gap-1.5 group"
+                >
+                  <span>View All {sortedProducts.length} Specimens</span>
+                  <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+                </button>
+              </div>
             </div>
           )}
         </div>

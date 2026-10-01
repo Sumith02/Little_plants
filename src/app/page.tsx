@@ -248,6 +248,17 @@ export default function HomePage() {
             <ProductCard key={product.id} product={product} layout="grid" />
           ))}
         </div>
+
+        {/* View All Button at the bottom after viewing plant images */}
+        <div className="text-center pt-6 sm:pt-8">
+          <Link
+            href="/category/plants"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-xl bg-olive hover:bg-olive-dark text-cream font-medium text-xs sm:text-sm tracking-wide transition-all shadow-md hover:shadow-lg cursor-pointer group"
+          >
+            <span>View All Botanical Specimens ({products.length})</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
+        </div>
       </section>
 
       {/* ============================================================
@@ -536,6 +547,17 @@ export default function HomePage() {
           {beginnerProducts.map((product) => (
             <ProductCard key={product.id} product={product} layout="grid" />
           ))}
+        </div>
+
+        {/* View All Button below beginner plant images */}
+        <div className="text-center pt-6 sm:pt-8">
+          <Link
+            href="/shop?filter=Beginner"
+            className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-xl bg-sand hover:bg-sand-dark text-olive font-medium text-xs sm:text-sm tracking-wide border border-sand-dark transition-all cursor-pointer group"
+          >
+            <span>View All Beginner-Friendly Plants</span>
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          </Link>
         </div>
       </section>
 
